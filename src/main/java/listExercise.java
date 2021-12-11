@@ -9,10 +9,14 @@ public class listExercise {
         String[] b = new String[5];
         String[] c = {"1"};
 
-        //2:List—是一个有序的集合，可以包含重复的元素，提供了按索引访问的方式，它继承Collection。
+        //2:List 继承Collection的一个接口,所以不能实例化,是一个有序的集合，可以包含重复的元素，提供了按索引访问的方式，
+        //java.util public interface List<E> extends java.util.Collection<E>
         List<String> d = Arrays.asList("a");
+        List<String> x = Arrays.asList(b);
+        List<String> y = Arrays.asList(c);
 
-        /**
+
+        /** 比较
          * list 可以给自动扩容， 而数组， 你初始化的时候就应该给指定大小。 而且list的方法很多， 对里面的元素操作起来也方便。
          List是一个接口，而ArrayList是一个类。
          ArrayList继承并实现了List。
