@@ -40,6 +40,5 @@ public class proper {
         String test = pro3.getProperty("test");
         System.out.println("测试成功  "+test);
 
-
     }
 }
