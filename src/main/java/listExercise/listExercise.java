@@ -1,3 +1,5 @@
+package listExercise;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +13,7 @@ public class listExercise {
 
         //2:List 继承Collection的一个接口,所以不能实例化,是一个有序的集合，可以包含重复的元素，提供了按索引访问的方式，
         //java.util public interface List<E> extends java.util.Collection<E>
-        List<String> d = Arrays.asList("a");
+        List<String> d = Arrays.asList("a","b");
         List<String> x = Arrays.asList(b);
         List<String> y = Arrays.asList(c);
 
@@ -31,7 +33,7 @@ public class listExercise {
 
         //ArrayList 结构器2
         ArrayList<String> e = new ArrayList<String>();
-        d.add("2");
+        d1.add("2");
 
         //把数组元素拷贝一个数组里
         e.toArray(b);

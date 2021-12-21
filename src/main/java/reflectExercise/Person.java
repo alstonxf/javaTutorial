@@ -15,7 +15,7 @@ public abstract class Person {
     public abstract void sport();
     public abstract void sport(String a);
 
-//    public abstract void sport(String... args);
+    public abstract void sport(String... args);
 
 
     public String getCountry() {

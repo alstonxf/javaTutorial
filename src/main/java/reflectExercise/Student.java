@@ -8,6 +8,7 @@ public class Student extends Person{
     public Student(){};
 
     public Student(Integer age){
+        super.setAge(age);
     }
 
     public Student(Date d){
@@ -27,6 +28,11 @@ public class Student extends Person{
     public void sport(String a) {
         System.out.println("sport"+a);
     }
+
+    @Override
+    public void sport(String... args) {
+
+    }
 //    @Override
 //    public void sport(String... args) {
 //        for(String s:args){
@@ -41,6 +47,7 @@ public class Student extends Person{
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
+
 
 
 }
