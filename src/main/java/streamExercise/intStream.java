@@ -10,6 +10,8 @@ import java.util.stream.Stream;
 public class intStream {
     Random r1 = new Random();
 
+
+
 //    r1.ints(10,100); ？？？
 //    r1.longs(10);
 
