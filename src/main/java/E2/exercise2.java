@@ -4,12 +4,19 @@ import java.util.ArrayList;
 
 /**
  * 【程序2】
+ *
  *  题目：判断101-200之间有多少个素数，并输出所有素数。
  *
  *  分析：什么是素数，只能被自己和1整除的数。
  */
 
 public class exercise2 {
+    private static final String e2 = "abc";
+    private static final String e3 = "abc";
+    private static final class d{
+
+    }
+
     public static void main(String[] args) {
 
         ArrayList<Object> sNum = new ArrayList<>();//有多少个素数

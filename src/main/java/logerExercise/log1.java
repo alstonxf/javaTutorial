@@ -4,6 +4,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class log1 {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Logger.getGlobal().info("日志关闭前");
         Logger.getGlobal().setLevel(Level.OFF);
