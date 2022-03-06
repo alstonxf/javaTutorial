@@ -27,7 +27,7 @@ public class worker {
     @Test
     public void b(){
         ArrayList<String> ab = new ArrayList(Arrays.asList(new String[]{"a","b"}));
-        int a1b1 = (int) (Math.random() * 10) % 2;
+        int a1b1 = (int) (Math.random() * 100) % 3;
         System.out.println(a1b1);
         switch (a1b1){
             case 0:{
@@ -37,6 +37,9 @@ public class worker {
             case 1:{
                 System.out.println("bbb!");
                 break;
+            }
+            default : {
+                System.out.println("ddd!");
             }
         }
     }
