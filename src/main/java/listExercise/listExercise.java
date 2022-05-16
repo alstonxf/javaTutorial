@@ -39,6 +39,29 @@ public class listExercise {
         //把数组元素拷贝一个数组里
         e.toArray(b);
 
+        //4:ArrayList 转为数组
+/*
+        首先是错误做法：
+        public int[] test(){
+            ArrayList<Integer> result=new ArrayList();
+            return (int[])result.toArray();
+        }
+
+        此时会报错，Ljava.lang.Object; cannot be cast to [Ljava.lang.String;
+        原因是类型不匹配，利用toArray()方法返回的是Object[]类型，没有泛型，无法强制转换，想要让其返回其对应类型的数组，使用toArray(T[] a)
+*/
+
+        ArrayList<Integer> result = new ArrayList();
+        Integer[] result2 = result.toArray(new Integer[result.size()]);
+
+
+        //JDK8 int[] <--> Integer[] 可以使用Stream流来实现互相转化
+
+        // int[] --> Integer[]
+        int[] arr = {1, 2, 3, 4, 5};
+        Integer[] integers = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+        // Integer[] --> int[]
+        int[] ints = Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
 
     }
 }
