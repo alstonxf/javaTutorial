@@ -8,14 +8,27 @@ public class listExercise {
     public static void main(String[] args) {
         //1:Array（数组）是基于索引(index)的数据结构，它使用索引在数组中搜索和读取数据是很快的。 Array获取数据的时间复杂度是O(1),但是要删除数据却是开销很大，因为这需要重排数组中的所有数据
         String[] a = new String[]{"1"};
+//        String[] b = new String[5];
+        String[] b0 = new String[]{};
+        System.out.println(b0.length);
         String[] b = new String[5];
+        System.out.println(b.length);
+        b[0] = "a0";
+        b[1] = "a1";
+        b[2] = "a2";
+        b[3] = "a3";
+        b[4] = "a4";
+//        b[5] = "a5";
+        System.out.println(Arrays.toString(b));
         String[] c = {"1"};
+        int[] result1 = new int[]{};
 
-        //2:List 继承Collection的一个接口,所以不能实例化,是一个有序的集合，可以包含重复的元素，提供了按索引访问的方式，
+        //2:List （列表） 继承Collection的一个接口,所以不能实例化,是一个有序的集合，可以包含重复的元素，提供了按索引访问的方式，
         //java.util public interface List<E> extends java.util.Collection<E>
         List<String> d = Arrays.asList("a","b");
         List<String> x = Arrays.asList(b);
         List<String> y = Arrays.asList(c);
+        List resulta = Arrays.asList(result1);
 
         com.sun.tools.javac.util.List<Integer> ls2 = com.sun.tools.javac.util.List.of(1,2);
 

@@ -31,13 +31,19 @@ import java.util.List;
         binary_search(find_num,nums)*/
 
 public class Solution704 {
+    public int search2(int[] nums2, int target2) {
+        return 1;
+    }
+
     public int search(int[] nums, int target) {
 
         if (target>nums[-1] || target<nums[0]){
             return -1;
         }
+
         int targetSub = nums.length;
         int mid = 0;
+
         List numsl = Arrays.asList(nums);
         ArrayList<Integer> numsa = new ArrayList<Integer>(numsl);
         while(numsa.size()>1){
