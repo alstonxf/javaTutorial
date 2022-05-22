@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.BinarySearch;
 
 /**
  * @author lixiaofeng

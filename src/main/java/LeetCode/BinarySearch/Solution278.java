@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.BinarySearch;
+
+import LeetCode.BinarySearch.VersionControl;
 
 public class Solution278 {
 /*

@@ -1,11 +1,4 @@
-package LeetCode;
-
-import org.junit.Test;
-import JunitTest.test.My.MyTest;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package LeetCode.BinarySearch;
 
 /*# 方案二：二分法
         nums=[-3,4,7,10,13,21,43,77,89]
@@ -55,7 +48,7 @@ public class Solution704 {
             return result;
         }
 
-        //当左右区间中还有数字时就压缩空间，除非找到target
+        //当左右区间中还有数字时就使用游标压缩空间，除非找到target
         long left = 0;
         long right = nums.length-1;
         while(right-left > 1) {
