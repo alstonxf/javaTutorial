@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.TwoPointers;
 
 import java.util.Arrays;
 
@@ -43,15 +43,28 @@ public class Solution189 {
 //            nums[nums.length-1] = temp;
 //        }
 
-        //向右旋转
-        int temp;
-        for(int i=0;i<k;i++){
-            temp = nums[nums.length-1];
-            for(int j=nums.length -1;j>0 ;j--) {
-                nums[j] = nums[j - 1];
-            }
-            nums[0] = temp;
+//        //向右旋转
+//        int temp;
+//        for(int i=0;i<k;i++){
+//            temp = nums[nums.length-1];
+//            for(int j=nums.length -1;j>0 ;j--) {
+//                nums[j] = nums[j - 1];
+//            }
+//            nums[0] = temp;
+//        }
+
+        //使用双指针
+
+        for (int left=0,right=left+k;left<k;right++,right++){
+            int leftTemp = nums[left];
+            int rightTemp = nums[right];
+
+
+            nums[right] = leftTemp;
+
+            nums[left] = rightTemp;
         }
+
     }
 
     public static void main(String[] args) {
@@ -95,4 +108,34 @@ class Solution {
         reverse(nums, 0, k - 1);
         reverse(nums, k, n - 1);
     }
+
+
+
+    /*
+双指针-对撞指针
+1:由于该数组两部分都有序，满足双指针的使用场景
+2:最终终止条件 左索引大于右索引
+3:由于左边是递增的，如果目标值小于第一个索引值，左边索引增长结束。
+4:右边部分是从右往左，为递减，如果右边索引值小于目标值，右减少结束。
+5:弹出条件，两边中至少一边的索引值等于目标值，弹出索引。
+6:两边索引无变化，那不存在，返回-1;
+*/
+/*
+    int search3(vector<int>& nums, int target) {
+        //双指针
+        if (nums.size() < 1) return -1;
+        int right = nums.size() - 1;
+        int left = 0;
+        while (right>=left)
+        {
+            if (nums[right]<target&&nums[left]>target) return -1; //6:两边索引无变化，那不存在，返回 - 1;
+            if (nums[right] == target) return right;//5:弹出条件，两边中至少一边的索引值等于目标值，弹出索引。
+            if (nums[left] == target) return left;//5:弹出条件，两边中至少一边的索引值等于目标值，弹出索引。
+            if (nums[right]>target) right--;//7:如果还满足条件，索引继续变化
+            if (nums[left]<target) left++;//7:如果还满足条件，索引继续变化
+        }
+        return -1;
+    }
+*/
+
 }

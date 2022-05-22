@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.TwoPointers;
 
 /*
 977. 有序数组的平方
