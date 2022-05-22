@@ -5,6 +5,11 @@ package LeetCode;
  */
 public abstract class VersionControl {
     boolean isBadVersion(int version) {
-        return false;
+        if (version >= 1702766719){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 }

@@ -29,49 +29,60 @@ import java.util.List;
         print('find it')
 
         binary_search(find_num,nums)*/
+/*
+704. 二分查找
+        给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
+
+
+        示例 1:
+
+        输入: nums = [-1,0,3,5,9,12], target = 9
+        输出: 4
+        解释: 9 出现在 nums 中并且下标为 4
+        示例 2:
+
+        输入: nums = [-1,0,3,5,9,12], target = 2
+        输出: -1
+        解释: 2 不存在 nums 中因此返回 -1
+*/
 
 public class Solution704 {
-    public int search2(int[] nums2, int target2) {
-        return 1;
-    }
 
     public int search(int[] nums, int target) {
 
-        if (target>nums[-1] || target<nums[0]){
-            return -1;
+        int result = -1;
+        if (target>nums[nums.length-1] || target<nums[0]){
+            return result;
         }
 
-        int targetSub = nums.length;
-        int mid = 0;
-
-        List numsl = Arrays.asList(nums);
-        ArrayList<Integer> numsa = new ArrayList<Integer>(numsl);
-        while(numsa.size()>1){
-            //取中间值,如果是偶数，直接除以2，如果是奇数，取中间值。
-            if(numsa.size()%2==0){
-                mid = numsa.size()/2;
-            }else{
-                mid = (numsa.size()+1)/2;
-            }
-            int numMid = nums[mid];
-            //如果中间值比目标值大，取前半截为新的nums，否则取后半截。
-            if(numMid>target){
-                numsa = new ArrayList(numsa.subList(0,mid));
-                Integer[] a = numsa.toArray(new Integer [numsa.size()]);
-                int[] b = Arrays.stream(a).mapToInt(Integer::valueOf).toArray();
-                search(b,target);
-
-                targetSub = targetSub - numsa.size();
-            }else if(numMid<target){
-                numsa = new ArrayList(numsa.subList(mid,numsa.size()));
-
-                targetSub =targetSub ;
-            }else {
-                return mid;
+        //当左右区间中还有数字时就压缩空间，除非找到target
+        long left = 0;
+        long right = nums.length-1;
+        while(right-left > 1) {
+            int mid = (int) Math.floor((left + right) / 2);
+            if (nums[mid] == target) {
+                result = mid;
+                break;
+            } else if (nums[mid] > target) {
+                right = mid;
+            } else {
+                left = mid;
             }
         }
+        //左右区间中间已经不存在target了，只要再判断left，right有没有可能存在target
+        if (nums[(int)left]==target) {
+            result = (int)left;
+        }
+        if (nums[(int)right]==target) {
+            result = (int)right;
+        }
+        try{System.out.println("result = "+result+"  nums["+result+"]="+nums[result] + "  target="+target);}
+        catch (Exception eee){
+            System.out.println("不存在");
+        }
 
-        return mid;
+        return result;
+
     }
 
 /*    给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
@@ -95,8 +106,9 @@ public class Solution704 {
     著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。*/
 
     public static void main(String[] args) {
+//        int[] nums = new int[]{-1,0,3,5,9,12};
         int[] nums = new int[]{-1,0,3,5,9,12};
-
+        new Solution704().search(nums,2);
     }
 
 }

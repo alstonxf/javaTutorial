@@ -25,27 +25,46 @@ public class Solution278 {
     提示：
 
             1 <= bad <= n <= 2^31 - 1
+
+
     通过次数328,842提交次数726,182
+
+    注意：bad 和 n都是int类型。这里有个坑是，如果两个最大的int数加在一起会超过int的范围，产生负数的。
 */
 
     /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
-    public class Solution extends VersionControl {
+    public static class Solution extends VersionControl {
         public int firstBadVersion(int n) {
-            if (n == 1){
-                return 1;
-            }
-            for(int i=2;i<n;i++){
-                if (isBadVersion(i-1) == true && isBadVersion(i) == false){
-                    return i;
+
+            long left = 1;
+            long right = n;
+            while (true) {
+                if (left==right){
+                    System.out.println("left=right:  "+left);
+                    return (int)left;
+                }
+                int mid = (int)Math.floor((left+right)/2);
+                boolean c1 = isBadVersion(mid) == false;
+                boolean c2 = isBadVersion(mid+1) == true;
+                if(c1 && c2){
+                    System.out.println(mid+1);
+                    return mid+1;
+                }
+
+                if (isBadVersion(mid) == true) {
+                    right = mid;
+                } else {
+                    left = mid;
                 }
             }
-            return 9999;
+
+
         }
     }
 
     public static void main(String[] args) {
-
+        new Solution().firstBadVersion(2126753390);
     }
 }
