@@ -139,8 +139,6 @@ public class RunoobTest {
 
 ## 实例
 
-**
-
 ```
 import java.util.ArrayList;
 

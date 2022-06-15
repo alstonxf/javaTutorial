@@ -1,4 +1,4 @@
-package freshJAVA.高级教程;
+package freshJAVA.Demo;
 
 import org.junit.Test;
 

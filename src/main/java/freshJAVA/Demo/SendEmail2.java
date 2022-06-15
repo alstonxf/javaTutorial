@@ -1,4 +1,4 @@
-package freshJAVA.高级教程;
+package freshJAVA.Demo;
 
 // 需要用户名密码邮件发送实例
 //文件名 SendEmail2.java
