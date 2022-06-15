@@ -106,7 +106,7 @@ public void run()
         ## 实例
 */
 
-
+//方法一 通过实现 Runnable 接口；
 class RunnableDemo implements Runnable {
     private Thread t;
     private String threadName;
@@ -174,19 +174,21 @@ class TestThread0 {
         Thread Thread-2 exiting.
         ```
 
-        ------
 
-        ## 通过继承Thread来创建线程
 
-        创建一个线程的第二种方法是创建一个新的类，该类继承 Thread 类，然后创建一个该类的实例。
 
-        继承类必须重写 run() 方法，该方法是新线程的入口点。它也必须调用 start() 方法才能执行。
+ */
 
-        该方法尽管被列为一种多线程实现方式，但是本质上也是实现了 Runnable 接口的一个实例。
+//方法二 通过继承 Thread 类本身；
 
-        ## 实例
-*/
+//## 通过继承Thread来创建线程
+//
+//创建一个线程的第二种方法是创建一个新的类，该类继承 Thread 类，然后创建一个该类的实例。
+//继承类必须重写 run() 方法，该方法是新线程的入口点。它也必须调用 start() 方法才能执行。
+//该方法尽管被列为一种多线程实现方式，但是本质上也是实现了 Runnable 接口的一个实例。
+//## 实例
 
+//与方法一相比，就只改了第一行
 class ThreadDemo extends Thread {
     private Thread t;
     private String threadName;
@@ -210,6 +212,7 @@ class ThreadDemo extends Thread {
         }
         System.out.println("Thread " +  threadName + " exiting.");
     }
+
     @Override
     @Test
     public void start () {
@@ -288,6 +291,8 @@ class TestThread1 {
         ## DisplayMessage.java 文件代码：
 
 */
+//方法三 通过 Callable 和 Future 创建线程。
+
 // 文件名 : DisplayMessage.java
 // 通过实现 Runnable 接口创建线程
 class DisplayMessage implements Runnable {

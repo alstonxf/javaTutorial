@@ -62,7 +62,7 @@ ObjectOutputStream 类用来序列化一个对象，如下的 SerializeDemo 例�
 
 ## SerializeDemo.java 文件代码：
 
-```
+```java
 import java.io.*;
  
 public class SerializeDemo
