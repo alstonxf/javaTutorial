@@ -188,7 +188,7 @@ public class Penguin  extends  Animal{
 
 ### implements关键字
 
-使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。
+<font color = Tomato size=3 face="楷书">使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。</font>
 
 ## implements 关键字
 
@@ -348,3 +348,13 @@ SubClass2
 SuperClass()
 SubClass2(int n):20
 ```
+
+### java中extend与implement的区别
+
+在类的声明中，通过关键字extends来创建一个类的子类。一个类通过关键字implements声明自己使用一个或者多个接口。
+
+extends 是继承某个类, 继承之后可以使用父类的方法, 也可以重写父类的方法; implements 是实现多个接口, 接口的方法一般为空的, 必须重写才能使用。
+
+extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重继承，但是可以用接口 来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了比如 class A extends B implements C,D,E。
+
+一个接口可以继承多个接口： ----> interface C extends A, B {}是可以的； 一个类可以实现多个接口： ---->class D implements A,B,C{}；但是一个类只能继承一个类,不能继承多个类 ：---->class B extends A{}；在继承类的同时,也可以继承接口：---->class E extends D implements A,B,C{}。这也正是选择用接口而不是抽象类的原因。

@@ -138,7 +138,7 @@ public class arraylistDemo {
 
 //    forEach()	遍历 arraylist 中每一个元素并执行特定操作
         // 将 lambda 表达式传递给 forEach
-        myArrayList.forEach((e) -> {
+        myArrayList.forEach(e -> {
             System.out.print(" forEach:"+e);
         });
 
