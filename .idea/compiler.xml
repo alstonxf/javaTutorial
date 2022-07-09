@@ -8,8 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myJava" />
-        <module name="myJavaStudy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="myJava" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
