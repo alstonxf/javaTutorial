@@ -87,7 +87,7 @@
         </property>
     </bean>
 
-    <bean id="user11" class="com.remli.domain.User">
+    <bean id="user113" class="com.remli.domain.User">
         <property name="name" value="我是"></property>
         <property name="addr" value="中国"></property>
     </bean>
@@ -96,4 +96,99 @@
         <property name="addr" value="中国1"></property>
     </bean>
 
+<!--    三、引入其他配置文件（分模块开发）-->
+<!--    实际开发中，Spring的配置内容非常多，这导致Spring配置很繁杂，使用可以拆分到其它配置文件当-->
+<!--    中，而且Spring主配置文件通过import标签加载-->
+
+<!--    1、< import >标签-->
+    <!--主配置文件——引入分模块文件-->
+    <import resource="applicationContext-user.xml"></import>
+
+<!--    四、Spring的重点配置-->
+<!--    1、< property >标签：属性注入、setter()-->
+<!--    property：通过setter对应的方法注入。-->
+<!--    1. name属性：属性名称-->
+<!--    1. value属性：注入的普通属性值-->
+<!--    1. ref属性：注入的对象引用值-->
+<!--    1. < set >标签：集合——引用ref-->
+    <!-- 给set注入值 不能有相同的对象 -->
+
+
+    <bean id="user112" class="com.remli.dao.impl.UserDaoImpl">
+        <property name="empSets">
+            <set>
+<!--                <ref bean="emp1" />-->
+<!--                <ref bean="emp2"/>-->
+                <value>人</value>
+                <value>民</value>
+                <value>人</value>
+            </set>
+        </property>
+
+<!--    1. < list >标签：集合——引用ref-->
+    <!-- 给list注入值 可以有相同的多个对象 -->
+
+        <property name="strList">
+            <list>
+                <value>人</value>
+                <value>民</value>
+                <value>人</value>
+            </list>
+        </property>
+
+<!--    1. < map >标签：集合——键值对-->
+    <!-- 给map注入值 只要map中的key值不一样就可以装配value -->
+
+    <property name="userMap">
+        <map><!--key value-->
+            <entry key="key1" value-ref="user11"> </entry>
+            <entry key="key2" value-ref="user22"> </entry>
+        </map>
+    </property>
+
+
+<!--    1. < properties >标签：与map类似——键值对-->
+    <property name="properties">
+        <props>
+            <prop key="1">111</prop>
+            <prop key="2">1112</prop>
+            <prop key="3">1113</prop>
+        </props>
+    </property>
+
+    </bean>
+
+<!--    2、< constructor-arg >标签：指定构造函数的参数注入-->
+<!--    constructor-arg：通过构造函数注入。-->
+
+    <!--找无参构造方法-->
+    <bean id="userDao1015"  class="com.remli.dao.impl.UserDaoImpl">
+    </bean>
+    <bean id="userService201"  class="com.remli.service.impl.UserServiceImpl">
+        <!--参数名-->            <!---->
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+    <bean id="userDao15"  class="com.remli.dao.impl.UserDaoImpl">
+        <!--    constructor-arg属性通过指定type 类型来调用对应的构造函数，-->
+
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="student"/>
+        <constructor-arg name="dream">
+            <list>
+                <value>soldier</value>
+                <value>scientist</value>
+                <value>pilot</value>
+            </list>
+        </constructor-arg>
+
+        <constructor-arg name="score">
+            <map>
+                <entry key="math" value="90"/>
+                <entry key="english" value="85"/>
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="user11" class="com.remli.domain.User"/>
 </beans>
+

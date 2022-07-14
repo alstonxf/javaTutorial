@@ -4,6 +4,8 @@ package com.remli.dao.impl;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
+
 import com.remli.domain.User;
 
 public class UserDaoImpl implements UserDao {
@@ -17,6 +19,16 @@ public class UserDaoImpl implements UserDao {
         System.out.println("无参构造修改：UserDaoImpl对象创建...");
     }
 
+//    public UserDaoImpl(int id){
+//    }
+//    public UserDaoImpl(String name){
+//    }
+//
+//    public UserDaoImpl(String[] dream){
+//    }
+
+    public UserDaoImpl(String id, String name, List dream, Map score) {
+    }
 
     private void destroy() {
         System.out.println("UserDaoImpl destory...");
@@ -50,6 +62,12 @@ public class UserDaoImpl implements UserDao {
 
     public void setUserMap(Map<String, User> userMap) {
         this.userMap = userMap;
+    }
+
+    private Set<String> empSets;
+
+    public void setEmpSets(Set<String> empSets) {
+        this.empSets = empSets;
     }
 
     public void setProperties(Properties properties) {

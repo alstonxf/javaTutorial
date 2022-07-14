@@ -19,12 +19,12 @@ public class proper {
         Properties pro = new Properties();
 
         //添加属性
-        pro.setProperty("width","600.0");
-        pro.setProperty("filename","/home/cay/books/cj11/code/v1ch11/raven.html");
+//        pro.setProperty("width","600.0");
+//        pro.setProperty("filename","/home/cay/books/cj11/code/v1ch11/raven.html");
 
         //将属性保存到文件
-        FileOutputStream out = new FileOutputStream("program.propertirs");
-        pro.store(out,"-comment-");
+//        FileOutputStream out = new FileOutputStream("program.propertirs");
+//        pro.store(out,"-comment-");
 
         //从文件读取属性
         FileInputStream in = new FileInputStream("program.propertirs");

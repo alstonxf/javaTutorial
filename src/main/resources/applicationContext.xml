@@ -1,0 +1,194 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+
+
+<!--    <bean id="userDao" class="com.remli.dao.impl.UserDaoImpl" scope="prototype"></bean>-->
+<!--    4、bean实例化：无参、工厂静态、工厂实例-->
+    <!--    1.无参构造方法实例化：默认-->
+    <!--找无参构造方法-->
+    <bean id="userDao"  class="com.remli.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy" scope="prototype"></bean>
+
+    <!--    2.工厂静态方法实例化：直接调用方法-->
+    <!--找全包名对应内部指定的方法、去返回对应的对象-->
+    <bean id="userDao1"  class="com.remli.factory.StaticFactory" scope="prototype" factory-method="getUserDao"></bean>
+
+    <!--    3.工厂实例方法实例化：先有工厂对象再调方法-->
+    <!--先创建工厂对象-->
+    <bean id="factory"  class="com.remli.factory.DynamicFactory" scope="prototype" ></bean>
+    <!--从容器当中工厂对象内部的方法获取指定返回的对象-->
+    <bean id="userDao2"  factory-bean="factory" factory-method="getUserDao"></bean>
+
+
+<!--    5、依赖注入DI：注入类型：对象、普通数据、集合数据-->
+<!--        1.构造方法注入：有参构造-->
+    <bean id="userService"  class="com.remli.service.impl.UserServiceImpl">
+        <!--参数名-->            <!---->
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+    <!--    2.set方法注入：-->
+    <!--找无参构造方法-->
+<!--    <bean id="userDao"  class="com.remli.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy" scope="prototype"></bean>-->
+    <!--set依赖注入-->
+<!--    <bean id="userService"  class="com.remli.service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+
+
+<!--    3.p命名空间注入：(本质set)-->
+<!--    1引入p命名空间：-->
+<!--    xmlns:p="http://www.springframework.org/schema/p"-->
+<!--    2修改注入方式：-->
+<!--    <bean id="userService"  class="com.remli.service.impl.UserServiceImpl" p:userDao-ref="userDao" />-->
+
+<!--    6、依赖注入类型：引用数据(对象)、普通数据、集合数据-->
+    <!--    1.普通数据-->
+
+    <bean id="userDao11"  class="com.remli.dao.impl.UserDaoImpl" >
+        <!--属性注入-->
+        <property name="username" value="注意空格"/>
+        <property name="age" value="2021825"/>
+    </bean>
+<!--    2.引用数据-->
+<!--    3.集合数据-->
+    <bean id="userDao222"  class="com.remli.dao.impl.UserDaoImpl" >
+        <!--属性注入-->
+        <property name="strList">
+            <list>
+                <value>任</value>
+                <value>明</value>
+                <value>任</value>
+            </list>
+        </property>
+        <property name="userMap">
+            <map><!--key value-->
+                <entry key="key1" value-ref="user11"> </entry>
+                <entry key="key2" value-ref="user22"> </entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="1">111</prop>
+                <prop key="2">1112</prop>
+                <prop key="3">1113</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="user113" class="com.remli.domain.User">
+        <property name="name" value="我是"></property>
+        <property name="addr" value="中国"></property>
+    </bean>
+    <bean id="user22" class="com.remli.domain.User">
+        <property name="name" value="我是1"></property>
+        <property name="addr" value="中国1"></property>
+    </bean>
+
+<!--    三、引入其他配置文件（分模块开发）-->
+<!--    实际开发中，Spring的配置内容非常多，这导致Spring配置很繁杂，使用可以拆分到其它配置文件当-->
+<!--    中，而且Spring主配置文件通过import标签加载-->
+
+<!--    1、< import >标签-->
+    <!--主配置文件——引入分模块文件-->
+    <import resource="applicationContext-user.xml"></import>
+
+<!--    四、Spring的重点配置-->
+<!--    1、< property >标签：属性注入、setter()-->
+<!--    property：通过setter对应的方法注入。-->
+<!--    1. name属性：属性名称-->
+<!--    1. value属性：注入的普通属性值-->
+<!--    1. ref属性：注入的对象引用值-->
+<!--    1. < set >标签：集合——引用ref-->
+    <!-- 给set注入值 不能有相同的对象 -->
+
+
+    <bean id="user112" class="com.remli.dao.impl.UserDaoImpl">
+        <property name="empSets">
+            <set>
+<!--                <ref bean="emp1" />-->
+<!--                <ref bean="emp2"/>-->
+                <value>人</value>
+                <value>民</value>
+                <value>人</value>
+            </set>
+        </property>
+
+<!--    1. < list >标签：集合——引用ref-->
+    <!-- 给list注入值 可以有相同的多个对象 -->
+
+        <property name="strList">
+            <list>
+                <value>人</value>
+                <value>民</value>
+                <value>人</value>
+            </list>
+        </property>
+
+<!--    1. < map >标签：集合——键值对-->
+    <!-- 给map注入值 只要map中的key值不一样就可以装配value -->
+
+    <property name="userMap">
+        <map><!--key value-->
+            <entry key="key1" value-ref="user11"> </entry>
+            <entry key="key2" value-ref="user22"> </entry>
+        </map>
+    </property>
+
+
+<!--    1. < properties >标签：与map类似——键值对-->
+    <property name="properties">
+        <props>
+            <prop key="1">111</prop>
+            <prop key="2">1112</prop>
+            <prop key="3">1113</prop>
+        </props>
+    </property>
+
+    </bean>
+
+<!--    2、< constructor-arg >标签：指定构造函数的参数注入-->
+<!--    constructor-arg：通过构造函数注入。-->
+
+    <!--找无参构造方法-->
+    <bean id="userDao1015"  class="com.remli.dao.impl.UserDaoImpl">
+    </bean>
+    <bean id="userService201"  class="com.remli.service.impl.UserServiceImpl">
+        <!--参数名-->            <!---->
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+    <bean id="userDao15"  class="com.remli.dao.impl.UserDaoImpl">
+        <!--    constructor-arg属性通过指定type 类型来调用对应的构造函数，-->
+
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="student"/>
+        <constructor-arg name="dream">
+            <list>
+                <value>soldier</value>
+                <value>scientist</value>
+                <value>pilot</value>
+            </list>
+        </constructor-arg>
+
+        <constructor-arg name="score">
+            <map>
+                <entry key="math" value="90"/>
+                <entry key="english" value="85"/>
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="user11" class="com.remli.domain.User"/>
+</beans>
+
