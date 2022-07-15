@@ -18,22 +18,22 @@
 <!--    4、bean实例化：无参、工厂静态、工厂实例-->
     <!--    1.无参构造方法实例化：默认-->
     <!--找无参构造方法-->
-    <bean id="userDao" class="remli.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy" scope="prototype"></bean>
+    <bean id="userDao"  class="com.remli.dao.impl.UserDaoImpl" init-method="init" destroy-method="destroy" scope="prototype"></bean>
 
     <!--    2.工厂静态方法实例化：直接调用方法-->
     <!--找全包名对应内部指定的方法、去返回对应的对象-->
-    <bean id="userDao1" class="remli.factory.StaticFactory" scope="prototype" factory-method="getUserDao"></bean>
+    <bean id="userDao1"  class="com.remli.factory.StaticFactory" scope="prototype" factory-method="getUserDao"></bean>
 
     <!--    3.工厂实例方法实例化：先有工厂对象再调方法-->
     <!--先创建工厂对象-->
-    <bean id="factory" class="remli.factory.DynamicFactory" scope="prototype" ></bean>
+    <bean id="factory"  class="com.remli.factory.DynamicFactory" scope="prototype" ></bean>
     <!--从容器当中工厂对象内部的方法获取指定返回的对象-->
     <bean id="userDao2"  factory-bean="factory" factory-method="getUserDao"></bean>
 
 
 <!--    5、依赖注入DI：注入类型：对象、普通数据、集合数据-->
 <!--        1.构造方法注入：有参构造-->
-    <bean id="userService"  class="remli.service.impl.UserServiceImpl">
+    <bean id="userService"  class="com.remli.service.impl.UserServiceImpl">
         <!--参数名-->            <!---->
         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
     </bean>
@@ -56,14 +56,14 @@
 <!--    6、依赖注入类型：引用数据(对象)、普通数据、集合数据-->
     <!--    1.普通数据-->
 
-    <bean id="userDao11"  class="remli.dao.impl.UserDaoImpl" >
+    <bean id="userDao11"  class="com.remli.dao.impl.UserDaoImpl" >
         <!--属性注入-->
         <property name="username" value="注意空格"/>
         <property name="age" value="2021825"/>
     </bean>
 <!--    2.引用数据-->
 <!--    3.集合数据-->
-    <bean id="userDao222"  class="remli.dao.impl.UserDaoImpl" >
+    <bean id="userDao222"  class="com.remli.dao.impl.UserDaoImpl" >
         <!--属性注入-->
         <property name="strList">
             <list>
@@ -87,11 +87,11 @@
         </property>
     </bean>
 
-    <bean id="user113" class="remli.domain.User">
+    <bean id="user113" class="com.remli.domain.User">
         <property name="name" value="我是"></property>
         <property name="addr" value="中国"></property>
     </bean>
-    <bean id="user22" class="remli.domain.User">
+    <bean id="user22" class="com.remli.domain.User">
         <property name="name" value="我是1"></property>
         <property name="addr" value="中国1"></property>
     </bean>
@@ -114,7 +114,7 @@
     <!-- 给set注入值 不能有相同的对象 -->
 
 
-    <bean id="user112" class="remli.dao.impl.UserDaoImpl">
+    <bean id="user112" class="com.remli.dao.impl.UserDaoImpl">
         <property name="empSets">
             <set>
 <!--                <ref bean="emp1" />-->
@@ -162,14 +162,14 @@
 <!--    constructor-arg：通过构造函数注入。-->
 
     <!--找无参构造方法-->
-    <bean id="userDao1015"  class="remli.dao.impl.UserDaoImpl">
+    <bean id="userDao1015"  class="com.remli.dao.impl.UserDaoImpl">
     </bean>
-    <bean id="userService201"  class="remli.service.impl.UserServiceImpl">
+    <bean id="userService201"  class="com.remli.service.impl.UserServiceImpl">
         <!--参数名-->            <!---->
         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
     </bean>
 
-    <bean id="userDao15"  class="remli.dao.impl.UserDaoImpl">
+    <bean id="userDao15"  class="com.remli.dao.impl.UserDaoImpl">
         <!--    constructor-arg属性通过指定type 类型来调用对应的构造函数，-->
 
         <constructor-arg name="id" value="1"/>
@@ -189,6 +189,6 @@
             </map>
         </constructor-arg>
     </bean>
-    <bean id="user11" class="remli.domain.User"/>
+    <bean id="user11" class="com.remli.domain.User"/>
 </beans>
 
