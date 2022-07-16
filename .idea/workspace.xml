@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/remli/dataSource/ds.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/remli/dataSource/testDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dataSource/testDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/ApplicationContest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/java/remli/dataSource/ds.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +43,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="2BfjsTUSfyKoWOhNn1HsTCH7UfC" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -69,7 +62,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "34ef8bc9d5e120cc6c36fb62ffc1648b"
+    "spring.configuration.checksum": "4ccc6052c22ccdb300bef7e8cddcee39"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -77,12 +70,27 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/remli/dataSource" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/DEMO/school" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/com/remli/dataSource" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testDataSource.test1">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DEMO.school.management.system.Main" />
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DEMO.school.management.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testDataSource.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -94,22 +102,6 @@
       <option name="PACKAGE_NAME" value="remli.dataSource" />
       <option name="MAIN_CLASS_NAME" value="remli.dataSource.testDataSource" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testDataSource.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="remli.dataSource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="remli.dataSource" />
-      <option name="MAIN_CLASS_NAME" value="remli.dataSource.testDataSource" />
-      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.testDataSource.test1" />
         <item itemvalue="JUnit.testDataSource.test5" />
         <item itemvalue="JUnit.testDataSource.test4" />
         <item itemvalue="JUnit.testDataSource.test3 (1)" />
-        <item itemvalue="JUnit.testDataSource.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +184,8 @@
       <workItem from="1657547164947" duration="3988000" />
       <workItem from="1657629394577" duration="415000" />
       <workItem from="1657629845268" duration="263000" />
-      <workItem from="1657630415297" duration="21457000" />
+      <workItem from="1657630415297" duration="21896000" />
+      <workItem from="1657958007268" duration="539000" />
     </task>
     <servers />
   </component>
