@@ -190,5 +190,28 @@
         </constructor-arg>
     </bean>
     <bean id="user11" class="remli.domain.User"/>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--set方法注入参数-->
+        <!--这里的名称是java里面的首字母小写-->
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/remli?useSSL=false&amp;serverTimezone=UTC"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="lixiaofeng"></property>
+    </bean>
+
+    <!--解耦合-->
+    <!--这个地方可以更换数据源-->
+    <!--加载外部properties配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <!--set方法注入参数-->
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
 </beans>
 

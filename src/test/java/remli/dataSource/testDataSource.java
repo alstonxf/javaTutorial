@@ -4,7 +4,10 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidPooledConnection;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.util.ResourceBundle;
 
@@ -101,6 +104,47 @@ public class testDataSource{
 
         /*连接关闭、归还资源*/
         connection.close();
+    }
+
+    @Test
+    /*测试Spring容器产生数据源对象(加载application.xml配置文件)*/
+    public void test4() throws Exception {
+        /*读取配置文件*/
+        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        /*创建数据源对象、设置连接参数*/
+        /*实例化对象*/
+        DataSource dataSource4 = app.getBean(DataSource.class);
+
+        /*创建对象获取连接信息*/
+        Connection connection4 = dataSource4.getConnection();
+
+        /*打印对象信息*/
+        System.out.println("\n地址："+connection4);
+
+        /*连接关闭、归还资源*/
+        connection4.close();
+
+    }
+
+    @Test
+    /*测试Spring容器产生数据源对象(加载application.xml配置文件)*/
+    public void test5() throws Exception {
+        /*读取配置文件*/
+        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        /*创建数据源对象、设置连接参数*/
+        /*实例化对象*/
+        DruidDataSource dr = app.getBean(DruidDataSource.class);
+
+        /*创建对象获取连接信息*/
+        Connection connection5 = dr.getConnection();
+
+        /*打印对象信息*/
+        System.out.println("\n地址5："+connection5);
+
+        /*连接关闭、归还资源*/
+        connection5.close();
 
     }
 

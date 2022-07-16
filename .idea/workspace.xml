@@ -5,467 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/CONTEXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/CONTEXT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E1/exercise9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E1/exercise9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E2/exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E2/exercise2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E2/exercise5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E2/exercise5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E2/exercise6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E2/exercise6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E2/tes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E2/tes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/E2/tes2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DEMO/E2/tes2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/Solution278.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/BinarySearch/Solution278.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/Solution35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/BinarySearch/Solution35.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/Solution704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/BinarySearch/Solution704.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/VersionControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/BinarySearch/VersionControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/Solution283.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Solution977_test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/Solution977_test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/Soulution344.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/Soulution344.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/Solution167.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/Solution167.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/Solution189.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/Solution189.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/Solution557.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/Solution557.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/Solution567.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/Solution567.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/Solution977.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/Solution977.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/TwoPointers/SolutionD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeetCode/TwoPointers/SolutionD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringDemo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringDemo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringDemo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringDemo/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringDemo/TestHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringDemo/TestHello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringDemo2/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringDemo2/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringDemo2/main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringDemo2/main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/dao/impl/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dao/impl/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/dataSource/ds.propertirs" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dataSource/ds.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/dataSource/testDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dataSource/testDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/factory/DynamicFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/factory/DynamicFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/factory/StaticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/factory/StaticFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/remli/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/CONTEXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/CONTEXT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule1/rule1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule1/rule1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule1/valueOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule1/valueOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Chapter2/rule9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Chapter2/rule9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Effective Java 第三版.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Effective Java 第三版.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Untitled 1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Untitled 1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/effectiveJAVA/Untitled.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effectiveJAVA/Untitled.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/ Java 序列化-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/ Java 序列化-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 修饰符-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 修饰符-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 变量类型-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 变量类型-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 基本数据类型-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 基本数据类型-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 基础语法-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 基础语法-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 对象和类-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 对象和类-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 开发环境配置-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 开发环境配置-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 循环结构 - for, while 及 do...while-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 循环结构 - for, while 及 do...while-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java 运算符-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java 运算符-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/JavaIntroduction-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/JavaIntroduction-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Java简介-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Java简介-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/.ipynb_checkpoints/test-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/DeserializeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/DeserializeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/ExerciseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/ExerciseThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/SendEmail2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/SendEmail2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/SerializeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/SerializeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/StreamTes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/StreamTes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/Demo/arraylistDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/Demo/arraylistDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/ Java 序列化.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/ Java 序列化.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java Character 类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java Character 类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java Number &amp; Math 类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java Number &amp; Math 类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java Scanner 类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java Scanner 类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java String 类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java String 类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java StringBuffer.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java StringBuffer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java switch case 语句.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java switch case 语句.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 修饰符.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 修饰符.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 修饰符.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 修饰符.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 变量类型.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 变量类型.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 变量类型.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 变量类型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 基本数据类型.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 基本数据类型.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 基本数据类型.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 基本数据类型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 基础语法.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 基础语法.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 基础语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 基础语法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 对象和类.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 对象和类.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 对象和类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 对象和类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 开发环境配置.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 开发环境配置.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 开发环境配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 开发环境配置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 异常处理.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 异常处理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 循环结构 - for, while 及 do...while.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 循环结构 - for, while 及 do...while.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 循环结构 - for, while 及 do...while.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 循环结构 - for, while 及 do...while.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 数组.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 数组.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 方法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 日期时间.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 日期时间.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 正则表达式.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 正则表达式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 流(Stream)、文件(File)和IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 流(Stream)、文件(File)和IO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 简介.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 简介.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 运算符.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 运算符.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java 运算符.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java 运算符.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/Java简介.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/Java简介.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/基础教程/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/基础教程/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 包(package).md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 包(package).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 多态.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 多态.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 封装.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 封装.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 抽象类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 抽象类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 接口.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 接口.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 枚举(enum).md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 枚举(enum).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 继承.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/面向对象/Java 重写(Override)与重载(Overload).md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/面向对象/Java 重写(Override)与重载(Overload).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/ Java 泛型.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/ Java 泛型.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/ Java 泛型-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/ Java 泛型-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Java HashMap-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Java HashMap-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Java HashSet-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Java HashSet-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Java Iterator（迭代器)-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Java Iterator（迭代器)-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Java 多线程编程-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Java 多线程编程-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Java 集合框架-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Java 集合框架-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 8 新特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 8 新特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 9 新特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 9 新特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java Applet 基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java Applet 基础.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java ArrayList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java ArrayList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java HashMap.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java HashMap.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java HashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java HashMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java HashSet.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java HashSet.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java HashSet.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java HashSet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java Iterator（迭代器).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java Iterator（迭代器).ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java Iterator（迭代器.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java Iterator（迭代器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java LinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java LinkedList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java MySQL 连接.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java MySQL 连接.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java Object 类.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java Object 类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 发送邮件.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 发送邮件.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 多线程编程.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 多线程编程.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 多线程编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 多线程编程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 实例.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 实例.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 序列化.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 序列化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 数据结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 数据结构.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 文档注释.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 文档注释.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 泛型.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 泛型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 网络编程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 网络编程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 集合框架.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 集合框架.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Java 集合框架.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Java 集合框架.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/freshJAVA/高级教程/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/freshJAVA/高级教程/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/PatternMatchingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/PatternMatchingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/SortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/StockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/StockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/jzoffer/DuplicateNumberInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/jzoffer/DuplicateNumberInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/jzoffer/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/jzoffer/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/arithmetic/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/arithmetic/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/CalculateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/CalculateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/CloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/CloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ExtendTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ExtendTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ExtendsTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ExtendsTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/FinalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/FinalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ForTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ForTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/IoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/IoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/PackagingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/PackagingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/PolymorphicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/PolymorphicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ReflectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ReflectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ReflectTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ReflectTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/ServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/ServletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/SetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/SetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/SocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/SocketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/StaticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/StaticTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/StringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/SuperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/SuperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/basics/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/basics/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example/WordCountApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example/WordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example/WordCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example/WordNormalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example/WordNormalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example/WordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example/WordReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/ReportBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/ReportBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/SentenceSpout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/SentenceSpout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/SplitSentenceBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/SplitSentenceBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/WordCountApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/WordCountBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/WordCountBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/example1/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/example1/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/one/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/one/WordCountApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/one/WordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/one/WordCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/one/WordNormalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/one/WordNormalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/one/WordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/one/WordReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/one/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/one/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test/TestBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test/TestBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test/TestSpout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test/TestSpout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test2/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test2/Test2Bolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test2/Test2Bolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test2/TestBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test2/TestBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test2/TestSpout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test2/TestSpout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/storm1/test2/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/storm1/test2/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/zookeeper/ZookeeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/zookeeper/ZookeeperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/bigdata/zookeeper/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/bigdata/zookeeper/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/code/MapCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/code/MapCodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/code/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/code/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/apache/CommonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/apache/CommonsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/apache/CompressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/apache/CompressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/apache/LangTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/apache/LangTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/apache/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/apache/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/google/GoogleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/google/GoogleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/google/GuavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/google/GuavaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/google/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/google/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/others/JodaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/others/JodaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/others/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/others/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/commons/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/commons/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/adapter/AdapterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/adapter/AdapterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/adapter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/adapter/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/bridge/BridgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/bridge/BridgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/bridge/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/bridge/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/builder/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/builder/BuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/builder/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/builder/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/command/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/command/CommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/command/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/command/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/composite/CompositeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/composite/CompositeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/composite/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/composite/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/decorator/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/decorator/DecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/decorator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/decorator/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/facade/FacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/facade/FacadeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/facade/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/facade/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/factory/FactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/factory/FactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/factory/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/factory/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/filter/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/filter/FilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/filter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/filter/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/flyweight/FlyweightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/flyweight/FlyweightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/flyweight/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/flyweight/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/interpreter/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/interpreter/InterpreterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/interpreter/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/interpreter/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/iterator/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/iterator/IteratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/iterator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/iterator/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/mediator/MediatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/mediator/MediatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/mediator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/mediator/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/memento/MementoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/memento/MementoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/memento/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/memento/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/nullobject/NullObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/nullobject/NullObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/nullobject/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/nullobject/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/observer/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/observer/ObserverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/observer/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/observer/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/prototype/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/prototype/PrototypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/prototype/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/prototype/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/proxy/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/proxy/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/proxy/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/proxy/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/responsibility/ResponsibilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/responsibility/ResponsibilityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/responsibility/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/responsibility/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/singleton/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/singleton/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/singleton/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/singleton/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/state/StateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/state/StateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/state/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/state/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/strategy/StrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/strategy/StrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/strategy/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/strategy/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/template/TemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/template/TemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/template/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/template/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/visitor/VisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/visitor/VisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/design/visitor/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/design/visitor/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/EsAggregationSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/EsAggregationSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/EsHighLevelRestSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/EsHighLevelRestSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/EsHighLevelRestTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/EsHighLevelRestTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/EsHighLevelRestTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/EsHighLevelRestTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/EsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/EsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/JestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/JestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/elasticsearch/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/elasticsearch/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/excel/EasyExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/excel/EasyExcelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/excel/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/excel/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/jdk8/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/jdk8/LambdaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/jdk8/LocalDateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/jdk8/LocalDateTimeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/jdk8/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/jdk8/StreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/jdk8/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/jdk8/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/KafkaProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/DataProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/DataProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/KafkaProducerConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/KafkaProducerConsumerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/WordCountDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/WordCountDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/examples/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/examples/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/others/TestConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/others/TestConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/others/TestProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/others/TestProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/others/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/others/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test1/KafkaConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test1/KafkaConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test1/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test1/KafkaProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test1/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test1/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test2/KafkaConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test2/KafkaConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test2/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test2/KafkaProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test2/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test2/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test3/KafkaConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test3/KafkaConsumerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test3/KafkaConsumerTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test3/KafkaConsumerTest3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test3/KafkaProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test3/KafkaProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/kafka/test3/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/kafka/test3/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/demo/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/demo/C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/demo/RabbitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/demo/RabbitConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/demo/RabbitProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/demo/RabbitProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2more/NewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2more/NewTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2more/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2more/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2one/ClientReceive1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2one/ClientReceive1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2one/ClientSend1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2one/ClientSend1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2one/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2one/Recv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/one2one/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/one2one/Send.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/mq/rabbitmq/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/mq/rabbitmq/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/ClientTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/ClientTestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo/MinaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo/MinaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo/MinaClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo/MinaClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo/MinaServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo/MinaServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo/MinaServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo/MinaServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MinaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MinaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MinaClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MinaClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MinaServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MinaServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MinaServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MinaServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MyTextLineCodecDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MyTextLineCodecDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MyTextLineCodecEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MyTextLineCodecEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/demo1/MyTextLineCodecFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/demo1/MyTextLineCodecFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/mina/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/mina/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyClientFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyClientFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyServerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyServerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/BaseClient1Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/BaseClient1Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/BaseClient2Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/BaseClient2Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/NettyClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo1/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo1/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo2/NettyClientDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo2/NettyClientDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo2/NettyClientHandlerDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo2/NettyClientHandlerDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo2/NettyServerDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo2/NettyServerDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo2/NettyServerHandlerDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo2/NettyServerHandlerDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyClientDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyClientDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyClientHandlerDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyClientHandlerDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyDecoder2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyDecoder2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyServerDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyServerDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo3/NettyServerHandlerDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo3/NettyServerHandlerDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo4/NettyClientDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo4/NettyClientDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo4/NettyClientHandlerDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo4/NettyClientHandlerDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo4/NettySendBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo4/NettySendBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo4/NettyServerDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo4/NettyServerDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo4/NettyServerHandlerDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo4/NettyServerHandlerDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo5/NettyClientDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo5/NettyClientDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo5/NettyClientHandlerDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo5/NettyClientHandlerDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo5/NettyServerDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo5/NettyServerDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo5/NettyServerHandlerDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo5/NettyServerHandlerDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo6/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo6/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo6/NettyServerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo6/NettyServerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo6/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo6/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/demo6/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/demo6/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/netty/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/netty/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/nio/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/nio/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/others/JsoupHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/others/JsoupHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/others/LogbackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/others/LogbackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/others/LombokTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/others/LombokTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/others/TimerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/others/TimerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/others/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/others/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/pojo/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/pojo/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/question/QuestionTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/question/QuestionTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/question/QuestionTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/question/QuestionTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/question/QuestionTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/question/QuestionTest3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/question/QuestionTest4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/question/QuestionTest4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/question/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/question/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/redis/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/redis/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/redis/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/redis/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/sql/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/sql/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/ThreadPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/liveLock/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/liveLock/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/liveLock/Drop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/liveLock/Drop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/liveLock/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/liveLock/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/liveLock/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/liveLock/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/liveLock/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/liveLock/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/concurrent/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/concurrent/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/LockSydTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/LockSydTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/LockTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/LockTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/LockTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/LockTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/VolatileTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/VolatileTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/VolatileTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/VolatileTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/lock/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/lock/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/JoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/JoinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/MyRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/MyRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/NotifyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/NotifyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/PriorityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/PriorityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/Test22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/Test22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/TheadTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/TheadTest3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/ThreadPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/ThreadTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/ThreadTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/ThreadTest4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/ThreadTest4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/ThreadTest5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/ThreadTest5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/ThreadTest6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/ThreadTest6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/YieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/YieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/executorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/executorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/threadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/threadMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/threadPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/threadPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/thread/test/threadTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/thread/test/threadTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/AESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/AESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/IPWhiteCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/IPWhiteCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/KafkaProducerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/KafkaProducerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/MyHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/MyHttpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/MyTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/MyTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/QrCodeCreateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/QrCodeCreateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/ZkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/ZkUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pancm/utils/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pancm/utils/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spyder/oschina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spyder/oschina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spyder/txPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/spyder/txPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/Junit单元测试教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/Junit单元测试教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/code/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/code/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/code/myTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/code/myTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/test/CaculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/test/CaculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/test/My/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/test/My/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/test/My/MyTestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/test/My/MyTestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JunitTest/test/My/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JunitTest/test/My/TestJunit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/assertExercise/assertOpen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/assertExercise/assertOpen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/interfaceExercise/com.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/interfaceExercise/com.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/interfaceExercise/comparetor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/interfaceExercise/comparetor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/interfaceExercise/lengthComparetor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/interfaceExercise/lengthComparetor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/listExercise/listExercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/listExercise/listExercise2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/listExercise/listExercise3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/logerExercise/log1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/logerExercise/log1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/propertiesExercise/proper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/propertiesExercise/proper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/reflectExercise/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/reflectExercise/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/reflectExercise/All2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/reflectExercise/All2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/reflectExercise/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/reflectExercise/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/reflectExercise/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/reflectExercise/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/reflectExercise/review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/reflectExercise/review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/sqlliteExercise/sqle1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/sqlliteExercise/sqle1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/sqlliteExercise/sqle2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/sqlliteExercise/sqle2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/sqlliteExercise/txt2String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/sqlliteExercise/txt2String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/CountLongWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/CountLongWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/NewStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/NewStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/SubStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/SubStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/intStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/intStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/mathStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/mathStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/streamExercise/printStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/streamExercise/printStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringFrameExercise/Spring 精简教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringFrameExercise/Spring 精简教程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringFrameExercise/Spring 精简教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringFrameExercise/Spring 精简教程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/remli/dataSource/ds.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/remli/dataSource/testDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/remli/dataSource/testDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/ApplicationContest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/ApplicationContest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/java/remli/dataSource/ds.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,32 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.testDataSource.test1">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringDemo.App" />
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SpringDemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="remli.dataSource.testDataSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="remli.dataSource.testDataSource" />
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="remli.dataSource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testDataSource.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -607,13 +131,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testDataSource.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="remli.dataSource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="remli.dataSource" />
+      <option name="MAIN_CLASS_NAME" value="remli.dataSource.testDataSource" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDataSource.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="remli.dataSource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="remli.dataSource" />
+      <option name="MAIN_CLASS_NAME" value="remli.dataSource.testDataSource" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.testDataSource.test1" />
-        <item itemvalue="JUnit.testDataSource.test2" />
+        <item itemvalue="JUnit.testDataSource.test5" />
+        <item itemvalue="JUnit.testDataSource.test4" />
         <item itemvalue="JUnit.testDataSource.test3 (1)" />
-        <item itemvalue="Application.remli.dataSource.testDataSource" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.testDataSource.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -636,7 +192,7 @@
       <workItem from="1657547164947" duration="3988000" />
       <workItem from="1657629394577" duration="415000" />
       <workItem from="1657629845268" duration="263000" />
-      <workItem from="1657630415297" duration="18658000" />
+      <workItem from="1657630415297" duration="21457000" />
     </task>
     <servers />
   </component>
