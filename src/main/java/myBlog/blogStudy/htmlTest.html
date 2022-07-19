@@ -117,7 +117,217 @@ border表示边框，参数是宽度的像素，该属性一般用 CSS 来设定
 <!--注意： 禁止 a 标签跳转到 <a href="javascript:void(0);"> 或者 <a href="javascript:;">-->
 
 
+<body>
+<!--table 标签的属性： 表格标签有一些属性可以用于设置表格大小、边框等，这些属性都放在 table 标签中-->
 
+<!--属性	描述-->
+<!--align	表示整个表格相对于周围元素的对齐方式，有 left、center、right-->
+<!--border	表示边框大小，1表示有边框（数字越大，边框越粗）；""表示没边框-->
+<!--cellpadding	表示内容距离边框的距离，默认1像素-->
+<!--cellspacing	表示单元格之间的距离，默认2像素-->
+<!--width/heigth	设置表格尺寸-->
+
+<table align="left" border="1" cellspacing="0" width="500" heigth="300">
+    <thead>
+    <td>姓名</td>
+    <td>年龄</td>
+    <td>性别</td>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张三</td>
+        <td>18</td>
+        <td>男</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>13</td>
+        <td>男</td>
+    </tr>
+<!--    td 标签的属性：-->
+<!--    rowspan 属性：表示跨行合并，rowspan="n" 表示从该行开始到下面n行，合并成一行，合并行内容为本行内容-->
+<!--    colspan 属性：表示跨列合并，colspan="n" 表示从该列开始到右边n列，合并成一列，合并列内容为本列内容-->
+
+    <tr>
+        <td>王五</td>
+        <td>16</td>
+        <td>女</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">李四</td>
+        <td colspan="2">99</td>
+    </tr>
+    </tbody>
+
+<!--    注意：-->
+<!--    列表中各元素是并列关系-->
+<!--    ul 和 ol 中只能放 li 标签，dl 中只能放 dt 和 dd 标签-->
+<!--    li 中可以放其它标签-->
+<!--    列表带有自己的样式，但可以使用 CSS 来修改-->
+
+</table>
+<body>
+<dl>
+    <dt>第一季</dt>
+    <dd>第一集</dd>
+    <dd>第二集</dd>
+
+    <dt>第二季</dt>
+    <dd>第一集</dd>
+    <dd>第二集</dd>
+</dl>
+</body>
+
+<!--2.10.2 input 标签-->
+
+<!--标签介绍： input 标签用于各种输入控件，包括：单行文本框、按钮、单选框、复选框-->
+
+<!--input 标签的属性：-->
+
+<!--属性	描述-->
+<!--type	type 取值很多，包括 text、password、button、file、radio、image 等等，分别表示不同的输入控件-->
+<!--name	表示给 input 取了个名字，对于单选框，必须使用多个相同的 name 才能产生单选效果-->
+<!--value	input 中文本的默认值-->
+<!--checked	带有该属性的内容初始时默认被选中（用于单选和多选按钮）-->
+<!--maxlength	用于设定最大长度-->
+<!--标签形式：-->
+
+单行文本框（type 值为 text）
+<br/>
+<input type="text">
+
+
+<br/>
+密码框（type 值为 password）
+<br/>
+<input type="password">
+
+
+<br/>
+单选框（type 值为 radio，input 中必须有个 name 属性，只需要将多个 input 标签的 name 属性设为同一个，就可以在这几个设置的标签中实现单选效果，标签后面写选项内容）
+<br/>
+<input type="radio" name="sex">男
+<input type="radio" name="sex">女
+<br/>
+
+复选框（type 值为 checkbox，标签后面写选项内容）
+<br/>
+<input type="checkbox"> 我爱睡觉
+<input type="checkbox"> 我爱干饭
+<input type="checkbox"> 我爱学习
+
+<br/>
+普通按钮（type 值为 button，value 属性表示显示的按钮名称）
+<br/>
+<input type="button" value="我是个按钮">
+
+<br/>
+提交按钮（提交按钮必须放到 form 标签内，点击后就会尝试给服务器发送）
+<br/>
+<form action="test1.html">
+    <input type="text" name="username">
+    <input type="submit" value="提交"></input>
+</form>
+
+<br/>
+清空按钮（清空按钮必须放到 form 标签内，点击后会将 form 内所有的用户输入内容重置
+<br/>
+<form action="test1.html">
+    <input type="text" name="username">
+    <input type="submit" value="提交">
+    <input type="reset" value="清空">
+</form>
+<br/>
+选择文件（type 值为 file）
+<br/>
+<input type="file">
+
+<br/>
+2.10.3 label 标签
+<br/>
+标签形式及介绍： label 标签搭配 input 使用，点击 label 就能选中对应的单选/复选框，能够提升用户体验
+<br/>
+<label for="male">男</label> <input id="male" type="radio" name="sex">
+<label for="female">女</label> <input id="female" type="radio" name="sex">
+
+<br/>
+label 标签的 for 属性： 指定当前 label 和哪个有相同 id（label 的 for 值与 input 的 id 值相同）的 input 标签对应
+<br/>
+2.10.4 select 标签
+<br/>
+标签形式及介绍： select 标签用于下拉菜单，搭配 option 标签（下拉菜单中的元素）使用
+<br/>
+<select>
+    <option>北京</option>
+    <option>深圳</option>
+    <option>上海</option>
+</select>
+<br/>
+注意：
+如果某个 option 中定义有 select="select"，则表示该选项初始时默认被选中
+可以让第一个选项作为默认选项，例如
+<br/>
+<select>
+    <option>--请选择年份--</option>
+    <option>2000</option>
+    <option>2001</option>
+    <option>2002</option>
+</select>
+<br/>
+
+2.10.5 textarea 标签
+<br/>
+标签形式及介绍： textarea 标签表示多行文本框，rows 和 cols 属性分别表示行数和列数
+<br/>
+<textarea rows="3" cols="50"></textarea>
+
+<br/>
+注意： 文本域中的内容就是默认内容，空格也会有影响
+<br/>
+2.11 div 和 span 标签
+<br/>
+上述标签都是语义标签，即每个标签都有特定含义。而 div 和 sapn 标签是无语义标签，并且这两个标签使用广泛
+<br/>
+标签形式及介绍：
+<br/>
+当前一个页面中的大部分标签，其实都可以使用 div 和 span 来代替。div 和 span 存在的意义就相当于一个盒子
+<br/>
+div 独占一行，是一个大的盒子
+<br/>
+span 不独占一行，是一个小的盒子
+<br/>
+这两个盒子用于网页布局
+<br/>
+示例：
+<div>
+    <span>詹姆斯</span>
+    <span>詹姆斯</span>
+    <span>詹姆斯</span>
+</div>
+<div>
+    <span>库里</span>
+    <span>库里</span>
+    <span>库里</span>
+</div>
+<div>
+    <span>科比</span>
+    <span>科比</span>
+    <span>科比</span>
+</div>
+
+
+<br/>
+3. HTML 特殊字符
+<br/>
+在 HTML 文件中，有些字符是不能直接表示的，例如
+<br/>
+空格：需要用 &nbsp; 代替
+小于号：需要用 &lt; 代替
+大于号：需要用 &gt; 代替
+按位与：需要用 &amp; 代替
+<br/>
+</body>
 
 </body>
 </html>
