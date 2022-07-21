@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/myBlog/blogStudy/cssTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myBlog/blogStudy/htmlTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myBlog/blogStudy/htmlTest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +192,7 @@
       <workItem from="1657630415297" duration="21896000" />
       <workItem from="1657958007268" duration="1265000" />
       <workItem from="1657972193751" duration="22000" />
-      <workItem from="1658046597413" duration="7269000" />
+      <workItem from="1658046597413" duration="9287000" />
     </task>
     <servers />
   </component>
