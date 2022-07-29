@@ -1,4 +1,23 @@
+
+
+#      框架的概念
+
+(一)从现实生活的角度来看: 框架，就好像是 “风筝”骨架。 如果我给你一个“风筝”的骨架，你只需要去往这个“风筝骨架”上，贴上一层纸。一个现成的风筝就做好啦~~ 如果没有“风筝的骨架”，那你需要，自己去找“竹子”“木材”“铁丝”等等东西，然后还要“自己手工”的做出一个“风筝骨架”来。。。呵呵，想一想，如果你做100个风筝的话。。。估计就要把人给“累死”啦。。。
+(二)从技术角度来看
+框架就是半个做好的程序。如果我们要编写程序的话，只需要花费 一半的时间精力，就可以完成，整个程序了。。。 因为这个现成的“框架”，已经帮我们做好了了一半啦。。。 这就是为什么，要使用“框架”，因为这样能够让我们，更加快速的开发出程序来。。。 当然了，其实也可以不用框架，那样的话。。。就要上面那个“风筝”似的。。。太累了。。
+
+总结：spring框架可以简化我们的开发，使开发更高效，快捷
+
+控制翻转概念（IoC）
+没用spring之前，如果想用自己创建的一个学生类
+
+Student student = new Student
+
+spring相当于一个容器，在spring的配置文件中管理这这些类，以前的方法是我们自己想用就new出来一个，是我们在控制这这些类做什么事，后者是spring在帮我们管理这些类，如：给学生类的成员变量赋值。
+
 # [Spring入门详细教程（一） ](https://www.cnblogs.com/jichi/p/10165538.html)
+
+
 
 ## 一、spring概述
 
@@ -160,21 +179,54 @@ web开发中,使用applicationContext。
 
 ## 六、spring的bean元素属性详解
 
-### 1、class：
+Spring如同一个工厂，用于生产和管理Spring容器中的Bean。在实际开发中，最常采用XML格式的配置方式，我们将通过XML文件来注册并管理Bean之间的依赖关系。
 
-被容器管理对象的完整类名。
+在Spring中，XML配置文件的根元素是< beans >,< beans >中可以包含多个< bean >子元素，每一个< bean >子元素定义了一个Bean,并描述了该Bean如何被装配到Spring 容器中。< bean >子元素中包含多个属性和子元素，常用的属性和子元素如下表所示:
 
-### 2、name：
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201116215534935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDA0ODcz,size_16,color_FFFFFF,t_70#pic_center)
+
+在Spring的配置文件中，通常一个普通的Bean只需要定义id(或name)和class两个属性即可。定义Bean的方式如下:
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <!--将指定类配置给Spring 让Spring创建其对象的实例-->
+        <!--使用id属性定义bean1,其对应的实现类为com.ssm.Bean1-->
+        <bean id="bean1" class="com.ssm.Bean1"/>
+        <!--使用name属性定义bean2,其对应的实现类为com.ssm.Bean2-->
+        <bean name="bean2" class="com.ssm.Bean2"> </bean>
+</beans>
+```
+
+需要注意的是: 如果在Bean中未指定id和name，那么Spring会将class值当作id使用。
+
+### 1、class 指定Bean的实现类全名：
+
+被容器管理对象的完整类名。指定Bean的实现类，它必须使用类的全限定名
+
+### 2、name 被容器管理对象的名称：
 
 被容器管理对象的名称，根据此名称从容器中获得该对象，可以重复，可以使用特殊字符。
 
-### 3、id：
+Spring容器通过此属性进行配置和管理，name属性可以为Bean指定多个名称，每个名称之间用逗号或分号隔开
+
+### 3、id 唯一标识符：
 
 被容器管理对象的唯一标识，id不可重复，不可使用特殊字符，作用与name相同，建议使用name。
 
-### 4、scope：
+Bean的唯一标识符，Spring容器对Bean的配置、管理都通过该属性进行
 
-　　(1)singleton(默认):单例对象，该对象在spring容器中只会存在一个。
+### 4、scope 用于设定Bean实例的作用域：
+
+　　用于设定Bean实例的作用域，其属性值有singleton(单例)、prototype(原型)、request、 session、global Session、application和websocket，默认值为singleton
+
+​		(1)singleton(默认):单例对象，该对象在spring容器中只会存在一个。
 
 　　(2)prototype:多例模式，配置为多例的对象不会在spring容器中创建，只有在从容器中要获取该对象的时候，容器对该对象进行创建，每次创建都是一个新的对象。注意在与struts2配合使用的时候，struts2中的action对象必须要配置成prototype这种多例模式。
 
@@ -215,7 +267,124 @@ public class User {
 }
 ```
 
-## 七、spring创建对象的方式
+
+
+### 6、constructor-arg	子元素
+
+<bean>元素的子元素，可以使用此元素传入构造参数进行实例化。该元素的index属性指定构造参数的序号(从0开始)，type属性指定构造参数的类型，参数值可以通过ref属性或value属性直接指定，也可以通过ref或value子元素指定
+
+### 7、property	子元素
+
+<bean>元素的子元素，用于调用Bean实例中的setter()方法完成属性赋值，从而完成依赖注入。该元素的name属性指定 Bean实例中的相应属性名，ref属性或value属性用于指定参数值
+
+###  8、ref	子元素
+
+<constructor-arg>、<property> 等元素的属性或子元素，可以用于指定对Bean工厂中某个Bean实例的引用
+
+### 9、value	子元素
+
+<constructor-arg>、<property> 等元素的属性或子元素，可以用于直接给定一个常量值
+
+### 10、list	依赖注入
+
+用于封装List或数组属性的依赖注入
+
+### 11、set	依赖注入
+
+用于封装Set类型属性的依赖注入
+
+### 12、map	依赖注入
+
+用于封装Map类型属性的依赖注入
+
+### 13、entry	依赖注入
+
+''<map> 元素的子元素，用于设置一个键值对。其kev属性指定字符串类型的键值。 ref属性或 value 属性直接指定其值，也可以通过 ref或 value 子元素指定其值
+
+## 七、Bean的作用域
+### 作用域的种类
+Spring中为Bean的实例定义了7种作用域，如下图所示:
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201116220049702.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNDA0ODcz,size_16,color_FFFFFF,t_70#pic_center)
+
+
+其中,singleton和prototype是常用的两种。
+
+### singleton作用域
+
+singleton是Spring容器默认的作用域，当Bean的作用域为singleton时，Spring容器就只会存在一个共享的Bean实例，并且所有对Bean的请求，只要id与该Bean的id属性相匹配，就会返回同一个Bean的实例。singleton作用域对于无会话状态的Bean(如Dao组件、Service组件)来说是最理想的选择。
+
+在Spring配置文件中，Bean的作用域是通过< bean >元素的scope属性来指定的，该属性值可以设置为singleton、prototype、request、session、globalSession、application、websocket七个值。 比如，要将作用域定义成singleton,只需要将scope属性值设置为singleton,代码如下:
+
+<bean id="scope" class="com.ssm.scope.Scope" scope="singleton">
+1
+测试singleton作用域
+项目创建在上一节中，已经详细介绍过，这里就不多说了。
+
+Scope.java
+在com.ssm.scope中创建Scope类，该类不需要写任何方法
+
+package com.ssm.scope;
+
+public class Scope {
+}
+
+
+applicatonContext.xml
+在com.ssm.scope包中创建Spring的配置文件applicationContext.xml,并在配置文件中创建一个id为scope的Bean,通过class属性指定其对应的实现类为Scope
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--将指定类配置给Spring 让Spring创建其对象的实例-->
+    <bean id="scope" class="com.ssm.scope.Scope" scope="singleton"></bean>
+</beans>
+
+ScopeTest.java
+在com.ssm.scope包中创建测试类ScopeTest来测试singleton作用域，代码如下:
+
+package com.ssm.scope;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ScopeTest {
+    public static void main(String[] args) {
+        //1.初始化Spring容器，加载配置文件
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        //2.输出获得的实例
+        System.out.println(applicationContext.getBean("scope"));
+        System.out.println(applicationContext.getBean("scope"));
+    }
+
+运行结果如下:
+
+从中可以看出，两次输出的结果相同，这说明Spring容器只创建了一个Scope类的实例
+
+注意: Spring容器默认的作用域就是singleton。
+
+### prototype作用域
+对需要保持会话状态的Bean应用使用prototype作用域。在使用prototype作用域时，Spring容器会为每个对该Bean的请求都创建一个新的实例。
+
+要将Bean定义为prototype作用域，只需在配置文件中将< bean >元素的scope属性值设置为prototype即可，代码如下:
+
+<bean id="scope" class="com.ssm.scope.Scope" scope="prototype">
+1
+修改完配置文件后，我们再次运行测试类ScopeTest,输出结果如下:
+
+从中可以看到，两次输出的Bean实例并不相同，这说明在prototype作用域下创建了两个不同的Scope实例
+
+## 八、Bean生命周期配置
+
+init-method：指定类中的初始化方法名称
+
+destroy-method：指定类中销毁方法名称
+
+## 九、spring创建对象的方式
 
 ### 1、空参构造方法
 
@@ -261,11 +430,24 @@ public class UserFactory {
 
 # [Spring入门详细教程（二） ](https://www.cnblogs.com/jichi/p/10176601.html)
 
-## 一、spring注入方式
+## 一、Bean的装配方式
 
-### 1、set方法注入
+Bean的装配可以理解为依赖关系注入，Bean的装配方式即Bean的依赖注入的方式。
 
-注意：需使用无参数构造器
+Spring容器支持多种形式的Bean的装配方式，如基于XML的装配、基于注解的装配、自动装配等。其中最常用的是基于注解的装配。
+
+## （一）基于XML的装配
+Spring提供了两种基于XML的装配方式：设值注入、构造注入
+
+Spring实例化Bean的过程中，Spring首先会调用Bean的默认构造方法来实例化Bean对象，然后通过反射的方式调用setter方法来注入属性值。
+
+#### 1、set方法注入
+
+##### **常用set方法**
+
+Bean类必须提供一个默认的无参构造方法
+Bean类必须为需要注入的属性提供对应的setter方法
+在配置文件中，需要使用 <property>元素为每个属性注入值
 
 ```java
 <bean name="user" class="SpringTest.SpringDemo.entity.User" >
@@ -274,9 +456,42 @@ public class UserFactory {
 </bean>
 ```
 
-### 2、构造方法注入
+##### **p名称空间注入（不常用）**
 
-注意：需使用含参数构造器
+P命名空间注入本质也是set方法注入，但比起上述的set方法注入更加方便，主要体现在配置文件中，如下：
+
+首先，使用p命名空间给属性赋值需要在beans标签中加一条属性用于引入P命名空间：
+
+xmlns:p="http://www.springframework.org/schema/p"
+
+使用则是p：加上变量名=一个值
+
+p:name="小白" p:age="10"
+
+```java
+xmlns:p="http://www.springframework.org/schema/p"
+<bean name="user" class="SpringTest.SpringDemo.entity.User" p:name="小白" p:age="10"></bean>
+```
+
+##### **spel表达式注入（不常用）**
+
+```java
+    <bean name="user" class="SpringTest.SpringDemo.entity.User">
+        <property name="name" value="小红"></property>
+        <property name="age" value="18"></property>
+    </bean>
+    <bean name="user1" class="SpringTest.SpringDemo.entity.User">
+        <property name="name" value="#{user.name}"></property>
+        <property name="age" value="#{user.age}"></property>
+    </bean>
+```
+
+
+
+#### 2、构造方法注入
+
+Bean类必须提供有参构造方法
+在配置文件中，需要使用<constructor-arg>元素来定义构造方法的参数，也可以使用其value属性来设置该参数的值
 
 ```
 package SpringTest.SpringDemo.entity;
@@ -322,25 +537,159 @@ public class User {
 </bean>
 ```
 
-### 3、p名称空间注入
 
-```java
-xmlns:p="http://www.springframework.org/schema/p"
-<bean name="user" class="SpringTest.SpringDemo.entity.User" p:name="小白" p:age="10"></bean>
+
+## （二）基于注解的装配
+#### spring常用注解
+
+Spring中定义了一系列的注解，常用的注解如下：
+
+##### 1、@Component：
+
+描述Spring中的Bean，可以作用在任何层次
+
+##### 2、@Repository：
+
+用于将持久层（Dao层）的类标识为Spring中的Bean
+
+##### 3、@Service：
+
+用于将业务层（Service层）的类标识为Spring中的Bean
+
+##### 4、@Controller：
+
+用于将控制层（Controller层）的类标识为Spring中的Bean
+
+##### 5、@Autowired：
+
+用于对Bean的属性变量、属性的setter方法以及构造方法进行标注，配合对应的注解处理器完成Bean的自动装配工作。默认按照Bean的类型进行装配
+
+引用类型的装配方式
+
+```
+    @Autowired
+    private Car car;
+
 ```
 
-### 4、spel表达式注入
+##### 6、@Resource：
+
+其作用与@Autowired一样。其区别在于@Autowired默认Bean的类型装配，而@Resource默认按照Bean的实例名称进行装配
+@Resource中有两个重要属性：name和type。Spring将name属性解析为Bean实例名称，type属性解析为Bean实例类型。如果指定name属性，则按实例名称进行装配；如果指定type属性，则按Bean类型进行装配；如果都不指定，则先按Bean的实例名称装配，如果不能匹配，再按照Bean类型进行装配；如果都无法匹配，则抛出 NoSuchBeanDefinitionException异常。
+
+引用类型的装配方式
+
+```
+    @Resource
+    private Car car;
+```
+
+### 
+
+##### 7、@Qualifier：
+
+与@Autowired注解配合使用，会将默认的按Bean类型装配修改为Bean的实例名称装配，Bean的实例名称由 @Qualifier注解的参数指定
 
 ```java
-    <bean name="user" class="SpringTest.SpringDemo.entity.User">
-        <property name="name" value="小红"></property>
-        <property name="age" value="18"></property>
-    </bean>
-    <bean name="user1" class="SpringTest.SpringDemo.entity.User">
-        <property name="name" value="#{user.name}"></property>
-        <property name="age" value="#{user.age}"></property>
-    </bean>
+@Repository("accountDao")
+public class AccountDaoImpl implements AccountDao {
+
+}
 ```
+
+```java
+@Service("accountService")
+public class AccountServiceImpl implements AccountService {
+     @Resource(name="accountDao")
+     private AccountDao accountDao; 
+ 
+}
+```
+
+
+此时，在配置文件中，Spring注解提供了另外一种高效的注解配置方式。
+
+含义是：告知Spring在创建容器时要扫描的包（通知Spring扫描指定包下的所有Bean）
+
+
+    <context:component-scan base-package="cn.itcast"></context:component-scan>
+##### 8、@Scope注解，作用在类上。
+
+```
+@Scope(scopeName="singleton")  //单例模式
+public class User {
+}
+@Scope(scopeName="prototype")  //多例模式
+public class User {
+}
+```
+
+##### 9、@Value用于注入普通类型值
+
+第一种方式：作用在属性上，通过反射的filed值，破坏了对象的封装性。
+
+```
+@Value("xiaohei")
+private String name;
+```
+
+第二种方式：通过set方法赋值，不破坏对象的封装性。
+
+```
+    @Value("xiaobai")
+    public void setName(String name) {
+        this.name = name;
+    }
+```
+
+##### 10、@PostConstruct与@PreDestroy
+
+```
+    @PostConstruct   //创建对象前调用
+    public void init(){
+        System.out.println("初始");
+    }
+    @PreDestroy　　   //对象销毁前调用
+    public void destory(){
+        System.out.println("销毁");
+    }
+```
+
+
+
+#### spring注解配置
+
+##### 1、开启注解扫描
+
+```
+<context:component-scan base-package="SpringTest.SpringDemo.entity"></context:component-scan>
+```
+
+扫描SpringTest.SpringDemo.entity下的所有类中的注解。
+
+##### 2、在类上添加注解
+
+```
+@Component
+public class User {
+}
+```
+
+## （三）自动装配 
+
+自动装配：将一个Bean自动地注入到其他Bean的Property中
+
+Spring的 <bean>元素中包含一个 autowire 属性，我们可以通过设置 autowire 的属性值来自动装配Bean。
+
+autowire属性的5个值：
+
+default（默认）：由<beans>的default-autowire属性值来确定。
+byName：根据属性的名称自动装配。容器将根据名称查找与属性完全一致的Bean，并将其属性自动装配
+byType：根据属性的数据类型自动装配。
+constructor：根据构造函数参数的数据类型，进行byType模式的自动装配
+no：在默认情况下，不使用自动装配，Bean依赖必须通过ref元素定义
+
+
 
 ## 二、spring复杂类型注入
 
@@ -465,15 +814,19 @@ public class Collection {
   </context-param>
 ```
 
-## 四、spring的分配置文件
+## 四、引入其他配置文件
 
-### 方式一：
+引入其他配置文件（分模块开发）
+实际开发中，Spring的配置内容非常多，这就导致Spring配置很繁杂且体积很大，所以，可以将部分配置拆解到其他配置文件中，而在Spring主配置文件通过以下两种方法加载
+
+
+### 方式一：载入时罗列
 
 ```
 ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext1.xml","applicationContext2.xml")
 ```
 
-### 方式二：
+### 方式二：通过import标签
 
 ```
 <import resource="applicationContext.xml"></import>
@@ -560,7 +913,7 @@ private String name;
 
 2、在测试类上添加注解
 
-```
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
 public class TestJunit {
@@ -577,15 +930,15 @@ public class TestJunit {
 
 # [Spring入门详细教程（三）](https://www.cnblogs.com/jichi/p/10177004.html)
 
-# 一、aop的概念
+## 一、aop的概念
 
-在软件业，AOP为Aspect Oriented Programming的缩写，意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。AOP是可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。
+在软件业，**AOP为Aspect Oriented Programming的缩写，意为：面向切面编程**，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。**AOP是可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。**
 
 AOP主要实现功能日志记录，性能统计，安全控制，事务处理，异常处理等等。将日志记录，性能统计，安全控制，事务处理，异常处理等代码从业务逻辑代码中划分出来，通过对这些行为的分离，我们希望可以将它们独立到非指导业务逻辑的方法中，进而改变这些行为的时候不影响业务逻辑的代码。
 
 AOP主要思想总结为横向重复，纵向抽取。
 
-# 二、spring实现aop的原理及底层实现
+## 二、spring实现aop的原理及底层实现
 
 spring实现aop的底层使用了两种代理机制。一种是jdk的动态代理，一种是cglib的动态代理。下面来分析一下两种代理模式。
 
@@ -610,9 +963,7 @@ public class UserDaoImpl implements UserDao {
 
 （2）建立一个UserDao的动态代理类，实现接口InvocationHandler。
 
-
-
-```
+```java
 public class UserProxy implements InvocationHandler{
     private UserDao userDao ;
     
@@ -638,9 +989,7 @@ public class UserProxy implements InvocationHandler{
 
 （3）进行单元测试，发现第一个方法执行的时候没有被动态代理，第二个执行的时候进行了动态代理。
 
-
-
-```
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
 public class TestJunit {
@@ -665,7 +1014,7 @@ public class TestJunit {
 
 
 
-```
+```java
 public class CglibProxy implements MethodInterceptor{
 
     private UserDaoImpl userDaoImpl;
@@ -698,7 +1047,7 @@ public class CglibProxy implements MethodInterceptor{
 
 
 
-```
+```java
     public void test4(){
         UserDaoImpl userDaoImpl = new UserDaoImpl();
         userDaoImpl.saveUser();
@@ -718,7 +1067,7 @@ public class CglibProxy implements MethodInterceptor{
 <aop:conﬁg proxy-target-class="true">
 ```
 
-# 三、aop开发中的相关概念
+## 三、aop开发中的相关概念
 
 1、Joinpoint（连接点）：目标对象中，所有可以增强的方法。
 
@@ -734,7 +1083,7 @@ public class CglibProxy implements MethodInterceptor{
 
 7、Aspect（切面）：切入点和通知的结合。
 
-# 四、spring中aop的实现方式
+## 四、spring中aop的实现方式
 
 分两种方式介绍，一种是xml配置方式，一种是注解方式。
 
@@ -746,7 +1095,7 @@ public class CglibProxy implements MethodInterceptor{
 
 
 
-```
+```java
 public class UserDaoImpl{
     
     public void saveUser(){
@@ -764,7 +1113,7 @@ public class UserDaoImpl{
 
 
 
-```
+```java
 public class UserAdvice{
     
     public void before(){
@@ -819,7 +1168,7 @@ public class UserAdvice{
 
 
 
-```
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
 public class TestAop {
@@ -848,7 +1197,7 @@ public class TestAop {
 
 
 
-```
+```java
 public class UserDaoImpl{
     
     public void saveUser(){
@@ -866,7 +1215,7 @@ public class UserDaoImpl{
 
 
 
-```
+```java
 public class UserAdvice{
     
     public void before(){
@@ -908,7 +1257,7 @@ public class UserAdvice{
 
 
 
-```
+```java
 @Aspect
 public class UserAdvice{
     
@@ -948,7 +1297,7 @@ public class UserAdvice{
 
 
 
-```
+```java
 @Aspect
 public class UserAdvice{
     
@@ -987,7 +1336,7 @@ public class UserAdvice{
 
 # [Spring入门详细教程（四）](https://www.cnblogs.com/jichi/p/10211475.html)
 
-# 一、spring整合jdbc继承jdbcdaosupport的方式
+## 一、spring整合jdbc继承jdbcdaosupport的方式
 
 1、导入所需jar包。
 
@@ -997,7 +1346,7 @@ public class UserAdvice{
 
 
 
-```
+```java
 public class UserDaoImpl extends JdbcDaoSupport implements UserDao {
     @Override
     public void save(User u) {
@@ -1053,6 +1402,8 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao {
 
 3、建立数据库链接配置文件
 
+db.properties
+
 ```
 jdbc.jdbcUrl=jdbc:mysql:///spring
 jdbc.driverClass=com.mysql.jdbc.Driver
@@ -1064,7 +1415,7 @@ jdbc.password=1234
 
 
 
-```
+```java
 <!-- 指定spring读取db.properties配置 -->
 <context:property-placeholder location="classpath:db.properties"  />
 <!-- 将连接池放入spring容器 -->
@@ -1086,7 +1437,7 @@ jdbc.password=1234
 
 
 
-```
+```java
 /*
  * Copyright 2002-2012 the original author or authors.
  *
@@ -1240,7 +1591,7 @@ public abstract class JdbcDaoSupport extends DaoSupport {
 
 
 
-```
+```java
     @Test
     public void fun2() throws Exception{
         User u = new User();
@@ -1253,7 +1604,7 @@ public abstract class JdbcDaoSupport extends DaoSupport {
 
 7、执行成功
 
-# 二、spring整合jdbctemplate
+## 二、spring整合jdbctemplate
 
 1、导入所需jar包。
 
@@ -1360,9 +1711,7 @@ public class UserDaoImpl  implements UserDao {
     }
 ```
 
-
-
-# 三、spring中jdbctemplate的相关方法
+## 三、spring中jdbctemplate的相关方法
 
 1、update
 
@@ -1464,11 +1813,11 @@ public class UserDaoImpl  implements UserDao {
 
 # [spring入门详细教程（五）](https://www.cnblogs.com/jichi/p/10229812.html)
 
-# 一、什么是事务
+## 一、什么是事务
 
 事务用白话来说比较好理解，我们举个例子。比如说你做两件事要达成一个目的。其中有一件事失败，你就相当于没做。如果两件事都成功，这件事你才算做的成功。用官方话来解释，就是事务是逻辑上的一组操作，组成这组操作的各个逻辑单元，要么一起成功，要么一起失败。
 
-# 二、事务的特性
+## 二、事务的特性
 
 了解了事务的概念，我们就可以了解事务的特性了。
 
@@ -1482,7 +1831,7 @@ public class UserDaoImpl  implements UserDao {
 
 持久性：事务一旦结束，数据就持久到数据库。
 
-# 三、事务的并发问题
+## 三、事务的并发问题
 
 事务三大问题，脏读，幻读，不可重复读。
 
@@ -1492,7 +1841,7 @@ public class UserDaoImpl  implements UserDao {
 
 虚幻读：一个事务读到了另一个事务已经提交的insert的数据导致多次查询结果不一致。
 
-# 四、事务并发问题的解决：事务隔离级别
+## 四、事务并发问题的解决：事务隔离级别
 
 1、未提交读：脏读，不可重复读，虚幻读都有可能发生。
 
@@ -1508,7 +1857,7 @@ mysql默认隔离级别：可重复读。
 
 oracle默认隔离级别：已提交读。
 
-# 五、spring封装事务
+## 五、spring封装事务
 
 首先spring封装了我们需要进行的事务操作。事务操作是什么呢。比如说我们首先需要打开事务，进行操作后，提交事务。如果发生错误，回滚事务，如果中途未发生错误，则事务进行提交。如果spring没有对事务进行封装，我们需要没进行一次操作都重新写事务的处理代码。spring封装后，事务代码被封装，我们不用一遍遍的重复编写代码，配置好后，不用书写事务代码。接下来我们了解几个spring中事务的相关概念。
 
@@ -2046,7 +2395,7 @@ public interface TransactionStatus extends SavepointManager, Flushable {
 
 （7）PROPAGATION_NESTED：如果当前事务存在，则嵌套事务来执行。
 
-# 六、spring的事务三种实现方式
+## 六、spring的事务三种实现方式
 
 三种方式分别为编码式，xml配置方式，注解配置方式。编码式了解即可，实际开发都是后两种。
 
