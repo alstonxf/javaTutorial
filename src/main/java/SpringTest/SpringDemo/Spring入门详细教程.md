@@ -1,6 +1,4 @@
-
-
-#      框架的概念
+# 框架的概念
 
 (一)从现实生活的角度来看: 框架，就好像是 “风筝”骨架。 如果我给你一个“风筝”的骨架，你只需要去往这个“风筝骨架”上，贴上一层纸。一个现成的风筝就做好啦~~ 如果没有“风筝的骨架”，那你需要，自己去找“竹子”“木材”“铁丝”等等东西，然后还要“自己手工”的做出一个“风筝骨架”来。。。呵呵，想一想，如果你做100个风筝的话。。。估计就要把人给“累死”啦。。。
 (二)从技术角度来看
@@ -267,23 +265,21 @@ public class User {
 }
 ```
 
-
-
 ### 6、constructor-arg	子元素
 
 <bean>元素的子元素，可以使用此元素传入构造参数进行实例化。该元素的index属性指定构造参数的序号(从0开始)，type属性指定构造参数的类型，参数值可以通过ref属性或value属性直接指定，也可以通过ref或value子元素指定
 
 ### 7、property	子元素
 
-<bean>元素的子元素，用于调用Bean实例中的setter()方法完成属性赋值，从而完成依赖注入。该元素的name属性指定 Bean实例中的相应属性名，ref属性或value属性用于指定参数值
+<bean>元素的子元素，用于调用Bean实例中的setter()方法完成属性赋值，从而完成依赖注入。**该元素的name属性指定 Bean实例中的相应属性名，ref属性或value属性用于指定参数值**
 
-###  8、ref	子元素
+###  8、ref	孙元素
 
-<constructor-arg>、<property> 等元素的属性或子元素，可以用于指定对Bean工厂中某个Bean实例的引用
+<constructor-arg>、<property> 等元素的属性或子元素，可以用于指定对Bean工厂中**某个Bean实例的引用**
 
-### 9、value	子元素
+### 9、value	孙元素
 
-<constructor-arg>、<property> 等元素的属性或子元素，可以用于直接给定一个常量值
+<constructor-arg>、<property> 等元素的属性或子元素，可以用于直接给定一个value="小红"
 
 ### 10、list	依赖注入
 
@@ -316,36 +312,41 @@ singleton是Spring容器默认的作用域，当Bean的作用域为singleton时�
 
 在Spring配置文件中，Bean的作用域是通过< bean >元素的scope属性来指定的，该属性值可以设置为singleton、prototype、request、session、globalSession、application、websocket七个值。 比如，要将作用域定义成singleton,只需要将scope属性值设置为singleton,代码如下:
 
+```xml
 <bean id="scope" class="com.ssm.scope.Scope" scope="singleton">
-1
+```
+
 测试singleton作用域
 项目创建在上一节中，已经详细介绍过，这里就不多说了。
 
 Scope.java
 在com.ssm.scope中创建Scope类，该类不需要写任何方法
 
+```java
 package com.ssm.scope;
 
 public class Scope {
 }
 
+```
 
 applicatonContext.xml
 在com.ssm.scope包中创建Spring的配置文件applicationContext.xml,并在配置文件中创建一个id为scope的Bean,通过class属性指定其对应的实现类为Scope
 
-<?xml version="1.0" encoding="UTF-8"?>
+```xml
+   <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-<!--将指定类配置给Spring 让Spring创建其对象的实例-->
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <!--将指定类配置给Spring 让Spring创建其对象的实例-->
     <bean id="scope" class="com.ssm.scope.Scope" scope="singleton"></bean>
 </beans>
+```
 
 ScopeTest.java
 在com.ssm.scope包中创建测试类ScopeTest来测试singleton作用域，代码如下:
 
+```java
 package com.ssm.scope;
 
 import org.springframework.context.ApplicationContext;
@@ -355,25 +356,28 @@ public class ScopeTest {
     public static void main(String[] args) {
         //1.初始化Spring容器，加载配置文件
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-
-        //2.输出获得的实例
-        System.out.println(applicationContext.getBean("scope"));
-        System.out.println(applicationContext.getBean("scope"));
-    }
+    //2.输出获得的实例
+    System.out.println(applicationContext.getBean("scope"));
+    System.out.println(applicationContext.getBean("scope"));
+}
+```
 
 运行结果如下:
 
 从中可以看出，两次输出的结果相同，这说明Spring容器只创建了一个Scope类的实例
 
-注意: Spring容器默认的作用域就是singleton。
+**注意: Spring容器默认的作用域就是singleton。**
 
 ### prototype作用域
 对需要保持会话状态的Bean应用使用prototype作用域。在使用prototype作用域时，Spring容器会为每个对该Bean的请求都创建一个新的实例。
 
 要将Bean定义为prototype作用域，只需在配置文件中将< bean >元素的scope属性值设置为prototype即可，代码如下:
 
+```xml
 <bean id="scope" class="com.ssm.scope.Scope" scope="prototype">
-1
+```
+
+
 修改完配置文件后，我们再次运行测试类ScopeTest,输出结果如下:
 
 从中可以看到，两次输出的Bean实例并不相同，这说明在prototype作用域下创建了两个不同的Scope实例
@@ -428,9 +432,9 @@ public class UserFactory {
 <bean name="user" factory-bean="userFactory" factory-method="createUser"></bean>
 ```
 
-# [Spring入门详细教程（二） ](https://www.cnblogs.com/jichi/p/10176601.html)
+# 
 
-## 一、Bean的装配方式
+## 十、Bean的装配方式
 
 Bean的装配可以理解为依赖关系注入，Bean的装配方式即Bean的依赖注入的方式。
 
@@ -584,7 +588,7 @@ Spring中定义了一系列的注解，常用的注解如下：
     private Car car;
 ```
 
-### 
+
 
 ##### 7、@Qualifier：
 
@@ -691,7 +695,7 @@ no：在默认情况下，不使用自动装配，Bean依赖必须通过ref元�
 
 
 
-## 二、spring复杂类型注入
+## 十一、spring复杂类型装配
 
 
 
@@ -800,7 +804,7 @@ public class Collection {
         </bean>
 ```
 
-## 三、配置spring随web项目启动初始化
+## 十二、配置spring随web项目启动初始化
 
 在web.xml中配置。
 
@@ -814,7 +818,7 @@ public class Collection {
   </context-param>
 ```
 
-## 四、引入其他配置文件
+## 十三、引入其他配置文件
 
 引入其他配置文件（分模块开发）
 实际开发中，Spring的配置内容非常多，这就导致Spring配置很繁杂且体积很大，所以，可以将部分配置拆解到其他配置文件中，而在Spring主配置文件通过以下两种方法加载
@@ -832,82 +836,7 @@ ApplicationContext applicationContext = new ClassPathXmlApplicationContext("appl
 <import resource="applicationContext.xml"></import>
 ```
 
-## 五、spring注解配置
-
-### 1、开启注解扫描
-
-```
-<context:component-scan base-package="SpringTest.SpringDemo.entity"></context:component-scan>
-```
-
-扫描SpringTest.SpringDemo.entity下的所有类中的注解。
-
-### 2、在类上添加注解
-
-```
-@Component
-public class User {
-}
-```
-
-## 六、spring常用注解
-
-### 1、@Componet，@Controller，@Service，@Repository 四个组件注解，作用在类上。四个注解并无区别，只是为了方便区分。
-
-### 2、@Scope注解，作用在类上。
-
-```
-@Scope(scopeName="singleton")  //单例模式
-public class User {
-}
-@Scope(scopeName="prototype")  //多例模式
-public class User {
-}
-```
-
-### 3、@Value用于注入普通类型值
-
-第一种方式：作用在属性上，通过反射的filed值，破坏了对象的封装性。
-
-```
-@Value("xiaohei")
-private String name;
-```
-
-第二种方式：通过set方法赋值，不破坏对象的封装性。
-
-```
-    @Value("xiaobai")
-    public void setName(String name) {
-        this.name = name;
-    }
-```
-
-### 4、@Autowired，@Resource，@Qualifier注解 
-
-引用类型的装配方式，详细区别请看之前的博客。
-
-```
-    @Autowired
-    private Car car;
-    @Resource
-    private Car car;
-```
-
-### 5、@PostConstruct与@PreDestroy
-
-```
-    @PostConstruct   //创建对象前调用
-    public void init(){
-        System.out.println("初始");
-    }
-    @PreDestroy　　   //对象销毁前调用
-    public void destory(){
-        System.out.println("销毁");
-    }
-```
-
-## 七、spring与junit整合测试
+## 十四、spring与junit整合测试
 
 1、导入spring基础包，与aop包和test包，可从lib中找到。
 
@@ -928,7 +857,7 @@ public class TestJunit {
 }
 ```
 
-# [Spring入门详细教程（三）](https://www.cnblogs.com/jichi/p/10177004.html)
+# [Spring入门详细教程（二）](https://www.cnblogs.com/jichi/p/10177004.html)
 
 ## 一、aop的概念
 
@@ -1334,7 +1263,7 @@ public class UserAdvice{
 }
 ```
 
-# [Spring入门详细教程（四）](https://www.cnblogs.com/jichi/p/10211475.html)
+# [Spring入门详细教程（三）](https://www.cnblogs.com/jichi/p/10211475.html)
 
 ## 一、spring整合jdbc继承jdbcdaosupport的方式
 
@@ -1811,7 +1740,7 @@ public class UserDaoImpl  implements UserDao {
     }
 ```
 
-# [spring入门详细教程（五）](https://www.cnblogs.com/jichi/p/10229812.html)
+# [spring入门详细教程（四）](https://www.cnblogs.com/jichi/p/10229812.html)
 
 ## 一、什么是事务
 

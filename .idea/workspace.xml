@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/TestDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +195,7 @@
       <workItem from="1658979372209" duration="5681000" />
       <workItem from="1659001781526" duration="897000" />
       <workItem from="1659011245762" duration="503000" />
-      <workItem from="1659055629078" duration="11088000" />
+      <workItem from="1659055629078" duration="14973000" />
     </task>
     <servers />
   </component>
