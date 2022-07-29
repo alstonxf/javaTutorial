@@ -203,7 +203,7 @@ applicationContext.xml
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 
 
-    <bean id="userDao"  class="com.remli.dao.impl.UserDaoImpl"></bean>
+    <bean id="userDao"  class="com.SpringTest.SpringDemo3.remli.dao.impl.UserDaoImpl"></bean>
 
 </beans>
 ————————————————
