@@ -274,7 +274,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p><img src="https://img-blog.csdnimg.cn/img_convert/a97966e358fbb6e74088badfa2066c2e.png" alt="image-20220209213730520"></p> 
 <h2><a name="t19"></a><a id="34__new__489"></a>3.4 使用构造函数 new 的执行过程</h2> 
 <ol><li>先在内存中创建一个空的对象</li><li>this 指向刚刚的空对象</li><li>执行构造函数的代码，给对象创建属性和方法</li><li>返回这个对象<br> 这里用构造函数的方式来举例使用对象</li></ol>
-                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://t4dmw.myBlog.blogStudy.csdn.net/article/details/122850512&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
+                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://t4dmw.project.myBlog.blogStudy.csdn.net/article/details/122850512&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
                 <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-3fd7f7a902.css" rel="stylesheet">
                 <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-49037e4d27.css" rel="stylesheet">
         </div>

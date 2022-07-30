@@ -21,7 +21,7 @@
 <h2><a name="t4"></a><a id="31__25"></a>3.1 基本介绍</h2> 
 <p>该博客系统页面现由4个部分组成，分别为：博客列表页、博客详情页、博客登录页、博客编辑页</p> 
 <p>针对每个页面后面都会进行页面和代码的展示，并且代码中含有个人的注释。为了方便下载使用，下面附上该博客系统页面的 Gitee 链接</p> 
-<p><strong>Gitee 链接：</strong> <a href="https://gitee.com/bbbbbge/blog-system">https://gitee.com/bbbbbge/myBlog.blogStudy-system</a></p> 
+<p><strong>Gitee 链接：</strong> <a href="https://gitee.com/bbbbbge/blog-system">https://gitee.com/bbbbbge/project.myBlog.blogStudy-system</a></p> 
 <h2><a name="t5"></a><a id="32__35"></a>3.2 博客列表页</h2> 
 <p><strong>页面展示：</strong></p> 
 <p><img src="https://img-blog.csdnimg.cn/img_convert/6972fbbaa1c66ee7d7922e5516e0d2f3.png" alt="image-20220218063339426"></p> 
@@ -58,7 +58,7 @@
                 <span class="token comment">&lt;!-- 用户名 --&gt;</span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>吞吞吐吐大魔王<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 其它信息 --&gt;</span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://myBlog.blogStudy.csdn.net/weixin_51367845?type=myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>CSDN 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://project.myBlog.blogStudy.csdn.net/weixin_51367845?type=project.myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>CSDN 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>GitHub 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 文章分类 --&gt;</span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>counter<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -73,8 +73,8 @@
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
         <span class="token comment">&lt;!-- 右侧区域，显示博客列表 --&gt;</span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-            <span class="token comment">&lt;!-- 每个 myBlog.blogStudy 代表一篇博客 --&gt;</span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- 每个 project.myBlog.blogStudy 代表一篇博客 --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>project.myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>第一篇博客<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2022-2-16<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>desc<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -82,7 +82,7 @@
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blog_detail.html<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>detail<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>查看全文<span class="token entity named-entity" title=">">&amp;gt;</span><span class="token entity named-entity" title=">">&amp;gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>project.myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>第二篇博客<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2022-2-16<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>desc<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -98,13 +98,13 @@
 <p><strong>专属页面样式 CSS 代码：</strong> <code>blog_list.css</code></p> 
 <pre data-index="1" class="prettyprint"><code class="prism language-css has-numbering" onclick="mdcp.copyCode(event)" style="position: unset;"><span class="token comment">/* 这个 CSS 专门针对博客列表页来设置样式 */</span>
 
-<span class="token selector">.myBlog.blogStudy</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客的标题 */</span>
-<span class="token selector">.myBlog.blogStudy .title</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy .title</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
     <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
@@ -113,19 +113,19 @@
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客的日期 */</span>
-<span class="token selector">.myBlog.blogStudy .date</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy .date</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
     <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> grey<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客的描述 */</span>
-<span class="token selector">.myBlog.blogStudy .desc</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy .desc</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-indent</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 查看博客详情的按钮 */</span>
-<span class="token selector">.myBlog.blogStudy .detail</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy .detail</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> grey<span class="token punctuation">;</span>
@@ -145,7 +145,7 @@
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 实现鼠标悬停在按钮上时有一个背景色切换的效果 */</span>
-<span class="token selector">.myBlog.blogStudy .detail:hover</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy .detail:hover</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> grey<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -186,7 +186,7 @@
                 <span class="token comment">&lt;!-- 用户名 --&gt;</span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>吞吞吐吐大魔王<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 其它信息 --&gt;</span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://myBlog.blogStudy.csdn.net/weixin_51367845?type=myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>CSDN 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://project.myBlog.blogStudy.csdn.net/weixin_51367845?type=project.myBlog.blogStudy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>CSDN 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>GitHub 地址<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 文章分类 --&gt;</span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>counter<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -202,7 +202,7 @@
         <span class="token comment">&lt;!-- 右侧区域，显示博客列表 --&gt;</span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
             <span class="token comment">&lt;!-- 使用这个 div 来放博客内容 --&gt;</span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myBlog.blogStudy-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>project.myBlog.blogStudy-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 博客的标题 --&gt;</span>
                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>我的第一篇博客<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
                 <span class="token comment">&lt;!-- 博客的日期 --&gt;</span>
@@ -229,12 +229,12 @@
 <p><strong>专属页面样式 CSS 代码：</strong> <code>blog_detail.css</code></p> 
 <pre data-index="3" class="prettyprint"><code class="prism language-css has-numbering" onclick="mdcp.copyCode(event)" style="position: unset;"><span class="token comment">/* 这个 CSS 文件是用来放博客详情页的专属样式 */</span>
 
-<span class="token selector">.myBlog.blogStudy-content</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-content</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">padding</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客标题 */</span>
-<span class="token selector">.myBlog.blogStudy-content h3</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-content h3</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
     <span class="token property">padding-top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
     <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
@@ -242,14 +242,14 @@
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客日期 */</span>
-<span class="token selector">.myBlog.blogStudy-content .date</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-content .date</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
     <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> grey<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 博客内容 */</span>
-<span class="token selector">.myBlog.blogStudy-content p</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-content p</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">text-indent</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> 10px 0<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -266,7 +266,7 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>登录页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>css/common.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>css/myBlog.blogStudy-login.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>css/project.myBlog.blogStudy-login.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
     <span class="token comment">&lt;!-- 导航栏 --&gt;</span>
@@ -404,7 +404,7 @@
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blog_login.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>注销<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     <span class="token comment">&lt;!-- 版心 --&gt;</span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myBlog.blogStudy-edit-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>project.myBlog.blogStudy-edit-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
         <span class="token comment">&lt;!-- 标题编辑区 --&gt;</span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>在这里写下文章标题<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -436,14 +436,14 @@
 <pre data-index="7" class="prettyprint"><code class="prism language-css has-numbering" onclick="mdcp.copyCode(event)" style="position: unset;"><span class="token comment">/* 这个 CSS 文件放博客编辑的专属样式 */</span>
 
 <span class="token comment">/* 博客编辑页的版心 */</span>
-<span class="token selector">.myBlog.blogStudy-edit-container</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-edit-container</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">width</span><span class="token punctuation">:</span> 1000px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">/* 标题编辑区 */</span>
-<span class="token selector">.myBlog.blogStudy-edit-container .title</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-edit-container .title</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
     <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
@@ -452,7 +452,7 @@
     <span class="token property">justify-content</span><span class="token punctuation">:</span> space-between<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">.myBlog.blogStudy-edit-container .title #title</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-edit-container .title #title</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">width</span><span class="token punctuation">:</span> 795px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
@@ -463,7 +463,7 @@
     <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">.myBlog.blogStudy-edit-container .title #submit</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-edit-container .title #submit</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
@@ -473,7 +473,7 @@
     <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">.myBlog.blogStudy-edit-container .title #submit:active</span> <span class="token punctuation">{<!-- --></span>
+<span class="token selector">.project.myBlog.blogStudy-edit-container .title #submit:active</span> <span class="token punctuation">{<!-- --></span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>41<span class="token punctuation">,</span> 83<span class="token punctuation">,</span> 149<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
@@ -631,7 +631,7 @@ html<span class="token punctuation">,</span> body <span class="token punctuation
 <p>通过以上步骤，就可以将 editor.md 该 markdown 编辑器引入我们的博客编辑页了</p> 
 <h1><a name="t11"></a><a id="4__711"></a>4. 总结</h1> 
 <p>该博客系统页面只是运用前段时间学习的前端知识做出来的一个简单的页面，往后会通过不断的学习来对该博客系统进行补充，期待它的成品！</p>
-                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://t4dmw.myBlog.blogStudy.csdn.net/article/details/123031433&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
+                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://t4dmw.project.myBlog.blogStudy.csdn.net/article/details/123031433&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
                 <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-3fd7f7a902.css" rel="stylesheet">
                 <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-49037e4d27.css" rel="stylesheet">
         </div>

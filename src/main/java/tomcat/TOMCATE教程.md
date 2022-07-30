@@ -14,7 +14,7 @@ Tomcat
 1 篇文章1 订阅
 订阅专栏
 絮絮叨叨：
-在深入了解Tomcat源码之前，本来是想亲自写一篇Tomcat的基本使用教程的，在网上兜兜转转发现了这篇博客：https://myBlog.blogStudy.csdn.net/weixin_40396459/article/details/81706543，写的特别详细，虽然有点老，但对于Tomcat入门来说是无所谓的，足够让初学者了解如何使用这只“猫”。在这里我就不重复造轮子了，将这篇博客贴在这里，方便大家阅读。在这篇文章之后，我们开始Tomcat的深入分析，以后每写一篇，我都会贴在这里，有哪里不对的还请大家不吝指教。下一篇文章是搭建tomcat的源码项目，将tomcat当做一个普通项目来运行，剖析里面的源码。
+在深入了解Tomcat源码之前，本来是想亲自写一篇Tomcat的基本使用教程的，在网上兜兜转转发现了这篇博客：https://project.myBlog.blogStudy.csdn.net/weixin_40396459/article/details/81706543，写的特别详细，虽然有点老，但对于Tomcat入门来说是无所谓的，足够让初学者了解如何使用这只“猫”。在这里我就不重复造轮子了，将这篇博客贴在这里，方便大家阅读。在这篇文章之后，我们开始Tomcat的深入分析，以后每写一篇，我都会贴在这里，有哪里不对的还请大家不吝指教。下一篇文章是搭建tomcat的源码项目，将tomcat当做一个普通项目来运行，剖析里面的源码。
 
 文章末尾有福利~
 
@@ -557,7 +557,7 @@ estroy 方法：当服务器销毁一个servlet的时候，会调用里面的des
 
 ————————————————
 版权声明：本文为CSDN博主「编程开发分享者」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://myBlog.blogStudy.csdn.net/chaogu94/article/details/107292921
+原文链接：https://project.myBlog.blogStudy.csdn.net/chaogu94/article/details/107292921
 
 
 
@@ -832,13 +832,13 @@ console.log("hello");
 6.4 部署博客系统页面
 我在之前编写过一个博客系统的前端页面（源码及注释都写的很详细，大家有需要可以看看《个人简单博客系统页面搭建（附源码）》，这里就以这个博客系统的页面为例，将其部署到 Tomcat 上
 
-首先在 webapps 目录下创建一个目录（这里为 myBlog.blogStudy）
+首先在 webapps 目录下创建一个目录（这里为 project.myBlog.blogStudy）
 
 将写的博客系统页面的文件拷贝进来
 
 
 
-启动 Tomcat，在浏览器的网址栏输入 127.0.0.1:8080/myBlog.blogStudy/blog_list.html 就可以访问到刚刚部署的博客系统
+启动 Tomcat，在浏览器的网址栏输入 127.0.0.1:8080/project.myBlog.blogStudy/blog_list.html 就可以访问到刚刚部署的博客系统
 
 
 
@@ -855,18 +855,18 @@ console.log("hello");
 
 
 
-将 myBlog.blogStudy.zip 拖拽到 xshell 中（也可以使用其它方式，如使用 xftp）
+将 project.myBlog.blogStudy.zip 拖拽到 xshell 中（也可以使用其它方式，如使用 xftp）
 
 
 
-拖拽成功后，将 myBlog.blogStudy.zip 进行解压缩
+拖拽成功后，将 project.myBlog.blogStudy.zip 进行解压缩
 
-unzip. myBlog.blogStudy.zip
+unzip. project.myBlog.blogStudy.zip
 1
 
 
-最后在浏览器中的网址栏搜索 http://:8080/myBlog.blogStudy/blog_list.html 就可以访问到该页面，大家也可以访问到的！
+最后在浏览器中的网址栏搜索 http://:8080/project.myBlog.blogStudy/blog_list.html 就可以访问到该页面，大家也可以访问到的！
 
 ————————————————
 版权声明：本文为CSDN博主「吞吞吐吐大魔王」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://myBlog.blogStudy.csdn.net/weixin_51367845/article/details/123429050
+原文链接：https://project.myBlog.blogStudy.csdn.net/weixin_51367845/article/details/123429050

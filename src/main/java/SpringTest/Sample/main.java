@@ -10,6 +10,7 @@ import java.util.Properties;
 
 public class main {
     /**
+     * 基于xml的装配
      * 通过读取配置文件创建对象调用方法
      * @param args
      */
