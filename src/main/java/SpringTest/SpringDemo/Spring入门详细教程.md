@@ -317,8 +317,10 @@ public class Dog {
 
 ```java
 package SpringTest.Sample;
-import SpringTest.Sample.Collection;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class Student {
@@ -328,17 +330,17 @@ public class Student {
     private int age;
     private Dog dog;
 
-    private String[] array1;
-    private Collection Collection1;
-    private Collection Collection2;
-    private Collection Collection3;
-    private Collection Collection4;
+    public Collection collect;
 
-    public Student(String name, int id, int age, Dog dog) {
+    public Student(String name, int id, int age, Dog dog, Collection collect) {
         this.name = name;
         this.id = id;
         this.age = age;
         this.dog = dog;
+        this.collect = collect;
+        for (String i:this.collect.myList){
+            System.out.println("初始化传入参数"+i);
+        }
         System.out.print("Student 初始化完成");
     }
 
@@ -350,6 +352,7 @@ public class Student {
     private void init2() {
         System.out.println(Student.class.getName()+" init...");
     }
+
 }
 
 ```
@@ -447,52 +450,6 @@ public class Collection {
 
 
 
-```java
-package SpringTest.Sample;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-
-public class main {
-    public static void main(String[] args) {
-//        1
-//        /*获取文件流*/
-        ApplicationContext context = new ClassPathXmlApplicationContext("sample1.xml");
-
-//        2.FileSystemXmlApplicationContext：文件 系统 文件类型 应用 上下文——磁盘绝对路径
-//        它是从磁盘路径上加载配置文件，配置文件可以在磁盘的任何位置。
-//        ApplicationContext context2 = new FileSystemXmlApplicationContext("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/resources/sample1.xml");
-        //获取实例
-        Collection collect1=(Collection) context.getBean("myCollect");
-        //调用方法
-        String[] myArray = collect1.getmyArray();
-        for (String i: myArray) {
-            System.out.println(i);
-        }
-        //调用方法
-        List<String> myList = collect1.getmyList();
-        for (String i: myList) {
-            System.out.println(i);
-        }
-        //调用方法
-        Map<String,Object> myMap = collect1.getmyMap();
-        for (String i: myMap.keySet()) {
-            System.out.println(i+":"+myMap.get(i));
-        }
-        //调用方法
-        Properties myProps = collect1.getMyProps();
-        for (String i: myProps.stringPropertyNames()) {
-            System.out.println(i);
-        }
-    }
-}
-```
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -504,8 +461,7 @@ public class main {
         <property name="name" value="tom"></property>
     </bean>
 
-
-    <bean name="myCollect" class="SpringTest.Sample.Collection">
+    <bean id = "myCollect" name="myCollect" class="SpringTest.Sample.Collection">
         <!--    ### 1、数组类型注入-->
         <property name="myArray">
             <array>
@@ -536,13 +492,18 @@ public class main {
         </property>
     </bean>
 
+
     <!--    使用有参构造进行注入-->
     <bean class="SpringTest.Sample.Student" id="student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+
         <constructor-arg name="name" value="test"></constructor-arg>
         <constructor-arg name="age" value="20"></constructor-arg>
         <constructor-arg name="id" value="30"></constructor-arg>
         <constructor-arg name="dog" ref="dog"></constructor-arg>
+        <constructor-arg name="collect" ref="myCollect"></constructor-arg>
+
     </bean>
+
 </beans>
 ```
 

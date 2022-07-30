@@ -5,11 +5,10 @@
 
     <bean id="dog" class="SpringTest.Sample.Dog">
         <property name="number" value="0"></property>
-        <property name="name" value="tom"></property>
+        <property name="name" value="Tom"></property>
     </bean>
 
-
-    <bean name="myCollect" class="SpringTest.Sample.Collection">
+    <bean id = "myCollect" name="myCollect" class="SpringTest.Sample.Collection">
         <!--    ### 1、数组类型注入-->
         <property name="myArray">
             <array>
@@ -20,8 +19,8 @@
         <!--    ### 2、list类型注入-->
         <property name="myList">
             <list>
-                <value>"l1"</value>
-                <value>"l2"</value>
+                <value>"basketball"</value>
+                <value>"swimming"</value>
             </list>
         </property>
         <!--    ### 3、map类型注入-->
@@ -42,11 +41,13 @@
 
     <!--    使用有参构造进行注入-->
     <bean class="SpringTest.Sample.Student" id="student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+
         <constructor-arg name="name" value="test"></constructor-arg>
         <constructor-arg name="age" value="20"></constructor-arg>
         <constructor-arg name="id" value="30"></constructor-arg>
         <constructor-arg name="dog" ref="dog"></constructor-arg>
-    </bean>
+        <constructor-arg name="collect" ref="myCollect"></constructor-arg>
 
+    </bean>
 
 </beans>

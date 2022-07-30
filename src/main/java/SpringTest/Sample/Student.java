@@ -1,6 +1,4 @@
 package SpringTest.Sample;
-import SpringTest.Sample.Collection;
-
 
 
 public class Student {
@@ -10,26 +8,33 @@ public class Student {
     private int age;
     private Dog dog;
 
-    private String[] array1;
-    private Collection Collection1;
-    private Collection Collection2;
-    private Collection Collection3;
-    private Collection Collection4;
+    public Collection habit;
 
-    public Student(String name, int id, int age, Dog dog) {
+    public Student(String name, int id, int age, Dog dog, Collection collect) {
         this.name = name;
         this.id = id;
         this.age = age;
         this.dog = dog;
-        System.out.print("Student 初始化完成");
-    }
-
-
-    private void destroy2() {
-        System.out.println(Student.class.getName()+" destory...");
+        this.habit = collect;
+        for (String i:this.habit.myList){
+            System.out.println("初始化传入参数"+i);
+        }
+        System.out.print("Student 初始化完成!!");
     }
 
     private void init2() {
-        System.out.println(Student.class.getName()+" init...");
+        System.out.println("\n指定类中的初始化方法名称"+Student.class.getName()+" init...");
+    }
+
+    private void destroy2() {
+        System.out.println("\n指定类中销毁方法名称"+Student.class.getName()+" destory...");
+    }
+
+    void studentInfo(){
+        System.out.println("id="+this.id);
+        System.out.println("name="+this.name);
+        System.out.println("age="+this.age);
+        System.out.println("dog="+this.dog.getName());
+        System.out.println("habit="+this.habit.myList.toString());
     }
 }
