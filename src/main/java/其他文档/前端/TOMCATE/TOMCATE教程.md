@@ -6,7 +6,7 @@
 
 6823
  收藏 163
-分类专栏： Tomcat 文章标签： tomcat servlet http
+分类专栏： Tomcat 文章标签： 其他文档.前端.javasript文档 servlet http
 版权
 
 Tomcat
@@ -72,7 +72,7 @@ tomcat软件：java开发的。java软件运行的时候需要jdk。
 
 
 3.3、tomcat下载和安装说明
-到http://tomcat.apache.org  下载
+到http://其他文档.前端.javasript文档.apache.org  下载
 
 1） Tomcat首页
 
@@ -382,7 +382,7 @@ Servlet：
 写servlet做两件事
 
 1、实现servlet接口。 由sun公司定义的一个接口。(定义一个规范)
-2、把类部署到web服务器中（tomcat）。
+2、把类部署到web服务器中（其他文档.前端.javasript文档）。
 sun公司定义一个servlet的规范。定义了servlet应该有哪些方法，以及方法需要的参数。
 
 1、实现servlet接口（javax.servlet.Servlet）
@@ -571,7 +571,7 @@ estroy 方法：当服务器销毁一个servlet的时候，会调用里面的des
 
 4133
  收藏 58
-分类专栏： JavaEE 文章标签： tomcat java-ee java
+分类专栏： JavaEE 文章标签： 其他文档.前端.javasript文档 java-ee java
 版权
 
 JavaEE
@@ -614,7 +614,7 @@ Tomcat 的 Connector 组件实现了 HTTP 请求的解析，可以把 Tomcat 看
 注意： 由于 Tomcat 运行在 Java 虚拟机上，因此在安装 Tomcat 之前要先下载好 JDK
 
 2.1 Windows 中安装
-进入 Tomcat 官网：https://tomcat.apache.org/
+进入 Tomcat 官网：https://其他文档.前端.javasript文档.apache.org/
 
 在下载栏点击 Tomcat 8
 
@@ -639,15 +639,15 @@ cd /opt
 1
 通过 wget 方式来下载 Tomcat 的安装包
 
-wget https://mirrors.cnnic.cn/apache/tomcat/tomcat-8/v8.5.73/bin/apache-tomcat-8.5.73.tar.gz
+wget https://mirrors.cnnic.cn/apache/其他文档.前端.javasript文档/其他文档.前端.javasript文档-8/v8.5.73/bin/apache-其他文档.前端.javasript文档-8.5.73.tar.gz
 1
 将下载的 Tomcat 压缩包进行解压
 
-tar xzf apache-tomcat-8.5.73.tar.gz
+tar xzf apache-其他文档.前端.javasript文档-8.5.73.tar.gz
 1
 之后通过 startup.sh 运行 Tomcat 服务器
 
-/opt/apache-tomcat-8.5.73/bin/startup.sh
+/opt/apache-其他文档.前端.javasript文档-8.5.73/bin/startup.sh
 1
 2.3 访问 Tomcat
 当我们运行 Tomcat 之后，就可以在浏览器中通过 服务器IP端口号 来进行访问。
@@ -672,7 +672,7 @@ Tomcat 的默认端口号为 8080（可以在 conf 目录中手动修改）
 
 bin： 存放各种启动、关闭和其它程序的脚本（*.sh 文件是针对 Unix 系统使用的，*.bat 文件是针对 Windows 系统使用的，* 相同的程序的功能是一样的）
 
-conf： 配置文件及相关数据文件存放的目录，如存放 server.xml、tomcat-users.xml、web.xml
+conf： 配置文件及相关数据文件存放的目录，如存放 server.xml、其他文档.前端.javasript文档-users.xml、web.xml
 
 lib： Tomcat 使用的库文件存放的目录，如存放 Servlet 规范的 API
 
@@ -696,7 +696,7 @@ catalina.properties： Java 属性定义文件，设定类加载器路径、安�
 context.xml： 为部署与此 Tomcat 实例上的 web 应用程序提供的默认配置文件，每个 webapp 都可以使用独有的 context.xml，通常放置于 webapp 目录的 META-INF 子目录中，常用于定义会话管理器，Realm 和 JDBC 等
 logging.properties： 定义日志相关的配置信息，如日志级别、文件路径等
 server.xml： Tomcat 核心配置文件，包含 Service、Connector、Engine、Realm、Valve、Hosts 主组件的相关配置信息
-tomcat-users.xml： 包含 Realm 认证时用到的相关角色、用户和密码等信息；Tomcat 自带的 manager 默认情况下会用到此文件；在 Tomcat 中添加火删除用户，为用户指定角色等将通过编辑此文件实现
+其他文档.前端.javasript文档-users.xml： 包含 Realm 认证时用到的相关角色、用户和密码等信息；Tomcat 自带的 manager 默认情况下会用到此文件；在 Tomcat 中添加火删除用户，为用户指定角色等将通过编辑此文件实现
 web.xml： 为部署与 Tomcat 实例上的所有 web 应用程序提供部署描述符，通常用于为 webapp 提供默认的 servlet 定义和基本的 MUIME 映射表
 5. WEB 应用部署目录结构
 部署应用程序时，一般会将其打包成一个 war 包，然后放到 Tomcat 的应用程序部署目录 webapps 中。而 web 应用程序有特定的组织格式，是一种层次型目录结构，通常包含了 servlet 代码文件、HTML、JSP 页面文件、类文件、部署描述符文件等等，相关说明如下：

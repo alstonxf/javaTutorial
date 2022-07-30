@@ -27,6 +27,7 @@ public class worker {
     @Test
     public void b(){
         ArrayList<String> ab = new ArrayList(Arrays.asList(new String[]{"a","b"}));
+
         int a1b1 = (int) (Math.random() * 100) % 3;
         System.out.println(a1b1);
         switch (a1b1){
