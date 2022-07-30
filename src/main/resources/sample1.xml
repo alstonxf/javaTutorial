@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dog" class="SpringTest.Sample.Dog">
+        <property name="number" value="0"></property>
+        <property name="name" value="tom"></property>
+    </bean>
+
+
+    <bean name="myCollect" class="SpringTest.Sample.Collection">
+        <!--    ### 1、数组类型注入-->
+        <property name="myArray">
+            <array>
+                <value>a1</value>
+                <value>a2</value>
+            </array>
+        </property>
+        <!--    ### 2、list类型注入-->
+        <property name="myList">
+            <list>
+                <value>"l1"</value>
+                <value>"l2"</value>
+            </list>
+        </property>
+        <!--    ### 3、map类型注入-->
+        <property name="myMap">
+            <map>
+                <entry key="name" value="xiaohei"></entry>
+                <entry key="age" value="18"></entry>
+            </map>
+        </property>
+        <!--    4、properties类型注入-->
+        <property name="myProps">
+            <props>
+                <prop key="name">"xiaohei"</prop>
+                <prop key="age">18</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--    使用有参构造进行注入-->
+    <bean class="SpringTest.Sample.Student" id="student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+        <constructor-arg name="name" value="test"></constructor-arg>
+        <constructor-arg name="age" value="20"></constructor-arg>
+        <constructor-arg name="id" value="30"></constructor-arg>
+        <constructor-arg name="dog" ref="dog"></constructor-arg>
+    </bean>
+
+
+</beans>

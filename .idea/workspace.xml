@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo3/remli/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo3/remli/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +74,7 @@
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "750ef7c49ece91763aa2501aa2d074e1"
+    "spring.configuration.checksum": "d4e7ac5cbce2613ee53a1af5ff70623b"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -83,14 +92,17 @@
       <recent name="$PROJECT_DIR$/src/main/java/blog" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SpringTest.Sample" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestDemo.test1">
-    <configuration name="SpringTest.SpringDemo3.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SpringTest.Sample.main">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo3.App" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo3.*" />
+          <option name="PATTERN" value="SpringTest.Sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.SpringDemo3.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo3.Test" />
+    <configuration name="SpringTest.Sample.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample.main" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo3.*" />
+          <option name="PATTERN" value="SpringTest.Sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,7 +155,7 @@
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo.*" />
+          <option name="PATTERN" value="SpringTest.Sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringTest.Sample.main" />
         <item itemvalue="JUnit.TestDemo.test1" />
         <item itemvalue="JUnit.TestDemo" />
         <item itemvalue="Application.SpringTest.SpringDemo3.App" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.SpringTest.SpringDemo3.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +207,8 @@
       <workItem from="1658979372209" duration="5681000" />
       <workItem from="1659001781526" duration="897000" />
       <workItem from="1659011245762" duration="503000" />
-      <workItem from="1659055629078" duration="14973000" />
+      <workItem from="1659055629078" duration="15149000" />
+      <workItem from="1659096081851" duration="7015000" />
     </task>
     <servers />
   </component>
@@ -212,6 +225,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java</url>
+          <line>13</line>
+          <properties field="Collection1" class="SpringTest.Sample.Student" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

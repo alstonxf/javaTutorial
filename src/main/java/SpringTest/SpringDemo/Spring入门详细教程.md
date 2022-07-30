@@ -297,7 +297,257 @@ public class User {
 
 ''<map> 元素的子元素，用于设置一个键值对。其kev属性指定字符串类型的键值。 ref属性或 value 属性直接指定其值，也可以通过 ref或 value 子元素指定其值
 
+### 样例(1,2,3,4,5,6,7,8,9,10,11,12,13)：
+
+```java
+package SpringTest.Sample;
+
+public class Dog {
+    private int number;
+    private String name;
+
+    public void setNumber(String number) {
+    }
+
+    public void setName(String name) {
+    }
+}
+
+```
+
+```java
+package SpringTest.Sample;
+import SpringTest.Sample.Collection;
+
+
+
+public class Student {
+
+    private String name;
+    private int id;
+    private int age;
+    private Dog dog;
+
+    private String[] array1;
+    private Collection Collection1;
+    private Collection Collection2;
+    private Collection Collection3;
+    private Collection Collection4;
+
+    public Student(String name, int id, int age, Dog dog) {
+        this.name = name;
+        this.id = id;
+        this.age = age;
+        this.dog = dog;
+        System.out.print("Student 初始化完成");
+    }
+
+
+    private void destroy2() {
+        System.out.println(Student.class.getName()+" destory...");
+    }
+
+    private void init2() {
+        System.out.println(Student.class.getName()+" init...");
+    }
+}
+
+```
+
+```java
+package SpringTest.Sample;
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+
+public class Collection {
+
+    public String[] myArray;
+
+    public List<String> myList;
+
+    public Map<String,Object> myMap;
+
+    public Properties myProps;
+
+    public String[] getMyArray() {
+        return myArray;
+    }
+
+    public void setMyArray(String[] myArray) {
+        this.myArray = myArray;
+    }
+
+    public List<String> getMyList() {
+        return myList;
+    }
+
+    public void setMyList(List<String> myList) {
+        this.myList = myList;
+    }
+
+    public Map<String, Object> getMyMap() {
+        return myMap;
+    }
+
+    public void setMyMap(Map<String, Object> myMap) {
+        this.myMap = myMap;
+    }
+
+    public Properties getMyProps() {
+        return myProps;
+    }
+
+    public void setMyProps(Properties myProps) {
+        this.myProps = myProps;
+    }
+
+    public String[] getmyArray() {
+        return myArray;
+    }
+
+    public void setmyArray(String[] myArray) {
+        this.myArray = myArray;
+    }
+
+    public List<String> getmyList() {
+        return myList;
+    }
+
+    public void setmyList(List<String> myList) {
+        this.myList = myList;
+    }
+
+    public Map<String, Object> getmyMap() {
+        return myMap;
+    }
+
+    public void setmyMap(Map<String, Object> myMap) {
+        this.myMap = myMap;
+    }
+
+    public Properties getmyProps() {
+        return myProps;
+    }
+
+    public void setmyProps(Properties myProps) {
+        this.myProps = myProps;
+    }
+
+    @Override
+    public String toString() {
+        return "Collection [myArray=" + Arrays.toString(myArray) + ", myList=" + myList + ", myMap=" + myMap + ", myProps=" + myProps + "]";
+    }
+
+}
+```
+
+
+
+```java
+package SpringTest.Sample;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+
+public class main {
+    public static void main(String[] args) {
+//        1
+//        /*获取文件流*/
+        ApplicationContext context = new ClassPathXmlApplicationContext("sample1.xml");
+
+//        2.FileSystemXmlApplicationContext：文件 系统 文件类型 应用 上下文——磁盘绝对路径
+//        它是从磁盘路径上加载配置文件，配置文件可以在磁盘的任何位置。
+//        ApplicationContext context2 = new FileSystemXmlApplicationContext("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/resources/sample1.xml");
+        //获取实例
+        Collection collect1=(Collection) context.getBean("myCollect");
+        //调用方法
+        String[] myArray = collect1.getmyArray();
+        for (String i: myArray) {
+            System.out.println(i);
+        }
+        //调用方法
+        List<String> myList = collect1.getmyList();
+        for (String i: myList) {
+            System.out.println(i);
+        }
+        //调用方法
+        Map<String,Object> myMap = collect1.getmyMap();
+        for (String i: myMap.keySet()) {
+            System.out.println(i+":"+myMap.get(i));
+        }
+        //调用方法
+        Properties myProps = collect1.getMyProps();
+        for (String i: myProps.stringPropertyNames()) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dog" class="SpringTest.Sample.Dog">
+        <property name="number" value="0"></property>
+        <property name="name" value="tom"></property>
+    </bean>
+
+
+    <bean name="myCollect" class="SpringTest.Sample.Collection">
+        <!--    ### 1、数组类型注入-->
+        <property name="myArray">
+            <array>
+                <value>a1</value>
+                <value>a2</value>
+            </array>
+        </property>
+        <!--    ### 2、list类型注入-->
+        <property name="myList">
+            <list>
+                <value>"l1"</value>
+                <value>"l2"</value>
+            </list>
+        </property>
+        <!--    ### 3、map类型注入-->
+        <property name="myMap">
+            <map>
+                <entry key="name" value="xiaohei"></entry>
+                <entry key="age" value="18"></entry>
+            </map>
+        </property>
+        <!--    4、properties类型注入-->
+        <property name="myProps">
+            <props>
+                <prop key="name">"xiaohei"</prop>
+                <prop key="age">18</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--    使用有参构造进行注入-->
+    <bean class="SpringTest.Sample.Student" id="student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+        <constructor-arg name="name" value="test"></constructor-arg>
+        <constructor-arg name="age" value="20"></constructor-arg>
+        <constructor-arg name="id" value="30"></constructor-arg>
+        <constructor-arg name="dog" ref="dog"></constructor-arg>
+    </bean>
+</beans>
+```
+
 ## 七、Bean的作用域
+
 ### 作用域的种类
 Spring中为Bean的实例定义了7种作用域，如下图所示:
 
@@ -432,8 +682,6 @@ public class UserFactory {
 <bean name="user" factory-bean="userFactory" factory-method="createUser"></bean>
 ```
 
-# 
-
 ## 十、Bean的装配方式
 
 Bean的装配可以理解为依赖关系注入，Bean的装配方式即Bean的依赖注入的方式。
@@ -479,7 +727,7 @@ xmlns:p="http://www.springframework.org/schema/p"
 
 ##### **spel表达式注入（不常用）**
 
-```java
+```xml
     <bean name="user" class="SpringTest.SpringDemo.entity.User">
         <property name="name" value="小红"></property>
         <property name="age" value="18"></property>
@@ -497,7 +745,7 @@ xmlns:p="http://www.springframework.org/schema/p"
 Bean类必须提供有参构造方法
 在配置文件中，需要使用<constructor-arg>元素来定义构造方法的参数，也可以使用其value属性来设置该参数的值
 
-```
+```java
 package SpringTest.SpringDemo.entity;
 
 public class User {
@@ -534,65 +782,134 @@ public class User {
 }
 ```
 
-```java
+```xml
 <bean name="user" class="SpringTest.SpringDemo.entity.User" >
     <constructor-arg name="name" value="小红" ></constructor-arg>
 　　<constructor-arg name="age" value="50"></constructor-arg>
 </bean>
 ```
 
-
-
 ## （二）基于注解的装配
+Spring 默认不使用注解装配 Bean，因此需要在配置文件中添加<context:annotation-config/>,启用注解。或者在被子文件中配置
+
+```xml
+ <context:component-scan base-package="需要使用注解的包"></context:component-scan>
+```
+
+
+
 #### spring常用注解
 
 Spring中定义了一系列的注解，常用的注解如下：
 
 ##### 1、@Component：
 
-描述Spring中的Bean，可以作用在任何层次
+描述Spring中的Bean，**仅仅表示一个组件（Bean）, 可以作用在任何层次，**使用时只需要将该注解标注在相应类上即可。
+
+```java
+1.先创建一个Spring组件扫描类
+@Configuration
+@ComponentScan("包名") 
+public class SpringConfig { 
+
+
+}
+```
+
+/*
+*此类是配置类,将在启动时被加载
+*此类配置了组件扫描,在被加载时将执行扫描
+*/
 
 ##### 2、@Repository：
 
-用于将持久层（Dao层）的类标识为Spring中的Bean
+用于将数据访问层（DAO层）的类标识为Spring中的Bean，**其功能与@Component相同**
+
+```java
+2.创建另一个组件类(用于数据的交互类)
+@Repository 
+public class UserMapper { 
+    public void insert() { 
+        System.out.println("UserMapper.insert() >> 将用户数据写入到数据库 中……"); 
+        } 
+}
+```
+
+/*
+*此类是一个组件类
+*在组件扫描的包找那个,且添加了组件注解@Repository
+*这个注解表示该组件是操作数据的组件
+*/
 
 ##### 3、@Service：
 
-用于将业务层（Service层）的类标识为Spring中的Bean
+通常作用在业务层（Service 层），用于将业务层的类标识为 Spring 中的 Bean，**其功能与 @Component 相同。**
 
 ##### 4、@Controller：
 
-用于将控制层（Controller层）的类标识为Spring中的Bean
+通常作用在控制层（如 Struts2 的 Action、SpringMVC 的 Controller），用于将控制层的类标识为 Spring 中的 Bean，**其功能与 @Component 相同。**
+
+```java
+3.创建控制器类
+@Controller 
+public class UserController { 
+    @Autowired // 注意：此处使用了自动装配的注解 
+    private UserMapper userMapper;
+    public void reg() { 
+    System.out.println("UserController.reg() >> 控制器即将执行用户注册……");  
+    userMapper.insert();                                                     
+	} 
+}
+```
+/*
+*userMapper属性并未赋值,但是使用了@Autowired注解
+*Spring框架会通过自动装配机制为此属性注入值
+*如果注入成功,调用此属性的方法时将成功运行
+*否则,就出现NPE
+*/
+
+```java
+4.创建测试类
+
+public class SpringRunner { 
+    public static void main(String[] args) { 
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfig.class); 
+    UserController userController = ac.getBean("userController",UserController.class);
+    userController.reg(); 
+      ac.close(); 
+    } 
+}
+```
+
+
 
 ##### 5、@Autowired：
 
-用于对Bean的属性变量、属性的setter方法以及构造方法进行标注，配合对应的注解处理器完成Bean的自动装配工作。默认按照Bean的类型进行装配
+可以应用到 Bean 的属性变量、属性的 setter 方法、以及构造方法进行标注，配合对应的注解处理器完成 Bean 的自动配置工作。默认按照 Bean 的类型进行装配。只要容器中有唯一的一个bean对象类型和要注入的变量类型匹配，就可以注入成功，如果ioc容器中没有任何bean类型和要注入的变量类型匹配则报错
+
 
 引用类型的装配方式
 
-```
+```java
     @Autowired
     private Car car;
-
 ```
 
 ##### 6、@Resource：
 
-其作用与@Autowired一样。其区别在于@Autowired默认Bean的类型装配，而@Resource默认按照Bean的实例名称进行装配
+其**作用与@Autowired一样**。其区别在于**@Autowired默认Bean的类型装配**，而**@Resource默认按照Bean的实例名称进行装配**
 @Resource中有两个重要属性：name和type。Spring将name属性解析为Bean实例名称，type属性解析为Bean实例类型。如果指定name属性，则按实例名称进行装配；如果指定type属性，则按Bean类型进行装配；如果都不指定，则先按Bean的实例名称装配，如果不能匹配，再按照Bean类型进行装配；如果都无法匹配，则抛出 NoSuchBeanDefinitionException异常。
 
 引用类型的装配方式
 
-```
+```java
     @Resource
     private Car car;
 ```
 
-
-
 ##### 7、@Qualifier：
 
-与@Autowired注解配合使用，会将默认的按Bean类型装配修改为Bean的实例名称装配，Bean的实例名称由 @Qualifier注解的参数指定
+与 @Autowired 注解配合使用，会将默认的按 Bean 类型装配修改为按 Bean 的实例名称装配，Bean 的实例名称由 @Qualifier 注解的参数指定。它在给类成员注入时不能单独使用必须要和@Autowired，但是在给方法参数注入时可以单独使用。
 
 ```java
 @Repository("accountDao")
@@ -619,7 +936,9 @@ public class AccountServiceImpl implements AccountService {
     <context:component-scan base-package="cn.itcast"></context:component-scan>
 ##### 8、@Scope注解，作用在类上。
 
-```
+用来给Bean改变作用域，使用时直接在Bean上加@Scope(value = "xxx")，默认值为singleton。
+
+```java
 @Scope(scopeName="singleton")  //单例模式
 public class User {
 }
@@ -629,6 +948,8 @@ public class User {
 ```
 
 ##### 9、@Value用于注入普通类型值
+
+用于注入基本类型和String类型的值用于指定数据的值，它可以使用spring中SpEL；
 
 第一种方式：作用在属性上，通过反射的filed值，破坏了对象的封装性。
 
@@ -646,9 +967,54 @@ private String name;
     }
 ```
 
-##### 10、@PostConstruct与@PreDestroy
+##### 10、 @Configuration：
 
-```
+标注在类上，配置spring容器(应用上下文)。相当于把该类作为spring的xml配置文件中的<beans>，在使用该注解的类中，使用@Bean注解标注的方法，返回的类型都会直接注册为bean。其底层实现使用了@Component 。
+
+##### 11、@Bean：
+
+用于告诉方法，产生一个Bean对象，然后这个Bean对象交给Spring管理。产生这个Bean对象的方法Spring只会调用一次，随后这个Spring将会将这个Bean对象放在自己的IOC容器中。
+
+改变作用域的常用注解：
+
+##### 12、@Lazy(true)：
+
+表明一个bean 是否延迟加载，可以作用在方法上，表示这个方法被延迟加载；可以作用在@Component (或者由@Component 作为原注解) 注释的类上，表明这个类中所有的bean 都被延迟加载。如果没有@Lazy注释，或者@Lazy 被设置为false，那么该bean 就会急切渴望被加载；除了上面两种作用域，@Lazy 还可以作用在@Autowired和@Inject注释的属性上，在这种情况下，它将为该字段创建一个惰性代理，作为使用ObjectFactory或Provider的默认方法
+
+##### 13、@ConfigurationProperties：
+
+用于注入一些值。请注意以下几点:
+
+前缀定义了哪些外部属性将绑定到类的字段上
+
+根据 Spring Boot 宽松的绑定规则，类的属性名称必须与外部属性的名称匹配
+
+我们可以简单地用一个值初始化一个字段来定义一个默认值
+
+类本身可以是包私有的
+
+类的字段必须有公共 setter 方法
+
+@Value和@ConfigurationProperties区别
+
+![image-20220729205502533](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220729205502533.png)
+
+二者区别	@ConfigurationProperties	@Value
+功能	批量注入配置文件中的属性	一个个指定
+松散绑定（松散语法）	支持	不支持
+SpEL	不支持	支持
+JSR303数据校验	支持	不支持
+复杂类型封装	支持	不支持
+
+##### 14、和生命周期相关常用注解：
+
+@PostConstruct：该注解被用来修饰一个非静态的void（）方法。被@PostConstruct修饰的方法会在服务器加载Servlet的时候运行，并且只会被服务器执行一次。PostConstruct在构造函数之后执行，init（）方法之前执行。通常我们会是在Spring框架中使用到@PostConstruct注解 该注解的方法在整个Bean初始化中的执行顺序：Constructor(构造方法) -> @Autowired(依赖注入) -> @PostConstruct(注释的方法)
+
+@PreDestory：@PreDestory修饰的方法会在服务器卸载Servlet的时候运行，并且之后被服务器调用一次，类似于Servlet中的destory()方法，虽然PreDestory字面意思是在destory之前运行，但是被@PreDestory修饰的方法会在destory方法运行之后运行，在Servlet被彻底卸载之前，PreDestory里的Destory指的是Servlet的销毁，而不是destory()方法。
+
+@PostConstruct与@PreDestroy
+
+```java
     @PostConstruct   //创建对象前调用
     public void init(){
         System.out.println("初始");
@@ -658,8 +1024,6 @@ private String name;
         System.out.println("销毁");
     }
 ```
-
-
 
 #### spring注解配置
 
@@ -673,7 +1037,7 @@ private String name;
 
 ##### 2、在类上添加注解
 
-```
+```java
 @Component
 public class User {
 }
@@ -687,13 +1051,50 @@ Spring的 <bean>元素中包含一个 autowire 属性，我们可以通过设置
 
 autowire属性的5个值：
 
-default（默认）：由<beans>的default-autowire属性值来确定。
-byName：根据属性的名称自动装配。容器将根据名称查找与属性完全一致的Bean，并将其属性自动装配
-byType：根据属性的数据类型自动装配。
-constructor：根据构造函数参数的数据类型，进行byType模式的自动装配
-no：在默认情况下，不使用自动装配，Bean依赖必须通过ref元素定义
+1、default（默认）：由<beans>的default-autowire属性值来确定。
+2、byName：根据属性的名称自动装配。容器将根据名称查找与属性完全一致的Bean，并将其属性自动装配
+3、byType：根据属性的数据类型自动装配。
+4、constructor：根据构造函数参数的数据类型，进行byType模式的自动装配
+5、no：在默认情况下，不使用自动装配，Bean依赖必须通过ref元素定义
 
-
+<div id="article_content" class="article_content clearfix">
+        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-b3c43d3711.css">
+                <div id="content_views" class="htmledit_views">
+                    <h3><a name="t0"></a>Spring的自动装配</h3> 
+<p>自动装配就是指 Spring 容器在不使用 &lt;constructor-arg&gt; 和&lt;property&gt; 标签的情况下，可以自动装配（autowire）相互协作的 Bean 之间的关联关系，将一个 Bean 注入其他 Bean 的 Property 中。</p> 
+<p>使用自动装配需要配置 &lt;bean&gt; 元素的 autowire 属性。autowire 属性有五个值，具体说明如下表所示：</p> 
+<div class="table-box"><table><thead><tr><th>名称</th><th>说明</th></tr></thead><tbody><tr><td>no</td><td>默认值，表示不使用自动装配，Bean 依赖必须通过 ref 元素定义。</td></tr><tr><td>byName</td><td>根据 Property 的 name 自动装配，如果一个 Bean 的 name 和另一个 Bean 中的 Property 的 name 相同，则自动装配这个 Bean 到 Property 中。（表示按属性名称自动装配，XML 文件中 Bean 的 id 必须与类中的属性名称相同）</td></tr><tr><td>byType</td><td>根据 Property 的数据类型（Type）自动装配，如果一个 Bean 的数据类型兼容另一个 Bean 中 Property 的数据类型，则自动装配。（XML 文件中 Bean 的 id 与类中的属性名称可以不同，但必须只有一个类型的 Bean。）</td></tr><tr><td>constructor</td><td>类似于 byType，根据构造方法参数的数据类型，进行 byType 模式的自动装配。（类中构造函数的参数必须在配置文件中有相同的类型）</td></tr><tr><td>autodetect（3.0版本不支持）</td><td>如果 Bean 中有默认的构造方法，则用 constructor 模式，否则用 byType 模式。</td></tr></tbody></table></div>
+<p>自动装配的优缺点</p> 
+<p>优点</p> 
+<ul><li> <p>自动装配只需要较少的代码就可以实现依赖注入。</p> </li></ul>
+<p>缺点</p> 
+<ul><li> <p>不能自动装配简单数据类型，比如 int、boolean、String 等。</p> </li><li> <p>相比较显示装配，自动装配不受程序员控制。</p> </li></ul>
+<h3><a name="t1"></a>Spring基于注解装配Bean（常用注解）</h3> 
+<p>Spring 默认不使用注解装配 Bean，因此需要在配置文件中添加<code>&lt;context:annotation-config/&gt;</code>,启用注解。或者在被子文件中配置</p> 
+<pre data-index="0"><code class="language-XML hljs">&nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"需要使用注解的包"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">context:component-scan</span>&gt;</span></code><div class="hljs-button {2}" data-title="复制" onclick="hljs.copyCode(event)"></div></pre> 
+<p>常用注解注入值：</p> 
+<p>@<strong>Component</strong>：用来描述Spring中的Bean，仅仅表示一个组件（Bean），并且可以作用在任何层次，使用时只需要将该注解标注在相应类上即可。</p> 
+<p>@<strong>Controller</strong>：通常作用在控制层（如 Struts2 的 Action、SpringMVC 的 Controller），用于将控制层的类标识为 Spring 中的 Bean，其功能与 @Component 相同。</p> 
+<p>@<strong>Service</strong>：通常作用在业务层（Service 层），用于将业务层的类标识为 Spring 中的 Bean，其功能与 @Component 相同。</p> 
+<p>@<strong>Repository</strong>：用于将数据访问层（DAO层）的类标识为Spring中的Bean，其功能与@Component相同</p> 
+<p><strong>@Autowired：可以应用到 Bean 的属性变量、属性的 setter 方法、非 setter 方法及构造函数等，配合对应的注解处理器完成 Bean 的自动配置工作。默认按照 Bean 的类型进行装配。只要容器中有唯一的一个bean对象类型和要注入的变量类型匹配，就可以注入成功，如果ioc容器中没有任何bean类型和要注入的变量类型匹配则报错</strong></p> 
+<p>@<strong>Qualifier</strong>：与 @Autowired 注解配合使用，会将默认的按 Bean 类型装配修改为按 Bean 的实例名称装配，Bean 的实例名称由 @Qualifier 注解的参数指定。它在给类成员注入时不能单独使用必须要和@Autowired，但是在给方法参数注入时可以单独使用。</p> 
+<p>@<strong>Resource</strong>：作用于@Autowired相同，区别在于@Resource可以通过Bean实例名称进行装配，也就是@Resource中的两个重要属性name和type。</p> 
+<p><strong>@Value</strong>：用于注入基本类型和String类型的值用于指定数据的值，它可以使用spring中SpEL；</p> 
+<p>@ConfigurationProperties：用于注入一些值。请注意以下几点:</p> 
+<ul><li> <p>前缀定义了哪些外部属性将绑定到类的字段上</p> </li><li> <p>根据 Spring Boot 宽松的绑定规则，类的属性名称必须与外部属性的名称匹配</p> </li><li> <p>我们可以简单地用一个值初始化一个字段来定义一个默认值</p> </li><li> <p>类本身可以是包私有的</p> </li><li> <p>类的字段必须有公共 setter 方法</p> </li></ul>
+<p><strong>@Value和@ConfigurationProperties区别</strong></p> 
+<div class="table-box"><table><thead><tr><th>二者区别</th><th>@ConfigurationProperties</th><th>@Value</th></tr></thead><tbody><tr><td>功能</td><td>批量注入配置文件中的属性</td><td>一个个指定</td></tr><tr><td>松散绑定（松散语法）</td><td>支持</td><td>不支持</td></tr><tr><td>SpEL</td><td>不支持</td><td>支持</td></tr><tr><td>JSR303数据校验</td><td>支持</td><td>不支持</td></tr><tr><td>复杂类型封装</td><td>支持</td><td>不支持</td></tr></tbody></table></div>
+<p>@<strong>Configuration</strong>：标注在类上，配置spring容器(应用上下文)。相当于把该类作为spring的xml配置文件中的<code>&lt;beans&gt;</code>，在使用该注解的类中，使用@Bean注解标注的方法，返回的类型都会直接注册为bean。其底层实现使用了@Component 。</p> 
+<p><strong>@Bean：</strong>用于告诉方法，产生一个Bean对象，然后这个Bean对象交给Spring管理。产生这个Bean对象的方法Spring只会调用一次，随后这个Spring将会将这个Bean对象放在自己的IOC容器中。</p> 
+<p>改变作用域的常用注解：</p> 
+<p><strong>@Lazy(true)：</strong>表明一个bean 是否延迟加载，可以作用在方法上，表示这个方法被延迟加载；可以作用在@Component (或者由@Component 作为原注解) 注释的类上，表明这个类中所有的bean 都被延迟加载。如果没有@Lazy注释，或者@Lazy 被设置为false，那么该bean 就会急切渴望被加载；除了上面两种作用域，@Lazy 还可以作用在@Autowired和@Inject注释的属性上，在这种情况下，它将为该字段创建一个惰性代理，作为使用ObjectFactory或Provider的默认方法</p> 
+<p><strong>@Scope：</strong>用来给Bean改变作用域，使用时直接在Bean上加@Scope(value = "xxx")，默认值为singleton。</p> 
+<p>和生命周期相关常用注解：</p> 
+<p><strong>@PostConstruct：</strong>该注解被用来修饰一个非静态的void（）方法。被@PostConstruct修饰的方法会在服务器加载Servlet的时候运行，并且只会被服务器执行一次。PostConstruct在构造函数之后执行，init（）方法之前执行。通常我们会是在Spring框架中使用到@PostConstruct注解 该注解的方法在整个Bean初始化中的执行顺序：Constructor(构造方法) -&gt; @Autowired(依赖注入) -&gt; @PostConstruct(注释的方法)</p> 
+<p><strong>@PreDestory：</strong>@PreDestory修饰的方法会在服务器卸载Servlet的时候运行，并且之后被服务器调用一次，类似于Servlet中的destory()方法，虽然PreDestory字面意思是在destory之前运行，但是被@PreDestory修饰的方法会在destory方法运行之后运行，在Servlet被彻底卸载之前，PreDestory里的Destory指的是Servlet的销毁，而不是destory()方法。</p>
+                </div><div><div></div></div>
+        </div>
 
 ## 十一、spring复杂类型装配
 

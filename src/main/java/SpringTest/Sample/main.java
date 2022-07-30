@@ -1,0 +1,43 @@
+package SpringTest.Sample;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+
+public class main {
+    public static void main(String[] args) {
+//        1
+//        /*获取文件流*/
+        ApplicationContext context = new ClassPathXmlApplicationContext("sample1.xml");
+
+//        2.FileSystemXmlApplicationContext：文件 系统 文件类型 应用 上下文——磁盘绝对路径
+//        它是从磁盘路径上加载配置文件，配置文件可以在磁盘的任何位置。
+//        ApplicationContext context2 = new FileSystemXmlApplicationContext("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/resources/sample1.xml");
+        //获取实例
+        Collection collect1=(Collection) context.getBean("myCollect");
+        //调用方法
+        String[] myArray = collect1.getmyArray();
+        for (String i: myArray) {
+            System.out.println(i);
+        }
+        //调用方法
+        List<String> myList = collect1.getmyList();
+        for (String i: myList) {
+            System.out.println(i);
+        }
+        //调用方法
+        Map<String,Object> myMap = collect1.getmyMap();
+        for (String i: myMap.keySet()) {
+            System.out.println(i+":"+myMap.get(i));
+        }
+        //调用方法
+        Properties myProps = collect1.getMyProps();
+        for (String i: myProps.stringPropertyNames()) {
+            System.out.println(i);
+        }
+    }
+}
