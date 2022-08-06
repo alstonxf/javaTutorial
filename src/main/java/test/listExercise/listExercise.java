@@ -30,7 +30,7 @@ public class listExercise {
         List<String> y = Arrays.asList(c);
         List resulta = Arrays.asList(result1);
 
-        com.sun.tools.javac.util.List<Integer> ls2 = com.sun.tools.javac.util.List.of(1,2);
+//        com.sun.tools.javac.util.List<Integer> ls2 = com.sun.tools.javac.util.List.of(1,2);
 
         /** 比较
          * list 可以给自动扩容， 而数组， 你初始化的时候就应该给指定大小。 而且list的方法很多， 对里面的元素操作起来也方便。

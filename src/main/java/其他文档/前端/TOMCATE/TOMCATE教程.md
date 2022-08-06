@@ -1,19 +1,6 @@
-# Tomcat的基本使用及相关知识的概述（超详细版）
+# Tomcat的基本使用及相关知识的概述
 
-编程开发分享者
 
-于 2020-07-11 23:45:10 发布
-
-6823
- 收藏 163
-分类专栏： Tomcat 文章标签： 其他文档.前端.javasript文档 servlet http
-版权
-
-Tomcat
-专栏收录该内容
-1 篇文章1 订阅
-订阅专栏
-絮絮叨叨：
 在深入了解Tomcat源码之前，本来是想亲自写一篇Tomcat的基本使用教程的，在网上兜兜转转发现了这篇博客：https://project.myBlog.blogStudy.csdn.net/weixin_40396459/article/details/81706543，写的特别详细，虽然有点老，但对于Tomcat入门来说是无所谓的，足够让初学者了解如何使用这只“猫”。在这里我就不重复造轮子了，将这篇博客贴在这里，方便大家阅读。在这篇文章之后，我们开始Tomcat的深入分析，以后每写一篇，我都会贴在这里，有哪里不对的还请大家不吝指教。下一篇文章是搭建tomcat的源码项目，将tomcat当做一个普通项目来运行，剖析里面的源码。
 
 文章末尾有福利~
@@ -870,3 +857,186 @@ unzip. project.myBlog.blogStudy.zip
 ————————————————
 版权声明：本文为CSDN博主「吞吞吐吐大魔王」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://project.myBlog.blogStudy.csdn.net/weixin_51367845/article/details/123429050
+
+# IDEA新建web项目
+
+## web项目结构：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210420203253538.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81NTY4OTUwMQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+
+
+## 新建web项目步骤
+
+打开ProjectStructure后，按照图示依次点击Facets->+号,在弹出的对话框个中选择Web.
+
+
+
+![img](https://upload-images.jianshu.io/upload_images/23678055-86c670ce6a75a10a.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+在弹出的对话框选择刚才创建的Maven项目（MavenDemo），点击ok.
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-c8e104ea4dfa4d2f.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/478/format/webp)
+
+接着会出现图示的结构，点击Deployment Descriptors 对话框右侧的加号，会弹出一个图示的小对话框，选择web.xml所在的路径，点击Ok。
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-0cfebe155e55db90.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+再次点击Web Resource Directories对话框右侧的加号，会弹出一个图示的小对话框，选择webapp所在的路径，点击Ok。
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-7d3588d4687be386.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+再次回到Project Structure,点击左侧 Artifacts，依次点击+号->Web Application:Exploded->From Modules.
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-6315b68eeb149bbe.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+在弹出的框中选择刚才创建的Maven项目（MavenDemo），Ok.
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-e778ae6c2b0ddb57.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/480/format/webp)
+
+出现下图的对话框，点击Ok即可。
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/23678055-dfa46ded2d2e7169.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+
+
+重点：在faces中选择对应的路径
+
+![img](https://upload-images.jianshu.io/upload_images/23678055-bfdb0c58d0932b9c.png?imageMogr2/auto-orient/strip|imageView2/2/w/1040/format/webp)
+
+# 如何在IDEA中配置Tomcat
+
+
+### 第一步：选择这个方框
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/943c417a061f4015af684ed0f073859a.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+### 第二步：选择+号，找到Tomcat Server（Local)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/59f13b727aef428dac885b5321cfd79a.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)![在这里插入图片描述](https://img-blog.csdnimg.cn/995bbd637ea74409b28c0d9fd482cf49.png#pic_center)
+
+### 第三步：将红方框内填完整
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021042019583942.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81NTY4OTUwMQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+注意：
+
+如果 intellij IDEA tomcat 启动时 报错
+AJP Connector node not found: set up one in the server.xml
+
+解决办法：
+
+把配置tomcat的HTTP端口下面的HTTPs的端口去掉就可以了
+
+run->Edit Configurations :
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200509201807193.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyNDI5MzY3,size_16,color_FFFFFF,t_70)
+
+### 第四步：创建artifaces，选择Deployment–>Artia…选择 *.war exploded或 * .exploded
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2bce4b1885d54c93a21e27a1b40d8688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+注意：如果tomcat的配置没有出现Artifact选项，则需要先新建web项目
+
+### 第五步：选择Application server
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/cf444d8519424809befd24b467f3d844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)![在这里插入图片描述](https://img-blog.csdnimg.cn/eef2380f50b542e5b5c79c111a1ba44c.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+
+最后点击apply，然后ok
+
+第六步：选择Tomcat 9，点击启动
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b4299f59688b48f2b1e4eebc2d69166e.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl81MDU2OTc4OQ==,size_16,color_FFFFFF,t_70#pic_center)
+
+————————————————
+版权声明：本文为CSDN博主「m0_67390969」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/m0_67390969/article/details/125401318
+
+![image-20220806202959341](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806202959341.png)
+
+# web项目打包和访问（lxf亲测）
+
+**背景**：因为普通的web项目无法用maven命令进行打包，所以怎样打成war包发布呢？
+
+## **1.进入项目的结构配置**
+
+![image-20220806221059787](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806221059787.png)
+在【ProjectStructure】中选择左侧的【Artifacts】页签，点击中间上面的，选择【WebApplication:Archive】-> 【Empty】
+![image-20220806221250665](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806221250665.png)
+
+## **2.添加war包的配置**
+
+
+点击+号，选择【Directory Content】
+
+将项目的classes的文件配置好
+![image-20220806222811109](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806222811109.png)
+创建【WEB-INF】
+
+![image-20220806222531512](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806222531512.png)
+
+
+添加好后如若发现有警告信息，则
+![image-20220806222854780](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806222854780.png)
+
+## **3.编译及执行打war包**
+
+![image-20220806223019019](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806223019019.png)
+4.将打包好的war包复制到tomcat的webapp目录下，启动tomcat就能访问了
+找到打包好的war文件（此文件在你的项目的输出文件)
+![image-20220806223059971](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806223059971.png)
+
+ 
+
+## 本地访问
+
+![image-20220806220256911](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806220256911.png)
+
+## 连接局域网实现多人访问
+
+获取局域网地址
+
+windows：
+
+![image-20220806223613990](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806223613990.png)
+
+Mac：
+
+![image-20220806224223715](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806224223715.png)
+
+![image-20220806224234754](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806224234754.png)
+
+192.168.2.165:8080/lxfweb/hello.html
+
+![image-20220806224340698](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806224340698.png)
+
+# 问题排查
+
+## 1、 客户端404 The origin server did not find a current representation for the target resou
+
+
+
+
+首先推荐一篇比较良心的博客决绝方法：关于Tomcat出现The origin server did not find a current representation for the target resourc…的问题
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200201163344682.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTQzNTA4,size_16,color_FFFFFF,t_70)
+————————————————
+版权声明：本文为CSDN博主「宜春」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_44543508/article/details/104135265
+
+## IDEA 设置编译位置
+
+![image-20220806214116001](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220806214116001.png)

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lxfweb">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="lxfweb.war">
+      <element id="javaee-facet-resources" facet="myJava/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="myJava" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

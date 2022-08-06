@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lxfweb" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lxfweb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/HelloSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/HelloSpringImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/TestHelloSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/GirlFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/SpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/HTML入门.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/HTML/HTML入门.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/TOMCATE教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE/TOMCATE教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/blog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/《JavaScript WebAPI 介绍》.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/javasript文档/《JavaScript WebAPI 介绍》.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/《JavaScript 入门知识》.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/javasript文档/《JavaScript 入门知识》.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/《JavaScript 的数组、函数、对象》.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/javasript文档/《JavaScript 的数组、函数、对象》.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/《两万字入门 CSS》.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/CSS/《两万字入门 CSS》.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tomcat/《超多动图带你入门 HTML》.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/HTML/《超多动图带你入门 HTML》.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/前端/CSS入门.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/CSS/CSS入门.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/前端/HTML入门.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring入门详细教程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring教程2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring教程2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE/TOMCATE教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE/TOMCATE教程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/markdown 高亮语法" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/markdown 高亮语法" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/markdown 高亮语法" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/markdown 高亮语法" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/worker.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +53,7 @@
         <option value="HTML File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -40,6 +62,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.3.8/spring-context-5.3.8.jar!/org/springframework/context/ApplicationContext.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,45 +93,47 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/java/其他文档/JAVA/LeetCode刷题",
+    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/web/WEB-INF/test",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "d4e7ac5cbce2613ee53a1af5ff70623b"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "5db975d4bcf447824a8d5da74745d474"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/test" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/JAVA/LeetCode刷题" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/target" />
-      <recent name="$PROJECT_DIR$/src/main/java/myBlog/blogDemo" />
-      <recent name="$PROJECT_DIR$/src/main/java/blog1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/前端/HTML" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/前端/CSS" />
-      <recent name="$PROJECT_DIR$/src/main/java/其他文档/前端" />
-      <recent name="$PROJECT_DIR$/src/main/java/其他文档/JAVA/effectiveJAVA" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.worker.b">
-    <configuration name="SpringRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample2.SpringRunner" />
+  <component name="RunManager" selected="Tomcat Server.myTomcat1">
+    <configuration name="SpringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample4.SpringTest" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample2.*" />
+          <option name="PATTERN" value="SpringTest.Sample4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,33 +154,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHelloSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample3.TestHelloSpring" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo.entity.*" />
+          <option name="PATTERN" value="SpringTest.Sample3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SpringTest.SpringDemo" />
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo.TestDemo" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="exercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DEMO.E2.exercise2" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample.*" />
+          <option name="PATTERN" value="DEMO.E2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SpringTest.SpringDemo" />
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo.TestDemo" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,13 +190,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="myTomcat1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="lxfweb">
+          <settings>
+            <option name="CONTEXT_PATH" value="/hello.html" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="9c2797c6-fd16-4bbe-8f39-96d7862e1969" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60721" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lxfweb" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.exercise2" />
+      <item itemvalue="Application.SpringTest" />
+      <item itemvalue="Application.SpringTest.Sample.main" />
+      <item itemvalue="Application.TestHelloSpring" />
+      <item itemvalue="JUnit.worker.b" />
+      <item itemvalue="Tomcat Server.myTomcat1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.worker.b" />
-        <item itemvalue="Application.SpringRunner" />
+        <item itemvalue="Application.exercise2" />
+        <item itemvalue="Application.SpringTest" />
         <item itemvalue="Application.SpringTest.Sample.main" />
-        <item itemvalue="JUnit.TestDemo.test1" />
-        <item itemvalue="JUnit.TestDemo" />
+        <item itemvalue="Application.TestHelloSpring" />
+        <item itemvalue="JUnit.worker.b" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +327,13 @@
       <workItem from="1659001781526" duration="897000" />
       <workItem from="1659011245762" duration="503000" />
       <workItem from="1659055629078" duration="15149000" />
-      <workItem from="1659096081851" duration="13279000" />
+      <workItem from="1659096081851" duration="13630000" />
+      <workItem from="1659183562212" duration="1826000" />
+      <workItem from="1659187831748" duration="400000" />
+      <workItem from="1659259717782" duration="3271000" />
+      <workItem from="1659363913132" duration="3084000" />
+      <workItem from="1659755818455" duration="299000" />
+      <workItem from="1659772834665" duration="10843000" />
     </task>
     <servers />
   </component>
@@ -223,17 +351,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/SpringTest/Sample/Collection.java</url>
-          <line>12</line>
-          <properties field="myList" class="SpringTest.Sample.Collection" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

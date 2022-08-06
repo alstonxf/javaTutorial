@@ -1,7 +1,8 @@
 package test.listExercise;
 
-import com.sun.tools.javac.util.List;
+//import com.sun.tools.javac.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 
 class listExercise3 {
@@ -14,20 +15,18 @@ class listExercise3 {
         也没有规定是final的，所以支持修改。
          */
 
-        //List<Integer> ls1 = Arrays.asList(1, 2, null);
-        List<Integer> ls2 = List.of(1,2);
+        List<Integer> ls1 = Arrays.asList(1, 2, null);
         //System.out.println(ls1.contains(null));
-        System.out.println(ls2.contains(null));
-        List<Integer> ls3 = List.of(1,2,null);
+//        System.out.println(ls2.contains(null));
 
-        List<String> k = com.sun.tools.javac.util.List.of("a");
+//        List<String> k = com.sun.tools.javac.util.List.of("a");
         java.util.List<String> d = Arrays.asList("a");
         java.util.List<String> d1 = Arrays.asList("a");
-        System.out.println("k vs d = "+k.equals(d)); //返回TRUE
-        System.out.println("k vs d = "+(k == d)); //返回FALSE
+//        System.out.println("k vs d = "+k.equals(d)); //返回TRUE
+//        System.out.println("k vs d = "+(k == d)); //返回FALSE
         System.out.println("d1 vs d = "+(d1 == d)); //返回FALSE
 
-        List.of("1");
+//        List.of("1");
 
     }
 }

@@ -3,7 +3,7 @@ package SpringTest.Sample;
 
 public class Student {
 
-    private String name;
+    private String name2;
     private int id;
     private int age;
     private Dog dog;
@@ -11,7 +11,7 @@ public class Student {
     public Collection habit;
 
     public Student(String name, int id, int age, Dog dog, Collection collect) {
-        this.name = name;
+        this.name2 = name;
         this.id = id;
         this.age = age;
         this.dog = dog;
@@ -32,9 +32,13 @@ public class Student {
 
     void studentInfo(){
         System.out.println("id="+this.id);
-        System.out.println("name="+this.name);
+        System.out.println("name2="+this.name2);
         System.out.println("age="+this.age);
         System.out.println("dog="+this.dog.getName());
         System.out.println("habit="+this.habit.myList.toString());
+    }
+
+    public void setName2(String name2) {
+        this.name2 = name2;
     }
 }

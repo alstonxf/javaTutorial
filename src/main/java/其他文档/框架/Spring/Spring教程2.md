@@ -447,26 +447,26 @@ public class TestHelloSpring {
 
 ## 2、什么是IoC(控制反转)
 
-IoC（Inversion of Control）的意思是“控制反转”，它是Spring最核心的点，并且贯穿始终。IoC并不是一门技术，而是一种设计思想。在Spring框架中实现控制反转的是Spring IoC容器，其具体就是由容器来控制对象的生命周期和业务对象之间的依赖关系，而不是像传统方式(new 对象)中由代码来直接控制。程序中所有的对象都会在Spring IoC容器中登记，告诉容器你是个什么，你需要什么，然后IoC容器会在系统运行到适当的时候，把你要的对象主动给你，同时也把你交给其它需要你的对象。也就是说控制对象生存周期的不再是引用它的对象，而是由Spring IoC容器来控制所有对象的创建、销毁。对于某个具体的对象而言，以前是它控制其它对象，现在是所有对象都被Spring IoC容器所控制，所以这叫控制反转。
+**IoC（Inversion of Control）**的意思是“控制反转”，它是Spring最核心的点，并且贯穿始终。<font color = Tomato size=3 face="楷书">IoC并不是一门技术，而是一种设计思想。</font>在Spring框架中实现控制反转的是Spring IoC容器，其<font color = Tomato size=3 face="楷书">具体就是由容器来控制对象的生命周期和业务对象之间的依赖关系，而不是像传统方式(new 对象)中由代码来直接控制。程序中所有的对象都会在Spring IoC容器中登记，告诉容器你是个什么，你需要什么，然后IoC容器会在系统运行到适当的时候，把你要的对象主动给你，同时也把你交给其它需要你的对象。也就是说**控制对象生存周期的不再是引用它的对象，而是由Spring IoC容器来控制所有对象的创建、销毁**。</font>对于某个具体的对象而言，以前是它控制其它对象，现在是所有对象都被Spring IoC容器所控制，所以这叫控制反转。 
 
-控制反转最直观的表达就是，IoC容器让对象的创建不用去new了，而是由Spring自动生产，使用java的反射机制，根据配置文件在运行时动态的去创建对象以及管理对象，并调用对象的方法。控制反转的本质是控制权由应用代码转到了外部容器(IoC容器)，控制权的转移即是所谓的反转。控制权的转移带来的好处就是降低了业务对象之间的依赖程度，即实现了解耦。即然控制反转中提到了反转，那么肯定有正转，正转和反转有什么区别呢？我曾经在博客上看到有人在面试的时候被问到Spring IoC知识点：什么是反转、正转？
+控制反转最直观的表达就是，<font color = Tomato size=3 face="楷书">IoC容器让对象的创建不用去new了，而是由Spring自动生产，使用java的反射机制，根据配置文件在运行时动态的去创建对象以及管理对象，并调用对象的方法。</font>控制反转的本质是控制权由应用代码转到了外部容器(IoC容器)，控制权的转移即是所谓的反转。控制权的转移带来的好处就是降低了业务对象之间的依赖程度，即实现了解耦。即然控制反转中提到了反转，那么肯定有正转，正转和反转有什么区别呢？我曾经在博客上看到有人在面试的时候被问到Spring IoC知识点：什么是反转、正转？
 
-- 正转：如果我们要使用某个对象，就需要自己负责对象的创建。
-- 反转：如果要使用某个对象，只需要从Spring 容器中获取需要使用的对象，不关心对象的创建过程，也就是把创建对象的控制权反转给了Spring框架。
+- **正转：如果我们要使用某个对象，就需要自己负责对象的创建。**
+- **反转：如果要使用某个对象，只需要从Spring 容器中获取需要使用的对象，不关心对象的创建过程，也就是把创建对象的控制权反转给了Spring框架。**
 
 [回到顶部](https://www.cnblogs.com/tanghaorong/p/13364634.html#_labelTop)
 
 ## 3、什么是DI(依赖注入)
 
-DI（Dependency Injection）的意思是"依赖注入"，**它是IoC(控制反转)的一个别名为**。在早些年，软件开发教父`Martin·Fowler`在一篇文章中提到将IoC改名为 DI，这是原文地址：https://martinfowler.com/articles/injection.html。其中有这样一段话，如下图所示：
+**DI（Dependency Injection）**的意思是"依赖注入"，**它是IoC(控制反转)的一个别名为**。在早些年，软件开发教父`Martin·Fowler`在一篇文章中提到将IoC改名为 DI，这是原文地址：https://martinfowler.com/articles/injection.html。其中有这样一段话，如下图所示：
 
 ![image](https://img2020.cnblogs.com/blog/1745215/202008/1745215-20200803161323685-440193302.png)
 
-意思是：他认为需要为该模式(IoC)指定一个更具体的名称。因为控制反转是一个过于笼统的术语，所以人们会感到困惑。他与IoC的倡导者进行了大量讨论之后，然后他们决定使用依赖注入这个名称。也就是在这时DI(依赖注入)这个词被大家知晓。我在第一章的时候也提到过，IoC和DI其实是同一个概念，只是从不同的角度描述罢了(IoC是一种思想，而DI则是一种具体的技术实现手段)。
+意思是：他认为需要为该模式(IoC)指定一个更具体的名称。因为控制反转是一个过于笼统的术语，所以人们会感到困惑。他与IoC的倡导者进行了大量讨论之后，然后他们决定使用依赖注入这个名称。也就是在这时DI(依赖注入)这个词被大家知晓。我在第一章的时候也提到过，<font color = Tomato size=3 face="楷书">IoC和DI其实是同一个概念，只是从不同的角度描述罢了(IoC是一种思想，而DI则是一种具体的技术实现手段)。</font>
 
-这是我们在其它地方看到的一句话，这句话真的是醍醐灌顶，一句话就把其它人一大堆很难懂的话给说清楚了：IoC是目的(它的目的是创建对象)，DI是手段(通过什么手段获取外部对象)。所以至此我们别再傻傻分不清楚IoC和DI了。
+这是我们在其它地方看到的一句话，这句话真的是醍醐灌顶，一句话就把其它人一大堆很难懂的话给说清楚了：<font color = Tomato size=3 face="楷书">IoC是目的(它的目的是创建对象)，DI是手段(通过什么手段获取外部对象)。</font>所以至此我们别再傻傻分不清楚IoC和DI了。
 
-依赖注入：即应用程序在运行时依赖IoC容器来动态注入对象需要的外部资源。依赖注入中"谁依赖谁，为什么需要依赖，谁注入谁，注入了什么"，下面来深入分析一下：
+<font color = Tomato size=3 face="楷书">依赖注入：即应用程序在运行时依赖IoC容器来动态注入对象需要的外部资源。</font>依赖注入中"谁依赖谁，为什么需要依赖，谁注入谁，注入了什么"，下面来深入分析一下：
 
 　　●谁依赖于谁：当然是应用程序依赖于IoC容器；
 
@@ -565,7 +565,7 @@ setter方法注入虽不像构造方法注入那样，让对象构造完成后�
 | -------------- | ------------------------------------------------------------ |
 | setter方法注入 | 因为方法可以命名，所以setter方法注入在描述性上要比构造方法注入好一些。 另外，setter方法可以被继承，允许设置默认值，而且有良好的IDE支持。缺点当然就是对象无法在构造完成后马上进入就绪状态。 |
 | 构造方法注入   | 这种注入方式的优点就是，对象在构造完成之后，即已进入就绪状态，可以 马上使用。缺点就是，当依赖对象比较多的时候，构造方法的参数列表会比较长。而通过反射构造对象的时候，对相同类型的参数的处理会比较困难，维护和使用上也比较麻烦。而且在Java中，构造方法无法被继承，无法设置默认值。对于非必须的依赖处理，可能需要引入多个构造方法，而参数数量的变动可能造成维护上的不便。 |
-| 接口注入       | 从注入方式的使用上来说，接口注入是现在不甚提倡的一种方式，基本处于“退役状态”。因为它强制被注入对象实现不必要的接口，带有侵入性。而构造方法注入和setter方法注入则不需要如此。 |
+| 接口注入       | 从注入方式的使用上来说，<font color = Tomato size=3 face="楷书">接口注入是现在不甚提倡的一种方式，基本处于“退役状态”。</font>因为它强制被注入对象实现不必要的接口，带有侵入性。而构造方法注入和setter方法注入则不需要如此。 |
 
 综上所述，构造方法注入和setter方法注入因为其侵入性较弱，且易于理解和使用，所以是现在使用最多的注入方式，尤其是setter方法注入；而接口注入因为侵入性较强，基本已经淘汰了。
 
@@ -752,6 +752,153 @@ public class OrangeJuice {
 
 测试类和运行的结果和构造器注入的方式是一样的，所以这里就不展示了。
 
+**set注入示例2**
+set 注入也叫设值注入，是指通过 setter 方法传入被调用者的实例。这种注入方式简单、直观，因而在 Spring 的依赖注入中大量使用。
+根据属性的数据类型的不同，set注入又可以分为简单类型的set注入和引用类型的set注入。
+
+简单类型的set注入
+Spring中规定基本数据类型和String类型都是简单类型。
+
+声明一个Student类
+
+    public class Student {
+        private String name;
+        private int age;
+        public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+
+在Spring的配置文件中声明需要添加到容器中的对象
+
+```
+<bean id="myStudent" class="com.xxx.package01.Student">
+    <!--id属性是自定义的对象名称，class属性是类的全限定名称-->
+    <property name="name" value="zhangsan" />
+    <property name="age" value="20" />
+    <!--name是属性名，value是属性值-->
+</bean>
+```
+
+写一个测试类来测试DI
+
+        @Test
+        public void test01(){
+            String config = "package01/applicationContext.xml";
+            ApplicationContext ac = new ClassPathXmlApplicationContext(config);
+            Student student = (Student) ac.getBean("myStudent");
+        System.out.println("Student = " + student);
+    
+    }
+
+测试结果：
+
+根据测试结果我们可以看出，spring通过DI将配置文件中声明的属性值成功赋给了容器中对象的属性。
+
+引用类型的set注入
+在以上代码的基础上，我们添加另外一个School类
+
+    public class School {
+        private String name;
+        private String address;
+        public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
+    @Override
+    public String toString() {
+        return "School{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    	}
+    }
+
+
+修改Student类，Student类的属性中包含了引用类型school
+
+
+
+```java
+public class Student {
+    private String name;
+    private int age;
+    private School school;
+public void setName(String name) {
+    this.name = name;
+}
+
+public void setAge(int age) {
+    this.age = age;
+}
+
+public void setSchool(School school) {
+    this.school = school;
+}
+
+@Override
+public String toString() {
+    return "Student{" +
+            "name='" + name + '\'' +
+            ", age=" + age +
+            ", school=" + school +
+            '}';
+}
+}
+```
+
+
+在spring配置文件中声明Student对象和School对象
+
+```
+<!--声明Student对象-->
+<bean id="myStudent" class="com.xxx.package02.Student">
+    <property name="name" value="zhangsan" />
+    <property name="age" value="20" />
+    <property name="school" ref="mySchool" />
+    <!--name="属性名称" ref="引用类型的bean的id"-->
+</bean>
+<!--声明School对象-->
+<bean id="mySchool" class="com.xxx.package02.School">
+    <property name="name" value="北京大学" />
+    <property name="address" value="北京" />
+</bean>
+```
+
+
+创建测试类
+
+public class MyTest02 {
+
+```java
+@Test
+public void test01(){
+    String config = "package02/applicationContext.xml";
+    ApplicationContext ac = new ClassPathXmlApplicationContext(config);
+
+    Student myStudent = (Student) ac.getBean("myStudent");
+    System.out.println("Student = " + myStudent);
+
+	}
+}
+```
+
 
 
 ### 6.4、接口注入
@@ -875,7 +1022,7 @@ IoC的思想最核心的地方在于，资源不由使用资源的双方管理�
 
 通过上面的图片我们可以发现**ApplicationContext是BeanFactory的子接口**。其中BeanFactory是Spring IoC容器的最底层接口，它只提供了IOC容器最基本的功能，给具体的IOC容器的实现提供了规范，所以我们称它为简单容器。它主要是负责配置、生产和管理bean，其内部定义了对单个bean的获取，对bean的作用域判断，获取bean类型，获取bean别名等功能。而ApplicationContext扩展(继承)了BeanFactory，所以ApplicationContext包含BeanFactory的所有功能，同时它又继承了MessageSource、ListableBeanFactory、ResourceLoader、ApplicationEventPublisher等接口，这样ApplicationContext为BeanFactory赋予了更高级的IOC容器特性，我们称它为高级容器。在实际应用中，一般不使用 BeanFactory，通常建议优先使用ApplicationContext（BeanFactory一般供代码内部使用）。
 
-注意：上面两个重要的类都是接口，既然是接口那总得有具体的实现类吧，那是由哪个类来具体实现IOC容器的呢？答：在BeanFactory子类中有一个**DefaultListableBeanFactory**类，它实现了包含基本Spirng IoC容器所具有的重要功能，我们开发时不论是使用BeanFactory系列还是ApplicationContext系列来创建容器基本都会使用到DefaultListableBeanFactory类。在平时我们说BeanFactory提供了IOC容器最基本的功能和规范，但真正可以作为一个可以独立使用的IOC容器还是DefaultListableBeanFactory，因为它真正实现了BeanFactory接口中的方法。所以DefaultListableBeanFactory 是整个Spring IOC的始祖，在Spring中实际上把它当成默认的IoC容器来使用。但是暂时我们不深入了解，只需知道有这么个东西即可。
+注意：上面两个重要的类都是接口，既然是接口那总得有具体的实现类吧，那是由哪个类来具体实现IOC容器的呢？答：在BeanFactory子类中有一个**DefaultListableBeanFactory**类，它实现了包含基本Spirng IoC容器所具有的重要功能，我们开发时不论是使用BeanFactory系列还是ApplicationContext系列来创建容器基本都会使用到DefaultListableBeanFactory类。在平时我们说BeanFactory提供了IOC容器最基本的功能和规范，但真正可以作为一个可以独立使用的IOC容器还是DefaultListableBeanFactory，因为它真正实现了BeanFactory接口中的方法。所以**DefaultListableBeanFactory 是整个Spring IOC的始祖，在Spring中实际上把它当成默认的IoC容器来使用**。但是暂时我们不深入了解，只需知道有这么个东西即可。
 
 [回到顶部](https://www.cnblogs.com/tanghaorong/p/13432008.html#_labelTop)
 
@@ -1072,8 +1219,6 @@ public interface BeanFactory {
 它的作用是如果在使用beanName获取Bean时，在BeanName前添加这个前缀（”&BeanName”）， 那么使用这个BeanName获得的Bean实例是其所在FactoryBean的实例，也就是实现 FactoryBean 接口的那个类的Bean实例。
 
 关于BeanFactory和FactoryBean的区别可以参考：https://blog.csdn.net/wangbiao007/article/details/53183764
-
-
 
 **(2)、getBean部分(重要)**：该方法表示获取bean实例
 
@@ -2154,7 +2299,7 @@ public` `void` `registerBeanDefinition(String beanName, BeanDefinition beanDefin
 
 Bean的装配说简单点就是将对象以 Bean 的方式装配到 Spring IoC 容器中，**也可以说是Bean的依赖注入**。在 Spring 中提供了3种方法进行配置：
 
-1. 在Spring XML 中显示配置Bean（通过Spring的XML配置文件来装配Bean，现在基本不这么用了）。
+1. <font color = Tomato size=3 face="楷书">在Spring XML 中显示配置Bean（通过Spring的XML配置文件来装配Bean，现在基本不这么用了）。</font>
 2. 通过注解 @Component+@Autowired 注解来自动装配Bean (常用)。
 3. 通过注解 @Configuration+@Bean 在类中实现装配Bean (常用)。这种方式在SpringBoot中会经常使用
 
@@ -2184,12 +2329,12 @@ Bean的装配说简单点就是将对象以 Bean 的方式装配到 Spring IoC �
 </beans>
 ```
 
-标签介绍：
+**标签介绍：**
 
 - beans元素：它是根元素，可以包含任意数量的import、bean、alias元素。
 - bean元素：用来定义一个bean对象。其中属性 id和name都是用来作为bean的唯一标识，在Spring容器中必须唯一，否则会报错，用来让Spring找到这个Bean，class属性则是将哪个类装配为一个Bean。
   - 补充--关于bean元素中 id和name的区别：
-  - 当id存在的时候，不管name有没有，取id为bean的名称
+  - <font color = Tomato size=3 face="楷书">当id存在的时候，不管name有没有，取id为bean的名称</font>
   - 当id不存在，此时需要看name，name的值可以通过 ,;或者空格 分割，最后会按照分隔符得到一个String数组，数组的第一个元素作为bean的名称，其他的作为bean的别名
   - 当id和name都存在的时候，id为bean名称，name用来定义多个别名
   - 当id和name都不指定的时候，bean名称自动生成，Spring 将会采用“类全限定名#{number}“的格式生成编号。例如这里，如果没有声明 “id="user"的话，那么 Spring 为其生成的编号就是"com.thr.pojo.User#0”，当它第二次声明没有 id 属性的 Bean 时，编号就是"com.thr.pojo.User#1"，后面以此类推。但是我们一般都会显示声明自定义的id，因为自动生成的id比较繁琐，不便于维护。
@@ -2207,8 +2352,6 @@ Bean的装配说简单点就是将对象以 Bean 的方式装配到 Spring IoC �
 - 接口注入
 
 其中构造器注入和setter注入是最主要的方式，下面简单回顾一下，这样对的话理解Bean的装配会更加容易。
-
-
 
 2.1 构造器注入
 
@@ -2360,7 +2503,7 @@ Spring的xml配置文件：
 
 - id 属性是标识符（别名），用来让Spring找到这个Bean，id属性不是一个必须的属性，如果我们没有声明它，那么 Spring 将会采用“全限定名#{number}“的格式生成编号。例如这里，如果没有声明 “id="user"的话，那么 Spring 为其生成的编号就是"com.thr.pojo.User#0”，当它第二次声明没有 id 属性的 Bean 时，编号就是"com.thr.pojo.User#1"，后面以此类推。但是我们一般都会显示声明自定义的id，因为自动生成的id比较繁琐，不便于维护。
 - class 属性显然就是一个类的全限定名 。
-- property 元素是定义类的属性，其中的 name 属性定义的是属性的名称，而 value 是它的值，ref 是用来引入另一个Bean对象的。
+- <font color = Tomato size=3 face="楷书"> 元素是定义类的属性，其中的 name 属性定义的是属性的名称，而 value 是它的值，ref 是用来引入另一个Bean对象的。</font> 
 
 简单来测试一下，测试代码如下：
 
@@ -2619,9 +2762,9 @@ public class SpringTest {
 
 [回到顶部](https://www.cnblogs.com/tanghaorong/p/14115432.html#_labelTop)
 
-## 6、Bean的自动装配
+## 6、Bean的自动装配（针对引用类型）
 
-> 注意：Bean的自动装配只针对引用类型而言，什么意思呢？例如上面的User类中，需要用到GirlFriend这个类，所以此时可以就可以使用自动装配
+> 注意：**<font color = Tomato size=3 face="楷书"> 的自动装配只针对引用类型而言</font>**，什么意思呢？例如上面的User类中，需要用到GirlFriend这个类，所以此时就可以使用自动装配
 
 
 
@@ -2632,7 +2775,7 @@ public class SpringTest {
 | 属性        | 描述                                                         |
 | :---------- | :----------------------------------------------------------- |
 | no          | 默认的设置，表示不启用自动装配，需要我们手动通过"ref"属性手动完成装配 |
-| byName      | 通过属性名称自动装配，如果一个JavaBean中的属性名称与Bean的id 相同，则自动装配这个Bean到JavaBean的属性中。Spring会查找该JavaBean中所有的set方法名，获得将set去掉并且首字母小写的字符串，然后去Spring容器中寻找是否有此字符串名称id 的Bean。如果有则就注入，如果没有则注入动作将不会执行 |
+| byName      | 通过属性名称自动装配，**如果一个JavaBean中的属性名称与Bean的id 相同，则自动装配这个Bean到JavaBean的属性中**。Spring会查找该JavaBean中所有的set方法名，获得将set去掉并且首字母小写的字符串，然后去Spring容器中寻找是否有此字符串名称id 的Bean。如果有则就注入，如果没有则注入动作将不会执行 |
 | byType      | 通过属性类型自动装配。Spring会在容器中查找JavaBean中的属性类型与Bean的类型一致的Bean，并自动装配这个Bean到JavaBean的属性中，如果容器中包含多个这个类型的Bean，Spring将抛出异常。如果没有找到这个类型的Bean，那么注入动作将不会执行 |
 | constructor | 类似于byType，也是通过类型自动装配，但是它是通过构造方法的参数类型来匹配。Spring会寻找与该JavaBean构造方法的各个参数类型相匹配的Bean，然后通过构造函数注入进来。如果在Spring容器中没有找一个构造函数参数类型的 Bean，则会报错 |
 | autodetect  | 表示在constructor和byType之间自动的选择注入方式(spring5.x已经没有了)。首先尝试通过 constructor 来自动装配，如果它不执行，则Spring 尝试通过 byType 来自动装配 |
@@ -2739,7 +2882,7 @@ public class SpringTest {
 
 
 
-### 6.3、byName装配
+### 6.3、byName装配（查找bean的id）
 
 byName装配是根据属性的名称自动装配，如果一个JavaBean中的属性名称与Bean的id 相同，则自动装配这个Bean到JavaBean的属性中。Spring会查找该JavaBean中所有的set方法名，获得将set去掉并且首字母小写的字符串，然后去Spring容器中寻找是否有此字符串名称id 的Bean。如果有则就注入，如果没有则注入动作将不会执行。
 
@@ -2763,7 +2906,7 @@ applicationContext.xml配置内容为：
 
 
 
-### 6.4、byType装配
+### 6.4、byType装配（查找bean的class）
 
 byType装配表示通过属性类型自动装配。Spring会在容器中查找JavaBean中的属性类型与Bean的类型一致的Bean，并自动装配这个Bean到JavaBean的属性中，如果容器中包含多个这个类型的Bean，Spring将抛出异常。如果没有找到这个类型的Bean，那么注入动作将不会执行。
 
@@ -2775,7 +2918,7 @@ byType装配表示通过属性类型自动装配。Spring会在容器中查找Ja
 
 ![image](https://img2020.cnblogs.com/blog/1745215/202012/1745215-20201219153942727-856679140.png)
 
-注意：使用byType首先需要保证同一类型的Bean在Spring容器中是唯一的，若不唯一则会产生歧义，Spring容器不知道选择哪个实例注入，所以后面会报异常。
+**注意：使用byType首先需要保证同一类型的Bean在Spring容器中是唯一的，若不唯一则会产生歧义，Spring容器不知道选择哪个实例注入，所以后面会报异常。**
 
 假如这里出现了两个，那么 Spring 则不知道选择哪个，此时会报错：
 
@@ -2785,11 +2928,11 @@ byType装配表示通过属性类型自动装配。Spring会在容器中查找Ja
 
 ![image](https://img2020.cnblogs.com/blog/1745215/202012/1745215-20201219153943673-260710754.png)
 
-所以，如果一旦选择了byType类型的自动装配，就必须确认配置文件中每个数据类型定义一个唯一的bean。
+所以，**如果一旦选择了byType类型的自动装配，就必须确认配置文件中每个数据类型定义一个唯一的bean。**
 
 
 
-### 6.5、constructor装配
+### 6.5、constructor装配（基本不用）
 
 constructor装配类似于byType，也是通过类型自动装配，但是它是通过构造方法的参数类型来匹配。Spring会寻找与该JavaBean构造方法的各个参数类型相匹配的Bean，然后通过构造函数注入进来。如果在Spring容器中没有找一个构造函数参数类型的 Bean，则会报错。
 
@@ -2801,11 +2944,11 @@ applicationContext.xml配置内容为：
 
 ![image](https://img2020.cnblogs.com/blog/1745215/202012/1745215-20201219160433025-1825071255.png)
 
-constructor自动装配具有和byType自动装配相同的局限性，就是当发现多个Bean匹配该JavaBean构造方法的类型时，Spring不知道用哪个Bean来装配，所以会导致装配失败。此外，如果一个JavaBean有多个构造方法，它们都满足自动装配的条件时，那么Spring也不会知道构造方法更适合使用，所以我们基本不会使用constructor装配。
+constructor自动装配具有和byType自动装配相同的局限性，就是当发现多个Bean匹配该JavaBean构造方法的类型时，Spring不知道用哪个Bean来装配，所以会导致装配失败。此外，如果一个JavaBean有多个构造方法，它们都满足自动装配的条件时，那么Spring也不会知道构造方法更适合使用，所以**我们基本不会使用constructor装配**。
 
 
 
-### 6.6、default装配
+### 6.6、default装配（所有bean默认的自动装配方式）
 
 default装配表示由父级标签beans的default-autowire属性来配置。如果beans标签上设置了default-autowire属性，那么default-autowire属性会统一配置当前beans中的所有bean的自动装配方式。
 
@@ -2816,11 +2959,11 @@ default装配表示由父级标签beans的default-autowire属性来配置。如�
 
 
 
-### 6.7、Bean自动装配的补充
+### 6.7、Bean自动装配的补充(设置拒绝自动装配)
 
 - [1]、上述的讲到byType和constructor装配是支持数组和强类型集合（即指定了集合元素类型）。如bean A有个属性定义是List<Foo>类型，Spring会在容器中查找所有类型为Foo的bean，注入到该属性。记住是Foo，不是List。另外如果集合是Map集合，那么Map的key必须是String类型，Spring会根据value的类型去匹配。例如有属性bean A中有一个属性为Map<String, Foo> p，容器中有bean B和C类型均为Foo，那么A实例化完成后，p属性的值为：{"B"：B的实例对象，"C"：C的实例对象}。
 - [2]、虽然autowrie给我们带来配置的便利性，但是也有缺点，比如会导致bean的关系没那么显而易见，所以用autowire还是ref还是需要根据项目来决定。
-- [3]、autowire-candidate：前面我们说到配置有autowire属性的bean，Spring在实例化这个bean的时候会在容器中查找匹配的bean对autowire bean进行属性注入，这些被查找的bean我们称为候选bean。作为候选bean，我凭什么就要被你用，老子不给你用。所以候选bean给自己增加了autowire-candidate="false"属性（默认是true），那么容器就不会把这个bean当做候选bean了，即这个bean不会被当做自动装配对象。同样，<beans/>标签可以定义default-autowire-candidate="false"属性让它包含的所有bean都不做为候选bean。我的地盘我做主。
+- [3]、autowire-candidate：前面我们说到配置有autowire属性的bean，Spring在实例化这个bean的时候会在容器中查找匹配的bean对autowire bean进行属性注入，这些被查找的bean我们称为候选bean。作为候选bean，我凭什么就要被你用，老子不给你用。所以**候选bean给自己增加了autowire-candidate="false"属性（默认是true），那么容器就不会把这个bean当做候选bean了，即这个bean不会被当做自动装配对象。同样，<beans/>标签可以定义default-autowire-candidate="false"属性让它包含的所有bean都不做为候选bean。我的地盘我做主。**
 
 
 
@@ -2870,19 +3013,290 @@ default装配表示由父级标签beans的default-autowire属性来配置。如�
 
 Spring提供了对Annotation（注解）技术的全面支持。Spring中定义了一系列的注解，常用的注解如表所示：
 
-| 注解名称    | 描述                                                         |
-| ----------- | ------------------------------------------------------------ |
-| @Component  | 作用在类上的注解，可以使用此注解来描述Spring中的Bean，但是它是一个泛华的概念，仅仅表示一个组件，可以作用在任何层次。白话文描述：当某个类上用该注解修饰时，表示Spring 会把这个类扫描成一个Bean实例，等价于XML方式中定义的：<bean id="user" class="com.thr.spring.pojo.User">，此时可以直接简写成@Component(value = "user") 或者 @Component("user")，甚至直接写成@Component，如果不写括号里面的内容，默认以类名的首字母小写的形式作为 id 配置到容器中。 |
-| @Repository | 通常用于对访问层DAO实现类进行标注，其功能与@Component相同，只是名字不同。 |
-| @Service    | 通常用于对业务层Service实现类进行标注，其功能与@Component相同，只是名字不同。 |
-| @Controller | 通常用于对控制层Controller实现类进行标注，其功能与@Component相同，只是名字不同。 |
-| @Autowired  | 用于对Bean的属性变量、属性的setter()方法即构造方法进行标注，配合对应的注解处理完成Bean的自动装配工作。默认按照Bean的类型进行装配，说简单点就自动注入另一个对象，相当于<property name="" ref=""/> |
-| @Resource   | 其作用于@Autowired一样，区别在于@Autowired默认按照Bean类型装配，而@Resource默认按照Bean实例名称进行装配。@Resource中有两个重要的属性：name和type。Spring将那么属性解析为Bean实例名称，type进行为Bean实例类型。若指定了name属性，则按照实例名称进行装配；若指定了type属性，则按照Bean类型进行装配；若都无法匹配，则抛出NoSuchBeanDefinitionException异常。 |
-| @Qualifier  | 与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称进行装配，Bean的实例名称有@Qualifier注解的参数指定。 |
-| @Primary    | 可以作用在类上，也可以配合@Bean作用在方法上，表示优先使用该注解标志的Bean。 |
-| @Value      | 相当于<property name="" value=""/>，这个注解表示注入一个值，但是这里只是一个简单值，如果是注入一个对象得用另一个注解(@Autowired 或者@Resource )。 |
+| 注解名称        | 描述                                                         |
+| --------------- | ------------------------------------------------------------ |
+| **@Component**  | **作用在类上的注解，可以使用此注解来描述Spring中的Bean，但是它是一个泛华的概念，仅仅表示一个组件，可以作用在任何层次。白话文描述：当某个类上用该注解修饰时，表示Spring 会把这个类扫描成一个Bean实例，等价于XML方式中定义的：<bean id="user" class="com.thr.spring.pojo.User">，此时可以直接简写成@Component(value = "user") 或者 @Component("user")，甚至直接写成@Component，如果不写括号里面的内容，默认以类名的首字母小写的形式作为 id 配置到容器中。** |
+| **@Repository** | **通常用于对访问层DAO实现类进行标注，其功能与@Component相同，只是名字不同。** |
+| **@Service**    | **通常用于对业务层Service实现类进行标注，其功能与@Component相同，只是名字不同。** |
+| **@Controller** | **通常用于对控制层Controller实现类进行标注，其功能与@Component相同，只是名字不同。** |
+| **@Autowired**  | **用于对Bean的属性变量、属性的setter()方法即构造方法进行标注，配合对应的注解处理完成Bean的自动装配工作。默认按照Bean的类型进行装配，说简单点就自动注入另一个对象，相当于<property name="" ref=""/>** |
+| **@Resource**   | **其作用于@Autowired一样，区别在于@Autowired默认按照Bean类型装配，而@Resource默认按照Bean实例名称进行装配。@Resource中有两个重要的属性：name和type。Spring将那么属性解析为Bean实例名称，type进行为Bean实例类型。若指定了name属性，则按照实例名称进行装配；若指定了type属性，则按照Bean类型进行装配；若都无法匹配，则抛出NoSuchBeanDefinitionException异常。** |
+| **@Qualifier**  | **与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称进行装配，Bean的实例名称有@Qualifier注解的参数指定。** |
+| **@Primary**    | **可以作用在类上，也可以配合@Bean作用在方法上，表示优先使用该注解标志的Bean。** |
+| **@Value**      | **相当于<property name="" value=""/>，这个注解表示注入一个值，但是这里只是一个简单值，如果是注入一个对象得用另一个注解(@Autowired 或者@Resource )。** |
 
 
+
+Spring 默认不使用注解装配 Bean，因此需要在配置文件中添加<context:annotation-config/>,启用注解。或者在被子文件中配置
+
+```xml
+ <context:component-scan base-package="需要使用注解的包"></context:component-scan>
+```
+
+
+
+#### spring常用注解
+
+Spring中定义了一系列的注解，常用的注解如下：
+
+##### 1、@Component：
+
+描述Spring中的Bean，**仅仅表示一个组件（Bean）, 可以作用在任何层次，**使用时只需要将该注解标注在相应类上即可。
+
+**作用在类上的注解，可以使用此注解来描述Spring中的Bean，但是它是一个泛华的概念，仅仅表示一个组件，可以作用在任何层次。白话文描述：当某个类上用该注解修饰时，表示Spring 会把这个类扫描成一个Bean实例，等价于XML方式中定义的：<bean id="user" class="com.thr.spring.pojo.User">，此时可以直接简写成@Component(value = "user") 或者 @Component("user")，甚至直接写成@Component，如果不写括号里面的内容，默认以类名的首字母小写的形式作为 id 配置到容器中。**
+
+```java
+1.先创建一个Spring组件扫描类
+@Configuration
+@ComponentScan("包名") 
+public class SpringConfig { 
+
+
+}
+```
+
+/*
+*此类是配置类,将在启动时被加载
+*此类配置了组件扫描,在被加载时将执行扫描
+*/
+
+##### 2、@Repository：
+
+用于将数据访问层（DAO层）的类标识为Spring中的Bean，**其功能与@Component相同**
+
+```java
+2.创建另一个组件类(用于数据的交互类)
+@Repository 
+public class UserMapper { 
+    public void insert() { 
+        System.out.println("UserMapper.insert() >> 将用户数据写入到数据库 中……"); 
+        } 
+}
+```
+
+/*
+*此类是一个组件类
+*在组件扫描的包找那个,且添加了组件注解@Repository
+*这个注解表示该组件是操作数据的组件
+*/
+
+##### 3、@Service：
+
+通常作用在业务层（Service 层），用于将业务层的类标识为 Spring 中的 Bean，**其功能与 @Component 相同。**
+
+##### 4、@Controller：
+
+通常作用在控制层（如 Struts2 的 Action、SpringMVC 的 Controller），用于将控制层的类标识为 Spring 中的 Bean，**其功能与 @Component 相同。**
+
+```java
+3.创建控制器类
+@Controller 
+public class UserController { 
+    @Autowired // 注意：此处使用了自动装配的注解 
+    private UserMapper userMapper;
+    public void reg() { 
+    System.out.println("UserController.reg() >> 控制器即将执行用户注册……");  
+    userMapper.insert();                                                     
+	} 
+}
+```
+
+/*
+*userMapper属性并未赋值,但是使用了@Autowired注解
+*Spring框架会通过自动装配机制为此属性注入值
+*如果注入成功,调用此属性的方法时将成功运行
+*否则,就出现NPE
+*/
+
+```java
+4.创建测试类
+
+public class SpringRunner { 
+    public static void main(String[] args) { 
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfig.class); 
+    UserController userController = ac.getBean("userController",UserController.class);
+    userController.reg(); 
+      ac.close(); 
+    } 
+}
+```
+
+
+
+##### 5、@Autowired：
+
+可以应用到 Bean 的属性变量、属性的 setter 方法、以及构造方法进行标注，配合对应的注解处理器完成 Bean 的自动配置工作。默认按照 Bean 的类型进行装配。只要容器中有唯一的一个bean对象类型和要注入的变量类型匹配，就可以注入成功，如果ioc容器中没有任何bean类型和要注入的变量类型匹配则报错
+
+**用于对Bean的属性变量、属性的setter()方法即构造方法进行标注，配合对应的注解处理完成Bean的自动装配工作。默认按照Bean的类型进行装配，说简单点就自动注入另一个对象，相当于<property name="" ref=""/>**
+
+
+引用类型的装配方式
+
+```java
+    @Autowired
+    private Car car;
+```
+
+##### 6、@Resource：
+
+其**作用与@Autowired一样**。其区别在于**@Autowired默认Bean的类型装配**，而**@Resource默认按照Bean的实例名称进行装配**
+@Resource中有两个重要属性：name和type。Spring将name属性解析为Bean实例名称，type属性解析为Bean实例类型。如果指定name属性，则按实例名称进行装配；如果指定type属性，则按Bean类型进行装配；如果都不指定，则先按Bean的实例名称装配，如果不能匹配，再按照Bean类型进行装配；如果都无法匹配，则抛出 NoSuchBeanDefinitionException异常。
+
+**其作用于@Autowired一样，区别在于@Autowired默认按照Bean类型装配，而@Resource默认按照Bean实例名称进行装配。@Resource中有两个重要的属性：name和type。Spring将那么属性解析为Bean实例名称，type进行为Bean实例类型。若指定了name属性，则按照实例名称进行装配；若指定了type属性，则按照Bean类型进行装配；若都无法匹配，则抛出NoSuchBeanDefinitionException异常。**
+
+引用类型的装配方式
+
+```java
+    @Resource
+    private Car car;
+```
+
+##### 7、@Qualifier：
+
+与 @Autowired 注解配合使用，会将默认的按 Bean 类型装配修改为按 Bean 的实例名称装配，Bean 的实例名称由 @Qualifier 注解的参数指定。它在给类成员注入时不能单独使用必须要和@Autowired，但是在给方法参数注入时可以单独使用。
+
+**与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称进行装配，Bean的实例名称有@Qualifier注解的参数指定。**
+
+```java
+@Repository("accountDao")
+public class AccountDaoImpl implements AccountDao {
+
+}
+```
+
+```java
+@Service("accountService")
+public class AccountServiceImpl implements AccountService {
+     @Resource(name="accountDao")
+     private AccountDao accountDao; 
+ 
+}
+```
+
+
+此时，在配置文件中，Spring注解提供了另外一种高效的注解配置方式。
+
+含义是：告知Spring在创建容器时要扫描的包（通知Spring扫描指定包下的所有Bean）
+
+
+    <context:component-scan base-package="cn.itcast"></context:component-scan>
+
+##### 8、**@Primary**  
+
+可以作用在类上，也可以配合@Bean作用在方法上，表示优先使用该注解标志的Bean。
+
+##### 9、@Value用于注入普通类型值
+
+**相当于<property name="" value=""/>，这个注解表示注入一个值，但是这里只是一个简单值，如果是注入一个对象得用另一个注解(@Autowired 或者@Resource )。**
+
+用于注入基本类型和String类型的值用于指定数据的值，它可以使用spring中SpEL；
+
+第一种方式：作用在属性上，通过反射的filed值，破坏了对象的封装性。
+
+```
+@Value("xiaohei")
+private String name;
+```
+
+第二种方式：通过set方法赋值，不破坏对象的封装性。
+
+```
+    @Value("xiaobai")
+    public void setName(String name) {
+        this.name = name;
+    }
+```
+
+##### 10、 @Configuration：
+
+标注在类上，配置spring容器(应用上下文)。相当于把该类作为spring的xml配置文件中的<beans>，在使用该注解的类中，使用@Bean注解标注的方法，返回的类型都会直接注册为bean。其底层实现使用了@Component 。
+
+##### 11、@Bean：
+
+用于告诉方法，产生一个Bean对象，然后这个Bean对象交给Spring管理。产生这个Bean对象的方法Spring只会调用一次，随后这个Spring将会将这个Bean对象放在自己的IOC容器中。
+
+改变作用域的常用注解：
+
+##### 12、@Lazy(true)：
+
+表明一个bean 是否延迟加载，可以作用在方法上，表示这个方法被延迟加载；可以作用在@Component (或者由@Component 作为原注解) 注释的类上，表明这个类中所有的bean 都被延迟加载。如果没有@Lazy注释，或者@Lazy 被设置为false，那么该bean 就会急切渴望被加载；除了上面两种作用域，@Lazy 还可以作用在@Autowired和@Inject注释的属性上，在这种情况下，它将为该字段创建一个惰性代理，作为使用ObjectFactory或Provider的默认方法
+
+##### 13、@ConfigurationProperties：
+
+用于注入一些值。请注意以下几点:
+
+前缀定义了哪些外部属性将绑定到类的字段上
+
+根据 Spring Boot 宽松的绑定规则，类的属性名称必须与外部属性的名称匹配
+
+我们可以简单地用一个值初始化一个字段来定义一个默认值
+
+类本身可以是包私有的
+
+类的字段必须有公共 setter 方法
+
+@Value和@ConfigurationProperties区别
+
+![image-20220729205502533](/Users/lixiaofeng/Library/Application Support/typora-user-images/image-20220729205502533.png)
+
+二者区别	@ConfigurationProperties	@Value
+功能	批量注入配置文件中的属性	一个个指定
+松散绑定（松散语法）	支持	不支持
+SpEL	不支持	支持
+JSR303数据校验	支持	不支持
+复杂类型封装	支持	不支持
+
+##### 14、和生命周期相关常用注解：
+
+@PostConstruct：该注解被用来修饰一个非静态的void（）方法。被@PostConstruct修饰的方法会在服务器加载Servlet的时候运行，并且只会被服务器执行一次。PostConstruct在构造函数之后执行，init（）方法之前执行。通常我们会是在Spring框架中使用到@PostConstruct注解 该注解的方法在整个Bean初始化中的执行顺序：Constructor(构造方法) -> @Autowired(依赖注入) -> @PostConstruct(注释的方法)
+
+@PreDestory：@PreDestory修饰的方法会在服务器卸载Servlet的时候运行，并且之后被服务器调用一次，类似于Servlet中的destory()方法，虽然PreDestory字面意思是在destory之前运行，但是被@PreDestory修饰的方法会在destory方法运行之后运行，在Servlet被彻底卸载之前，PreDestory里的Destory指的是Servlet的销毁，而不是destory()方法。
+
+@PostConstruct与@PreDestroy
+
+```java
+    @PostConstruct   //创建对象前调用
+    public void init(){
+        System.out.println("初始");
+    }
+    @PreDestroy　　   //对象销毁前调用
+    public void destory(){
+        System.out.println("销毁");
+    }
+```
+
+##### 15、@Scope注解，作用在类上。
+
+用来给Bean改变作用域，使用时直接在Bean上加@Scope(value = "xxx")，默认值为singleton。
+
+```java
+@Scope(scopeName="singleton")  //单例模式
+public class User {
+}
+@Scope(scopeName="prototype")  //多例模式
+public class User {
+}
+```
+
+##### 
+
+#### spring注解配置
+
+##### 1、开启注解扫描
+
+```
+<context:component-scan base-package="SpringTest.SpringDemo.entity"></context:component-scan>
+```
+
+扫描SpringTest.SpringDemo.entity下的所有类中的注解。
+
+##### 2、在类上添加注解
+
+```java
+@Component
+public class User {
+}
+```
 
 使用注解装配Bean简单举例，来看之前的User类，并用@Component进行装配(或者@Repository、@Service、@Controller)：
 

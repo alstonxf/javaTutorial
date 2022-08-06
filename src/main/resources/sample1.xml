@@ -39,15 +39,19 @@
         </property>
     </bean>
 
-    <!--    使用有参构造进行注入-->
-    <bean class="SpringTest.Sample.Student" id="student2" init-method="init2" destroy-method="destroy2" scope="singleton">
 
+<!--    当id不存在，此时需要看name，name的值可以通过 ,;或者空格 分割，最后会按照分隔符得到一个String数组，数组的第一个元素作为bean的名称，其他的作为bean的别名-->
+<!--    <bean class="SpringTest.Sample.Student" id="student2" name = "student2,student22;student222" init-method="init2" destroy-method="destroy2" scope="singleton">-->
+    <bean class="SpringTest.Sample.Student"  name = "student23456,student22;student222,student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+
+        <!--    使用有参构造进行注入-->
         <constructor-arg name="name" value="test"></constructor-arg>
         <constructor-arg name="age" value="20"></constructor-arg>
         <constructor-arg name="id" value="30"></constructor-arg>
         <constructor-arg name="dog" ref="dog"></constructor-arg>
         <constructor-arg name="collect" ref="myCollect"></constructor-arg>
-
+        <!--    使用set注入属性，这里测试了name2变量，先是构造器注入"test"，然后set注入"test2",所以最后打印出来的结果是"test2"-->
+        <property name="name2" value="test2"></property>
     </bean>
 
 </beans>
