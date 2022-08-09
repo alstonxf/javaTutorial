@@ -16,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,30 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/web/WEB-INF/test&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5db975d4bcf447824a8d5da74745d474&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/java/其他文档/LINUX",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "5db975d4bcf447824a8d5da74745d474"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/其他文档/LINUX" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/test" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/JAVA/LeetCode刷题" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
@@ -309,7 +310,7 @@
       <workItem from="1659363913132" duration="3084000" />
       <workItem from="1659755818455" duration="299000" />
       <workItem from="1659772834665" duration="10990000" />
-      <workItem from="1660022866941" duration="648000" />
+      <workItem from="1660022866941" duration="1348000" />
     </task>
     <servers />
   </component>

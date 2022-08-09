@@ -21,42 +21,42 @@
 
 # 系统信息和性能查看
 
-| 常用命令                    | 作用                               |
-| --------------------------- | ---------------------------------- |
-| uname -a                    | 查看内核/OS/CPU信息                |
-| uname -r                    | 查看内核版本                       |
-| uname -m                    | 查看处理器架构                     |
-| arch                        | 查看处理器架构                     |
-| hostname                    | 查看计算机名                       |
-| who                         | 显示当前登录系统的⽤户             |
-| who am i                    | 显示登录时的⽤户名                 |
-| whoami                      | 显示当前⽤户名                     |
-| cat /proc/version           | 查看linux版本信息                  |
-| cat /proc/cpuinfo           | 查看CPU信息                        |
-| cat /proc/interrupts        | 查看中断                           |
-| cat /proc/loadavg           | 查看系统负载                       |
-| uptime                      | 查看系统运⾏时间、⽤户数、负载     |
-| env                         | 查看系统的环境变量                 |
-| lsusb -tv                   | 查看系统USB设备信息                |
-| lspci -tv                   | 查看系统PCI设备信息                |
-| lsmod                       | 查看已加载的系统模块               |
-| grep MemTotal /proc/meminfo | 查看内存总量                       |
-| grep MemFree /proc/meminfo  | 查看空闲内存量                     |
-| free -m                     | 查看内存⽤量和交换区⽤量           |
-| date                        | 显示系统⽇期时间                   |
-| cal 2021                    | 显示2021⽇历表                     |
-| top                         | 动态显示cpu/内存/进程等情况        |
-| vmstat 1 20                 | 每1秒采⼀次系统状态，采20次        |
-| iostat                      | 查看io读写/cpu使⽤情况             |
-| 查看io读写/cpu使⽤情况      | 查询cpu使⽤情况（1秒⼀次，共10次） |
-| sar -d 1 10                 | 查询磁盘性能                       |
+| 常用命令                           | 作用                               |
+| ---------------------------------- | ---------------------------------- |
+| uname -a                           | 查看内核/OS/CPU信息                |
+| uname -r                           | 查看内核版本                       |
+| uname -m                           | 查看处理器架构                     |
+| arch                               | 查看处理器架构                     |
+| hostname                           | 查看计算机名                       |
+| who                                | 显示当前登录系统的⽤户             |
+| who am i                           | 显示登录时的⽤户名                 |
+| whoami                             | 显示当前⽤户名                     |
+| <u>cat /proc/version</u>           | 查看linux版本信息                  |
+| <u>cat /proc/cpuinfo</u>           | 查看CPU信息                        |
+| <u>cat /proc/interrupts</u>        | 查看中断                           |
+| <u>cat /proc/loadavg</u>           | 查看系统负载                       |
+| uptime                             | 查看系统运⾏时间、⽤户数、负载     |
+| env                                | 查看系统的环境变量                 |
+| l<u>susb -tv</u>                   | 查看系统USB设备信息                |
+| <u>lspci -tv</u>                   | 查看系统PCI设备信息                |
+| <u>lsmod</u>                       | 查看已加载的系统模块               |
+| <u>grep MemTotal /proc/meminfo</u> | 查看内存总量                       |
+| <u>grep MemFree /proc/meminfo</u>  | 查看空闲内存量                     |
+| <u>free -m</u>                     | 查看内存⽤量和交换区⽤量           |
+| date                               | 显示系统⽇期时间                   |
+| cal 2021                           | 显示2021⽇历表                     |
+| top                                | 动态显示cpu/内存/进程等情况        |
+| <u>vmstat 1 20</u>                 | 每1秒采⼀次系统状态，采20次        |
+| iostat                             | 查看io读写/cpu使⽤情况             |
+| <u>sar -u 1 10</u>                 | 查询cpu使⽤情况（1秒⼀次，共10次） |
+| <u>sar -d 1 10</u>                 | 查询磁盘性能                       |
 
 # 磁盘和分区
 
 | 常用命令                            | 作用                           |
 | ----------------------------------- | ------------------------------ |
-| fdisk -l                            | 查看所有磁盘分区               |
-| swapon -s                           | 查看所有交换分区               |
+| <u>fdisk -l</u>                     | 查看所有磁盘分区               |
+| <u>swapon -s</u>                    | 查看所有交换分区               |
 | df -h                               | 查看磁盘使⽤情况及挂载点       |
 | df -hl                              | 同上                           |
 | du -sh /dir                         | 查看指定某个⽬录的⼤⼩         |
@@ -87,7 +87,7 @@
 | w                                                     | 查看活动⽤户                                   |
 | id codesheep                                          | 查看指定⽤户codesheep信息                      |
 | last                                                  | 查看⽤户登录⽇志                               |
-| crontab -l                                            | 查看当前⽤户的计划任务                         |
+| <u>crontab -l</u>                                     | 查看当前⽤户的计划任务                         |
 | cut -d: -f1 /etc/passwd                               | 查看系统所有⽤户                               |
 | cut -d: -f1 /etc/group                                | 查看系统所有组                                 |
 
@@ -95,9 +95,9 @@
 
 | 常用命令                                                     | 作用                                 |
 | ------------------------------------------------------------ | ------------------------------------ |
-| ifconfig                                                     | 查看⽹络接⼝属性                     |
-| ifconfig eth0                                                | 查看某⽹卡的配置                     |
-| route -n                                                     | 查看路由表                           |
+| <u>ifconfig</u>                                              | 查看⽹络接⼝属性                     |
+| <u>ifconfig eth0</u>                                         | 查看某⽹卡的配置                     |
+| <u>route -n</u>                                              | 查看路由表                           |
 | netstat -lntp                                                | 查看所有监听端⼝                     |
 | netstat -antp                                                | 查看已经建⽴的TCP连接                |
 | netstat -lutp                                                | 查看TCP/UDP的状态信息                |
@@ -122,7 +122,7 @@
 | sar -u 1 10                                                  | 查询cpu使⽤情况（1秒⼀次，共10次）   |
 | sar -d 1 10                                                  | 查询磁盘性能                         |
 
-# 常⻅系统服务命令
+# 常见系统服务命令
 
 | 常用命令                   | 作用         |
 | -------------------------- | ------------ |
@@ -169,7 +169,7 @@
 | cp -a /tmp/dir1 .        | 复制⼀个⽬录⾄当前⽬录                                       |
 | ln -s file1 link1        | 创建指向⽂件/⽬录的软链接                                    |
 | ln file1 lnk1            | 创建指向⽂件/⽬录的物理链接                                  |
-| find / -name file1       | 从跟⽬录开始搜索⽂件/⽬录                                    |
+| find / -name file1       | 从根⽬录开始搜索⽂件/⽬录                                    |
 | find / -user user1       | 搜索⽤户user1的⽂件/⽬录                                     |
 | find /dir -name *.bin    | 在⽬录/dir中搜带有.bin后缀的⽂件                             |
 | locate <关键词>          | 快速定位⽂件                                                 |
@@ -209,6 +209,7 @@
 | sed -n '5p;5q' hello.txt      | 查看第5⾏                               |
 | paste file1 file2             | 合并两个⽂件或两栏的内容                |
 | paste -d '+' file1 file2      | 合并两个⽂件或两栏的内容，中间⽤"+"区分 |
+| sort file1                    | 排序file1内容                           |
 | sort file1 file2              | 排序两个⽂件的内容                      |
 | comm -1 file1 file2           | ⽐较两个⽂件的内容(去除'file1'所含内容) |
 | comm -2 file1 file2           | ⽐较两个⽂件的内容(去除'file2'所含内容  |
@@ -216,25 +217,25 @@
 
 # 打包和解压
 
-| 常用命令                          | 作用                     |
-| --------------------------------- | ------------------------ |
-| zip xxx.zip file                  | 压缩⾄zip包              |
-| zip -r xxx.zip file1 file2 dir1   | 将多个⽂件+⽬录压成zip包 |
-| unzip xxx.zip                     | 解压zip包                |
-| tar -cvf xxx.tar file             | 创建⾮压缩tar包          |
-| tar -cvf xxx.tar file1 file2 dir1 | 将多个⽂件+⽬录打tar包   |
-| tar -tf xxx.tar                   | 查看tar包的内容          |
-| tar -xvf xxx.tar                  | 解压tar包                |
-| tar -xvf xxx.tar -C /dir          | 将tar包解压⾄指定⽬录    |
-| tar -cvfj xxx.tar.bz2 dir         | 创建bz2压缩包            |
-| tar -jxvf xxx.tar.bz2             | 解压bz2压缩包            |
-| tar -cvfz xxx.tar.gz dir          | 创建gzip压缩包           |
-| tar -zxvf xxx.tar.gz              | 解压gzip压缩包           |
-| bunzip2 xxx.bz2                   | 解压bz2压缩包            |
-| bzip2 filename                    | 压缩⽂件                 |
-| gunzip xxx.gz                     | 解压gzip压缩包           |
-| gzip filename                     | 压缩⽂件                 |
-| gzip -9 filename                  | 最⼤程度压缩             |
+| 常用命令                          | 作用                      |
+| --------------------------------- | ------------------------- |
+| zip xxx.zip file1                 | 压缩file1⾄zip包          |
+| zip -r xxx.zip file1 file2        | 将多个⽂件+⽬录压成zip包  |
+| unzip xxx.zip                     | 解压zip包                 |
+| tar -cvf xxx.tar file1            | 将file1创建⾮压缩tar包    |
+| tar -cvf xxx.tar file1 file2 dir1 | 将多个⽂件+⽬录打tar包    |
+| tar -tf xxx.tar                   | 查看tar包的内容           |
+| tar -xvf xxx.tar                  | 解压tar包                 |
+| tar -xvf xxx.tar -C /dir          | 将tar包解压⾄指定⽬录/dir |
+| tar -cvfj xxx.tar.bz2 dir         | 创建bz2压缩包             |
+| tar -jxvf xxx.tar.bz2             | 解压bz2压缩包             |
+| tar -cvfz xxx.tar.gz dir          | 创建gzip压缩包            |
+| tar -zxvf xxx.tar.gz              | 解压gzip压缩包            |
+| bunzip2 xxx.bz2                   | 解压bz2压缩包             |
+| bzip2 filename                    | 压缩⽂件                  |
+| gunzip xxx.gz                     | 解压gzip压缩包            |
+| gzip filename                     | 压缩⽂件                  |
+| gzip -9 filename                  | 最⼤程度压缩              |
 
 # RPM包管理命令
 
