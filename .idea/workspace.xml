@@ -10,37 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lxfweb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/HelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/HelloSpringImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/TestHelloSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/GirlFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/SpringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring入门详细教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring入门详细教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/Spring教程2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring教程2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/listExercise/listExercise3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE/TOMCATE教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE/TOMCATE教程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/markdown 高亮语法" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/markdown 高亮语法" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/markdown 高亮语法" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/markdown 高亮语法" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/worker.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +307,7 @@
       <workItem from="1659259717782" duration="3271000" />
       <workItem from="1659363913132" duration="3084000" />
       <workItem from="1659755818455" duration="299000" />
-      <workItem from="1659772834665" duration="10843000" />
+      <workItem from="1659772834665" duration="10990000" />
     </task>
     <servers />
   </component>
