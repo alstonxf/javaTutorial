@@ -1,5 +1,6 @@
-package SpringTest.AOP1;
+package SpringTest.AOP1.main;
 
+import SpringTest.AOP1.service.IUserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

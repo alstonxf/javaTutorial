@@ -18,7 +18,7 @@ public class LogAspect {  //定义一个日志切面类
 
     // @Before注解将当前方法标记为前置通知
     // value属性：配置当前通知的切入点表达式，通俗来说就是这个通知往谁身上套
-    @Before(value = "execution(public void SpringTest.AOP1.UserServiceImpl.addUser(String,Integer))")
+    @Before(value = "execution(public void SpringTest.AOP1.service.UserServiceImpl.addUser(String,Integer))")
     public void doBefore(JoinPoint joinPoint) { // 在通知方法中，声明JoinPoint类型的形参，就可以在Spring调用当前方法时把这个类型的对象传入
 
         // 1.通过JoinPoint对象获取目标方法的签名

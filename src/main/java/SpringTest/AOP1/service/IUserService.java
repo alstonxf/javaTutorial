@@ -1,4 +1,4 @@
-package SpringTest.AOP1;
+package SpringTest.AOP1.service;
 
 /**
  * 代理对象接口

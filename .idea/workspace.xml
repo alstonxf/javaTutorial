@@ -10,20 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/AOPTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-AOP1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring教程2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring教程2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/AOPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/main/AOPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5db975d4bcf447824a8d5da74745d474&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;cd38c773746dc4e19fef361d399d7570&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -167,12 +164,12 @@
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.AOP1.*" />
+          <option name="PATTERN" value="SpringTest.AOP1.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SpringTest.AOP1" />
-      <option name="MAIN_CLASS_NAME" value="SpringTest.AOP1.AOPTest" />
+      <option name="PACKAGE_NAME" value="SpringTest.AOP1.main" />
+      <option name="MAIN_CLASS_NAME" value="SpringTest.AOP1.main.AOPTest" />
       <option name="METHOD_NAME" value="testAOP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -324,7 +321,14 @@
       <workItem from="1659755818455" duration="299000" />
       <workItem from="1659772834665" duration="10990000" />
       <workItem from="1660022866941" duration="1437000" />
-      <workItem from="1660182988118" duration="3258000" />
+      <workItem from="1660182988118" duration="4439000" />
+      <workItem from="1660450679494" duration="306000" />
+      <workItem from="1660460064005" duration="7000" />
+      <workItem from="1660463622843" duration="22156000" />
+      <workItem from="1660545825286" duration="358000" />
+      <workItem from="1660546199949" duration="255000" />
+      <workItem from="1660561891421" duration="8000" />
+      <workItem from="1660561985008" duration="343000" />
     </task>
     <servers />
   </component>
