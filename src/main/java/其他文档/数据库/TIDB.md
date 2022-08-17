@@ -69,7 +69,9 @@ drop user 'bxc'@'172.160.158.3';
 grant select on testdb.* to 'bxc';
 ```
 
-![img](https://oss-emcsprod-public.modb.pro/wechatSpider/modb_20220614_ff3118b6-ebd5-11ec-8d2e-fa163eb4f6be.png)下面我们用bxc用户，进行查询和写入测试：![img](https://oss-emcsprod-public.modb.pro/wechatSpider/modb_20220614_ff3cc864-ebd5-11ec-8d2e-fa163eb4f6be.png)可以看到只有读的权限，没有写的权限，下面将写的权限赋予bxc用户：
+![img](https://oss-emcsprod-public.modb.pro/wechatSpider/modb_20220614_ff3118b6-ebd5-11ec-8d2e-fa163eb4f6be.png)
+
+下面我们用bxc用户，进行查询和写入测试：![img](https://oss-emcsprod-public.modb.pro/wechatSpider/modb_20220614_ff3cc864-ebd5-11ec-8d2e-fa163eb4f6be.png)可以看到只有读的权限，没有写的权限，下面将写的权限赋予bxc用户：
 
 ```
 grant insert on testdb.* to 'bxc';
@@ -171,3 +173,4 @@ grant all on testdb.* to manager;
 ```
 
 ![img](https://oss-emcsprod-public.modb.pro/wechatSpider/modb_20220614_009dbd4e-ebd6-11ec-8d2e-fa163eb4f6be.png)
+

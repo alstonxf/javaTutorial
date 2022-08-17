@@ -70,26 +70,26 @@
 
 # ⽤户和⽤户组
 
-| 常用命令                                              | 作用                                           |
-| ----------------------------------------------------- | ---------------------------------------------- |
-| useradd codesheep                                     | 创建⽤户                                       |
-| userdel -r codesheep                                  | 删除⽤户                                       |
-| usermod -g group_name user_name                       | 修改⽤户的组                                   |
-| usermod -aG group_name user_name                      | 将⽤户添加到组                                 |
-| usermod -s /bin/ksh -d /home/codepig –g dev codesheep | 修改⽤户codesheep的登录Shell、主⽬录以及⽤户组 |
-| groups test                                           | 查看test⽤户所在的组                           |
-| groupadd group_name                                   | 创建⽤户组                                     |
-| groupdel group_name                                   | 删除⽤户组                                     |
-| groupmod -n new_name old_name                         | 重命名⽤户组                                   |
-| su - user_name                                        | su - user_name                                 |
-| passwd                                                | 修改⼝令                                       |
-| passwd codesheep                                      | 修改某⽤户的⼝令                               |
-| w                                                     | 查看活动⽤户                                   |
-| id codesheep                                          | 查看指定⽤户codesheep信息                      |
-| last                                                  | 查看⽤户登录⽇志                               |
-| <u>crontab -l</u>                                     | 查看当前⽤户的计划任务                         |
-| cut -d: -f1 /etc/passwd                               | 查看系统所有⽤户                               |
-| cut -d: -f1 /etc/group                                | 查看系统所有组                                 |
+| 常用命令                                           | 作用                                           |
+| -------------------------------------------------- | ---------------------------------------------- |
+| useradd 用户名                                     | 创建⽤户                                       |
+| userdel -r 用户名                                  | 删除⽤户                                       |
+| usermod -g group_name user_name                    | 修改⽤户的组                                   |
+| usermod -aG group_name user_name                   | 将⽤户添加到组                                 |
+| usermod -s /bin/ksh -d /home/codepig –g dev 用户名 | 修改⽤户codesheep的登录Shell、主⽬录以及⽤户组 |
+| groups test                                        | 查看test⽤户所在的组                           |
+| groupadd group_name                                | 创建⽤户组                                     |
+| groupdel group_name                                | 删除⽤户组                                     |
+| groupmod -n new_name old_name                      | 重命名⽤户组                                   |
+| su - user_name                                     | 登录后切换用户                                 |
+| passwd                                             | 修改⼝令                                       |
+| passwd 用户名                                      | 修改某⽤户的⼝令                               |
+| w                                                  | 查看活动⽤户                                   |
+| id 用户名                                          | 查看指定⽤户codesheep信息                      |
+| last                                               | 查看⽤户登录⽇志                               |
+| <u>crontab -l</u>                                  | 查看当前⽤户的计划任务                         |
+| cut -d: -f1 /etc/passwd                            | 查看系统所有⽤户                               |
+| cut -d: -f1 /etc/group                             | 查看系统所有组                                 |
 
 # ⽹络和进程管理
 
@@ -113,7 +113,7 @@
 | host [www.baidu.com](http://www.baidu.com)                   | 解析主机名                           |
 | nslookup [www.baidu.com](http://www.baidu.com)               | 查询DNS记录，查看域名解析是否正常    |
 | ps -ef                                                       | 查看所有进程                         |
-| ps -ef \| grep codesheep                                     | 过滤出你需要的进程                   |
+| ps -ef \| grep 进程名                                        | 过滤出你需要的进程                   |
 | kill -s name                                                 | kill指定名称的进程                   |
 | kill -s pid                                                  | kill指定pid的进程                    |
 | top                                                          | 实时显示进程状态                     |
