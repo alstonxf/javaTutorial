@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB其他.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB官方文档.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/markdown 高亮语法" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/markdown 高亮语法" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +323,7 @@
       <workItem from="1660545825286" duration="358000" />
       <workItem from="1660546199949" duration="255000" />
       <workItem from="1660561891421" duration="8000" />
-      <workItem from="1660561985008" duration="3719000" />
+      <workItem from="1660561985008" duration="5270000" />
     </task>
     <servers />
   </component>

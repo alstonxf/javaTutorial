@@ -58,7 +58,7 @@
 | <u>fdisk -l</u>                     | 查看所有磁盘分区               |
 | <u>swapon -s</u>                    | 查看所有交换分区               |
 | df -h                               | 查看磁盘使⽤情况及挂载点       |
-| df -hl                              | 同上                           |
+| df -lh                              | 同上                           |
 | du -sh /dir                         | 查看指定某个⽬录的⼤⼩         |
 | du -sk * \| sort -rn                | 从⾼到低依次显示⽂件和⽬录⼤⼩ |
 | mount /dev/hda2 /mnt/hda2           | 挂载hda2盘                     |
@@ -187,6 +187,7 @@
 
 | 常用命令                      | 作用                                                         |
 | ----------------------------- | ------------------------------------------------------------ |
+| vi file1                      | 查看file1  输入/查找内容 往下查找，直接输入查找内容会往上查找，：set hls 打开高亮 ：set nohls 关闭高亮 |
 | cat file1                     | 查看⽂件内容                                                 |
 | cat -n file1                  | 查看内容并标示⾏数                                           |
 | tac file1                     | 从最后⼀⾏开始反看⽂件内容                                   |
@@ -214,6 +215,37 @@
 | comm -1 file1 file2           | ⽐较两个⽂件的内容(去除'file1'所含内容)                      |
 | comm -2 file1 file2           | ⽐较两个⽂件的内容(去除'file2'所含内容                       |
 | comm -3 file1 file2           | ⽐较两个⽂件的内容(去除两⽂件共有部分)                       |
+
+## Linux中根据文件大小排序(document used 简称du)
+
+sort
+-n 依照数值的大小排序。
+-r 以相反的顺序来排序。
+
+du
+–max-depth=<目录层数> 超过指定层数的目录后，予以忽略。
+-h或–human-readable 会显示以K，M，G为单位，提高信息的可读性。
+-m或–megabytes 以1MB为单位。
+-s或–summarize 仅显示总计。
+–exclude=<目录或文件> 略过指定的目录或文件。
+
+**du -h** 
+
+**du -hm**
+
+**du -hm    * | sort -nr**
+
+**du -hm    * | sort -nr    | head -10**
+
+[weblogic@test logs]$ du -hm * | sort -nr | head -8
+1166    test2020-08-18-14:01:41.out
+1132    test2020-09-21-23:05:35.out
+1028    test2020-08-04-11:06:05.out
+609     test2020-10-30-15:26:59.out
+490     test2020-08-28-16:32:38.out
+361     test2020-01-04-10:05:36.out
+182     test2020-04-08-09:23:32.out
+171     test2020-11-17-15:45:21.out
 
 # 打包和解压
 
