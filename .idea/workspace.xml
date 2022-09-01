@@ -10,12 +10,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/dao/UserDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/test/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserDaoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/test/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/test/UserDaoTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/用户权限设置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/mac 软件安装.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/markdown 高亮语法" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/subline手册.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/1MySQL基础课堂笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/2MySQL约束课堂笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (一) --- 索引、视图、存储过程、触发器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.assets/image-20220828173513798.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.assets/image-20220828194240283.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.assets/image-20220828195953243.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.assets/image-20220828200431521.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.assets/image-20220828214114508.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化 (二) --- 体系结构、存储引擎、SQL优化.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化（三） --- 查询缓存优化、内存管理及优化、MySQL锁问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/Mysql深入优化（四）--- MySQL常用工具、日志、主从复制、综合案例.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql/mysql常用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Redis/Redis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Redis/Redis实例demo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Redis/Redis得使用简介.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Redis/redis得使用小Demo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB其他.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB官方文档.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB官方文档v6.1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB常用排查.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/TIDB本地安装.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB/tidb-stable-zh-manual.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/MyBatis 教程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/springMVC基础整理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/markdown 高亮语法" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/Mysql.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB其他.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB官方文档.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB官方文档v6.1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB常用排查.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/TIDB本地安装.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/tidb-stable-zh-manual.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/数据库/数据库视图.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/数据库/数据库视图.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybati教程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringFrameExercise/Java Spring开发入门.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringFrameExercise/Spring 精简教程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/markdown 高亮语法" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/参考文档" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +91,8 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -74,98 +138,111 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/java/其他文档/LINUX&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/resources&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;cd38c773746dc4e19fef361d399d7570&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/LINUX" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/test" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/其他文档/JAVA/LeetCode刷题" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/SMV/COM1" />
+      <recent name="$PROJECT_DIR$/src/main/java/SMV" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/数据库" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring" />
-      <recent name="$PROJECT_DIR$/src/main/java/其他文档/前端/TOMCATE" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SMV.COM2.utils" />
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AOPTest.testAOP">
-    <configuration name="SpringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample4.SpringTest" />
+  <component name="RunManager" selected="JUnit.UserDaoTest2.get">
+    <configuration name="UserDaoTest2.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample4.*" />
+          <option name="PATTERN" value="SMV.COM2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
+      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest2" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.Sample.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample.main" />
+    <configuration name="UserDaoTest.AddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample.*" />
+          <option name="PATTERN" value="SMV.COM2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
+      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="AddUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHelloSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample3.TestHelloSpring" />
+    <configuration name="UserDaoTest.DeleteUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample3.*" />
+          <option name="PATTERN" value="SMV.COM2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
+      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="DeleteUserById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DEMO.E2.exercise2" />
+    <configuration name="UserDaoTest.UpdateUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DEMO.E2.*" />
+          <option name="PATTERN" value="SMV.COM2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
+      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="UpdateUserById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AOPTest.testAOP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.AOP1.service.*" />
+          <option name="PATTERN" value="SMV.COM2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SpringTest.AOP1.main" />
-      <option name="MAIN_CLASS_NAME" value="SpringTest.AOP1.main.AOPTest" />
-      <option name="METHOD_NAME" value="testAOP" />
+      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
+      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="getUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,20 +337,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.exercise2" />
-      <item itemvalue="Application.SpringTest" />
-      <item itemvalue="Application.SpringTest.Sample.main" />
-      <item itemvalue="Application.TestHelloSpring" />
-      <item itemvalue="JUnit.AOPTest.testAOP" />
+      <item itemvalue="JUnit.UserDaoTest.AddUser" />
+      <item itemvalue="JUnit.UserDaoTest.DeleteUserById" />
+      <item itemvalue="JUnit.UserDaoTest.UpdateUserById" />
+      <item itemvalue="JUnit.UserDaoTest.getUserById" />
+      <item itemvalue="JUnit.UserDaoTest2.get" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AOPTest.testAOP" />
-        <item itemvalue="Application.exercise2" />
-        <item itemvalue="Application.SpringTest" />
-        <item itemvalue="Application.SpringTest.Sample.main" />
-        <item itemvalue="Application.TestHelloSpring" />
+        <item itemvalue="JUnit.UserDaoTest2.get" />
+        <item itemvalue="JUnit.UserDaoTest.DeleteUserById" />
+        <item itemvalue="JUnit.UserDaoTest.UpdateUserById" />
+        <item itemvalue="JUnit.UserDaoTest.AddUser" />
+        <item itemvalue="JUnit.UserDaoTest.getUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -324,6 +401,11 @@
       <workItem from="1660546199949" duration="255000" />
       <workItem from="1660561891421" duration="8000" />
       <workItem from="1660561985008" duration="5270000" />
+      <workItem from="1661666172590" duration="1583000" />
+      <workItem from="1661675854785" duration="991000" />
+      <workItem from="1661680350723" duration="19000" />
+      <workItem from="1661734471917" duration="15325000" />
+      <workItem from="1662040133112" duration="1302000" />
     </task>
     <servers />
   </component>
@@ -343,6 +425,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SMV/COM1/test/UserDaoTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
