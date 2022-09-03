@@ -8,7 +8,7 @@
     <!--    这里ID对应我们接口中的方法  resultType代表返回类型-->
     <select id="getUserList" resultType="SMV.COM1.pojo.User">
     --     接口对应sql语句
-        select * from user where id != '3';
+        select * from user;
     </select>
 
 </mapper>

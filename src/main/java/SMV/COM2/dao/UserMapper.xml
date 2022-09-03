@@ -28,5 +28,10 @@
     </select>
 
 
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getUserByName" resultType="SMV.COM2.pojo.User" parameterType="map">
+        select * from user where id=#{n}
+    </select>
+
 </mapper>
 

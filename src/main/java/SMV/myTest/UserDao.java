@@ -1,10 +1,9 @@
-package SMV.COM2.dao;
-import SMV.COM2.pojo.User;
+package SMV.myTest;
 
 import java.util.HashMap;
 import java.util.List;
 
-public interface UserDaoMapper {
+public interface UserDao {
     //查询所有用户
     List<User> getUserList();
     //根据ID查询用户
@@ -20,6 +19,9 @@ public interface UserDaoMapper {
     User getUserById2(HashMap<String,Object> map);
 
     User getUserByName(HashMap<String,Object> map);
+
+    User getUserByNameOrId(HashMap<String,Object> map);
+
 }
 
 
