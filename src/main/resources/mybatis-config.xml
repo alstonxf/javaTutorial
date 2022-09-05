@@ -20,5 +20,6 @@
     <!--    com/yunduo/dao/UserDaoMapper.xml-->
         <mapper resource="SMV/COM1/dao/UserDaoMapper.xml"/>
     </mappers>
+
 </configuration>
 

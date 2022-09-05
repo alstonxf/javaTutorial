@@ -1,11 +1,19 @@
 package SMV.myTest;
 
+import org.apache.ibatis.annotations.Select;
+
 import java.util.HashMap;
 import java.util.List;
 
 public interface UserDao {
     //查询所有用户
     List<User> getUserList();
+    List<User> getUserList2();
+
+    List<User> getUserListPassword();
+    @Select("select * from user limit 2")
+    List<User> queryUserListPage2();
+
     //根据ID查询用户
     User getUserById(User user);
     //新增用户

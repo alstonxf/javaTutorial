@@ -237,7 +237,7 @@ du
 
 **du -hm    * | sort -nr    | head -10**
 
-[weblogic@test logs]$ du -hm * | sort -nr | head -8
+[weblogic@test logs]$ du -h * | sort -nr | head -8
 1166    test2020-08-18-14:01:41.out
 1132    test2020-09-21-23:05:35.out
 1028    test2020-08-04-11:06:05.out

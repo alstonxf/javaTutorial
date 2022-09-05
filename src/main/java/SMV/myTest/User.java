@@ -4,12 +4,15 @@ public class User {
 //    查询到的结果集，sql语句的返回字段。
     private int id;
     private String name;
-    private String pwd;
+    private String password;
 
-    public User(int id, String name, String pwd) {
+    public User(int id, String name, String password) {
         this.id = id;
         this.name = name;
-        this.pwd = pwd;
+//        数据库 id name pwd
+//        实体类 id name password
+//        我们将pwd绑定到我们实体类中的password
+        this.password = password;
     }
 
     public User() {
@@ -31,12 +34,12 @@ public class User {
         this.name = name;
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getpassword() {
+        return password;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setpassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -44,7 +47,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", pwd='" + pwd + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
