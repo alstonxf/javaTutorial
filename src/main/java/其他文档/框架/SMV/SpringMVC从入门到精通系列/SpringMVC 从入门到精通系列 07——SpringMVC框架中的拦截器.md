@@ -9,14 +9,25 @@
 
 
 ## 1. 拦截器概述
-1. SpringMVC框架中的拦截器用于对处理器进行 <mark>预处理</mark> 和 <mark>后处理</mark> 的技术。1. 可以定义拦截器链，连接器链就是将拦截器按着一定的顺序结成一条链，在访问被拦截的方法时，拦截器链中的拦截器会按着定义的顺序执行。<li>拦截器和过滤器的功能比较类似，有如下区别： 
-  <ol>1. 过滤器是Servlet规范的一部分，任何框架都可以使用过滤器技术。1. 拦截器是 SpringMVC 框架独有的。1. 过滤器配置了 /*，可以拦截任何资源。1. 拦截器只会对控制器中的方法进行拦截。
----
+1. SpringMVC框架中的拦截器用于对处理器进行 预处理 和 后处理 的技术。
+2. 可以定义拦截器链，连接器链就是将拦截器按着一定的顺序结成一条链，在访问被拦截的方法时，拦截器链中的拦截器会按着定义的顺序执行。
+3. 拦截器和过滤器的功能比较类似，有如下区别：
+   + 过滤器是Servlet规范的一部分，任何框架都可以使用过滤器技术。
+   + 拦截器是 SpringMVC 框架独有的。
+   + 过滤器配置了 /*，可以拦截任何资源。
+   + 拦截器只会对控制器中的方法进行拦截。
+4. 拦截器也是AOP思想的一种实现方式
+5. 想要自定义拦截器，需要实现 HandlerInterceptor 接口。
+
 
 
 ## 2. 自定义拦截器步骤
-<li> **创建类，实现HandlerInterceptor接口，重写需要的方法。** 
-  <ol>1. return true 放行，执行下一个拦截器。如果没有，执行controller中的方法1. return false 不放行。
+ **创建类，实现HandlerInterceptor接口，重写需要的方法。** 
+
+1. return true 放行，执行下一个拦截器。如果没有，执行controller中的方法
+2. return false 不放行。
+
+
 ```java
 public class MyInterceptor implements HandlerInterceptor {
 
@@ -36,17 +47,21 @@ public class MyInterceptor implements HandlerInterceptor {
 
 ```
 
+
 **在springmvc.xml中配置拦截器类。**
 
 ```xml
+
 <!--配置拦截器-->
 <mvc:interceptors>
     <!--配置第一个拦截器-->
     <mvc:interceptor>
         <!--要拦截的方法-->
         <mvc:mapping path="/user/*"/>
+
         <!--不要拦截的方法-->
-        <!--<mvc:exclude-mapping path=""/>-->
+        <!--<mvc:exclude-mapping path=""/>
+-->
         <!--配置拦截器对象-->
         <bean class="com.itheima.interceptor.MyInterceptor"></bean>
     </mvc:interceptor>
@@ -59,7 +74,9 @@ public class MyInterceptor implements HandlerInterceptor {
 
 <font size="5">演示如下：</font>
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/img_convert/a1999e2ad46583335f153fa3521cae46.png#pic_left" alt="在这里插入图片描述" width="300"/>
+**工程目录：** 
+ <img src="https://img-blog.csdnimg.cn/img_convert/a1999e2ad46583335f153fa3521cae46.png#pic_left" alt="在这里插入图片描述" width="300"/>
+
 
 **Controller：**
 
@@ -112,7 +129,11 @@ public class  UserController {
 
 ```
 
-**演示效果：** <img src="https://img-blog.csdnimg.cn/img_convert/34107035b2c4af2fbe08ed6d197f3741.png#pic_left" alt="在这里插入图片描述" width="250"/> <img src="https://img-blog.csdnimg.cn/img_convert/95ab196a94279e2c27c4f0c5df9fddac.png" alt="在这里插入图片描述"/>
+**演示效果：** 
+ <img src="https://img-blog.csdnimg.cn/img_convert/34107035b2c4af2fbe08ed6d197f3741.png#pic_left" alt="在这里插入图片描述" width="250"/>
+
+ <img src="https://img-blog.csdnimg.cn/img_convert/95ab196a94279e2c27c4f0c5df9fddac.png" alt="在这里插入图片描述"/>
+
 
 ---
 
@@ -170,7 +191,9 @@ public class MyInterceptor implements HandlerInterceptor {
 
 ```
 
-**演示结果：** <img src="https://img-blog.csdnimg.cn/img_convert/fe37302437ed469001f4ddefa69ad341.png#pic_left" alt="在这里插入图片描述" width="270"/>
+**演示结果：** 
+ <img src="https://img-blog.csdnimg.cn/img_convert/fe37302437ed469001f4ddefa69ad341.png#pic_left" alt="在这里插入图片描述" width="270"/>
+
 
 ---
 
@@ -184,8 +207,10 @@ public class MyInterceptor implements HandlerInterceptor {
     <mvc:interceptor>
         <!--要拦截的方法-->
         <mvc:mapping path="/user/*"/>
+
         <!--不要拦截的方法-->
-        <!--<mvc:exclude-mapping path=""/>-->
+        <!--<mvc:exclude-mapping path=""/>
+-->
         <!--配置拦截器对象-->
         <bean class="com.itheima.interceptor.MyInterceptor"></bean>
     </mvc:interceptor>
@@ -194,8 +219,10 @@ public class MyInterceptor implements HandlerInterceptor {
     <mvc:interceptor>
         <!--要拦截的方法-->
         <mvc:mapping path="/user/*"/>
+
         <!--不要拦截的方法-->
-        <!--<mvc:exclude-mapping path=""/>-->
+        <!--<mvc:exclude-mapping path=""/>
+-->
         <!--配置拦截器对象-->
         <bean class="com.itheima.interceptor.MyInterceptor2"></bean>
     </mvc:interceptor>
@@ -205,7 +232,11 @@ public class MyInterceptor implements HandlerInterceptor {
 
 拦截顺序是 <mark>根据配置里面的拦截顺序进行拦截</mark>，放行也是从最深处向外放行，具体图示如下：
 
-<img src="https://img-blog.csdnimg.cn/img_convert/66eec0d2c13941f7299dead83bf289b3.png" alt="在这里插入图片描述"/>
 
-演示效果如下： <img src="https://img-blog.csdnimg.cn/img_convert/8b7e6db8be07f654fb93b5ffd16b5a86.png#pic_left" alt="在这里插入图片描述" width="320"/>
+ <img src="https://img-blog.csdnimg.cn/img_convert/66eec0d2c13941f7299dead83bf289b3.png" alt="在这里插入图片描述"/>
+
+
+演示效果如下： 
+ <img src="https://img-blog.csdnimg.cn/img_convert/8b7e6db8be07f654fb93b5ffd16b5a86.png#pic_left" alt="在这里插入图片描述" width="320"/>
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/118945069

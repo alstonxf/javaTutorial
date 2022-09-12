@@ -40,15 +40,27 @@
 
 
 ## 二、Mybatis 注解开发需要说明的问题
-1.  <font color="red">注解开发中 **不能** 和 XML 开发的配置共存</font>，即使在主配置文件 SqlConfig.xml 中使用mapper 标签并指定class路径，也会报错。 <li> **xml 在 mapper 标签配置 resource，注解开发在 mapper 标签配置class。** <pre><code class="prism language-xml"><!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
-<mappers>
-    <mapper class="com.itheima.dao.IUserDao"/>
-</mappers>
-</code></pre> <font color="red">但是更一般的情况我们会选择使用 package 标签指定带有注解的dao接口的所在位置。</font> <pre><code class="prism language-xml"><!--带有注解的dao接口的所在位置-->  
-<mappers> 
-	<package name="com.itheima.dao"></package>
-</mappers> 
-</code></pre> </li>
+1. <font color="red">注解开发中 **不能** 和 XML 开发的配置共存</font>，即使在主配置文件 SqlConfig.xml 中使用mapper 标签并指定class路径，也会报错。 
+
+   ```
+   <!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
+   <mappers>
+       <mapper class="com.itheima.dao.IUserDao"/>
+   </mappers>
+   
+   ```
+
+2. <font color="red">但是更一般的情况我们会选择使用 package 标签指定带有注解的dao接口的所在位置。</font>
+
+   ```
+   <!--带有注解的dao接口的所在位置-->  
+   <mappers> 
+   	<package name="com.itheima.dao"></package>
+   </mappers> 
+   
+   ```
+
+   
 ---
 
 
@@ -61,7 +73,7 @@
 
 ### 3.1 编写实体类
 
-```xml
+```java
 public class User {
     private Integer id;
     private String username;
@@ -132,7 +144,7 @@ public class User {
 
 **代码如下：**
 
-```xml
+```java
 public interface IUserDao {
 
     /**
@@ -464,4 +476,5 @@ public void insertUser(User user);
 
 
 本文针对基于注解实现了 Mybatis 进行了CRUD 操作，并对部分常用注解进行总结，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/116615063

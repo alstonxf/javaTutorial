@@ -22,38 +22,43 @@
 
 
 ## 一、复杂关系映射的注解说明
-<li> **@Results 注解** 
-  <blockquote> 
-   <mark>代替的是标签 <resultMap></mark> 该注解中可以使用单个@Result 注解，也可以使用@Result 集合 @Results（{@Result() ，@Result() }）或 @Results（ @Result() ） 
-  </blockquote> </li><li> **@Resutl 注解** 
-  <blockquote> 
-   <mark>代替了 <id> 标签和 <result> 标签</mark> @Result 中 属性介绍： 
-   <ol>1. id 是否是主键字段1. column 数据库的列名1. property 需要装配的属性名1. one 需要使用的 @One 注解（@Result（one=@One）（）））1. many 需要使用的 @Many 注解（@Result（many=@many）（）））
->  
-   <mark>代替了 <id> 标签和 <result> 标签</mark> @Result 中 属性介绍： 
-   - id 是否是主键字段- column 数据库的列名- property 需要装配的属性名- one 需要使用的 @One 注解（@Result（one=@One）（）））- many 需要使用的 @Many 注解（@Result（many=@many）（））） 
-  
+**@Results 注解** 
+
+==代替的是标签 <resultMap>==
+该注解中可以使用单个@Result 注解，也可以使用@Result 集合
+@Results（{@Result() ，@Result() }）或 @Results（ @Result() ）
+
+  **@Resutl 注解**
+
+==代替了 <id> 标签和 <result> 标签==
+@Result 中 属性介绍：
+
+id 是否是主键字段
+column 数据库的列名
+property 需要装配的属性名
+one 需要使用的 @One 注解（@Result（one=@One）（）））
+many 需要使用的 @Many 注解（@Result（many=@many）（）））
 
 **@One 注解（一对一）**
 
->  
-   <mark>代替了<assocation> 标签，是多表查询的关键，在注解中用来指定子查询返回单一对象</mark> @One 注解属性介绍： 
+>  <mark>代替了<assocation> 标签，是多表查询的关键，在注解中用来指定子查询返回单一对象</mark> @One 注解属性介绍： 
+   
    - select 指定用的 来多表查询的 sqlmapper- fetchType 会覆盖全局的配置参数 lazyLoadingEnabled。 
-  
+
 
 >  
    使用格式：@Result(column=" “,property=”",one=@One(select="")) 
-  
+
 
 **@Many 注解（多对一）**
 
 >  
    <mark>代替了 标签, 是是多表查询的关键，在注解中用来指定子查询返回对象集合。</mark> <mark>注意：聚集元素用来处理“一对多”的关系。需要指定映射的 Java 实体类的属性，属性的 javaType（一般为 ArrayList）但是注解中可以不定义；</mark> 
-  
+
 
 >  
    使用格式：@Result(property="", column="", many=@Many(select="")) 
-  
+
 
 ---
 
@@ -559,4 +564,5 @@ public class UserTest {
 
 
   本文借鉴了黑马教程笔记并针对 Mybatis 中基于注解配置实现了一对多与多对多的查询，查询同时也应用了注解配置中的延迟加载与立即加载，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/116708906

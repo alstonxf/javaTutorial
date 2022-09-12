@@ -67,15 +67,10 @@ Cell
 
 ```
 1) 监控RegionServer
-
 2) 处理RegionServer故障转移
-
 3) 处理元数据的变更
-
 4) 处理region的分配或移除
-
 5) 在空闲时间进行数据的负载均衡
-
 6) 通过Zookeeper发布自己的位置给客户端
 
 ```
@@ -86,15 +81,10 @@ Cell
 
 ```
 1) 负责存储HBase的实际数据
-
 2) 处理分配给它的Region
-
 3) 刷新缓存到HDFS
-
 4) 维护HLog
-
 5) 执行压缩
-
 6) 负责处理Region分片
 
 ```
@@ -126,42 +116,58 @@ hbase(main):010:0> create 'user', {<!-- -->NAME => 'info', VERSIONS => '3'}，{<
 ```
 
 #### 5、添加数据操作
--  向user表中插入信息，row key为rk0001，列族info中添加name列标示符，值为zhangsan hbase(main):011:0> put ‘user’, ‘rk0001’, ‘info:name’, ‘zhangsan’ ​ -  向user表中插入信息，row key为rk0001，列族info中添加gender列标示符，值为female hbase(main):012:0> put ‘user’, ‘rk0001’, ‘info:gender’, ‘female’ -  向user表中插入信息，row key为rk0001，列族info中添加age列标示符，值为20 hbase(main):013:0> put ‘user’, ‘rk0001’, ‘info:age’, 20 -  向user表中插入信息，row key为rk0001，列族data中添加pic列标示符，值为picture hbase(main):014:0> put ‘user’, ‘rk0001’, ‘data:pic’, ‘picture’ 
+向user表中插入信息，row key为rk0001，列族info中添加name列标示符，值为zhangsan
+
+hbase(main):011:0> put 'user', 'rk0001', 'info:name', 'zhangsan'
+
+向user表中插入信息，row key为rk0001，列族info中添加gender列标示符，值为female
+
+hbase(main):012:0> put 'user', 'rk0001', 'info:gender', 'female'
+
+向user表中插入信息，row key为rk0001，列族info中添加age列标示符，值为20
+
+hbase(main):013:0> put 'user', 'rk0001', 'info:age', 20
+
+向user表中插入信息，row key为rk0001，列族data中添加pic列标示符，值为picture
+
+hbase(main):014:0> put 'user', 'rk0001', 'data:pic', 'picture'
+
+
 #### 6、查询数据操作
 
 ##### 1、通过rowkey进行查询
 
 获取user表中row key为rk0001的所有信息
 
-hbase(main):015:0> get ‘user’, ‘rk0001’
+hbase(main):015:0> get 'user', 'rk0001'
 
 ##### 2、查看rowkey下面的某个列族的信息
 
 获取user表中row key为rk0001，info列族的所有信息
 
-hbase(main):016:0> get ‘user’, ‘rk0001’, ‘info’
+hbase(main):016:0> get 'user', 'rk0001', 'info'
 
 ##### 3、查看rowkey指定列族指定字段的值
 
 获取user表中row key为rk0001，info列族的name、age列标示符的信息
 
-hbase(main):017:0> get ‘user’, ‘rk0001’, ‘info:name’, ‘info:age’
+hbase(main):017:0> get 'user', 'rk0001', 'info:name', 'info:age'
 
 ##### 4、查询所有数据
 
 查询user表中的所有信息
 
-scan ‘user’
+scan 'user'
 
 ##### 5、列族查询
 
 查询user表中列族为info的信息
 
-scan ‘user’, {COLUMNS => ‘info’}
+scan 'user', {COLUMNS => 'info'}
 
 #### 7、统计
 
-hbase(main):053:0> count ‘user’
+hbase(main):053:0> count 'user'
 
 #### 8.显示所有表
 
@@ -201,41 +207,62 @@ Row key行键 (Row key)可以是任意字符串(最大长度是 64KB，实际应
 
 ##### Cell
 
-由{row key, column( = + <label>), version} 唯一确定的单元。</label>
+由{row key, column( = + ), version} 唯一确定的单元。
 
 cell中的数据是没有类型的，全部是字节码形式存贮。
 
 ### 1.4、HBASE读请求过程
 
-get ‘user’ ‘rk0001’
+get 'user' 'rk0001'
 
 java api
 
 <img src="https://img-blog.csdnimg.cn/5d4e51ca220347328fe698eceb855675.png#pic_center" alt="在这里插入图片描述"/>
-- HRegionServer保存着meta表以及表数据，要访问表数据，首先Client先去访问zookeeper，从zookeeper里面获取meta表所在的位置信息，即找到这个meta表在哪个HRegionServer上保存着。- 接着Client通过刚才获取到的HRegionServer的IP来访问Meta表所在的HRegionServer，从而读取到Meta，进而获取到Meta表中存放的元数据。- Client通过元数据中存储的信息，访问对应的HRegionServer，然后扫描所在HRegionServer的Memstore和Storefile来查询数据。- 最后HRegionServer把查询到的数据响应给Client。
+- HRegionServer保存着meta表以及表数据，要访问表数据，首先Client先去访问zookeeper，从zookeeper里面获取meta表所在的位置信息，即找到这个meta表在哪个HRegionServer上保存着。
+- 接着Client通过刚才获取到的HRegionServer的IP来访问Meta表所在的HRegionServer，从而读取到Meta，进而获取到Meta表中存放的元数据。
+- Client通过元数据中存储的信息，访问对应的HRegionServer，然后扫描所在HRegionServer的Memstore和Storefile来查询数据。
+- 最后HRegionServer把查询到的数据响应给Client。
+  
 ### 1.5、HBASE写请求过程
 
 <img src="https://img-blog.csdnimg.cn/f51a0a7573db416db32789f87c60683f.png#pic_center" alt="在这里插入图片描述"/>
--  Client也是先访问zookeeper，找到Meta表，并获取Meta表元数据。确定当前将要写入的数据所对应的HRegion和HRegionServer服务器。 -  Client向该HRegionServer服务器发起写入数据请求，然后HRegionServer收到请求并响应。 -  Client先把数据写入到HLog，以防止数据丢失。然后将数据写入到Memstore。 -  如果HLog和Memstore均写入成功，则这条数据写入成功 -  如果Memstore达到阈值，会把Memstore中的数据flush到Storefile中。 -  当Storefile越来越多，会触发Compact合并操作，把过多的Storefile合并成一个大的Storefile。 -  当Storefile越来越大，Region也会越来越大，达到阈值后，会触发Split操作，将Region一分为二。 
+- Client也是先访问zookeeper，找到Meta表，并获取Meta表元数据。确定当前将要写入的数据所对应的HRegion和HRegionServer服务器。
+
+- Client向该HRegionServer服务器发起写入数据请求，然后HRegionServer收到请求并响应。
+
+- Client先把数据写入到HLog，以防止数据丢失。然后将数据写入到Memstore。
+
+- 如果HLog和Memstore均写入成功，则这条数据写入成功
+
+- 如果Memstore达到阈值，会把Memstore中的数据flush到Storefile中。
+
+- 当Storefile越来越多，会触发Compact合并操作，把过多的Storefile合并成一个大的Storefile。
+
+- 当Storefile越来越大，Region也会越来越大，达到阈值后，会触发Split操作，将Region一分为二。
+
 ### 1.6、hbase的预分区
 
 #### 1.6.1、预分区有什么用
-- 增加数据读写效率- 负载均衡，防止数据倾斜- 方便集群容灾调度region- 优化Map数量
+- 增加数据读写效率- 负载均衡，防止数据倾斜
+- 方便集群容灾调度region
+- 优化Map数量
 #### 1.6.2、如何预分区
 
  每一个region维护着startRowkey与endRowKey，如果加入的数据符合某个region维护的rowKey范围，则该数据交给这个region维护。
 
 #### 1.6.3、设定预分区
-<li> **手动设定预分区** <pre><code>create 'staff','info','partition1',SPLITS => ['1000','2000','3000','4000']
-</code></pre> </li>
+1.**手动设定预分区** 
+
+```sql
+create 'staff','info','partition1',SPLITS => ['1000','2000','3000','4000']
+```
+
 <img src="https://img-blog.csdnimg.cn/7bd366cf5e4b452a94b41bc37b7d7e04.png#pic_center" alt="在这里插入图片描述"/>
 
 2.**使用16进制算法生成预分区**
 
-```
+```sql
 create 'staff2','info','partition2',{NUMREGIONS => 15, SPLITALGO => 'HexStringSplit'}
-
-
 ```
 
 <img src="https://img-blog.csdnimg.cn/dacaa977515b4a2f994ffeae20f194b4.png#pic_center" alt="在这里插入图片描述"/>
@@ -260,7 +287,7 @@ create 'staff2','info','partition2',{NUMREGIONS => 15, SPLITALGO => 'HexStringSp
 
 ##### 3、唯一原则
 
-必须在设计上保证其唯一性。rowkey 是按照字典顺序排序存储的，因此，设计 rowkey 的时候，要充分利用这个排序的特点，将经常读取的数据存储到一块，将最近可能会被访问 的数据放到一块。
+必须在设计上保证其唯一性。rowkey 是按照字典顺序排序存储的，因此，设计 rowkey 的时候，要充分利用这个排序的特点，将经常读取的数据存储到一块，将最近可能会被访问的数据放到一块。
 
 #### 1.7.2、热点问题
 
@@ -324,3 +351,6 @@ create 'staff2','info','partition2',{NUMREGIONS => 15, SPLITALGO => 'HexStringSp
 |16|计算机网络编程面试题（2022版）|https://blog.csdn.net/qq_43061290/article/details/124041420|
 
 # **文章地址： **https://blog.csdn.net/qq_43061290/article/details/125145399
+
+
+

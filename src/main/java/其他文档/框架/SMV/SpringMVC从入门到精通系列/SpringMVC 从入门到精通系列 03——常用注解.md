@@ -12,9 +12,14 @@
 
 
 ## 1. RequestParam 注解
-1.  **作用：** <mark>把请求中的指定名称的参数传递给控制器中的形参赋值</mark> <li> **属性：** 
-  <ol>1. **value：** 请求参数中的名称1. **required：** 请求参数中是否必须提供此参数，默认值是true，<mark>必须提供</mark>（如果不提供会报错）1. **代码如下：**
+1.  **作用：** <mark>把请求中的指定名称的参数传递给控制器中的形参赋值</mark>  
+1.  **属性：** 
+1. **value：** 请求参数中的名称
+2. **required：** 请求参数中是否必须提供此参数，默认值是true，必须提供（如果不提供会报错）
+3. **代码如下：**
+
 **jsp:**
+
 
 ```html
 <a href="anno/testRequestParam?username=xiuyan">测试RequestParam</a>
@@ -38,15 +43,22 @@ public class AnnoController {
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210603100842846.png" alt="在这里插入图片描述"/>
+**测试结果：** 
+ <img src="https://img-blog.csdnimg.cn/20210603100842846.png" alt="在这里插入图片描述"/>
+
 
 ---
 
 
 ## 2. RequestBody 注解
-1.  **作用：用于获取请求体的内容**<font color="red">（注意：get方法不可以）</font> <li> **属性：** 
-  <ol>1. required：是否必须有请求体，默认值是true
-**代码如下：**
+1. **作用：用于获取请求体的内容**<font color="red">（注意：get方法不可以）</font>
+
+2. **属性：** 
+
+   required：是否必须有请求体，默认值是true
+
+3.  **代码如下：**
+
 
 **jsp：**
 
@@ -76,20 +88,35 @@ public class AnnoController {
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210603101515974.png" alt="在这里插入图片描述"/> <img src="https://img-blog.csdnimg.cn/20210603101549498.png" alt="在这里插入图片描述"/>
+**测试结果：** 
+ <img src="https://img-blog.csdnimg.cn/20210603101515974.png" alt="在这里插入图片描述"/>
+
+ <img src="https://img-blog.csdnimg.cn/20210603101549498.png" alt="在这里插入图片描述"/>
+
 
 ---
 
 
 ## 3. PathVariable 注解
-1. **作用：拥有绑定url中的占位符的。** <mark>例如：url中有/delete/{id}，{id}就是占位符</mark><li>**属性：** 
-  <ol>1. value：指定url中的占位符名称1. 请求路径一样，可以根据不同的请求方式去执行后台的不同方法<li>restful风格的URL优点 
-    <ol>1. 结构清晰1. 符合标准1. 易于理解1. 扩展方便
+1. **作用：拥有绑定url中的占位符的。** <mark>例如：url中有/delete/{id}，{id}就是占位符</mark>
+1. **属性：** 
+1. value：指定url中的占位符名称
+
+3、**Restful 风格的 URL**：
+
+1. 请求路径一样，可以根据不同的请求方式去执行后台的不同方法
+2. restful风格的URL优点
+   1. 结构清晰
+   2. 符合标准
+   3. 易于理解
+   4. 扩展方便
+
+4、**代码如下：**
+
 **jsp：**
 
 ```html
 <a href="anno/testPathVariable/111">测试PathVariable</a>
-
 ```
 
 **Controller：**
@@ -109,13 +136,16 @@ public class AnnoController {
 
 ```
 
-<img src="https://img-blog.csdnimg.cn/20210603102336226.png" alt="在这里插入图片描述"/>
+
+ <img src="https://img-blog.csdnimg.cn/20210603102336226.png" alt="在这里插入图片描述"/>
+
 
 ---
 
 
 ## 4. RequestHeader 注解（了解）
-1.  **作用：获取指定请求头的值** <li> **属性：** 
+1.  **作用：获取指定请求头的值**
+1.  **属性：** 
   <ol>1. value：请求头的名称
 代码如下
 
@@ -132,7 +162,8 @@ public String sayHello(@RequestHeader(value="Accept") String header) {
 
 
 ## 5. CookieValue 注解（了解）
-1.  **作用：用于获取指定cookie的名称的值** <li> **属性：** 
+1.  **作用：用于获取指定cookie的名称的值** 
+1.  **属性：** 
   <ol>1. value：cookie的名称
 **代码：**
 
@@ -149,9 +180,13 @@ public String sayHello(@CookieValue(value="JSESSIONID") String cookieValue) {
 
 
 ## 6. ModelAttribute 注解
-<li>**作用：** 
-  <ol>1. 出现在方法上：表示当前方法会在控制器方法执行前先执行。1. 出现在参数上：获取指定的数据给参数赋值。1. 当提交表单数据不是完整的实体数据时，保证没有提交的字段使用数据库原来的数据。
-**有返回值：**
+1. **作用**：
+   1. 出现在方法上：表示当前方法会在控制器方法执行前先执行。
+   2. 出现在参数上：获取指定的数据给参数赋值。
+2. **应用场景**：
+   1. 当提交表单数据不是完整的实体数据时，保证没有提交的字段使用数据库原来的数据。
+3. **具体的代码**
+
 
 **jsp：**
 
@@ -189,7 +224,11 @@ public User showUser(String username){
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210603104838286.png" alt="在这里插入图片描述"/> <img src="https://img-blog.csdnimg.cn/20210603104911334.png" alt="在这里插入图片描述"/>
+**测试结果：** 
+ <img src="https://img-blog.csdnimg.cn/20210603104838286.png" alt="在这里插入图片描述"/>
+
+ <img src="https://img-blog.csdnimg.cn/20210603104911334.png" alt="在这里插入图片描述"/>
+
 
   结果显示，由于先执行 showUser 方法，在方法里面封装了 User 对象并返回，从而再执行 testModuleAttribute 方法时，不会因为传入表单没有传入日期属性，而导致日期属性为空。
 
@@ -221,15 +260,25 @@ public void showUser(String username, Map<String, User> map){
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210603105424521.png" alt="在这里插入图片描述"/> <img src="https://img-blog.csdnimg.cn/20210603105442433.png" alt="在这里插入图片描述"/>
+**测试结果：** 
+ <img src="https://img-blog.csdnimg.cn/20210603105424521.png" alt="在这里插入图片描述"/>
+
+ <img src="https://img-blog.csdnimg.cn/20210603105442433.png" alt="在这里插入图片描述"/>
+
 
 ---
 
 
 ## 7. SessionAttributes 注解
-1. **作用：用于多次执行控制器方法间的参数共享**<li>**属性：** 
-  <ol>1. value：指定存入属性的名称
-**jsp：**
+1. **作用：用于多次执行控制器方法间的参数共享**
+
+2. **属性：** 
+
+   value：指定存入属性的名称
+
+3. 代码如下：
+
+   **jsp：**
 
 ```html
 <a href="anno/testSessionAttributes">测试SessionAttributes</a><br>
@@ -289,5 +338,7 @@ public class AnnoController {
 
 ```
 
-<img src="https://img-blog.csdnimg.cn/20210603111029690.png" alt="在这里插入图片描述"/>
+
+ <img src="https://img-blog.csdnimg.cn/20210603111029690.png" alt="在这里插入图片描述"/>
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117511435

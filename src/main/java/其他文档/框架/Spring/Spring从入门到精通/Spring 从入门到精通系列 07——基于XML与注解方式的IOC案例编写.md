@@ -13,20 +13,22 @@
 1.3 业务层接口及实现类
 1.4 持久层接口及实现类
 1.5 bean.xml
-★
 1.6 测试方法
 二、基于注解配置的 IOC 案例
 2.1 业务层接口实现类
 2.2 持久层接口实现类
 2.3 bean.xml
-★
 
 ---
 
 
 ## 一、基于 XML 的 IOC 的案例
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210601223328851.png#pic_left" alt="在这里插入图片描述" width="250"/>
+**工程目录**：
+
+ <img src="https://img-blog.csdnimg.cn/20210601223328851.png#pic_left" alt="在这里插入图片描述" width="250"/>
+
+
 
 ---
 
@@ -343,7 +345,11 @@ public class AccountDaoImpl implements IAccountDao {
 ```
 
 **注意：**
-1. 在配置对象间的依赖关系，首先配置 service 业务层对象，因为业务层对象中含有 dao 对象，所以就需要依赖注入的方式注入 dao 对象，这时候还没有 dao 对象所以还需要配置 dao 对象 … 以此类推。1. QueryRunner 的数据源是通过调用带参构造函数构造的。1. QueryRunner 默认是单例对象，为了防止线程干扰，可以使用 scope=“prototype” 让其变为多例对象。
+1. 在配置对象间的依赖关系，首先配置 service 业务层对象，因为业务层对象中含有 dao 对象，所以就需要依赖注入的方式注入 dao 对象，这时候还没有 dao 对象所以还需要配置 dao 对象 … 以此类推。
+
+2. QueryRunner 的数据源是通过调用带参构造函数构造的。
+
+   QueryRunner 默认是单例对象，为了防止线程干扰，可以使用 scope=“prototype” 让其变为多例对象。
 ---
 
 
@@ -402,7 +408,11 @@ public class AccountServiceTest {
 
 ## 二、基于注解配置的 IOC 案例
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210601232305237.png#pic_left" alt="在这里插入图片描述" width="250"/> 除了以下内容与 xml 案例中的不同，其余部分都相同。
+**工程目录：**
+
+ <img src="https://img-blog.csdnimg.cn/20210601232305237.png#pic_left" alt="在这里插入图片描述" width="250"/> 
+
+除了以下内容与 xml 案例中的不同，其余部分都相同。
 
 ---
 
@@ -545,4 +555,5 @@ public class AccountDaoImpl implements IAccountDao {
 
 
 本文使用 XML 方式和注解方式实现单表的 CRUD操作，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117455809

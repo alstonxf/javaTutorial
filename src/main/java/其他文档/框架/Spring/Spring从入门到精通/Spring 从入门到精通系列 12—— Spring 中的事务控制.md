@@ -1,5 +1,5 @@
 # Spring 从入门到精通系列 12—— Spring 中的事务控制
-  在 《Spring 从入门到精通系列 09——转账方法的事务问题与动态代理》</a> 一文中，我们讲到了转账方法存在着事务问题，当在业务层方法更新转入账户时发现异常，更新收款方账户则会出错。 当时是通过自定义事务管理器进行整体事务的处理。其实Spring 提供了业务层的事务处理解决方案，并且 Spring 的事务控制都是基于 AOP 的。
+  在 《Spring 从入门到精通系列 09——转账方法的事务问题与动态代理》 一文中，我们讲到了转账方法存在着事务问题，当在业务层方法更新转入账户时发现异常，更新收款方账户则会出错。 当时是通过自定义事务管理器进行整体事务的处理。其实Spring 提供了业务层的事务处理解决方案，并且 Spring 的事务控制都是基于 AOP 的。
 
 <img src="https://img-blog.csdnimg.cn/20210531194346342.png#pic_center" alt="在这里插入图片描述" width="380"/>
 
@@ -19,7 +19,9 @@ Spring 中基于 xml 的声明式事务控制配置步骤
 
 ## 一、环境准备
 
-为了演示 Spring 中的事务控制，我们创建一个空项目，项目目录如下： <img src="https://img-blog.csdnimg.cn/20210602203824759.png?#pic_left" alt="在这里插入图片描述" width="280"/>
+为了演示 Spring 中的事务控制，我们创建一个空项目，项目目录如下：
+
+ <img src="https://img-blog.csdnimg.cn/20210602203824759.png?#pic_left" alt="在这里插入图片描述" width="280"/>
 
 ---
 
@@ -234,24 +236,59 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
 ## 二、基于 XML 的事务控制
 
 ### Spring 中基于 xml 的声明式事务控制配置步骤 <font color="red"> ★ </font>
-<li> **配置事务管理器** <pre><code class="prism language-xml"><!--配置事务管理器-->
+#### 1、配置事务管理器
+
+```xml
+<!--配置事务管理器-->
 <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"></bean>
-</code></pre> </li><li> **配置事务的通知** （需要导入事务的约束 tx 和 aop 的名称空间和约束） 使用 tx:advice 标签配置事务通知 **属性：** 
-  <blockquote> 
-   id：给事务通知起一个唯一标识 transaction-manager：给事务通知提供一个事务管理器引用 
-  </blockquote> <pre><code class="prism language-xml"><!--配置事务的通知-->
+```
+
+#### 2、配置事务的通知 （需要导入事务的约束 tx 和 aop 的名称空间和约束）
+
+使用 tx:advice 标签配置事务通知
+属性：
+
+id：给事务通知起一个唯一标识
+transaction-manager：给事务通知提供一个事务管理器引用
+
+```xml
+<!--配置事务的通知-->
 <tx:advice id="txAdvice" transaction-manager="transactionManager"></tx:advice>
-</code></pre> </li><li> **配置AOP的通用切入点表达式** <pre><code class="prism language-xml"><!--配置AOP的通用切入点表达式-->
+```
+
+#### 3、配置AOP的通用切入点表达式
+
+```xml
+<!--配置AOP的通用切入点表达式-->
 <aop:config>
 	<aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
 </aop:config>
-</code></pre> </li><li> **建立事务通知 与 切入点表达式的对应关系** <pre><code class="prism language-xml"><!--配置AOP的通用切入点表达式-->
+
+```
+
+#### 4、建立事务通知 与 切入点表达式的对应关系
+
+```xml
+<!--配置AOP的通用切入点表达式-->
 <aop:config>
 	<aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
 	<aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
 </aop:config>
-</code></pre> </li><li> **配置事务的属性** 在事务的通知 tx:advice 标签的内部 **配置事务的属性：** 
-  <ol>1. **isolation：** 用于指定事务的隔离级别。默认值是DEFAULT，表示使用数据库的默认隔离级别。1. **propagation：** 用于指定事务的传播行为。默认值是REQUIRED，表示一定会有事务，增删改的选择。查询方法可以选择SUPPORT。1. **read-only：** 用于指定事务是否只读。只有查询方法才能设置为true。默认值时false，表示读写。1. **timeout：** 用于指定事务的超时时间。默认值是-1，表示永不超时。如果指定了数值，则以秒为单位。1. **rollback-for：** 用于指定一个异常，当产生该异常时，事务不回滚，产生其他异常，事务不回滚。没有默认值。表示任何异常都回滚。1. **no-rollback-for：** 用于指定一个异常，当产生该异常时，事务不回滚，产生其他异常时，事务回滚。没有默认值。表示任何异常都回滚。
+```
+
+#### 5、配置事务的属性
+
+在事务的通知 tx:advice 标签的内部
+
+**配置事务的属性：**
+
+1. isolation： 用于指定事务的隔离级别。默认值是DEFAULT，表示使用数据库的默认隔离级别。
+2. propagation： 用于指定事务的传播行为。默认值是REQUIRED，表示一定会有事务，增删改的选择。查询方法可以选择SUPPORT。
+3. read-only： 用于指定事务是否只读。只有查询方法才能设置为true。默认值时false，表示读写。
+4. timeout： 用于指定事务的超时时间。默认值是-1，表示永不超时。如果指定了数值，则以秒为单位。
+5. rollback-for： 用于指定一个异常，当产生该异常时，事务不回滚，产生其他异常，事务不回滚。没有默认值。表示任何异常都回滚。
+6. no-rollback-for： 用于指定一个异常，当产生该异常时，事务不回滚，产生其他异常时，事务回滚。没有默认值。表示任何异常都回滚。
+
 ```xml
 <!--配置事务的通知-->
 <tx:advice id="txAdvice" transaction-manager="transactionManager">
@@ -260,10 +297,10 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
         <tx:method name="find*" propagation="REQUIRED" read-only="false"></tx:method> <!--优先级高于通配符 * -->
     </tx:attributes>
 </tx:advice>
-
 ```
 
-**最终 bean.xml：**
+
+最终 bean.xml：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -282,49 +319,50 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
     <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
     </bean>
+<!--配置账户的持久层-->
+<bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+</bean>
 
-    <!--配置账户的持久层-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
-    </bean>
+<!--配置jdbcTemplate-->
+<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <property name="dataSource" ref="dataSource"></property>
+</bean>
 
-    <!--配置jdbcTemplate-->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource"></property>
-    </bean>
-
-    <!-- 配置数据源-->
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mysql://localhost:3306/springdb"></property>
-        <property name="username" value="root"></property>
-        <property name="password" value="000000"></property>
-    </bean>
+<!-- 配置数据源-->
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+    <property name="url" value="jdbc:mysql://localhost:3306/springdb"></property>
+    <property name="username" value="root"></property>
+    <property name="password" value="000000"></property>
+</bean>
    
-    <!--配置事务管理器-->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"></property>
-    </bean>
+<!--配置事务管理器-->
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="dataSource"></property>
+</bean>
 
-    <!--配置事务的通知-->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-            <tx:method name="*" propagation="REQUIRED" read-only="false"></tx:method>
-            <tx:method name="find*" propagation="REQUIRED" read-only="false"></tx:method>
-        </tx:attributes>
-    </tx:advice>
+<!--配置事务的通知-->
+<tx:advice id="txAdvice" transaction-manager="transactionManager">
+    <tx:attributes>
+        <tx:method name="*" propagation="REQUIRED" read-only="false"></tx:method>
+        <tx:method name="find*" propagation="REQUIRED" read-only="false"></tx:method>
+    </tx:attributes>
+</tx:advice>
 
-    <!--配置AOP的通用切入点表达式-->
-    <aop:config>
-        <aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
-    </aop:config>
-
+<!--配置AOP的通用切入点表达式-->
+<aop:config>
+    <aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
+    <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
+</aop:config>
 </beans>
-
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210602224701837.png?#pic_left" alt="在这里插入图片描述" width="700"/>
+**测试结果：** 
+
+<img src="https://img-blog.csdnimg.cn/20210602224701837.png?#pic_left" alt="在这里插入图片描述" width="700"/>
+
+
 
 ---
 
@@ -332,7 +370,9 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
 ## 三、基于注解的事务控制
 
 ### Spring 中基于 xml 的声明式事务控制配置步骤
-1.  **配置事务管理器** 1.  **开启 Spring 对注解事物的支持** 1.  **在需要事务支持的地方使用 @Transactional 注解** 
+1.  **配置事务管理器** 
+1.  **开启 Spring 对注解事物的支持**
+1.  **在需要事务支持的地方使用 @Transactional 注解** 
 ---
 
 
@@ -385,7 +425,7 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
 
 **账户业务层实现类：**
 
-```xml
+```java
 /**
  * 转账的业务层实现类
  */
@@ -399,7 +439,7 @@ public class AccountServiceImpl implements IAccountService {
 
 **账户持久层实现类：**
 
-```xml
+```java
 /**
  * 账户的持久层实现类
  */
@@ -414,10 +454,13 @@ public class AccountDaoImpl implements IAccountDao {
 
 ```
 
-**测试结果如下：** <img src="https://img-blog.csdnimg.cn/20210602230324758.png#pic_left" alt="在这里插入图片描述" width="700"/>
+**测试结果如下：
+
+ <img src="https://img-blog.csdnimg.cn/20210602230324758.png#pic_left" alt="在这里插入图片描述" width="700"/>
 
 ---
 
 
 本文实现了 Spring 中基于 XML 与注解配置的事务控制，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117482310

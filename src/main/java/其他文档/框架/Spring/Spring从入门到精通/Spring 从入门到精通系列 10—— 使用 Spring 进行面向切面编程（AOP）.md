@@ -8,10 +8,10 @@
 
  # 文章目录
 一、AOP 概述
-1.1 什么是 AOP
-1.2 AOP 的作用及优势
-1.3 AOP 的实现方式
-1.4 Spring 中 AOP 的 相关术语
+	1.1 什么是 AOP
+	1.2 AOP 的作用及优势
+	1.3 AOP 的实现方式
+	1.4 Spring 中 AOP 的 相关术语
 二、Spring 中基于 XML 的 AOP 配置步骤
 ★
 2.1 工程准备
@@ -34,14 +34,23 @@
 
 ### 1.1 什么是 AOP
 
-<img src="https://img-blog.csdnimg.cn/20210602110310850.png" alt="在这里插入图片描述"/>   简单的说它就是把我们程序重复的代码抽取出来，在需要执行的时候，使用动态代理的技术，在不修改源码的基础上，对我们的已有方法进行增强。
+<img src="https://img-blog.csdnimg.cn/20210602110310850.png" alt="在这里插入图片描述"/>   
+
+简单的说它就是把我们程序重复的代码抽取出来，在需要执行的时候，使用动态代理的技术，在不修改源码的基础上，对我们的已有方法进行增强。
 
 ---
 
 
 ### 1.2 AOP 的作用及优势
-1. **作用：** 在程序运行期间，不修改源码对已有方法进行增强。<li>**优势：** 
-  1. 减少重复代码1. 提高开发效率1. 维护方便 </li>
+1. **作用：** 在程序运行期间，不修改源码对已有方法进行增强。
+
+1. **优势：** 
+
+   + 减少重复代码
+
+   + 提高开发效率
+
+   + 维护方便 
 ---
 
 
@@ -53,25 +62,52 @@
 
 
 ### 1.4 Spring 中 AOP 的 相关术语
-1.  **连接点：** 所谓连接点就是指那些被拦截的点。//业务层中所有的方法 <li>
+1.  **连接点：** 所谓连接点就是指那些被拦截的点。//业务层中所有的方法 
 	
 1.   **切入点：** 所谓切入点就是指我们要对哪些连接点进行拦截。//业务层中被增强的方法例如： 
 	
-	<pre><code class="prism language-java">public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-	if("test".equals(method.getName())){
-		return method.invoke(accountService, args);
+	```java
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		if("test".equals(method.getName())){
+			return method.invoke(accountService, args);
+		}
+		//...增强操作...
 	}
-	//...增强操作...
-	}
+	
+	//业务层
+	void test();//是连接点，不是切入点。因为方法被拦截，没有被增强。
+	
+	```
+	
+	
 
 //业务层
 void test();//是连接点，不是切入点。因为方法被拦截，没有被增强。
-</code></pre> </li>1.  **前置通知** 1.  **后置通知** 1.  **异常通知** 1.  **最终通知** 1.  **环绕通知** <img src="https://img-blog.csdnimg.cn/20210602113102987.png?#pic_left" alt="在这里插入图片描述" width="600"/> 
----
+
+3、**前置通知** 
+
+4、**后置通知** 
+
+5、**异常通知** 
+
+6、**最终通知** 
+
+7、**环绕通知**
+
+ <img src="https://img-blog.csdnimg.cn/20210602113102987.png?#pic_left" alt="在这里插入图片描述" width="600"/> 
 
 
 
-1.  **Introduction（引介）：** 引介是一种特殊的通知在不修改类代码的前提下，Introduction可以在运行期为类动态地添加一些方法或Fields。（了解） 1.  **Target（目标对象）：** 代理的目标对象。 1.  **weaving（织入）：** 是指把增强应用到目标对象来创建新的代理对象的 **过程** 。spring采用动态代理织入，而AspectJ采用编译期织入和类装载期织入。 1.  **Proxy（代理）：** 一个类被 AOP 织入增强后，就产生一个结果代理类。 1.  **Aspect（切面）：** 是切入点和通知（引介）的结合。 
+8、**Introduction（引介）：** 引介是一种特殊的通知在不修改类代码的前提下，Introduction可以在运行期为类动态地添加一些方法或Fields。（了解） 
+
+9、**Target（目标对象）：** 代理的目标对象。 
+
+10、**weaving（织入）：** 是指把增强应用到目标对象来创建新的代理对象的 **过程** 。spring采用动态代理织入，而AspectJ采用编译期织入和类装载期织入。 
+
+11. **Proxy（代理）：** 一个类被 AOP 织入增强后，就产生一个结果代理类。 
+
+12.  **Aspect（切面）：** 是切入点和通知（引介）的结合。 
+
 ---
 
 
@@ -79,7 +115,9 @@ void test();//是连接点，不是切入点。因为方法被拦截，没有被
 
 ## 二、Spring 中基于 XML 的 AOP 配置步骤 <font color="red">★</font>
 
-为了演示 AOP 配置步骤，建立一个工程。工程目录如下： <img src="https://img-blog.csdnimg.cn/20210602130404560.png?#pic_left" alt="在这里插入图片描述" width="300"/>
+为了演示 AOP 配置步骤，建立一个工程。工程目录如下：
+
+ <img src="https://img-blog.csdnimg.cn/20210602130404560.png?#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 
@@ -88,7 +126,7 @@ void test();//是连接点，不是切入点。因为方法被拦截，没有被
 
 **导入依赖：**
 
-```java
+```xml
 <dependencies>
 	<dependency>
 		<groupId>org.springframework</groupId>
@@ -106,7 +144,7 @@ void test();//是连接点，不是切入点。因为方法被拦截，没有被
 
 **账户业务层及其实现类代码：**
 
-```xml
+```java
 public interface IAccountService {
 
     void saveAccount();
@@ -177,19 +215,44 @@ public class Logger {
 
 
 ### 2.2 配置 AOP 步骤
-<li> **把通知 Bean 交给 spring 来管理** <pre><code class="prism language-xml"><!--配置Logger类-->
+1、把通知 Bean 交给 spring 来管理
+
+```xml
+<!--配置Logger类-->
 <bean id="logger" class="com.itheima.utils.Logger"></bean>
-</code></pre> </li><li> **使用 aop:config 标签标明开始AOP的配置** <pre><code class="prism language-xml"><!--配置aop-->
+
+```
+
+2、使用 aop:config 标签标明开始AOP的配置
+
+```xml
+<!--配置aop-->
 <aop:config>   
 </aop:config>
-</code></pre> </li><li> **使用 aop:aspect 标签标明配置切面** **id属性：** 是给切面提供一个唯一标识，**一般使用 logAdvice 作为 id 值** **ref属性：** 是指定通知类bean的id <pre><code class="prism language-xml"><!--配置aop-->
+
+```
+
+3、使用 aop:aspect 标签标明配置切面
+id属性： 是给切面提供一个唯一标识，一般使用 logAdvice 作为 id 值
+ref属性： 是指定通知类bean的id
+
+```xml
+<!--配置aop-->
 <aop:config>
     <!--配置切面-->
     <aop:aspect id="logAdvice" ref="logger">
     </aop:aspect>
 </aop:config>
-</code></pre> </li><li> **在 aop:aspect 标签的内部使用对应标签来配置通知的类型** 我们现在示例是让 printLog 方法在切入点执行之前执行：所以是前置通知 **aop:before: 表示配置前置通知** （后文会介绍其他四种通知类型） 
-  <ol>1. method属性：用于指定logger类中那个方法是前置通知1. <font color="red">pointcut属性：用于指定切入点表达式，该表达式的含义指的是对业务层中那些方法增强（建立前置通知和业务层之间的关系）</font>
+```
+
+4、在 aop:aspect 标签的内部使用对应标签来配置通知的类型
+
+我们现在示例是让 printLog 方法在切入点执行之前执行：所以是前置通知
+aop:before: 表示配置前置通知 （后文会介绍其他四种通知类型）
+
+method属性：用于指定logger类中那个方法是前置通知
+pointcut属性：用于指定切入点表达式，该表达式的含义指的是对业务层中那些方法增强（建立前置通知和业务层之间的关系）
+
 ```xml
 <!--配置aop-->
 <aop:config>
@@ -199,37 +262,75 @@ public class Logger {
         <aop:before method="printLog" pointcut="execution( * com.itheima.service.impl.*.*(..))"></aop:before>
     </aop:aspect>
 </aop:config>
-
 ```
-
----
-
 
 ### 2.3 切入点表达式的写法
 
-**关键字：** execution(表达式)
+**关键字**： execution(表达式)
 
-**表达式：** 访问修饰符 返回值 包名.包名.包名…类名.方法名(参数列表)
-<li> **标准的表达式写法** <pre><code class="prism language-java">public void com.ithiema.service.impl.AccountServiceImpl.saveAccount()
-</code></pre> </li><li> **访问修饰符可以省略** <pre><code class="prism language-java">void com.ithiema.service.impl.AccountServiceImpl.saveAccount()
-</code></pre> </li><li> **返回值可以使用通配符，表示任意返回值** <pre><code class="prism language-java">* com.ithiema.service.impl.AccountServiceImpl.saveAccount()
-</code></pre> </li><li> **包名可以使用通配符，表示任意包。但是有几级包，就需要写几个 *.** <pre><code class="prism language-java">* *.*.*.*.AccountServiceImpl.saveAccount())
-</code></pre> </li><li> **包名可以使用…表示当前包及其子包** <pre><code class="prism language-java">* *..AccountServiceImpl.saveAccount()
-</code></pre> </li><li> **类名和方法名都可以使用 * 来实现通配** <pre><code class="prism language-java">* *..*.*()
-</code></pre> **参数列表：** 
-  <ol><li> 可以直接写数据类型： 
-    1. 基本类型直接写名称 int1. 引用类型写包名.类名的方式 java.lang.String </li>1.  可以使用 **通配符** 表示任意类型，但是必须有参数 可以使用…表示有无参数均可，有参数可以是任意类型 <li> 全通配写法： <pre><code class="prism language-xml">* *..*.*(..)
-</code></pre> </li>
----
+**表达式**： 访问修饰符 返回值 包名.包名.包名…类名.方法名(参数列表)
 
+1、标准的表达式写法
 
-#### 2.3.1 切入点表达式的通常写法
+```java
+public void com.ithiema.service.impl.AccountServiceImpl.saveAccount()
 
-<font color="red"> 实际开发中切入点表达式的通常写法：切到业务层实现类下的所有方法: </font>
+```
+
+2、访问修饰符可以省略
+
+```java
+void com.ithiema.service.impl.AccountServiceImpl.saveAccount()
+
+```
+
+3、返回值可以使用通配符，表示任意返回值
 
 ```xml
-* com.itheima.service.impl.*.*(..)
+* com.ithiema.service.impl.AccountServiceImpl.saveAccount()
+```
 
+
+4、包名可以使用通配符，表示任意包。但是有几级包，就需要写几个 *.
+
+```
+* *.*.*.*.AccountServiceImpl.saveAccount())
+```
+
+5、包名可以使用…表示当前包及其子包
+
+```
+* *..AccountServiceImpl.saveAccount()
+```
+
+6、类名和方法名都可以使用 * 来实现通配
+
+```
+* *..*.*()
+```
+
+参数列表：
+
+1、可以直接写数据类型：
+
++ 基本类型直接写名称 int
++ 引用类型写包名.类名的方式 java.lang.String
+
+2、可以使用 通配符 表示任意类型，但是必须有参数
+       可以使用…表示有无参数均可，有参数可以是任意类型
+
+3、全通配写法：
+
+```
+* *..*.*(..)
+```
+
+#### **2.3.1 切入点表达式的通常写法**
+
+<font color=red>实际开发中切入点表达式的通常写法：切到业务层实现类下的所有方法:</font>>
+
+```
+com.itheima.service.impl.*.*(..)
 ```
 
 配置完成后的 bean.xml 文件如下：
@@ -264,7 +365,7 @@ public class Logger {
 
 **测试方法：**
 
-```xml
+```java
 public class AOPTest {
     public static void main(String[] args) {
         //1.获取容器
@@ -282,7 +383,9 @@ public class AOPTest {
 
 ```
 
-**执行结果：** <img src="https://img-blog.csdnimg.cn/20210602132252384.png?#pic_left" alt="在这里插入图片描述" width="600"/>
+**执行结果：**
+
+ <img src="https://img-blog.csdnimg.cn/20210602132252384.png?#pic_left" alt="在这里插入图片描述" width="600"/>
 
 ---
 
@@ -295,7 +398,8 @@ public class AOPTest {
 <aop:pointcut id="pt1" expression="execution( * com.itheima.service.impl.*.*(..))"></aop:pointcut>
 
 ```
-- 配置切入点表达式 id 的属性用于指定表达式的唯一标识。expression 属性用于指定表达式内容- 此标签既可以写在 aop:aspect 内部，也可以写在外部。- 标签写在内部只能当前切面使用，写在外面代表所有切面可用，<font color="red">但是一定要放在aop:config标签的最顶部</font>
+- 配置切入点表达式 id 的属性用于指定表达式的唯一标识。expression 属性用于指定表达式内容
+- 此标签既可以写在 aop:aspect 内部，也可以写在外部。- 标签写在内部只能当前切面使用，写在外面代表所有切面可用，<font color="red">但是一定要放在aop:config标签的最顶部</font>
 **标签写在 aop:aspect 内部：**
 
 ```java
@@ -466,14 +570,18 @@ public Object aroundPrintLog(ProceedingJoinPoint pjp){
 
 ```
 
-测试方法结果： <img src="https://img-blog.csdnimg.cn/2021060215090764.png?#pic_left" alt="在这里插入图片描述" width="500"/>
+测试方法结果：
+
+ <img src="https://img-blog.csdnimg.cn/2021060215090764.png?#pic_left" alt="在这里插入图片描述" width="500"/>
 
 ---
 
 
 ## 三、Spring 中基于注解的 AOP 配置步骤
 
-为了演示基于注解的AOP配置步骤，我们创建一个新的工程，工程目录如下： <img src="https://img-blog.csdnimg.cn/20210602152006963.png?#pic_left" alt="在这里插入图片描述" width="250"/>
+为了演示基于注解的AOP配置步骤，我们创建一个新的工程，工程目录如下：
+
+ <img src="https://img-blog.csdnimg.cn/20210602152006963.png?#pic_left" alt="在这里插入图片描述" width="250"/>
 
 ---
 
@@ -575,7 +683,7 @@ public class Logger {
 
 **测试方法：**
 
-```xml
+```java
 public static void main(String[] args) {
 	//1.获取容器
 	ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");	
@@ -587,14 +695,16 @@ public static void main(String[] args) {
 
 ```
 
-<img src="https://img-blog.csdnimg.cn/20210602152831200.png?#pic_left" alt="在这里插入图片描述" width="650"/> 从结果中看出，后置通知与最终通知顺序有所不同，这个是 Spring 内部的问题。解决该问题的方法是使用环绕通知，我们手动增强方法和执行的方式。
+<img src="https://img-blog.csdnimg.cn/20210602152831200.png?#pic_left" alt="在这里插入图片描述" width="650"/> 
+
+从结果中看出，后置通知与最终通知顺序有所不同，这个是 Spring 内部的问题。解决该问题的方法是使用环绕通知，我们手动增强方法和执行的方式。
 
 ---
 
 
 ### 3.2 环绕通知类型
 
-```xml
+```java
 @Component("logger")
 @Aspect//表示当前类是一个切面类
 public class Logger {
@@ -627,7 +737,11 @@ public class Logger {
 
 ```
 
-方法执行结果如下： <img src="https://img-blog.csdnimg.cn/20210602153436538.png?#pic_left" alt="在这里插入图片描述" width="600"/>
+方法执行结果如下：
+
+ <img src="https://img-blog.csdnimg.cn/20210602153436538.png?#pic_left" alt="在这里插入图片描述" width="600"/>
+
+
 
 ---
 

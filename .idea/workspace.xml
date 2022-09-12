@@ -10,79 +10,294 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/myTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.assets/wps9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/IntelliJ IDEA.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config-mytest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ed95140-3250-403f-8f53-127ea6b6c464.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ed95140-3250-403f-8f53-127ea6b6c464.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/UserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/util/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/JAVA/java8实战/.Java 8 实战.pdf.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/JAVA/java8实战/.java详细思维导图.xmind.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/@linux查看用户操作的记录.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/在linux用户下查看当前用户或者历史用户的操作记录.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/Spring 从入门到精通系列 01——Spring概述与体系结构总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/Spring 从入门到精通系列 08——使用纯注解的方式实现 IOC 案例与 Junit 整合.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/mybatis trim标签的使用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/1-企业权限管理系统.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/1-黑马旅游网注册.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/10-企业权限管理-用户详情.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/11-企业权限管理-角色操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/12-企业权限管理-资源权限.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/13-企业权限管理-用户关联角色操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/14-企业权限管理-角色关联权限操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/15-企业权限管理-aop日志.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/15-企业权限管理-方法级别权限控制.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/2-企业权限管理-环境搭建.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/2-黑马旅游网登陆-退出.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/2020最新版Shiro教程,整合SpringBoot项目实战教程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/3-企业权限管理-产品添加.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/3-黑马旅游Baseservlet抽取 和分类展示.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/3MySQL多表&amp;事务课堂笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/3mybatis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/4-企业权限管理-订单操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/4-黑马旅游网-分页展示.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/4Mybatis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/5-企业权限管理-订单分页.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/5-黑马旅游网-线路查询.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/6-企业权限管理-订单详情.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/6-黑马旅游网-旅游线路详情.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/7-企业权限管理-权限操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/7-黑马旅游网-旅游线路收藏.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/8-企业权限管理-登陆.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/8-黑马旅游网-点击按钮收藏.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/9-企业权限管理-用户操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/HTTP协议：响应消息和 Response对象和ServletContext对象.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/HTTP和RPC区别（通俗易懂超级好）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/JDBCTemplate.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/JDBC详情.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/JSP简介&amp;&amp;EL表达式&amp;&amp; JSTL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/Java反射机制.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/Mybatis基础详细介绍.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/Nginx 配置清单（一篇够用）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/Servlet&amp;HTTP&amp;Request笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/Session&amp;&amp;Cookie.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/ajax&amp;&amp;json.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/hive 在执行create table student1 as select * from student;就一直在这个阶段没有启用mr 为什么？.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/hive在执行插入操作的时候insert into student values(1,&quot;ss&quot;);报错.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javahweb1登陆案例.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb2添加功能.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb3删除功能.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb4修改信息.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb5删除选中.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb6分页查询功能简述.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/javaweb7复杂分页查询.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/json.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/mybatis的概述.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/shiro的具体认证流程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/spring基于xml的 ioc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/spring基础概述.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/synchronized原理详解（通俗易懂超级好）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/volatile 和synchronized的目的.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vue-day01.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vue-day02.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vue-day03.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vue-day04.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday05_vue路由(1).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday06_vue前端工程化.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday08.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday09.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday10.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday11.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday12.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday13.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/vueday14.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/zookeeper定义及操作.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/《七里香》雨下整夜 我的爱溢出就像雨水.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/《黑马旅游网》综合案例简述.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/七夕节缘由.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/中writeValue和writeValueAsString的区别.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/使用MailUtils发送邮件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/使用域名访问网站或者静态页面.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/函数加强.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/分布式、集群、微服务的区别.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/前后端分离项目部署vue+springboot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/动态代理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/大数据 zookeeper 常用启动命令.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/大数据技术之Kafka.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/如何检查域名解析是否生效.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/微服务定义及优缺点.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/我的创作（研究生毕业）纪念日----工作一周年！！！.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/推导式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/数仓中指标-标签，维度-度量，自然键-代理键，数据集市等各名词解析及关系.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/数据仓库建设规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/数据分析包括911.csv.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/数据开发流程及规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/浅析-ES6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/浅析-vue.js.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/浅析-微服务1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/浅析-微服务2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/浅析-微服务3搭建框架.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/线程池详解（通俗易懂超级好）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/绘制football网络.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/过滤器Fliter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/部署若以单应用版本.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/面向对象-其他.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/验证登陆案例.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/临时文件/qq_43061290/黑马-企业权限管理系统资料百度云盘全部.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/flink/Flink知识体系保姆级总结.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/flink/checkpoint.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/flink/flink知识体系.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/flink/flink算子大全.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/flink/time.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/hbase/hbase.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/kafka/kafka.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据/spark/spark.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/brew安装.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/其他组件/XStream 组件使用手册.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/halo" beforeDir="false" afterPath="$PROJECT_DIR$/halo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/halo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/halo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/halo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/halo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/halo/src/main/java/run/halo/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/halo/src/main/resources/templates/themes/anatole" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/dao/UserDaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserDaoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserDaoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/myTest/myTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/myTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/JAVA/java8实战/Java 8 实战.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/JAVA/java8实战/java详细思维导图.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/1-企业权限管理系统.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/1-黑马旅游网注册.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/10-企业权限管理-用户详情.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/11-企业权限管理-角色操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/12-企业权限管理-资源权限.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/13-企业权限管理-用户关联角色操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/14-企业权限管理-角色关联权限操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/15-企业权限管理-aop日志.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/15-企业权限管理-方法级别权限控制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/2-企业权限管理-环境搭建.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/2-黑马旅游网登陆-退出.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/2020最新版Shiro教程,整合SpringBoot项目实战教程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/3-企业权限管理-产品添加.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/3-黑马旅游Baseservlet抽取 和分类展示.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/3MySQL多表&amp;事务课堂笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/3mybatis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/4-企业权限管理-订单操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/4-黑马旅游网-分页展示.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/4Mybatis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/5-企业权限管理-订单分页.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/5-黑马旅游网-线路查询.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/6-企业权限管理-订单详情.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/6-黑马旅游网-旅游线路详情.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/7-企业权限管理-权限操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/7-黑马旅游网-旅游线路收藏.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/8-企业权限管理-登陆.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/8-黑马旅游网-点击按钮收藏.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/9-企业权限管理-用户操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/HTTP协议：响应消息和 Response对象和ServletContext对象.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/HTTP和RPC区别（通俗易懂超级好）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/JDBCTemplate.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/JDBC详情.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/JSP简介&amp;&amp;EL表达式&amp;&amp; JSTL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/Java反射机制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/Mybatis基础详细介绍.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/Nginx 配置清单（一篇够用）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/Servlet&amp;HTTP&amp;Request笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/Session&amp;&amp;Cookie.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/ajax&amp;&amp;json.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/hive 在执行create table student1 as select * from student;就一直在这个阶段没有启用mr 为什么？.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/hive在执行插入操作的时候insert into student values(1,&quot;ss&quot;);报错.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javahweb1登陆案例.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb2添加功能.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb3删除功能.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb4修改信息.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb5删除选中.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb6分页查询功能简述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/javaweb7复杂分页查询.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/json.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/mybatis的概述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/shiro的具体认证流程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/spring基于xml的 ioc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/spring基础概述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/synchronized原理详解（通俗易懂超级好）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/volatile 和synchronized的目的.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vue-day01.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vue-day02.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vue-day03.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vue-day04.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday05_vue路由(1).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday06_vue前端工程化.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday07.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday08.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday09.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday10.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday11.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday12.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday13.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/vueday14.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/zookeeper定义及操作.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/《七里香》雨下整夜 我的爱溢出就像雨水.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/《黑马旅游网》综合案例简述.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/七夕节缘由.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/中writeValue和writeValueAsString的区别.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/使用MailUtils发送邮件.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/使用域名访问网站或者静态页面.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/函数加强.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/分布式、集群、微服务的区别.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/前后端分离项目部署vue+springboot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/动态代理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/大数据 zookeeper 常用启动命令.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/大数据技术之Kafka.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/如何检查域名解析是否生效.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/微服务定义及优缺点.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/我的创作（研究生毕业）纪念日----工作一周年！！！.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/推导式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/数仓中指标-标签，维度-度量，自然键-代理键，数据集市等各名词解析及关系.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/数据仓库建设规范.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/数据分析包括911.csv.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/数据开发流程及规范.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/浅析-ES6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/浅析-vue.js.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/浅析-微服务1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/浅析-微服务2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/浅析-微服务3搭建框架.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/线程池详解（通俗易懂超级好）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/绘制football网络.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/过滤器Fliter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/部署若以单应用版本.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/面向对象-其他.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/验证登陆案例.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/qq_43061290/黑马-企业权限管理系统资料百度云盘全部.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Flink（2022版）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Flink（2022版）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Hbase（2022版）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Hbase（2022版）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Kafka（2022版）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Kafka（2022版）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Spark（2022版）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/大数据八股文/大数据知识面试题-Spark（2022版）.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/工具/mac 软件安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/工具/mac 软件安装.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SMV/COM1/dao/UserDaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SMV/COM2/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/废弃/Spring+Mybatis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/MyBatis入门到精通——入门篇.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/MyBatis入门到精通——入门篇.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 07——Mybatis 连接池与事务控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 07——Mybatis 连接池与事务控制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 08——动态 SQL 语句.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 08——动态 SQL 语句.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 11——Mybatis 延迟加载与立即加载.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 11——Mybatis 延迟加载与立即加载.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 12——Mybatis 的一级缓存与二级缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 12——Mybatis 的一级缓存与二级缓存.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 13——基于注解配置的增删改查.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 13——基于注解配置的增删改查.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 14——基于注解配置的一对一查询与一对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 14——基于注解配置的一对一查询与一对多查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 15——嵌套查询与嵌套结果.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 15——嵌套查询与嵌套结果.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 01——SpringMVC 概述与入门案例.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 01——SpringMVC 概述与入门案例.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 02——请求参数的绑定.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 02——请求参数的绑定.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 03——常用注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 03——常用注解.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 04——返回值分类和转发和重定向的实现.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 04——返回值分类和转发和重定向的实现.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 05——Ajax的实现方式总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 05——Ajax的实现方式总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 06——SpringMVC 实现文件上传.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 06——SpringMVC 实现文件上传.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 07——SpringMVC框架中的拦截器.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/SMV/SpringMVC从入门到精通系列/SpringMVC 从入门到精通系列 07——SpringMVC框架中的拦截器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 01——Spring概述与体系结构总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 01——Spring概述与体系结构总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 02——程序的耦合问题及工厂模式解耦.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 02——程序的耦合问题及工厂模式解耦.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 03——使用 Spring 的 IOC 解决程序耦合.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 03——使用 Spring 的 IOC 解决程序耦合.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 05——Spring 依赖注入的三种方式.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 05——Spring 依赖注入的三种方式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 06——Spring 中的 IOC 常用注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 06——Spring 中的 IOC 常用注解.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 07——基于XML与注解方式的IOC案例编写.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 07——基于XML与注解方式的IOC案例编写.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 08——使用纯注解的方式实现 IOC 案例与 Junit 整合.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 08——使用纯注解的方式实现 IOC 案例与 Junit 整合.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 09——转账方法的事务问题与动态代理.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 09——转账方法的事务问题与动态代理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 10—— 使用 Spring 进行面向切面编程（AOP）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 10—— 使用 Spring 进行面向切面编程（AOP）.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 11—— Spring 中的 JdbcTemplate.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 11—— Spring 中的 JdbcTemplate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 12—— Spring 中的事务控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 12—— Spring 中的事务控制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext3 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM1/dao/UserDaoMapper 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/dao/UserMapper 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext-AOP1 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext-product 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext-user 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext2 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc 3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config-mytest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config-mytest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config2 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample1 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample3 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample4 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample4_2 3.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +309,8 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -133,30 +348,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava/src/main/resources",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "spring.configuration.checksum": "cd38c773746dc4e19fef361d399d7570"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1b38cf98cdd2b5c93a24a4979aef6d00&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/SMV/myTest" />
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/LINUX" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/test" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/SMV/COM1" />
@@ -165,13 +380,16 @@
       <recent name="$PROJECT_DIR$/src/main/java/其他文档/数据库" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="SMV.myTest" />
       <recent name="SMV.COM2.utils" />
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.myTest">
+  <component name="RunManager" selected="JUnit.UserMapperTest">
     <configuration name="myTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SMV.myTest.myTest" />
       <module name="myJava" />
@@ -216,22 +434,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.DeleteUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SMV.myTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SMV.COM2.test" />
-      <option name="MAIN_CLASS_NAME" value="SMV.COM2.test.UserDaoTest" />
-      <option name="METHOD_NAME" value="DeleteUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -244,6 +446,21 @@
       <option name="MAIN_CLASS_NAME" value="SMV.COM1.test.UserDaoTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatis.UserMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -338,19 +555,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.myTest" />
+      <item itemvalue="JUnit.UserMapperTest" />
       <item itemvalue="JUnit.UserDaoTest.test" />
       <item itemvalue="JUnit.UserDaoTest2" />
-      <item itemvalue="JUnit.UserDaoTest.DeleteUserById" />
       <item itemvalue="JUnit.UserDaoTest2.get" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="Application.myTest" />
         <item itemvalue="JUnit.UserDaoTest2" />
         <item itemvalue="JUnit.UserDaoTest.test" />
         <item itemvalue="JUnit.UserDaoTest2.get" />
-        <item itemvalue="JUnit.UserDaoTest.DeleteUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -411,6 +628,10 @@
       <workItem from="1662172230123" duration="52000" />
       <workItem from="1662172298507" duration="19000" />
       <workItem from="1662172332065" duration="7753000" />
+      <workItem from="1662383917089" duration="543000" />
+      <workItem from="1662431713025" duration="2421000" />
+      <workItem from="1662566857942" duration="250000" />
+      <workItem from="1662997611103" duration="1551000" />
     </task>
     <servers />
   </component>

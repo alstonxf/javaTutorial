@@ -372,8 +372,11 @@ public class AccountDaoImpl implements IAccountDao {
 
 
 ## 二、动态代理
-1. **特点：** 字节码随用随创建，随用随加载1. **作用：** 不修改源码的基础上对方法增强<li>**分类：** 
-  1. 基于接口的动态代理1. 基于子类的动态代理 </li>
+1. **特点：** 字节码随用随创建，随用随加载
+1. **作用：** 不修改源码的基础上对方法增强
+1. **分类：** 
+   + 基于接口的动态代理
+   + 基于子类的动态代理
 ---
 
 
@@ -417,4 +420,5 @@ public class Beanfactory {
 
 
 读者们想了解，可以点击右方链接查看：👉 https://www.cnblogs.com/yulinfeng/p/7811965.html</a>
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117459286

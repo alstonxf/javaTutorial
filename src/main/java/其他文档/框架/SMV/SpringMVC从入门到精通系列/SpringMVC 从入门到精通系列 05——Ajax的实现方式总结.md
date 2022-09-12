@@ -56,7 +56,11 @@ public @ResponseBody User testAjax1(@RequestBody User user){
 
 ```
 
-后台打印： <img src="https://img-blog.csdnimg.cn/20210617225707300.png#pic_left" alt="在这里插入图片描述" width="500"/> 前台响应数据： <img src="https://img-blog.csdnimg.cn/2021061723013355.png#pic_left" alt="在这里插入图片描述" width="500"/>
+后台打印： 
+ <img src="https://img-blog.csdnimg.cn/20210617225707300.png#pic_left" alt="在这里插入图片描述" width="500"/>
+ 前台响应数据： 
+ <img src="https://img-blog.csdnimg.cn/2021061723013355.png#pic_left" alt="在这里插入图片描述" width="500"/>
+
 
 **注意：**
 1. 如果使用 @RequestBody 注解，ajax需要传 **json 字符串**，因此需要 JSON.stringify(param) 进行转换。1. 也可以使用 ‘{“username”:“xiuYan”,“password”:“123456”,“age”:21}’，但是更推荐上一种。1. <font color="red">@RequestBody 注解的作用是把 json 的字符串转换成 JavaBean 的对象</font>1. $.ajax() 方式实现，需要和 @RequestBody 注解配合使用，其作用是把客户的 json 对象转换为 javaBean 对象。(使用该注解前提：contentType 设置为：application/json)
@@ -92,9 +96,13 @@ public @ResponseBody User testAjax2(User user){
 
 ```
 
-后台打印： <img src="https://img-blog.csdnimg.cn/20210617231741659.png#pic_left" alt="在这里插入图片描述" width="500"/>
+后台打印： 
+ <img src="https://img-blog.csdnimg.cn/20210617231741659.png#pic_left" alt="在这里插入图片描述" width="500"/>
 
-前台响应： <img src="https://img-blog.csdnimg.cn/2021061723165964.png#pic_left" alt="在这里插入图片描述" width="500"/>
+
+前台响应： 
+ <img src="https://img-blog.csdnimg.cn/2021061723165964.png#pic_left" alt="在这里插入图片描述" width="500"/>
+
 
 **注意：**
 1. json数据使用，json的头带双引号也能解析成功。如"username": “xiuYan2”…1. **这里后台不需要用 @RequestBody 注解，这样会报 415错误。**
@@ -150,7 +158,11 @@ public void testAjax3(User user, HttpServletResponse response) throws IOExceptio
 
 ```
 
-后台打印： <img src="https://img-blog.csdnimg.cn/20210629102511651.png#pic_left" alt="在这里插入图片描述" width="480"/> 前台响应： <img src="https://img-blog.csdnimg.cn/20210617233647413.png" alt="在这里插入图片描述"/>
+后台打印： 
+ <img src="https://img-blog.csdnimg.cn/20210629102511651.png#pic_left" alt="在这里插入图片描述" width="480"/>
+ 前台响应： 
+ <img src="https://img-blog.csdnimg.cn/20210617233647413.png" alt="在这里插入图片描述"/>
+
 
 ---
 
@@ -196,7 +208,11 @@ public @ResponseBody boolean testAjax4(User user, HttpServletResponse response) 
 
 ```
 
-后台打印： <img src="https://img-blog.csdnimg.cn/20210629102732137.png#pic_left" alt="在这里插入图片描述" width="480"/> 前台响应： <img src="https://img-blog.csdnimg.cn/20210629102758632.png#pic_left" alt="在这里插入图片描述" width="400"/>
+后台打印： 
+ <img src="https://img-blog.csdnimg.cn/20210629102732137.png#pic_left" alt="在这里插入图片描述" width="480"/>
+ 前台响应： 
+ <img src="https://img-blog.csdnimg.cn/20210629102758632.png#pic_left" alt="在这里插入图片描述" width="400"/>
+
 
 ---
 

@@ -21,7 +21,9 @@
 
 
 ## 一、问题题出
-1.  什么是缓存 <mark>存在于内存中的临时数据。</mark> 1.  为什么使用缓存 <mark>减少和数据库的交互次数，提高执行效率。</mark> <li> 什么样的数据能使用缓存，什么样的数据不能使用 
+1.  什么是缓存 <mark>存在于内存中的临时数据。</mark> 
+1.  为什么使用缓存 <mark>减少和数据库的交互次数，提高执行效率。</mark> 
+1.  什么样的数据能使用缓存，什么样的数据不能使用 
   <blockquote> 
    **适用于缓存:** 经常查询并且不经常改变的。数据的正确与否对最终结果影响不大的。 **不适用于缓存:** ① 经常改变的数据; ②数据的正确与否对最终结果影响很大的。   例如：商品的库存，银行的汇率，股市的牌价。 
   </blockquote> </li>
@@ -133,20 +135,43 @@ public void testClearCache(){
 
 **使用步骤：**
 
-第一步 : 让 Mybatis 框架支持二级缓存(在SqlMapConfig.xml中配置) 第二步 : 让当前的映射文件支持二级缓存(在IUserDao.xml中配置) 第三步 : 让当前的操作支持二级缓存(在select标签中配置)
-<li> 第一步：主配置文件中支持二级缓存 <pre><code class="prism language-xml"><settings>
-	<setting name="cacheEnabled" value="true"></setting>
+第一步 : 让 Mybatis 框架支持二级缓存(在SqlMapConfig.xml中配置) 
+
+第二步 : 让当前的映射文件支持二级缓存(在IUserDao.xml中配置) 
+
+第三步 : 让当前的操作支持二级缓存(在select标签中配置)
+
+1、第一步：主配置文件中支持二级缓存 
+
+```xml
+<settings>
+  <setting name="cacheEnabled" value="true"></setting> 
 </settings>
-</code></pre> 因为 cacheEnabled 的取值默认就为 true，所以这一步可以省略不配置。为 true 代表开启二级缓存；为false 代表不开启二级缓存。 </li><li> 第二步：映射文件支持二级缓存 <pre><code class="prism language-xml"><!--开启user支持二级缓存-->
-<cache/>
-</code></pre> </li><li> 第三步：让当前的操作支持二级缓存 <pre><code class="prism language-xml"><!--根据id查询用户，添加 useCache 属性，并指定为true-->
+```
+
+因为 cacheEnabled 的取值默认就为 true，所以这一步可以省略不配置。为 true 代表开启二级缓存；为false 代表不开启二级缓存。 
+
+2、第二步：映射文件支持二级缓存
+
+```xml
+<mapper namespace="xxx.XxxMapper" >
+    <!-- 启动当前命名空间的二级缓存 -->
+    <cache></cache>
+</mapper>   
+```
+
+3、第三步：让当前的操作支持二级缓存
+
+```xml
+<!--根据id查询用户，添加 useCache 属性，并指定为true-->
 <select id="findById" parameterType="INT" resultType="user" useCache="true">
     select * from user where id = #{id}
 </select>
-</code></pre> </li>
+```
+
 示例：
 
-```xml
+```java
 @Test
 public void testFirstLevelCache(){
     SqlSession sqlSession1 = factory.openSession();
@@ -174,13 +199,13 @@ public void testFirstLevelCache(){
 ---
 
 
-## 四、补充：注解配置开启二级缓存
+## 四、补充：也可以使用注解配置开启二级缓存
 
 基于注解配置开启二级缓存，第二步与基于XML配置有所区别，其需要在持久层接口名的上方添加@CacheNamespace(blocking = true)
 
 **实例：**
 
-```xml
+```java
 @CacheNamespace(blocking = true)
 public interface IUserDao {
 
@@ -195,7 +220,7 @@ public interface IUserDao {
 
 **测试方法：**
 
-```xml
+```java
  @Test
  public void testFindById(){
      SqlSession session1 = factory.openSession();
@@ -223,4 +248,5 @@ public interface IUserDao {
 
 
 本文针对 Mybatis 中一级缓存和二级缓存进行了总结归纳，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/116572478

@@ -55,11 +55,11 @@
 
 ### 1.1、kafka介绍
 
-​ kafka是最初由linkedin公司开发的，使用scala语言编写，kafka是一个分布式，分区的，多副本的，多订阅者的消息队列系统。
+ kafka是最初由linkedin公司开发的，使用scala语言编写，kafka是一个分布式，分区的，多副本的，多订阅者的消息队列系统。
 
 ### 1.2、kafka相比其他消息队列的优势
 
-​ 常见的消息队列：RabbitMQ，Redis ，zeroMQ ,ActiveMQ
+ 常见的消息队列：RabbitMQ，Redis ，zeroMQ ,ActiveMQ
 
 **kafka的优势**：
 - 可靠性：分布式的，分区，复制和容错的。- 可扩展性：kafka消息传递系统轻松缩放，无需停机。- 耐用性：kafka使用分布式提交日志，这意味着消息会尽可能快速的保存在磁盘上，因此它是持久的。- 性能：kafka对于发布和定于消息都具有高吞吐量。即使存储了许多TB的消息，他也爆出稳定的性能。- kafka非常快：保证零停机和零数据丢失。
@@ -122,10 +122,11 @@ public ProducerRecord(String topic, Integer partition, Long timestamp, K key, V 
 1.  **同步模式**：配置=1 （只有Leader收到，-1 所有副本成功，0 不等待）Leader Partition挂了，数据就会丢失 解决：设置 -1 保证produce 写入所有副本算成功 producer.type = sync request.required.acks=-1 1.  **异步模式**，当缓冲区满了，如果配置为0（没有收到确认，一满就丢弃），数据立刻丢弃 解决：不限制阻塞超时时间。就是一满生产者就阻 ​ 
 #### **1.8.2、broker保证数据不丢失**
 
-​ broker采用分片副本机制，保证数据高可用。
+ broker采用分片副本机制，保证数据高可用。
 
 #### 1.8.3、customer保证数据不丢失
 -  拿到数据后，存储到hbase中或者mysql中，如果hbase或者mysql在这个时候连接不上，就会抛出异常，如果在处理数据的时候已经进行了提交，那么kafka上的oﬀset值已经进行了修改了，但是hbase或者mysql中没有数据，这个时候就会出现**数据丢失**。 主要是因为offset提交使用了异步提交。 <li> 解决方案 
+  
   <ul>- Consumer将数据处理完成之后，再来进行oﬀset的修改提交。默认情况下oﬀset是 自动提交，需要修改为手动提交oﬀset值。- 流式计算。高级数据源以kafka为例，由2种方式：receiver (开启WAL，失败可恢复) director （checkpoint保证）
 ### 1.9、数据重复
 - 落表（主键或者唯一索引的方式，避免重复数据） 业务逻辑处理（选择唯一主键存储到Redis或者mongdb中，先查询是否存在，若存在则不处理；若不存在，先插入Redis或Mongdb,再进行业务逻辑处理）
@@ -137,7 +138,7 @@ public ProducerRecord(String topic, Integer partition, Long timestamp, K key, V 
 
 **第二步**：查找对应的segment里面的index文件 。index文件都是key/value对的。key表示数据在log文件里面的顺序是第几条。value记录了这一条数据在全局的标号。如果能够直接找到对应的offset直接去获取对应的数据即可
 
-​ 如果index文件里面没有存储offset，就会查找offset最近的那一个offset，例如查找offset为7的数据找不到，那么就会去查找offset为6对应的数据，找到之后，再取下一条数据就是offset为7的数据
+ 如果index文件里面没有存储offset，就会查找offset最近的那一个offset，例如查找offset为7的数据找不到，那么就会去查找offset为6对应的数据，找到之后，再取下一条数据就是offset为7的数据
 
 ### 1.11、Kafka auto.offset.reset值详解
 
@@ -190,4 +191,8 @@ kafka只能保证partition内是有序的，但是partition间的有序是没办
 ### 13. Kafka单条日志传输大小
 
 kafka对于消息体的大小默认为单条最大值是1M但是在我们应用场景中, 常常会出现一条消息大于1M，如果不对kafka进行配置。则会出现生产者无法将消息推送到kafka或消费者无法去消费kafka里面的数据, 这时我们就要对kafka 进行以下配置：server.properties replica.fetch.max.bytes: 1048576 broker可复制的消息的最大字节数, 默认为 1M message.max.bytes: 1000012 kafka 会接收单个消息size的最大限制，默认为1M左右 注意：message.max.bytes必须小于等于replica.fetch.max.bytes，否则就会导致replica之间数据同步失败。
+
 # **文章地址： **https://blog.csdn.net/qq_43061290/article/details/125145841
+
+
+

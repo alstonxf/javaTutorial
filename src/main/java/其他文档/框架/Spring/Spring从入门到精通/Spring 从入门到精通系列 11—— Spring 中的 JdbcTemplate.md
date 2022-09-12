@@ -24,7 +24,9 @@
 ## 一、JdbcTemplate 概述
 
   它是 spring 框架中提供的一个对象，是对原始 Jdbc API 对象的简单封装。spring 框架为我们提供了很多的操作模板类。
-1. 操作关系型数据的： jdbcTemplate HibernateTemplate1. 操作 nosql 数据库的： RedisTemplate1. 操作消息队列的： JmsTemplate
+1. 操作关系型数据的： jdbcTemplate HibernateTemplate
+2. 操作 nosql 数据库的： RedisTemplate
+1. 操作消息队列的： JmsTemplate
   JdbcTemplate在 spring-jdbc-5.0.2.RELEASE.jar 中，我们在导包的时候，除了要导入这个 jar 包 外，还需要导入一个 spring-tx-5.0.2.RELEASE.jar（它是和事务相关的），也可以在maven工程中也可以导入依赖：
 
 ```xml
@@ -154,7 +156,9 @@ public class JdbctemplateDemo2 {
 #### 3.2.1 配置数据源
 
 配置数据源的方式有三种，分别是：
-1. 配置 C3P0 数据源1. 配置 DBCP 数据源1. 配置 Spring 内置数据源
+1. 配置 C3P0 数据源
+1. 配置 DBCP 数据源
+1. 配置 Spring 内置数据源
 ---
 
 
@@ -284,4 +288,5 @@ public class JdbctemplateDemo3 {
 
 
 本文针对 Spring 中的 JdbcTemplate 进行了分析，并实现对数据库的操作。如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117478948

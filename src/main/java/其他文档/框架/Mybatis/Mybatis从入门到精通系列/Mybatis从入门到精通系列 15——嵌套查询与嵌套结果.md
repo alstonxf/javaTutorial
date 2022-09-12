@@ -28,17 +28,20 @@ Mybatis 在映射文件中加载关联关系对象主要通过两种方式：嵌
 
 ---
 
+下面在 mysql 中建立 t_goods 表、t_orders 表以及 t_goods_orders 表，并在 t_goods_orders 设立外键。 <img src="https://img-blog.csdnimg.cn/20210526232135891.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232230812.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232414498.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232519308.png?#pic_left" alt="在这里插入图片描述" width="650"/> 
 
-下面在 mysql 中建立 t_goods 表、t_orders 表以及 t_goods_orders 表，并在 t_goods_orders 设立外键。 <img src="https://img-blog.csdnimg.cn/20210526232135891.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232230812.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232414498.png?#pic_left" alt="在这里插入图片描述" width="650"/> <img src="https://img-blog.csdnimg.cn/20210526232519308.png?#pic_left" alt="在这里插入图片描述" width="650"/> **注意：t_goods** 表中的 **customer_id** 属性，以及 **t_goods_orders** 中的 **number** 在本文案例中只是一个正常的属性，没有特殊含义。
+**注意：t_goods** 表中的 **customer_id** 属性，以及 **t_goods_orders** 中的 **number** 在本文案例中只是一个正常的属性，没有特殊含义。
 
 ---
 
 
 **添加数据：**
 
-<img src="https://img-blog.csdnimg.cn/20210527133233708.png?#pic_left" alt="在这里插入图片描述" width="400"/> <img src="https://img-blog.csdnimg.cn/20210527133259909.png?#pic_left" alt="在这里插入图片描述" width="400"/>
+​	<img src="https://img-blog.csdnimg.cn/20210527133233708.png?#pic_left" alt="在这里插入图片描述" width="400"/> <img src="https://img-blog.csdnimg.cn/20210527133259909.png?#pic_left" alt="在这里插入图片描述" width="400"/>
 
 <img src="https://img-blog.csdnimg.cn/20210527133315239.png?#pic_left" alt="在这里插入图片描述" width="400"/>
+
+
 
 ---
 
@@ -149,7 +152,7 @@ jdbc.password=000000
 
 **log4j.properties：**
 
-``` %m\n
+``` 
 </code>
 # Set root category priority to INFO and its only appender to CONSOLE.
 #log4j.rootCategory=INFO, CONSOLE            debug   info   warn error fatal
@@ -432,7 +435,9 @@ public class Client {
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210527000117928.png#pic_left" alt="在这里插入图片描述" width="800"/>
+**测试结果：**
+
+ <img src="https://img-blog.csdnimg.cn/20210527000117928.png#pic_left" alt="在这里插入图片描述" width="800"/>
 
 ---
 
@@ -512,5 +517,8 @@ public void testNestedResult(){
 
 ```
 
-**测试结果：** <img src="https://img-blog.csdnimg.cn/20210527072802645.png#pic_left" alt="在这里插入图片描述" width="800"/>
+**测试结果：**
+
+ <img src="https://img-blog.csdnimg.cn/20210527072802645.png#pic_left" alt="在这里插入图片描述" width="800"/>
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117022226

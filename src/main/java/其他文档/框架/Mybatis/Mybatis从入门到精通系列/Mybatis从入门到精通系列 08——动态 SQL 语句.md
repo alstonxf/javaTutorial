@@ -1,5 +1,5 @@
 # Mybatis从入门到精通系列 08——动态 SQL 语句
-  Mybatis 的映射文件中，前面我们的 SQL 都是比较简单的，有些时候业务逻辑复杂时，我们的 SQL 是动态变化的，此时在前面的学习中我们的 SQL 就不能满足要求了。那么本文针对 Mybatis 动态 SQL 语句进行简单的操作。
+Mybatis 的映射文件中，前面我们的 SQL 都是比较简单的，有些时候业务逻辑复杂时，我们的 SQL 是动态变化的，此时在前面的学习中我们的 SQL 就不能满足要求了。那么本文针对 Mybatis 动态 SQL 语句进行简单的操作。
 
 后文应用 typeAliases 标签指定了所有实体类都注册别名，并且类名就是别名，参考链接如下： Mybatis从入门到精通系列 06——properties 和 typeAliase 标签总结</a> <img src="https://img-blog.csdnimg.cn/20210423225938742.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -76,7 +76,9 @@ public void testFindByCondition(){
 
 ## 二、动态 SQL 的 where 标签
 
-为了简化上面 where 1=1 的条件拼装，我们可以采用标签来简化开发。
+==为了简化上面 where 1=1 的条件拼装，我们可以采用标签来简化开发。==
+
+<where> </where> 标签等同于 where 1=1
 
 **持久层 Dao 接口：**
 
@@ -155,7 +157,10 @@ List<User> findUserInIdsByList(List list);
 
 **持久层 Dao 映射配置：**
 
+相当于执行sql：select * from user where 1=1 and id in (,,,,,,) 括号内是list的元素。
+
 ```xml
+
 <!--根据 List 实现查询用户列表-->
 <select id="findUserInIdsByList" resultType="user" parameterType="list">
     select * from user
@@ -171,8 +176,17 @@ List<User> findUserInIdsByList(List list);
 ```
 
 其中，foreach 标签用于遍历集合，它的属性：
-- collection:代表要遍历的集合元素，注意编写时不要写#{}- open:代表语句的开始部分- close:代表结束部分- item:代表遍历集合的每个元素，生成的变量名- separator:代表分隔符
-**测试方法：**
+- collection:代表要遍历的集合元素，注意编写时不要写#{}
+
+- open:代表语句的开始部分
+
+- close:代表结束部分
+
+- item:代表遍历集合的每个元素，生成的变量名
+
+- separator:代表分隔符
+
+  **测试方法：**
 
 ```java
 @Test
@@ -279,7 +293,7 @@ public void testFindInIds(){
 
 ## 四、动态 SQL 的 bind 标签
 
-bind 标签可以使用 OGNL 表达式创建一个变量井将其绑定到上下文中，其主要用于模糊查询，防止 SQL 注入。
+bind 标签可以使用 OGNL 表达式创建一个变量井将其绑定到上下文中，==其主要用于模糊查询，防止 SQL 注入。==
 
 **持久层 Dao 接口：**
 
@@ -339,9 +353,11 @@ set 标签是 mybatis 提供的一个智能标记，我一般将其用在修改�
 
 ```
 
-在上述的代码片段当中，假如说现在三个字段都有值得话，那么上面打印的SQL语句如下： update user set username=‘xxx’ , sex=‘xx’ where id=‘x’
+在上述的代码片段当中，假如说现在三个字段都有值得话，那么上面打印的SQL语句如下： 
 
-set标记已经自动帮助我们把最后一个逗号给去掉了。
+update user set username=‘xxx’ , sex=‘xx’ where id=‘x’
+
+<font color=red>set标记已经自动帮助我们把最后一个逗号给去掉了。</font>
 
 参考博客：https://www.cnblogs.com/qiankun-site/p/5758383.html</a>
 
@@ -351,6 +367,13 @@ set标记已经自动帮助我们把最后一个逗号给去掉了。
 ## 六、动态 SQL 的 trim 标签
 
   mybatis 的 trim 标签一般用于去除 sql 语句中多余的 and 关键字，逗号，或者给 sql 语句前拼接 “where“、“set“ 以及“values (“ 等前缀，或者添加“)“等后缀，可用于选择性插入、更新、删除或者条件查询等操作。
+
+| 属性            | 描述                                                         |
+| :-------------- | :----------------------------------------------------------- |
+| prefix          | 给sql语句拼接的前缀                                          |
+| suffix          | 给sql语句拼接的后缀                                          |
+| prefixOverrides | 去除sql语句前面的关键字或者字符，该关键字或者字符由prefixOverrides属性指定，假设该属性指定为"AND"，当sql语句的开头为"AND"，trim标签将会去除该"AND" |
+| suffixOverrides | 去除sql语句后面的关键字或者字符，该关键字或者字符由suffixOverrides属性指定 |
 
 持久层 Dao 映射配置：
 
@@ -371,7 +394,7 @@ set标记已经自动帮助我们把最后一个逗号给去掉了。
 
 此处对于 trim 标签的使用讲解不是特别清楚，读者可参考以下链接：
 
-参考博客：https://blog.csdn.net/wt_better/article/details/80992014</a>
+参考博客：https://blog.csdn.net/wt_better/article/details/80992014
 
 ---
 
@@ -409,4 +432,5 @@ Sql 标签中可将重复的 sql 提取出来，使用时用 include 引用即�
 
 
 本文针对 Mybatis 中的动态 SQL 语句使用进行了总结归纳，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/116074898

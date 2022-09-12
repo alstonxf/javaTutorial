@@ -86,23 +86,47 @@ public class StaticFactory {
 
 ## 二、bean 标签的作用范围调整
 
-bean标签的scope属性：
--  作用：<mark>用于指定bean的作用范围</mark> <li> 取值：常用是单例和多例 
-  <ol>-  **singleton : 单例（默认值）** <li> **prototype ：多例** 
-    <blockquote> 
-     **request** ：作用域web应用的请求范围 **session** ：作用域web应用的会画范围 **global-session** ：作用域集群环境的会话范围（全局会话范围），当不是集群环境时，它就是session 
-    </blockquote> </li></ol> </li>
+bean标签的**scope属性**：
+-  作用：<mark>用于指定bean的作用范围</mark>  
+  
+-  取值：常用是单例和多例 
+  
+  1. **singleton : 单例（默认值）**
+  2. **prototype ：多例**
+  
+  request ：作用域web应用的请求范围
+  session ：作用域web应用的会画范围
+  global-session ：作用域集群环境的会话范围（全局会话范围），当不是集群环境时，它就是session
 ---
 
 
 ## 三、bean 对象的生命周期
-1. **单例对象** 出生：当容器创建时对象出生 活着：只要容器还在，对象一直在 死亡：容器销毁，对象消亡 总结：单例对象的生命周期和容器相同1. **多例对象** 出生：当我们使用对象时，spring框架为我们创建 活着：对象只要是在使用过程中就一直活着 **死亡：当对象长时间不用，或者没有别的对象引用时，由 java 垃圾回收器回收**
+1、**单例对象** 
+
+出生：当容器创建时对象出生 
+
+活着：只要容器还在，对象一直在 
+
+死亡：容器销毁，对象消亡 
+
+总结：单例对象的生命周期和容器相同
+
+2、**多例对象** 
+
+出生：当我们使用对象时，spring框架为我们创建 
+
+活着：对象只要是在使用过程中就一直活着 
+
+==**死亡：当对象长时间不用，或者没有别的对象引用时，由 java 垃圾回收器回收**==
+
 ---
 
 
 为了演示 bean 对象的生命周期，我们创建一个工程，工程目录如下：
 
-<img src="https://img-blog.csdnimg.cn/20210601022940502.png#pic_left" alt="在这里插入图片描述" width="250"/> 注意：factory 包下的类不用看，演示 bean 生命周期涉及不到。
+<img src="https://img-blog.csdnimg.cn/20210601022940502.png#pic_left" alt="在这里插入图片描述" width="250"/> 
+
+注意：factory 包下的类不用看，演示 bean 生命周期涉及不到。
 
 **业务层接口及其实现类：**
 
@@ -187,4 +211,5 @@ public class Client {
 
 
 本文针对 Spring 对 bean 的管理细节进行分析与讲解，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~
+
 # **文章地址： **    https://blog.csdn.net/weixin_43819566/article/details/117433760

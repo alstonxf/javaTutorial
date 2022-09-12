@@ -45,7 +45,7 @@ public class myTest {
         //3.使用工厂生产SqlSession对象
         //这里的sqlSession对象就相当于jdbc中的Connection对象
         //返回sqlSession对象
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession = sqlSessionFactory.openSession();//参数如果设置为true，设置为自动提交commit
 
         //4.使用SqlSession创建Dao接口的代理对象
         //关联上接口，然后就可以调用接口方法了。

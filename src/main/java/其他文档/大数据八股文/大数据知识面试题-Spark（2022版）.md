@@ -113,11 +113,11 @@ Spark基于内存计算，提高了在大数据环境下数据处理的实时性
 
 ### 1.2、spark与Hadoop的区别
 
-​ 尽管Spark相对于Hadoop而言具有较大优势，但Spark并不能完全替代Hadoop，Spark主要用于替代Hadoop中的MapReduce计算模型。存储依然可以使用HDFS，但是中间结果可以存放在内存中；调度可以使用Spark内置的，也可以使用更成熟的调度系统YARN等
+ 尽管Spark相对于Hadoop而言具有较大优势，但Spark并不能完全替代Hadoop，Spark主要用于替代Hadoop中的MapReduce计算模型。存储依然可以使用HDFS，但是中间结果可以存放在内存中；调度可以使用Spark内置的，也可以使用更成熟的调度系统YARN等
 
-​ 实际上，Spark已经很好地融入了Hadoop生态圈，并成为其中的重要一员，它可以借助于YARN实现资源调度管理，借助于HDFS实现分布式存储。
+ 实际上，Spark已经很好地融入了Hadoop生态圈，并成为其中的重要一员，它可以借助于YARN实现资源调度管理，借助于HDFS实现分布式存储。
 
-​ 此外，Hadoop可以使用廉价的、异构的机器来做分布式存储与计算，但是，Spark对硬件的要求稍高一些，对内存与CPU有一定的要求。
+ 此外，Hadoop可以使用廉价的、异构的机器来做分布式存储与计算，但是，Spark对硬件的要求稍高一些，对内存与CPU有一定的要求。
 
 ### 1.3、spark的特点
 -  快 与Hadoop的MapReduce相比，Spark基于内存的运算要快100倍以上，基于硬盘的运算也要快10倍以上。Spark实现了高效的DAG执行引擎，可以通过基于内存来高效处理数据流。 -  易用 Spark支持Java、Python、R和Scala的API，还支持超过80种高级算法，使用户可以快速构建不同的应用。而且Spark支持交互式的Python和Scala的shell，可以非常方便地在这些shell中使用Spark集群来验证解决问题的方法。 -  通用 Spark提供了统一的解决方案。Spark可以用于批处理、交互式查询(Spark SQL)、实时流处理(Spark Streaming)、机器学习(Spark MLlib)和图计算(GraphX)。这些不同类型的处理都可以在同一个应用中无缝使用。Spark统一的解决方案非常具有吸引力，毕竟任何公司都想用统一的平台去处理遇到的问题，减少开发和维护的人力成本和部署平台的物力成本。 -  兼容性 Spark可以非常方便地与其他的开源产品进行融合。比如，Spark可以使用Hadoop的YARN和Apache Mesos作为它的资源管理和调度器，并且可以处理所有Hadoop支持的数据，包括HDFS、HBase和Cassandra等。这对于已经部署Hadoop集群的用户特别重要，因为不需要做任何数据迁移就可以使用Spark的强大处理能力。Spark也可以不依赖于第三方的资源管理和调度器，它实现了Standalone作为其内置的资源管理和调度框架，这样进一步降低了Spark的使用门槛，使得所有人都可以非常容易地部署和使用Spark。 
@@ -125,31 +125,31 @@ Spark基于内存计算，提高了在大数据环境下数据处理的实时性
 
 #### 1.local本地模式(单机)–开发测试使用
 
-​ 分为local单线程和local-cluster多线程
+ 分为local单线程和local-cluster多线程
 
 #### 2.standalone独立集群模式–开发测试使用
 
-​ 典型的Mater/slave模式
+ 典型的Mater/slave模式
 
 #### 3.standalone-HA高可用模式–生产环境使用
 
-​ 基于standalone模式，使用zk搭建高可用，避免Master是有单点故障的
+ 基于standalone模式，使用zk搭建高可用，避免Master是有单点故障的
 
 #### 4.on yarn集群模式–生产环境使用
 -  运行在 yarn 集群之上，由 yarn 负责资源管理，Spark 负责任务调度和计算， 好处：计算资源按需伸缩，集群利用率高，共享底层存储，避免数据跨集群迁移。 FIFO Fair Capacity 
 #### 5.on mesos集群模式–国内使用较少
 
-​ 运行在 mesos 资源管理器框架之上，由 mesos 负责资源管理，Spark 负责任务调度和计算
+ 运行在 mesos 资源管理器框架之上，由 mesos 负责资源管理，Spark 负责任务调度和计算
 
 #### 6.on cloud集群模式–中小公司未来会更多的使用云服务
 
-​ 比如 AWS 的 EC2，使用这个模式能很方便的访问 Amazon的 S3
+ 比如 AWS 的 EC2，使用这个模式能很方便的访问 Amazon的 S3
 
 ### 1.5、spark-shell
 
 ●引入
 
-​ 之前我们使用提交任务都是使用spark-shell提交，spark-shell是Spark自带的交互式Shell程序，方便用户进行交互式编程，用户可以在该命令行下可以用scala编写spark程序，适合学习测试时使用！
+ 之前我们使用提交任务都是使用spark-shell提交，spark-shell是Spark自带的交互式Shell程序，方便用户进行交互式编程，用户可以在该命令行下可以用scala编写spark程序，适合学习测试时使用！
 
 ●示例
 
@@ -262,7 +262,7 @@ object WordCount {<!-- -->
 - **集群运行需要改那些东西？**
 ### 1.8、rdd是什么
 
-​ RDD(Resilient Distributed Dataset)叫做弹性分布式数据集，是Spark中最基本的数据抽象，代表一个不可变、可分区、里面的元素可并行计算的集合。
+ RDD(Resilient Distributed Dataset)叫做弹性分布式数据集，是Spark中最基本的数据抽象，代表一个不可变、可分区、里面的元素可并行计算的集合。
 
 **单词拆解**
 
@@ -377,9 +377,9 @@ RDD的算子分为两类:
 
 ### 1.12、spark中的checkpoint
 
-​ 持久化/缓存可以把数据放在内存中，虽然是快速的，但是也是最不可靠的；也可以把数据放在磁盘上，也不是完全可靠的！例如磁盘会损坏等。
+ 持久化/缓存可以把数据放在内存中，虽然是快速的，但是也是最不可靠的；也可以把数据放在磁盘上，也不是完全可靠的！例如磁盘会损坏等。
 
-​ Checkpoint的产生就是为了更加可靠的数据持久化，在Checkpoint的时候一般把数据放在在HDFS上，这就天然的借助了HDFS天生的高容错、高可靠来实现数据最大程度上的安全，实现了RDD的容错和高可用。
+ Checkpoint的产生就是为了更加可靠的数据持久化，在Checkpoint的时候一般把数据放在在HDFS上，这就天然的借助了HDFS天生的高容错、高可靠来实现数据最大程度上的安全，实现了RDD的容错和高可用。
 
 **具体用法**：
 
@@ -431,19 +431,19 @@ Checkpoint会斩断依赖链，因为Checkpoint会把结果保存在HDFS这类�
 
 ### 1.15、DAG
 
-​ DAG(Directed Acyclic Graph有向无环图)指的是数据转换执行的过程，有方向，无闭环(其实就是RDD执行的流程)
+ DAG(Directed Acyclic Graph有向无环图)指的是数据转换执行的过程，有方向，无闭环(其实就是RDD执行的流程)
 
-​ 原始的RDD通过一系列的转换操作就形成了DAG有向无环图，任务执行时，可以按照DAG的描述，执行真正的计算(数据被操作的一个过程)。一个Spark应用中可以有一到多个DAG，取决于触发了多少次Action。
+ 原始的RDD通过一系列的转换操作就形成了DAG有向无环图，任务执行时，可以按照DAG的描述，执行真正的计算(数据被操作的一个过程)。一个Spark应用中可以有一到多个DAG，取决于触发了多少次Action。
 
 ### 1.16、stage的划分
 
 ●为什么要划分Stage? --并行计算
 
-​ 一个复杂的业务逻辑如果有shuffle，那么就意味着前面阶段产生结果后，才能执行下一个阶段，即下一个阶段的计算要依赖上一个阶段的数据。那么我们按照shuffle进行划分(也就是按照宽依赖就行划分)，就可以将一个DAG划分成多个Stage/阶段，在同一个Stage中，会有多个算子操作，可以形成一个pipeline流水线，流水线内的多个平行的分区可以并行执行。
+ 一个复杂的业务逻辑如果有shuffle，那么就意味着前面阶段产生结果后，才能执行下一个阶段，即下一个阶段的计算要依赖上一个阶段的数据。那么我们按照shuffle进行划分(也就是按照宽依赖就行划分)，就可以将一个DAG划分成多个Stage/阶段，在同一个Stage中，会有多个算子操作，可以形成一个pipeline流水线，流水线内的多个平行的分区可以并行执行。
 
 ●如何划分DAG的stage
 
-​ Spark会根据shuffle/宽依赖使用回溯算法来对DAG进行Stage划分，从后往前，遇到宽依赖就断开，遇到窄依赖就把当前的RDD加入到当前的stage/阶段中。
+ Spark会根据shuffle/宽依赖使用回溯算法来对DAG进行Stage划分，从后往前，遇到宽依赖就断开，遇到窄依赖就把当前的RDD加入到当前的stage/阶段中。
 
 <img src="https://img-blog.csdnimg.cn/a0d785b1ed8e482bace48bf004e71bbd.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -463,7 +463,7 @@ DataSet是在**Spark1.6**中添加的新的接口。
 
 **与DataFrame相比**，保存了类型信息，是强类型的，提供了编译时类型检查。
 
-​ DataSet包含了DataFrame的功能，**Spark2.0**中两者统一，DataFrame表示为DataSet[Row]，即DataSet的子集。DataFrame其实就是Dateset[Row]。
+ DataSet包含了DataFrame的功能，**Spark2.0**中两者统一，DataFrame表示为DataSet[Row]，即DataSet的子集。DataFrame其实就是Dateset[Row]。
 
 <img src="https://img-blog.csdnimg.cn/8009420d908a44409477f8302581a6e6.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -656,11 +656,11 @@ object CreateDFDS2 {<!-- -->
 
 ### 1.21、sparkStreaming的原理
 
-​ Spark Streaming是一个基于Spark Core之上的实时计算框架，可以从很多数据源消费数据并对数据进行实时的处理，具有高吞吐量和容错能力强等特点。
+ Spark Streaming是一个基于Spark Core之上的实时计算框架，可以从很多数据源消费数据并对数据进行实时的处理，具有高吞吐量和容错能力强等特点。
 
 ##### 1.21.1、数据抽象
 
-​ Spark Streaming的基础抽象是DStream(Discretized Stream，离散化数据流，连续不断的数据流)，代表持续性的数据流和经过各种Spark算子操作后的结果数据流。
+ Spark Streaming的基础抽象是DStream(Discretized Stream，离散化数据流，连续不断的数据流)，代表持续性的数据流和经过各种Spark算子操作后的结果数据流。
 - 1.DStream本质上就是一系列时间上连续的RDD- 对DStream的数据的进行操作也是按照RDD为单位来进行的。
 <img src="https://img-blog.csdnimg.cn/c80d2d1cb61d4944b29a6eef05f4bd1b.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -814,6 +814,7 @@ new SparkConf().setAppName("SparkStream").setMaster("local[*]")
 
 ##### 1.24.2、Direct直连方式（常用）
 - KafkaUtils.createDirectStream(开发中使用，要求掌握)<li>Direct方式是直接连接kafka分区来获取数据，从每个分区直接读取数据大大提高了并行能力 
+  
   <ul>- Direct方式调用Kafka低阶API(底层API)，offset自己存储和维护，默认由Spark维护在checkpoint中，消除了与zk不一致的情况
 ```
 package cn.itcast.streaming
@@ -864,13 +865,13 @@ new SparkConf().setAppName("SparkStream").setMaster("local[*]")
 
 #### 2、优化后的HashShuffleManager
 
-​ 开启consolidate机制之后，在shuffle write过程中，task就不是为下游stage的每个task创建一个磁盘文件了，此时会出现**shuffleFileGroup**的概念，每个shuffleFileGroup会对应一批磁盘文件，磁盘文件的数量与下游stage的task数量是相同的。
+ 开启consolidate机制之后，在shuffle write过程中，task就不是为下游stage的每个task创建一个磁盘文件了，此时会出现**shuffleFileGroup**的概念，每个shuffleFileGroup会对应一批磁盘文件，磁盘文件的数量与下游stage的task数量是相同的。
 
 <img src="https://img-blog.csdnimg.cn/940c4098577245a7bd7af10c7c251f09.png#pic_center" alt="在这里插入图片描述"/>
 
 #### 3、SortShuffle
 
-​ 后面就引入了 Sort Based Shuffle， map端的任务会按照Partition id以及key对记录进行排序。同时将全部结果写到一个数据文件中，同时生成一个索引文件。
+ 后面就引入了 Sort Based Shuffle， map端的任务会按照Partition id以及key对记录进行排序。同时将全部结果写到一个数据文件中，同时生成一个索引文件。
 
 <img src="https://img-blog.csdnimg.cn/04e1e7f888544e499ffa2dc7e192f2c7.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -882,7 +883,7 @@ bypass运行机制的触发条件如下：
 
 #### 5、Tungsten-Sort Based Shuffle
 
-​ 后面就引入了 Tungsten-Sort Based Shuffle， 这个是直接使用堆外内存和新的内存管理模型，节省了内存空间和大量的gc， 是为了提升性能。
+ 后面就引入了 Tungsten-Sort Based Shuffle， 这个是直接使用堆外内存和新的内存管理模型，节省了内存空间和大量的gc， 是为了提升性能。
 
 ### 1.26、spark性能调优
 
@@ -890,7 +891,7 @@ bypass运行机制的触发条件如下：
 
 ##### 1.1、资源参数设置
 
-​ Spark性能调优的第一步，就是为任务分配更多的资源，在一定范围内，增加资源的分配与性能的提升是成正比的，实现了最优的资源配置后，在此基础上再考虑进行后面论述的性能调优策略。
+ Spark性能调优的第一步，就是为任务分配更多的资源，在一定范围内，增加资源的分配与性能的提升是成正比的，实现了最优的资源配置后，在此基础上再考虑进行后面论述的性能调优策略。
 
 ```
 /opt/soft/spark/bin/spark-submit \
@@ -922,13 +923,13 @@ bypass运行机制的触发条件如下：
 
 ##### 1.2、并行度设置
 
-​ Spark作业中的并行度指各个stage的task的数量。
+ Spark作业中的并行度指各个stage的task的数量。
 
-​ 如果并行度设置不合理而导致并行度过低，会导致资源的极大浪费。
+ 如果并行度设置不合理而导致并行度过低，会导致资源的极大浪费。
 
-​ 例如，20个Executor，每个Executor分配3个CPU core，而Spark作业有40个task，这样每个Executor分配到的task个数是2个，这就使得每个Executor有一个CPU core空闲，导致资源的浪费。
+ 例如，20个Executor，每个Executor分配3个CPU core，而Spark作业有40个task，这样每个Executor分配到的task个数是2个，这就使得每个Executor有一个CPU core空闲，导致资源的浪费。
 
-​ Spark官方推荐，task数量应该设置为Spark作业总CPU core数量的2~3倍。之所以没有推荐task数量与CPU core总数相等，是因为task的执行时间不同，有的task执行速度快而有的task执行速度慢，如果task数量与CPU core总数相等，那么执行快的task执行完成后，会出现CPU core空闲的情况。如果task数量设置为CPU core总数的2~3倍，那么一个task执行完毕后，CPU core会立刻执行下一个task，降低了资源的浪费，同时提升了Spark作业运行的效率。
+ Spark官方推荐，task数量应该设置为Spark作业总CPU core数量的2~3倍。之所以没有推荐task数量与CPU core总数相等，是因为task的执行时间不同，有的task执行速度快而有的task执行速度慢，如果task数量与CPU core总数相等，那么执行快的task执行完成后，会出现CPU core空闲的情况。如果task数量设置为CPU core总数的2~3倍，那么一个task执行完毕后，CPU core会立刻执行下一个task，降低了资源的浪费，同时提升了Spark作业运行的效率。
 
 ```
 val conf = new SparkConf().set("spark.default.parallelism", "500")
@@ -937,11 +938,11 @@ val conf = new SparkConf().set("spark.default.parallelism", "500")
 
 ##### 3、使用缓存和checkpoint
 
-​ Spark持久化在大部分情况下是没有问题的，但是有时数据可能会丢失，如果数据一旦丢失，就需要对丢失的数据重新进行计算，计算完后再缓存和使用，为了避免数据的丢失，可以选择对这个RDD进行checkpoint，也就是将数据持久化一份到容错的文件系统上（比如HDFS）。
+ Spark持久化在大部分情况下是没有问题的，但是有时数据可能会丢失，如果数据一旦丢失，就需要对丢失的数据重新进行计算，计算完后再缓存和使用，为了避免数据的丢失，可以选择对这个RDD进行checkpoint，也就是将数据持久化一份到容错的文件系统上（比如HDFS）。
 
 一个RDD缓存并checkpoint后，如果一旦发现缓存丢失，就会优先查看checkpoint数据存不存在，如果有，就会使用checkpoint数据，而不用重新计算。也即是说，checkpoint可以视为cache的保障机制，如果cache失败，就使用checkpoint的数据。
 
-​ 使用checkpoint的优点在于提高了Spark作业的可靠性，一旦缓存出现问题，不需要重新计算数据，缺点在于，checkpoint时需要将数据写入HDFS等文件系统，对性能的消耗较大。
+ 使用checkpoint的优点在于提高了Spark作业的可靠性，一旦缓存出现问题，不需要重新计算数据，缺点在于，checkpoint时需要将数据写入HDFS等文件系统，对性能的消耗较大。
 
 ```
 sc.setCheckpointDir(‘HDFS’)
@@ -952,7 +953,7 @@ rdd.checkpoint
 
 ##### 4、使用广播变量
 
-​ 假设当前任务配置了20个Executor，指定500个task，有一个20M的变量被所有task共用，此时会在500个task中产生500个副本，耗费集群10G的内存，如果使用了广播变量， 那么每个Executor保存一个副本，一共消耗400M内存，内存消耗减少了5倍。}
+ 假设当前任务配置了20个Executor，指定500个task，有一个20M的变量被所有task共用，此时会在500个task中产生500个副本，耗费集群10G的内存，如果使用了广播变量， 那么每个Executor保存一个副本，一共消耗400M内存，内存消耗减少了5倍。}
 
 ```
 val 广播变量名= sc.broadcast(会被各个Task用到的变量,即需要广播的变量)
@@ -962,7 +963,7 @@ val 广播变量名= sc.broadcast(会被各个Task用到的变量,即需要广�
 
 ##### 5、使用kryo序列化
 
-​ 默认情况下，Spark使用**Java的序列化机制**。Spark官方宣称Kryo序列化机制比Java序列化机制性能提高10倍左右，Spark之所以没有默认使用Kryo作为序列化类库，是因为它不支持所有对象的序列化，同时Kryo需要用户在使用前注册需要序列化的类型，不够方便，但从Spark 2.0.0版本开始，简单类型、简单类型数组、字符串类型的Shuffling RDDs 已经默认使用Kryo序列化方式了。
+ 默认情况下，Spark使用**Java的序列化机制**。Spark官方宣称Kryo序列化机制比Java序列化机制性能提高10倍左右，Spark之所以没有默认使用Kryo作为序列化类库，是因为它不支持所有对象的序列化，同时Kryo需要用户在使用前注册需要序列化的类型，不够方便，但从Spark 2.0.0版本开始，简单类型、简单类型数组、字符串类型的Shuffling RDDs 已经默认使用Kryo序列化方式了。
 
 ```
 //创建SparkConf对象
@@ -985,7 +986,7 @@ conf.set("spark.kryo.registrator", "bigdata.com.MyKryoRegistrator");
 |ANY|task和数据可以在集群的任何地方，而且不在一个机架中，性能最差。|
 
 
-​ 在Spark项目开发阶段，可以使用client模式对程序进行测试，此时，可以在本地看到比较全的日志信息，日志信息中有明确的task数据本地化的级别，如果大部分都是PROCESS_LOCAL，那么就无需进行调节，但是如果发现很多的级别都是NODE_LOCAL、ANY，那么需要对本地化的等待时长进行调节，通过延长本地化等待时长，看看task的本地化级别有没有提升，并观察Spark作业的运行时间有没有缩短。
+ 在Spark项目开发阶段，可以使用client模式对程序进行测试，此时，可以在本地看到比较全的日志信息，日志信息中有明确的task数据本地化的级别，如果大部分都是PROCESS_LOCAL，那么就无需进行调节，但是如果发现很多的级别都是NODE_LOCAL、ANY，那么需要对本地化的等待时长进行调节，通过延长本地化等待时长，看看task的本地化级别有没有提升，并观察Spark作业的运行时间有没有缩短。
 
 注意，过犹不及，不要将本地化等待时长延长地过长，导致因为大量的等待时长，使得Spark作业的运行时间反而增加了。
 
@@ -1008,7 +1009,7 @@ val conf = new SparkConf().set("spark.locality.wait", "6")
 
 ##### 2.2、尽早的filter
 
-​ 获取到初始RDD后，应该考虑尽早地过滤掉不需要的数据，进而减少对内存的占用，从而提升Spark作业的运行效率。
+ 获取到初始RDD后，应该考虑尽早地过滤掉不需要的数据，进而减少对内存的占用，从而提升Spark作业的运行效率。
 
 ##### 2.3、foreachpartition
 
@@ -1020,7 +1021,7 @@ foreachPartition是将RDD的每个分区作为遍历对象，一次处理一个�
 
 ##### 2.4、filter+coalesce减少分区
 
-​ 在Spark任务中我们经常会使用filter算子完成RDD中数据的过滤，在任务初始阶段，从各个分区中加载到的数据量是相近的，但是一旦进过filter过滤后，每个分区的数据量有可能会存在较大差异，如图2-6所示：
+ 在Spark任务中我们经常会使用filter算子完成RDD中数据的过滤，在任务初始阶段，从各个分区中加载到的数据量是相近的，但是一旦进过filter过滤后，每个分区的数据量有可能会存在较大差异，如图2-6所示：
 
 <img src="https://img-blog.csdnimg.cn/e642bf7a92984f85b1936c6da92ef995.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -1030,23 +1031,23 @@ foreachPartition是将RDD的每个分区作为遍历对象，一次处理一个�
 1. 针对第一个问题，既然分区的数据量变小了，我们希望可以对分区数据进行重新分配，比如将原来4个分区的数据转化到2个分区中，这样只需要用后面的两个task进行处理即可，避免了资源的浪费。1. 针对第二个问题，解决方法和第一个问题的解决方法非常相似，对分区数据重新分配，让每个partition中的数据量差不多，这就避免了数据倾斜问题。
 ##### 2.5、reducebykey本地预聚合
 
-​ reduceByKey相较于普通的shuffle操作一个显著的特点就是会进行map端的本地聚合，map端会先对本地的数据进行combine操作，然后将数据写入给下个stage的每个task创建的文件中。
+ reduceByKey相较于普通的shuffle操作一个显著的特点就是会进行map端的本地聚合，map端会先对本地的数据进行combine操作，然后将数据写入给下个stage的每个task创建的文件中。
 
-​ 基于reduceByKey的本地聚合特征，我们应该考虑使用reduceByKey代替其他的shuffle算子，例如groupByKey。reduceByKey与groupByKey的运行原理如图2-9和图2-10所示：
+ 基于reduceByKey的本地聚合特征，我们应该考虑使用reduceByKey代替其他的shuffle算子，例如groupByKey。reduceByKey与groupByKey的运行原理如图2-9和图2-10所示：
 
 <img src="https://img-blog.csdnimg.cn/17212d0480aa4c9a8e5b8e365b99e79a.png#pic_center" alt="在这里插入图片描述"/>
 
-​ 图2-9 groupByKey原理
+ 图2-9 groupByKey原理
 
 <img src="https://img-blog.csdnimg.cn/3f245546cba74c06becdf5567ee55338.png#pic_center" alt="在这里插入图片描述"/>
 
-​ 图2-10 reduceByKey原理
+ 图2-10 reduceByKey原理
 
-​ 根据上图可知，groupByKey不会进行map端的聚合，而是将所有map端的数据shuffle到reduce端，然后在reduce端进行数据的聚合操作。由于reduceByKey有map端聚合的特性，使得网络传输的数据量减小，因此效率要明显高于groupByKey。
+ 根据上图可知，groupByKey不会进行map端的聚合，而是将所有map端的数据shuffle到reduce端，然后在reduce端进行数据的聚合操作。由于reduceByKey有map端聚合的特性，使得网络传输的数据量减小，因此效率要明显高于groupByKey。
 
 #### 3、shuffle调优
 
-​ 在划分stage时，最后一个stage称为finalStage，它本质上是一个ResultStage对象，前面的所有stage被称为ShuffleMapStage。ShuffleMapStage的结束伴随着shuffle文件的写磁盘。
+ 在划分stage时，最后一个stage称为finalStage，它本质上是一个ResultStage对象，前面的所有stage被称为ShuffleMapStage。ShuffleMapStage的结束伴随着shuffle文件的写磁盘。
 
 <img src="https://img-blog.csdnimg.cn/0effefb69ded42b08946c76556dc9c9e.png#pic_center" alt="在这里插入图片描述"/>
 
@@ -1054,9 +1055,9 @@ foreachPartition是将RDD的每个分区作为遍历对象，一次处理一个�
 
 ###### map端
 
-​ 在Spark任务运行过程中，如果shuffle的map端处理的数据量比较大，但是map端缓冲的大小是固定的，可能会出现map端缓冲数据频繁spill溢写到磁盘文件中的情况，使得性能非常低下，通过调节map端缓冲的大小，可以避免频繁的磁盘IO操作，进而提升Spark任务的整体性能。
+ 在Spark任务运行过程中，如果shuffle的map端处理的数据量比较大，但是map端缓冲的大小是固定的，可能会出现map端缓冲数据频繁spill溢写到磁盘文件中的情况，使得性能非常低下，通过调节map端缓冲的大小，可以避免频繁的磁盘IO操作，进而提升Spark任务的整体性能。
 
-​ map端缓冲的默认配置是32KB，如果每个task处理640KB的数据，那么会发生640/32 = 20次溢写，如果每个task处理64000KB的数据，机会发生64000/32=2000此溢写，这对于性能的影响是非常严重的。
+ map端缓冲的默认配置是32KB，如果每个task处理640KB的数据，那么会发生640/32 = 20次溢写，如果每个task处理64000KB的数据，机会发生64000/32=2000此溢写，这对于性能的影响是非常严重的。
 
 map端缓冲的配置方法如代码清单2-7所示：
 
@@ -1068,9 +1069,9 @@ val conf = new SparkConf()
 
 ###### reduce端
 
-​ Spark Shuffle过程中，shuffle reduce task的buffer缓冲区大小决定了reduce task每次能够缓冲的数据量，也就是每次能够拉取的数据量，如果内存资源较为充足，适当增加拉取数据缓冲区的大小，可以减少拉取数据的次数，也就可以减少网络传输的次数，进而提升性能。
+ Spark Shuffle过程中，shuffle reduce task的buffer缓冲区大小决定了reduce task每次能够缓冲的数据量，也就是每次能够拉取的数据量，如果内存资源较为充足，适当增加拉取数据缓冲区的大小，可以减少拉取数据的次数，也就可以减少网络传输的次数，进而提升性能。
 
-​ reduce端数据拉取缓冲区的大小可以通过spark.reducer.maxSizeInFlight参数进行设置，默认为48MB，该参数的设置方法如代码清单2-8所示：
+ reduce端数据拉取缓冲区的大小可以通过spark.reducer.maxSizeInFlight参数进行设置，默认为48MB，该参数的设置方法如代码清单2-8所示：
 
 ```
 val conf = new SparkConf()
@@ -1082,7 +1083,7 @@ val conf = new SparkConf()
 
 ###### 重试次数
 
-​ Spark Shuffle过程中，reduce task拉取属于自己的数据时，如果因为网络异常等原因导致失败会自动进行重试。对于那些包含了特别耗时的shuffle操作的作业，建议增加重试最大次数（默认3次），以避免由于JVM的full gc或者网络不稳定等因素导致的数据拉取失败。在实践中发现，对于针对超大数据量（数十亿~上百亿）的shuffle过程，调节该参数可以大幅度提升稳定性。
+ Spark Shuffle过程中，reduce task拉取属于自己的数据时，如果因为网络异常等原因导致失败会自动进行重试。对于那些包含了特别耗时的shuffle操作的作业，建议增加重试最大次数（默认3次），以避免由于JVM的full gc或者网络不稳定等因素导致的数据拉取失败。在实践中发现，对于针对超大数据量（数十亿~上百亿）的shuffle过程，调节该参数可以大幅度提升稳定性。
 
 ```
 //reduce端拉取数据重试次数配置
@@ -1103,7 +1104,7 @@ val conf = new SparkConf()
 
 ##### 3、bypass机制开启阈值
 
-​ 当你使用SortShuffleManager时，如果的确不需要排序操作，那么建议将这个参数调大一些，大于shuffle read task的数量，那么此时map-side就不会进行排序了，减少了排序的性能开销。
+ 当你使用SortShuffleManager时，如果的确不需要排序操作，那么建议将这个参数调大一些，大于shuffle read task的数量，那么此时map-side就不会进行排序了，减少了排序的性能开销。
 
 ```
 val conf = new SparkConf()
@@ -1127,23 +1128,23 @@ val conf = new SparkConf()
 
 ##### 4.2、提高reduce并行度
 
-​ reduce端并行度的提高就增加了reduce端task的数量，那么每个task分配到的数据量就会相应减少，由此缓解数据倾斜问题。
+ reduce端并行度的提高就增加了reduce端task的数量，那么每个task分配到的数据量就会相应减少，由此缓解数据倾斜问题。
 
-​ 1. reduce端并行度的设置
+ 1. reduce端并行度的设置
 
-​ 在大部分的shuffle算子中，都可以传入一个并行度的设置参数，比如reduceByKey(500)，这个参数会决定shuffle过程中reduce端的并行度，在进行shuffle操作的时候，就会对应着创建指定数量的reduce task。对于Spark SQL中的shuffle类语句，比如group by、join等，需要设置一个参数，即spark.sql.shuffle.partitions，该参数代表了shuffle read task的并行度，该值默认是200，对于很多场景来说都有点过小。
+ 在大部分的shuffle算子中，都可以传入一个并行度的设置参数，比如reduceByKey(500)，这个参数会决定shuffle过程中reduce端的并行度，在进行shuffle操作的时候，就会对应着创建指定数量的reduce task。对于Spark SQL中的shuffle类语句，比如group by、join等，需要设置一个参数，即spark.sql.shuffle.partitions，该参数代表了shuffle read task的并行度，该值默认是200，对于很多场景来说都有点过小。
 
 **使用场景有限制**：
 
-​ 该方案通常无法彻底解决数据倾斜，因为如果出现一些极端情况，比如某个key对应的数据量有100万，那么无论你的task数量增加到多少，这个对应着100万数据的key肯定还是会分配到一个task中去处理，因此注定还是会发生数据倾斜的。
+ 该方案通常无法彻底解决数据倾斜，因为如果出现一些极端情况，比如某个key对应的数据量有100万，那么无论你的task数量增加到多少，这个对应着100万数据的key肯定还是会分配到一个task中去处理，因此注定还是会发生数据倾斜的。
 
 ##### 4.3、使用mapjoin
 
-​ 普通的join是会走shuffle过程的，而一旦shuffle，就相当于会将相同key的数据拉取到一个shuffle read task中再进行join，此时就是reduce join。但是如果一个RDD是比较小的，则可以采用广播小RDD全量数据+map算子来实现与join同样的效果，也就是map join，此时就不会发生shuffle操作，也就不会发生数据倾斜。
+ 普通的join是会走shuffle过程的，而一旦shuffle，就相当于会将相同key的数据拉取到一个shuffle read task中再进行join，此时就是reduce join。但是如果一个RDD是比较小的，则可以采用广播小RDD全量数据+map算子来实现与join同样的效果，也就是map join，此时就不会发生shuffle操作，也就不会发生数据倾斜。
 
 **核心思路**
 
-​ 不使用join算子进行连接操作，而使用Broadcast变量与map类算子实现join操作，进而完全规避掉shuffle类的操作，彻底避免数据倾斜的发生和出现。将较小RDD中的数据直接通过collect算子拉取到Driver端的内存中来，然后对其创建一个Broadcast变量；接着对另外一个RDD执行map类算子，在算子函数内，从Broadcast变量中获取较小RDD的全量数据，与当前RDD的每一条数据按照连接key进行比对，如果连接key相同的话，那么就将两个RDD的数据用你需要的方式连接起来。
+ 不使用join算子进行连接操作，而使用Broadcast变量与map类算子实现join操作，进而完全规避掉shuffle类的操作，彻底避免数据倾斜的发生和出现。将较小RDD中的数据直接通过collect算子拉取到Driver端的内存中来，然后对其创建一个Broadcast变量；接着对另外一个RDD执行map类算子，在算子函数内，从Broadcast变量中获取较小RDD的全量数据，与当前RDD的每一条数据按照连接key进行比对，如果连接key相同的话，那么就将两个RDD的数据用你需要的方式连接起来。
 
 根据上述思路，根本不会发生shuffle操作，从根本上杜绝了join操作可能导致的数据倾斜问题。
 
@@ -1153,7 +1154,7 @@ val conf = new SparkConf()
 
 #### 1、内存溢出
 
-​ **spark常见的问题不外乎oom** ​ 我们首先看一下Spark 的内存模型： SparkExecutor中内存分三块，一块是execution内存，其他是storage内存和other内存。
+ **spark常见的问题不外乎oom** ​ 我们首先看一下Spark 的内存模型： SparkExecutor中内存分三块，一块是execution内存，其他是storage内存和other内存。
 -  **execution内存**是执行内存，文档中说join，aggregate都在这部分内存中执行，shuffle的数据也会先缓存在这个内存中，满了再写入磁盘，能够减少IO。其实map过程也是在这个内存中执行的。 -  **storage内存**是存储broadcast，cache，persist数据的地方。 -  **other内存**是程序执行时预留给自己的内存。 OOM的问题通常出现在execution这块内存中，因为storage这块内存在存放数据满了之后，会直接丢弃内存中旧的数据，对性能有影响但是不会有OOM的问题。 
 **Spark中的OOM问题不外乎以下三种情况**
 - map执行中内存溢出- shuffle后内存溢出- driver内存溢出
@@ -1199,11 +1200,11 @@ val conf = new SparkConf()
 
 #### 2、gc导致的shuffle文件拉取失败
 
-​ 在Spark作业中，有时会出现shuffle file not found的错误，这是非常常见的一个报错，有时出现这种错误以后，选择重新执行一遍，就不再报出这种错误。
+ 在Spark作业中，有时会出现shuffle file not found的错误，这是非常常见的一个报错，有时出现这种错误以后，选择重新执行一遍，就不再报出这种错误。
 
-​ 出现上述问题可能的原因是Shuffle操作中，后面stage的task想要去上一个stage的task所在的Executor拉取数据，结果对方正在执行GC，执行GC会导致Executor内所有的工作现场全部停止，比如BlockManager、基于netty的网络通信等，这就会导致后面的task拉取数据拉取了半天都没有拉取到，就会报出shuffle file not found的错误，而第二次再次执行就不会再出现这种错误。
+ 出现上述问题可能的原因是Shuffle操作中，后面stage的task想要去上一个stage的task所在的Executor拉取数据，结果对方正在执行GC，执行GC会导致Executor内所有的工作现场全部停止，比如BlockManager、基于netty的网络通信等，这就会导致后面的task拉取数据拉取了半天都没有拉取到，就会报出shuffle file not found的错误，而第二次再次执行就不会再出现这种错误。
 
-​ 可以通过调整reduce端拉取数据重试次数和reduce端拉取数据时间间隔这两个参数来对Shuffle性能进行调整，增大参数值，使得reduce端拉取数据的重试次数增加，并且每次失败后等待的时间间隔加长。
+ 可以通过调整reduce端拉取数据重试次数和reduce端拉取数据时间间隔这两个参数来对Shuffle性能进行调整，增大参数值，使得reduce端拉取数据的重试次数增加，并且每次失败后等待的时间间隔加长。
 
 ```
 val conf = new SparkConf()
@@ -1214,14 +1215,15 @@ val conf = new SparkConf()
 
 #### 3、yarn_cluster模式JVM栈内存溢出
 
-​ YARN-client模式下，Driver是运行在本地机器上的，Spark使用的JVM的PermGen的配置，是本地机器上的spark-class文件，JVM永久代的大小是128MB，运行在client上进行测试时候是没有问题的。
+ YARN-client模式下，Driver是运行在本地机器上的，Spark使用的JVM的PermGen的配置，是本地机器上的spark-class文件，JVM永久代的大小是128MB，运行在client上进行测试时候是没有问题的。
 
-​ 在cluster模式下，Driver运行在YARN集群的某个节点上，使用的是没有经过配置的默认设置，PermGen永久代大小为82MB。运行报出OOM错误。
+ 在cluster模式下，Driver运行在YARN集群的某个节点上，使用的是没有经过配置的默认设置，PermGen永久代大小为82MB。运行报出OOM错误。
 
-​ 解决上述问题的方法时增加PermGen的容量，需要在spark-submit脚本中对相关参数进行设置。
+ 解决上述问题的方法时增加PermGen的容量，需要在spark-submit脚本中对相关参数进行设置。
 
 ```
 --conf spark.driver.extraJavaOptions="-XX:PermSize=128M -XX:MaxPermSize=256M"
 
 ```
 # **文章地址： **https://blog.csdn.net/qq_43061290/article/details/125146030
+

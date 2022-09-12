@@ -4,12 +4,32 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--//实际上是把dao接口映射成xml文件，接口名就是namespace，id就是各个方法名。所以dao和mapper.xml是绑定的。-->
 <!--namespace命名空间，需要绑定对应的dao接口-->
+
 <mapper namespace="SMV.myTest.UserDao">
     <!--    这里ID对应我们接口中的方法  resultType代表返回类型-->
     <select id="getUserList" resultType="SMV.myTest.User" parameterType="SMV.myTest.User">
         select * from user
     </select>
-    <select id="getUserById" resultType="SMV.myTest.User" parameterType="SMV.myTest.User">
+
+    <!--start.....................................................-->
+    <!--    因为数据库查询结果的字段名称与bean类对应字段名称不一致，所以返回结果不直接赋给bean类，而是改用resultMap,把名字不一样的字段做个映射。
+    数据库 id name pwd
+    实体类 id name password
+    我们将pwd绑定到我们实体类中的password
+    -->
+    <!--    这里的我们使用resultMap getuser是给这个select取名字 -->
+    <select id="getUserListPassword" resultMap="getuser1" parameterType="user">
+        select * from user
+    </select>
+
+    <!--    这里使用resultMap标签，id对应select中的resultMap定义的名称，type表示我们需要解决字段不一致的实体类-->
+    <resultMap id="getuser1" type="user">
+        <!--        使用result标签，进行映射不一致的属性字段   column对应数据库中的字段，property对应我们修改对应实体类中的属性-->
+        <result column="pwd" property="password"/>
+    </resultMap>
+    <!--end.....................................................-->
+
+    <select id="getUserById" resultType="SMV.myTest.User" parameterType="user">
         select * from user where id=#{id}
     </select>
     <insert id="AddUser" parameterType="SMV.myTest.User">
@@ -34,7 +54,7 @@
 
     <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
     <select id="getUserByNameOrId" resultType="SMV.myTest.User" parameterType="map">
-        select * from user where #{idOrName}=#{v}
+        select * from user where #{idOrName} = #{v}
     </select>
 
 </mapper>

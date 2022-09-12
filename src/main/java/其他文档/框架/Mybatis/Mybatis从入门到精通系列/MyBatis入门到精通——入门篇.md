@@ -54,12 +54,11 @@
 
 ## （2）引入依赖包
 
->  
- 在https://mvnrepository.com/</a> 搜索添加到pom.xml中 
- 注意：如果使用到lombok需要用IDEA转上lombok插件。 
+>   在https://mvnrepository.com/ 搜索添加到pom.xml中 
+ 注意：如果使用到lombok需要用IDEA装上lombok插件。 
 
 
-```
+```xml
         <!--mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -86,7 +85,7 @@
 
 ## （3）创建数据库执行sql脚本
 
-```
+```sql
 /*
  Navicat Premium Data Transfer
 
@@ -109,22 +108,23 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for t_user
 -- ----------------------------
-DROP TABLE IF EXISTS `t_user`;
-CREATE TABLE `t_user`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
-  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
+CREATE DATABASE IF NOT EXISTS mybatis;
+USE mybatis;
+DROP TABLE IF EXISTS t_user;
+CREATE TABLE IF NOT EXISTS t_user (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  password varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  PRIMARY KEY (id) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES (1, 'admin1', '123456');
-INSERT INTO `t_user` VALUES (2, 'admin2', '123456');
+INSERT INTO t_user VALUES (1, 'admin1', '123456');
+INSERT INTO t_user VALUES (2, 'admin2', '123456');
 
 SET FOREIGN_KEY_CHECKS = 1;
-
 ```
 
 # 三、入门程序源码
@@ -135,7 +135,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 ## （1）User.java
 
-```
+```java
 package com.mybatis.entity;
 
 import lombok.Data;
@@ -156,7 +156,7 @@ public class User implements Serializable {
 
 ## （2）UserMapper.java
 
-```
+```java
 package com.mybatis.mapper;
 
 import com.mybatis.entity.User;
@@ -171,7 +171,7 @@ public interface UserMapper {
 
 ## （3）MybatisUtils.java
 
-```
+```java
 package com.mybatis.util;
 
 import org.apache.ibatis.io.Resources;
@@ -207,7 +207,7 @@ public class MybatisUtils {
 
 ## （4）UserMapperTest.java
 
-```
+```java
 package com.mybatis;
 
 import com.mybatis.entity.User;
@@ -236,7 +236,7 @@ public class UserMapperTest {
 
 ## （6）UserMapper.xml
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -254,7 +254,7 @@ public class UserMapperTest {
 
 ## （7）mybatis-config.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -283,7 +283,7 @@ public class UserMapperTest {
 
 ## （8）pom.xml 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -337,6 +337,6 @@ public class UserMapperTest {
 # 五、程序完整源码获取
 
 >  
- https://download.csdn.net/download/qq_19309473/85157975</a> 
+ https://download.csdn.net/download/qq_19309473/85157975
 
 # **文章地址： **https://yang-roc.blog.csdn.net/article/details/124219227?spm=1001.2101.3001.6650.18&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-18-124219227-blog-115666342.pc_relevant_multi_platform_featuressortv2dupreplace&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-18-124219227-blog-115666342.pc_relevant_multi_platform_featuressortv2dupreplace&utm_relevant_index=19
