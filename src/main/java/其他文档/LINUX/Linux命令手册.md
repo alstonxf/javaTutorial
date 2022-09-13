@@ -98,8 +98,9 @@
 | <u>ifconfig</u>                                              | 查看⽹络接⼝属性                     |
 | <u>ifconfig eth0</u>                                         | 查看某⽹卡的配置                     |
 | <u>route -n</u>                                              | 查看路由表                           |
-| netstat -lntp                                                | 查看所有监听端⼝                     |
-| netstat -antp                                                | 查看已经建⽴的TCP连接                |
+| ==netstat -lntp==                                            | 查看所有监听端⼝                     |
+| ==netstat -antp==                                            | 查看已经建⽴的TCP连接                |
+| ==netstat -an\|grep 8101==                                   | 搜索8101端口的连接                   |
 | netstat -lutp                                                | 查看TCP/UDP的状态信息                |
 | ifup eth0                                                    | 启⽤eth0⽹络设备                     |
 | ifdown eth0                                                  | 禁⽤eth0⽹络设备                     |
@@ -112,8 +113,8 @@
 | hostname                                                     | 查看主机名                           |
 | host [www.baidu.com](http://www.baidu.com)                   | 解析主机名                           |
 | nslookup [www.baidu.com](http://www.baidu.com)               | 查询DNS记录，查看域名解析是否正常    |
-| ps -ef                                                       | 查看所有进程                         |
-| ps -ef \| grep 进程名                                        | 过滤出你需要的进程                   |
+| ==ps -ef==                                                   | ==查看所有进程==                     |
+| ==ps -ef \| grep 进程名==                                    | ==过滤出你需要的进程==               |
 | kill -s name                                                 | kill指定名称的进程                   |
 | kill -s pid                                                  | kill指定pid的进程                    |
 | top                                                          | 实时显示进程状态                     |

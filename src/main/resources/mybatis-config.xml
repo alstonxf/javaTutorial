@@ -20,6 +20,8 @@
     <mappers>
     <!--    com/yunduo/dao/UserDaoMapper.xml-->
         <mapper resource="SMV/COM1/dao/UserDaoMapper.xml"/>
+        <mapper resource="com/itheima/dao/IUserDao.xml"/>
+
         <package name="com.mybatis.mapper"/>
     </mappers>
 

@@ -17,7 +17,9 @@
 
 <font size="5">工程目录：</font>
 
-  注解配置摒弃了XML的映射配置文件的创建。   <img src="https://img-blog.csdnimg.cn/20210417215232639.png?#pic_left" alt="在这里插入图片描述" width="380"/>
+  注解配置摒弃了XML的映射配置文件的创建。  
+
+ <img src="https://img-blog.csdnimg.cn/20210417215232639.png?#pic_left" alt="在这里插入图片描述" width="380"/>
 
 ---
 

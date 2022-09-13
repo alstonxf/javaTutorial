@@ -110,14 +110,67 @@ public static void main(String[] args) {
 
 <font size="5" id="step1">1、创建数据库：</font>
 
-首先在 mysql 中创建数据库，这里我们命名为 mybatisdb。创建好数据库之后，接下来我们创建 user 表，并添加如下图中的 5 条属性，注意设置 id 自增。 <img src="https://img-blog.csdnimg.cn/20210417213810931.png?#pic_left" alt="在这里插入图片描述" width="600"/>
+首先在 mysql 中创建数据库，这里我们命名为 mybatisdb。创建好数据库之后，接下来我们创建 user 表，并添加如下图中的 5 条属性，注意设置 id 自增。
+
+```sql
+
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 本地数据库
+ Source Server Type    : MySQL
+ Source Server Version : 50733
+ Source Host           : localhost:3306
+ Source Schema         : mybatis-simple
+
+ Target Server Type    : MySQL
+ Target Server Version : 50733
+ File Encoding         : 65001
+
+ Date: 16/04/2022 23:11:46
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for t_user
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS user;
+CREATE TABLE IF NOT EXISTS user (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  birthday datetime DEFAULT NULL,
+  sex varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  address varchar(256) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_user
+-- ----------------------------
+INSERT INTO user VALUES (1, 'admin1', date_format('20220901', '%Y%m%d'),'m','address1');
+INSERT INTO user VALUES (2, 'admin2', date_format('20220902', '%Y%m%d'),'m','address2');
+INSERT INTO user VALUES (3, 'admin3', date_format('20220904', '%Y%m%d'),'f','address3');
+INSERT INTO user VALUES (4, 'admin4', date_format('20220905', '%Y%m%d'),'f','address4');
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
+
+ <img src="https://img-blog.csdnimg.cn/20210417213810931.png?#pic_left" alt="在这里插入图片描述" width="600"/>
 
 ---
 
 
 <font size="5" id="step1">2、创建maven工程并导入坐标：</font>
 
-Idea 中点击 File → New → Project <img src="https://img-blog.csdnimg.cn/20210413151051491.png?#pic_left" alt="在这里插入图片描述" width="450"/> 在下面界面点击 Maven → Next（当然也可以勾选 Create from archetype， 然后选中方式2中的框中的选项）
+Idea 中点击 File → New → Project
+
+ <img src="https://img-blog.csdnimg.cn/20210413151051491.png?#pic_left" alt="在这里插入图片描述" width="450"/> 
+
+在下面界面点击 Maven → Next（当然也可以勾选 Create from archetype， 然后选中方式2中的框中的选项）
 
 **方式1：** <img src="https://img-blog.csdnimg.cn/20210413151322359.png?#pic_left" alt="在这里插入图片描述" width="500"/> 
 
@@ -168,6 +221,9 @@ POM文件导入坐标：
 实体类：
 
 ```java
+package com.itheima.domain;
+import java.util.Date;
+
 /**
  * 用户的实体类
  */
@@ -235,6 +291,10 @@ public class User {
 Dao的接口：
 
 ```java
+package com.itheima.dao;
+import com.itheima.domain.User;
+import java.util.List;
+
 /**
  * 用户的持久层  接口
  */
@@ -248,7 +308,6 @@ public interface IUserDao {
 ```
 
 ---
-
 
 <font size="5">4、创建 mybatis 的主配置文件 SqlMapConfig.xml</font>
 
@@ -287,11 +346,10 @@ public interface IUserDao {
 
 ---
 
-
-<font size="5">5、创建映射配置文件 IUerDao.xml</font>
+<font size="5">5、创建映射配置文件 IUserDao.xml</font>
 
 **要求：**
-1. <font color="red">创建位置：必须和持久层接口在相同的包中。</font>（idea种是在resources文件夹下创建相同的目录结构）
+1. <font color="red">创建位置：必须和持久层接口在相同的包中。</font>（idea中是在resources文件夹下创建相同的目录结构）
 
 2. <font color="red">**名称：必须以持久层接口名称命名文件名，扩展名是.xml**</font> 
 
@@ -316,14 +374,27 @@ public interface IUserDao {
 ### 3.2 入门案例编写
 
 ```java
+package package01.test;
+
+import com.itheima.dao.IUserDao;
+import com.itheima.domain.User;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import java.io.InputStream;
+import java.util.List;
+
 public class MybatisTest {
     /**
      * 入门案例
      */
     public static void main(String[] args) throws Exception {
         //1.读取配置文件
-        InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
-        
+        InputStream in = Resources.getResourceAsStream("com/SqlMapConfig.xml");
+//        InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
+
         //2.创建SqlSessionFactory工厂
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory factory = builder.build(in);
@@ -346,6 +417,7 @@ public class MybatisTest {
     }
 }
 
+
 ```
 
 控制台打印结果： <img src="https://img-blog.csdnimg.cn/20210415110143921.png?#pic_left" alt="在这里插入图片描述" width="850"/>
@@ -364,7 +436,7 @@ public class MybatisTest {
 
 5.   **映射配置文件 IUerDao.xml 的操作配置(select)， id属性的取值必须是dao接口的方法名** 
 
-    ==遵从 3、4、5 之后， 在开发中就无需再写dao的实现类==
+    ==<font color="red">遵从 3、4、5 之后， 在开发中就无需再写dao的实现类</font>==
 ---
 
 
