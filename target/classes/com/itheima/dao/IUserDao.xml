@@ -7,5 +7,57 @@
     <select id="findAll" resultType="com.itheima.domain.User">
         select * from user;
     </select>
+
+    <!--保存用户-->
+    <insert id="saveUser" parameterType="com.itheima.domain.User">
+        <!--配置插入操作之后，获取插入数据的id-->
+--         keyProperty：代表要返回的值名称 order：取值为 AFTER 代表插入后的行为 resultType：代表返回值的类型
+--         如果没有对于获取新增用户的 id 的需求，那么删除即可。
+        <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into user(username, address, sex, birthday) values(#{username}, #{address}, #{sex}, #{birthday});
+    </insert>
+
+    <!--更新用户-->
+    <update id="updateUser" parameterType="com.itheima.domain.User">
+        update user set username=#{username}, address=#{address}, sex=#{sex}, birthday=#{birthday} where id=#{id}
+    </update>
+
+    <!--删除用户-->
+    <!--基本类型或者基本类型包装类 并且 占位符只有一个参数时，可以随意写 -->
+    <!--如下文中占位符参数是 uid，也可以是其他任意字符-->
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from user where id = #{uid}
+    </delete>
+
+    <!--根据id查询用户-->
+    <select id="findById" parameterType="INT" resultType="com.itheima.domain.User">
+        select * from user where id = #{uid}
+    </select>
+
+    <!--根据名称模糊查询-->
+    <select id="findByName" parameterType="String" resultType="com.itheima.domain.User">
+        select * from user where username like #{name}
+    </select>
+
+    <!--分页查询-->
+    <select id="findByPage" resultType="com.itheima.domain.User">
+        select * from user limit #{start}, #{rows}
+    </select>
+
+    <!--查询总用户数-->
+    <select id="findTotal" resultType="int">
+        select count(*) from user;
+    </select>
+
+    <!--根据queryvo的条件查询用户-->
+    <select id="findUserByVo" parameterType="com.itheima.domain.QueryVo" resultType="com.itheima.domain.User">
+        select * from user where username like #{user.username}
+    </select>
+
+
+
+
 </mapper>
 

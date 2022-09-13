@@ -28,8 +28,21 @@
 测试类部分代码如下：
 
 ```java
-public class MybatisTest {
-	  private InputStream in;
+package package01.test;
+
+import com.itheima.dao.IUserDao;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
+import org.junit.Before;
+
+import java.io.InputStream;
+
+
+public class MybatisTest4 {
+    private InputStream in;
     private SqlSession sqlSession;
     private IUserDao userDao;
 
@@ -55,6 +68,7 @@ public class MybatisTest {
     }
 }
 
+
 ```
 
   与之前代码不同的是，我们将关于读取配置文件、获取SqlSessionFactory等重复操作放在了具有 @Before 下面的方法中，作用是在单元测试之前执行。那么 @After 下面的方法则是在每次单元测试之后执行，这里用于释放资源与 **事务的提交**。（事务提交在下文添加操作详解）
@@ -79,7 +93,7 @@ void saveUser(User user);
 
 ```xml
 <!--保存用户-->
-<insert id="saveUser" parameterType="com.ithiema.domain.User">
+<insert id="saveUser" parameterType="com.itheima.domain.User">
     <!--配置插入操作之后，获取插入数据的id-->
     <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
         select last_insert_id();
@@ -131,9 +145,14 @@ public void testSave(){
 
 **需要说明的点：**
 
-1. **关于获取新增用户的id**   关于获取新增用户的id，我们可以在 selectKey 标签中使用 select last_insert_id(); 获取id值，具体用法如下图： <img src="https://img-blog.csdnimg.cn/20210417231731274.png" alt="在这里插入图片描述"/> keyProperty：代表要返回的值名称 order：取值为 AFTER 代表插入后的行为 resultType：代表返回值的类型
+1. **关于获取新增用户的id**   
+  
+  关于获取新增用户的id，我们可以在 selectKey 标签中使用 select last_insert_id(); 获取id值，具体用法如下图： <img src="https://img-blog.csdnimg.cn/20210417231731274.png" alt="在这里插入图片描述"/> keyProperty：代表要返回的值名称 order：取值为 AFTER 代表插入后的行为 resultType：代表返回值的类型
   如果没有对于获取新增用户的 id 的需求，那么删除即可。
-1. **关于事务提交**   如果没有 **sqlSession.commit()** 完成事务提交，那么添加操作就会向下方的截图一样，会造成事务回滚，即添加失败。具体原因在于下图中的 <font color="red">Setting autocommit to false on JDBC Connection</font>， ==mybatis 关闭了自动提交，需要手动提交，这里我们还没有手动提交事务。所以我们需要在事务结束之前添加 **sqlSession.commit()** 完成事务提交。==<img src="https://img-blog.csdnimg.cn/20210417230320768.png#pic_left" alt="在这里插入图片描述"/>
+  
+1. **关于事务提交**   
+
+     如果没有 **sqlSession.commit()** 完成事务提交，那么添加操作就会向下方的截图一样，会造成事务回滚，即添加失败。具体原因在于下图中的 <font color="red">Setting autocommit to false on JDBC Connection</font>， ==mybatis 关闭了自动提交，需要手动提交，这里我们还没有手动提交事务。所以我们需要在事务结束之前添加 **sqlSession.commit()** 完成事务提交。==<img src="https://img-blog.csdnimg.cn/20210417230320768.png#pic_left" alt="在这里插入图片描述"/>
 ---
 
 
@@ -154,7 +173,7 @@ void updateUser(User user);
 
 ```xml
 <!--更新用户-->
-<update id="updateUser" parameterType="com.ithiema.domain.User">
+<update id="updateUser" parameterType="com.itheima.domain.User">
     update user set username=#{username}, address=#{address}, sex=#{sex}, birthday=#{birthday} where id=#{id}
 </update>
 
@@ -232,6 +251,7 @@ public void testDelete(){
 
 ```java
 /**
+ *在持久层接口中添加查询单个方法：
  * 根据 id 查询用户信息
  * @param userId
  * @return
@@ -244,7 +264,7 @@ User findById(Integer userId);
 
 ```xml
 <!--根据id查询用户-->
-<select id="findById" parameterType="INT" resultType="com.ithiema.domain.User">
+<select id="findById" parameterType="INT" resultType="com.itheima.domain.User">
     select * from user where id = #{uid}
 </select>
 
@@ -287,7 +307,7 @@ List<User> findByName(String name);
 
 ```xml
 <!--根据名称模糊查询-->
-<select id="findByName" parameterType="String" resultType="com.ithiema.domain.User">
+<select id="findByName" parameterType="String" resultType="com.itheima.domain.User">
     select * from user where username like '%${value}%'
 </select>
 
@@ -299,7 +319,7 @@ List<User> findByName(String name);
 
 ```xml
 <!--根据名称模糊查询-->
-<select id="findByName" parameterType="String" resultType="com.ithiema.domain.User">
+<select id="findByName" parameterType="String" resultType="com.itheima.domain.User">
     select * from user where username like #{name}
 </select>
 
@@ -350,7 +370,7 @@ List<User> findByPage(@Param("start")int start, @Param("rows")int rows);
 
 ```xml
 <!--分页查询-->
-<select id="findByPage" resultType="com.ithiema.domain.User">
+<select id="findByPage" resultType="com.itheima.domain.User">
     select * from user limit #{start}, #{rows}
 </select>
 
@@ -382,6 +402,7 @@ public void testFindByPage(){
 
 ```java
 /**
+ * 在持久层接口中添加查询总的记录条数：
  * 查询总用户数
  * @return
  */
@@ -440,6 +461,7 @@ public class QueryVo {
 
 ```java
 /**
+ * 在持久层接口中添加根据QueryVo中的条件查询用户的方法：
  * 根据QueryVo中的条件查询用户
  * @param vo
  * @return
@@ -452,7 +474,7 @@ List<User> findUserByVo(QueryVo vo);
 
 ```xml
 <!--根据queryvo的条件查询用户-->
-<select id="findUserByVo" parameterType="com.ithiema.domain.QueryVo" resultType="com.ithiema.domain.User">
+<select id="findUserByVo" parameterType="com.itheima.domain.QueryVo" resultType="com.itheima.domain.User">
     select * from user where username like #{user.username}
 </select>
 
