@@ -339,6 +339,16 @@ public void testFindUserByBindLabel(){
 
 set 标签是 mybatis 提供的一个智能标记，我一般将其用在修改的 sql 中，例如以下情况：
 
+**持久层 Dao 接口：**
+
+```java
+    /**
+     * 动态 SQL 的 set 标签
+     */
+
+    void updateUserBySetLabel(User user);
+```
+
 **持久层 Dao 映射配置：**
 
 ```xml
@@ -359,7 +369,27 @@ update user set username=‘xxx’ , sex=‘xx’ where id=‘x’
 
 <font color=red>set标记已经自动帮助我们把最后一个逗号给去掉了。</font>
 
+**测试方法：**
+
+```java
+    //动态 SQL 的 set 标签
+    @Test
+    public void testUpdateUserBySetLabel(){
+        User user = new User();
+        user.setId(46);
+        user.setUsername("mybatis upodateuser");
+        user.setAddress("更新的地址");
+        user.setSex("女");
+        user.setBirthday(new Date());
+
+        //执行保存方法
+        userDao.updateUserBySetLabel(user);
+    }
+```
+
 参考博客：https://www.cnblogs.com/qiankun-site/p/5758383.html</a>
+
+
 
 ---
 
@@ -375,20 +405,42 @@ update user set username=‘xxx’ , sex=‘xx’ where id=‘x’
 | prefixOverrides | 去除sql语句前面的关键字或者字符，该关键字或者字符由prefixOverrides属性指定，假设该属性指定为"AND"，当sql语句的开头为"AND"，trim标签将会去除该"AND" |
 | suffixOverrides | 去除sql语句后面的关键字或者字符，该关键字或者字符由suffixOverrides属性指定 |
 
-持久层 Dao 映射配置：
+**持久层 Dao接口**
+
+```
+    List<User> findUserByTrimLabel(User user);
+```
+
+**持久层 Dao 映射配置：**
 
 ```xml
-<select id="findUserByTrimLabel" parameterType="user" resultType="user">
- 	select * from user
-    <trim prefix="WHERE" prefixOverrides="AND">
-        <if test="username != null">
-            username = #{username}
-        </if>
-        <if test="sex != null">
-            sex = #{sex}
-        </if>
-    </trim>
-</select>
+    <select id="findUserByTrimLabel" parameterType="user" resultType="user">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+        </trim>
+    </select>
+```
+
+**测试方法：**
+
+```java
+    //动态 SQL 的 trim 标签
+    @Test
+    public void testFindUserByTrimLabel(){
+        User user = new User();
+        user.setUsername("admin1");
+        user.setSex("f");
+        user.setBirthday(new Date());
+
+        //执行保存方法
+        List<User> u = userDao.findUserByTrimLabel(user);
+    }
 
 ```
 
@@ -403,32 +455,63 @@ update user set username=‘xxx’ , sex=‘xx’ where id=‘x’
 
 Sql 标签中可将重复的 sql 提取出来，使用时用 include 引用即可，最终达到 sql 重用的目的。
 
-**定义代码片段：**
+**持久层 Dao接口**
+
+```java
+    //测试使用代码片段
+    List<User> findAll2();
+    User findById2(Integer userId);
+```
+
+**持久层 Dao 映射配置：**
+
+​		**定义代码片段：**
 
 ```xml
 <!-- 抽取重复的语句代码片段 -->
-<sql id="defaultSql">
+<sql id="defaultUser">
 	select * from user
 </sql>
-
 ```
 
-**引用代码片段：**
+​		**引用代码片段：**
 
 ```xml
+
+
 <!--配置查询所有-->
-<select id="findAll" resultType="user">
+<select id="findAll2" resultType="user">
     <include refid="defaultUser"></include>/*引用sql标签中的sql语句,refid为sql的id*/
 </select>
 
 <!--根据id查询用户-->
-<select id="findById" parameterType="INT" resultType="user">
+<select id="findById2" parameterType="INT" resultType="user">
    <include refid="defaultUser"></include> where id = #{id}
 </select>
 
+
+
+
 ```
 
----
+**测试方法**
+
+```java
+    /**
+     * 测试使用SQL片段
+     */
+    @Test
+    public void testFindAll2(){
+        List<User> u = userDao.findAll2();
+        System.out.println(u);
+    }
+    @Test
+    public void testFindById2(){
+        User u = userDao.findById2(2);
+        System.out.println(u);
+    }
+
+```
 
 
 本文针对 Mybatis 中的动态 SQL 语句使用进行了总结归纳，如果大家对文章内容还存在一些疑问，欢迎大家在评论区留言哦~

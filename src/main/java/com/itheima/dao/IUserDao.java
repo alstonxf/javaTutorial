@@ -83,5 +83,41 @@ public interface IUserDao {
      * 传递List
      */
     List<User> findByList(List list);
+
+    /**
+     * 使用 if 标签
+     */
+    List<User> findUserIfLabelByCondition(User user);
+
+    /**
+     * 使用 where 标签
+     */
+    List<User> findUserWhereLabelByCondition(User user);
+
+    /**
+     * 根据 list 中提供的id集合，查询用户信息
+     */
+    List<User> findUserInIdsByList(List list);
+
+    /**
+     * 根据 queryvo 中提供的id集合，查询用户信息
+     */
+    List<User> findUserInIdsByQueryVo(QueryVo vo);
+
+    /**
+     * 使用 bind 标签
+     */
+    List<User> findUserByBindLabel(User user);
+
+    /**
+     * 动态 SQL 的 set 标签
+     */
+    void updateUserBySetLabel(User user);
+
+    List<User> findUserByTrimLabel(User user);
+
+    //测试使用代码片段
+    List<User> findAll2();
+    User findById2(Integer userId);
 }
 

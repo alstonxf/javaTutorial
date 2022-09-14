@@ -17,6 +17,7 @@
 <!--      typeAliases 标签用于配置实体类别名，其内容标签 typeAlias 的 type 属性指定的是实体类全限定类名，alias 属性指定别名。-->
     <typeAliases>
         <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>
+        <typeAlias type="com.itheima.domain.QueryVo" alias="queryvo"></typeAlias>
     </typeAliases>
 
     <!--配置环境-->
