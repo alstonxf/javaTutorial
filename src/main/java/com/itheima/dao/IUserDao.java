@@ -5,6 +5,7 @@ import com.itheima.domain.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.HashMap;
 import java.util.List;
 /**
  * 用户的持久层  接口
@@ -73,6 +74,14 @@ public interface IUserDao {
 
     List<User> findUserByVo(QueryVo vo);
 
+    /**
+     * 传递Map
+     */
+    public List<User> getBeanList(HashMap map);
 
+    /**
+     * 传递List
+     */
+    List<User> findByList(List list);
 }
 

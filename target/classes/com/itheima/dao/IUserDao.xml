@@ -53,11 +53,24 @@
 
     <!--根据queryvo的条件查询用户-->
     <select id="findUserByVo" parameterType="com.itheima.domain.QueryVo" resultType="com.itheima.domain.User">
-        select * from user where username like #{user.username}
+        select * from user where username like #{user.username};
     </select>
 
+    <select id="getBeanList" parameterType="hashmap" resultType="com.itheima.domain.User">
+        select * from user where id=#{MapKey1} and username = #{MapKey2};
+    </select>
 
-
+    <!--根据 List 集合中的id集合实现查询用户列表-->
+    <select id="findByList" resultType="com.itheima.domain.User" parameterType="java.util.List">
+        select * from user
+        <where>
+            <if test="list!=null and list.size()>0">
+                <foreach collection="list" open="and id in (" close=")" item="sid" separator=",">
+                    #{sid}
+                </foreach>
+            </if>
+        </where>
+    </select>
 
 </mapper>
 

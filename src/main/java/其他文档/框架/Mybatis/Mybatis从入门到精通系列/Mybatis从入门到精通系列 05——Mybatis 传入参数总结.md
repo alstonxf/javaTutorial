@@ -112,7 +112,7 @@ List<User> findUserByVo(QueryVo vo);
  */
 public List<User> getBeanList(HashMap map);  
 
-<select id="getBeanList" parameterType="hashmap" resultType="com.ithiema.domain.User">
+<select id="getBeanList" parameterType="hashmap" resultType="com.itheima.domain.User">
 　　select * from user where id=#{MapKey1} and code = #{MapKey2}  
 </select>  
 
@@ -134,7 +134,7 @@ public List<User> getBeanList(HashMap map);
 List<User> findByList(List list);
 
 <!--根据 List 集合中的id集合实现查询用户列表-->
-<select id="findByList" resultType="com.ithiema.domain.User" parameterType="java.util.List">
+<select id="findByList" resultType="com.itheima.domain.User" parameterType="java.util.List">
    select * from user
    <where>
        <if test="list!=null and list.size()>0">

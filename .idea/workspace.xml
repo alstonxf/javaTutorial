@@ -10,15 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/QueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 04——基于XML配置实现增删改查.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 04——基于XML配置实现增删改查.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 05——Mybatis 传入参数总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 05——Mybatis 传入参数总结.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IUserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/package01/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,26 +105,14 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package01.test" />
       <recent name="com.itheima.dao.IUserDao" />
       <recent name="SMV.myTest" />
       <recent name="SMV.COM2.utils" />
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest4.testFindUserByVo">
-    <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest" />
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MybatisTest5.testFindByList">
     <configuration name="MybatisTest4.testFindTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -160,22 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest4.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest4" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MybatisTest4.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -187,6 +156,38 @@
       <option name="PACKAGE_NAME" value="package01.test" />
       <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest4" />
       <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest5.testFindByList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="package01.test" />
+      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest5" />
+      <option name="METHOD_NAME" value="testFindByList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest5.testGetBeanList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="package01.test" />
+      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest5" />
+      <option name="METHOD_NAME" value="testGetBeanList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,20 +282,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MybatisTest" />
       <item itemvalue="JUnit.MybatisTest4.testFindTotal" />
       <item itemvalue="JUnit.MybatisTest4.testFindUserByVo" />
-      <item itemvalue="JUnit.MybatisTest4.testSave" />
       <item itemvalue="JUnit.MybatisTest4.testUpdate" />
+      <item itemvalue="JUnit.MybatisTest5.testFindByList" />
+      <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisTest5.testFindByList" />
+        <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
         <item itemvalue="JUnit.MybatisTest4.testFindUserByVo" />
         <item itemvalue="JUnit.MybatisTest4.testFindTotal" />
         <item itemvalue="JUnit.MybatisTest4.testUpdate" />
-        <item itemvalue="JUnit.MybatisTest4.testSave" />
-        <item itemvalue="Application.MybatisTest" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +359,7 @@
       <workItem from="1662383917089" duration="543000" />
       <workItem from="1662431713025" duration="2421000" />
       <workItem from="1662566857942" duration="250000" />
-      <workItem from="1662997611103" duration="12958000" />
+      <workItem from="1662997611103" duration="15555000" />
     </task>
     <servers />
   </component>
