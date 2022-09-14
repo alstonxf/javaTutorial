@@ -30,15 +30,15 @@ public class MybatisTest5 {
         //2.获取SqlSessionFactory
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
         //3.获取SqlSession对象
-        sqlSession = factory.openSession();
+        sqlSession = factory.openSession(true);//参数为true，设置为自动提交commit
         //4.获取dao的代理对象
         userDao = sqlSession.getMapper(IUserDao.class);
     }
 
     @After//单元测试之后执行
     public void destroy() throws Exception {
-        //提交事务
-        sqlSession.commit();
+//        //提交事务,如果设置了自动提交，可以注释掉。
+//        sqlSession.commit();
         //释放资源
         sqlSession.close();
         in.close();

@@ -26,6 +26,7 @@
             <!--配置事务的类型-->
             <transactionManager type="JDBC"/>
             <!--配置数据源（连接池）-->
+<!--            type=”POOLED”：MyBatis 会创建 PooledDataSource 实例-->
             <dataSource type="POOLED">
 <!--                1.2 通过属性引用外部配置文件信息-->
                 <!--配置连接数据库的4个基本信息-->
