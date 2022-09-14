@@ -19,8 +19,9 @@
         insert into user(username, address, sex, birthday) values(#{username}, #{address}, #{sex}, #{birthday});
     </insert>
 
+<!--    经过typeAliase 标签指定别名的配置，那么在用户映射配置文件中，用到全限定类名的地方可以用 **别名** 代替， 如：-->
     <!--更新用户-->
-    <update id="updateUser" parameterType="com.itheima.domain.User">
+    <update id="updateUser" parameterType="user">
         update user set username=#{username}, address=#{address}, sex=#{sex}, birthday=#{birthday} where id=#{id}
     </update>
 

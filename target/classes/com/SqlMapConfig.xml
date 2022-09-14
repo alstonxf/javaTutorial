@@ -3,8 +3,22 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
-<!--mybatis主配置文件-->
+        <!--mybatis主配置文件-->
 <configuration>
+
+    <!--1.4 外部引入 jdbcConfig.properties 文件-->
+<!--    properties标签 resource 和 url 属性的两种写法:-->
+    <!--写法1 resource 但这个jdbcConfig.properties要直接放在resource下-->
+<!--    <properties resource="jdbcConfig.properties" ></properties>-->
+    <!--写法2 url-->
+    <properties url="file:///Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/resources/com/jdbcConfig.properties"></properties>
+
+<!--    ### 2.1 typeAliase 标签指定别名-->
+<!--      typeAliases 标签用于配置实体类别名，其内容标签 typeAlias 的 type 属性指定的是实体类全限定类名，alias 属性指定别名。-->
+    <typeAliases>
+        <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>
+    </typeAliases>
+
     <!--配置环境-->
     <environments default="mysql">
         <!--配置mysql的环境-->
@@ -13,11 +27,12 @@
             <transactionManager type="JDBC"/>
             <!--配置数据源（连接池）-->
             <dataSource type="POOLED">
+<!--                1.2 通过属性引用外部配置文件信息-->
                 <!--配置连接数据库的4个基本信息-->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatisdb"/>
-                <property name="username" value="root"/>
-                <property name="password" value="lixiaofeng"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
     </environments>
@@ -29,6 +44,8 @@
         <!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
         <mapper class="com.itheima.dao.IUserDao"/>
     </mappers>
+
+
 
 </configuration>
 
