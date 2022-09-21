@@ -4,6 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.itheima.dao.IAccountDao">
+    <!--    3.2 二级缓存的开启与关闭-->
+    <!--    2、第二步：映射文件支持二级缓存-->
+    <!-- 启动当前命名空间的二级缓存 -->
+    <cache></cache>
 
     <!-- 一对一查询 定义封装account和user的resultMap -->
     <resultMap id="accountUserMap" type="com.itheima.domain.Account">
@@ -49,6 +53,13 @@
     <!--配置查询所有-->
     <select id="findAll2" resultMap="userAccountMap">
         select u.*, a.id as aid, a.uid, a.money from user u left outer join account a on u.id = a.uid
+    </select>
+
+    <!--    3.2 二级缓存的开启与关闭-->
+    <!--    3、第三步：让当前的操作支持二级缓存-->
+    <!--根据id查询用户，添加 useCache 属性，并指定为true-->
+    <select id="findById" parameterType="INT" resultType="user" useCache="true">
+        select * from user where id = #{id}
     </select>
 
 </mapper>

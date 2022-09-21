@@ -12,10 +12,22 @@
 <!--    <properties resource="jdbcConfig.properties" ></properties>-->
     <!--写法2 url-->
     <properties url="file:///Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/resources/com/jdbcConfig.properties"></properties>
+
     <settings>
+        <!--    | 设置参数                  | 描述                                                                                               | 有效值 | 默认值 |-->
+        <!--    | ==lazyLoadingEnabled==    | 延迟加载的全局开关。当开启时，所有关联对象都会延迟加载，特定关联关系中可通过设置fetchType属性来覆盖该项的开关状态。 | true   | false  |-->
+        <!--    | ==aggressiveLazyLoading== | 当开启时，任何方法的调用都会加载该对象的所有属性。否则，每个属性会按需加载(参考lazyLoadTriggerMethods )        | true   | false  -->
         <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="aggressiveLazyLoading" value="false"/>
+
+        <!--        ### 3.2 二级缓存的开启与关闭-->
+        <!--        **使用步骤：**-->
+        <!--        1、第一步：主配置文件中支持二级缓存-->
+        <setting name="cacheEnabled" value="true"></setting>
     </settings>
+
+
+
 <!--    ### 2.1 typeAliase 标签指定别名-->
 <!--      typeAliases 标签用于配置实体类别名，其内容标签 typeAlias 的 type 属性指定的是实体类全限定类名，alias 属性指定别名。-->
     <typeAliases>

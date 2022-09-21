@@ -11,6 +11,20 @@ import java.util.List;
  * 用户的持久层  接口
  */
 
+//## 补充：也可以使用注解配置开启二级缓存
+//        基于注解配置开启二级缓存，第二步与基于XML配置有所区别，其需要在持久层接口名的上方添加@CacheNamespace(blocking = true)
+//@CacheNamespace(blocking = true)
+//public interface IUserDao {
+//
+//    /**
+//     * 根据id查询用户
+//     */
+//    @Select("select * from user where id = #{uid}")
+//    User findById(Integer id);
+//}
+
+
+
 public interface IUserDao {
     /**
      * 查询操作

@@ -63,7 +63,6 @@ public void testFirstLevelCache_1() {
 
 ---
 
-
 **示例代码2：**
 
 ```java
@@ -194,7 +193,9 @@ public void testFirstLevelCache(){
 
 ```
 
-测试结果： <img src="https://img-blog.csdnimg.cn/20210510002736496.png?#pic_left" alt="在这里插入图片描述" width="800"/>
+测试结果：
+
+ <img src="https://img-blog.csdnimg.cn/20210510002736496.png?#pic_left" alt="在这里插入图片描述" width="800"/>
 
 ---
 
