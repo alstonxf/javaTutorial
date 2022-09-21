@@ -10,18 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IAccountDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/spyder/sheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/RoleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/package01/test/MybatisTest8.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,20 @@
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RunManager" selected="JUnit.RoleTest">
+    <configuration name="sheep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.spyder.sheep" />
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.spyder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -136,49 +146,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest5.testFindByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.test.*" />
+          <option name="PATTERN" value="package01.test2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest5" />
-      <option name="METHOD_NAME" value="testFindByPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest5.testGetBeanList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest5" />
-      <option name="METHOD_NAME" value="testGetBeanList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest8" />
+      <option name="PACKAGE_NAME" value="package01.test2" />
+      <option name="MAIN_CLASS_NAME" value="package01.test2.RoleTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="package01.test2" />
+      <option name="MAIN_CLASS_NAME" value="package01.test2.RoleTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,20 +281,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.sheep" />
       <item itemvalue="JUnit.AccountTest" />
+      <item itemvalue="JUnit.RoleTest" />
+      <item itemvalue="JUnit.RoleTest.testFindAll" />
       <item itemvalue="JUnit.UserTest" />
-      <item itemvalue="JUnit.MybatisTest8" />
-      <item itemvalue="JUnit.MybatisTest5.testFindByPage" />
-      <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoleTest" />
+        <item itemvalue="JUnit.RoleTest.testFindAll" />
+        <item itemvalue="Application.sheep" />
         <item itemvalue="JUnit.AccountTest" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.MybatisTest8" />
-        <item itemvalue="JUnit.MybatisTest5.testFindByPage" />
-        <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +361,7 @@
       <workItem from="1662997611103" duration="19245000" />
       <workItem from="1663158294260" duration="7570000" />
       <workItem from="1663672824637" duration="5327000" />
-      <workItem from="1663736977170" duration="3935000" />
+      <workItem from="1663736977170" duration="7143000" />
     </task>
     <servers />
   </component>

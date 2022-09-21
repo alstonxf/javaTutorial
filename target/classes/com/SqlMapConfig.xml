@@ -19,6 +19,7 @@
         <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>
         <typeAlias type="com.itheima.domain.Account" alias="account"></typeAlias>
         <typeAlias type="com.itheima.domain.QueryVo" alias="queryvo"></typeAlias>
+        <typeAlias type="com.itheima.domain.Role" alias="role"></typeAlias>
     </typeAliases>
 
     <!--配置环境-->
@@ -47,6 +48,7 @@
         <!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
         <mapper class="com.itheima.dao.IUserDao"/>
         <mapper class="com.itheima.dao.IAccountDao"/>
+        <mapper class="com.itheima.dao.IRoleDao"/>
     </mappers>
 
 

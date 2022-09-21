@@ -23,7 +23,9 @@
 
 ## 一、多表查询（多对多）分析步骤
 
-  多对多关系其实我们看成是双向的一对多关系，日常生活中这种关系也非常的常见，比如：一个用户可以拥有多个角色，一个角色可以赋予多个用户。   示例：一个用户可以有多个角色，一个角色可以赋予多个用户
+  多对多关系其实我们看成是双向的一对多关系，日常生活中这种关系也非常的常见，比如：一个用户可以拥有多个角色，一个角色可以赋予多个用户。   
+
+​       示例：一个用户可以有多个角色，一个角色可以赋予多个用户
 
 ---
 
@@ -35,12 +37,42 @@
 1.  **实现配置** 当我们查询用户时，可以同时得到用户所包含的角色信息 当我们查询角色时，可以同时得到角色的所赋子用户信息
 ---
 
-
 下面在 mysql 中建立 User 表、role表以及 user_role 表，并在 user_role 建立索引，索引名称以及外键是否建立在本文的案例中没有强制要求。
+
+```sql
+
+-- ----------------------------
+-- Table structure for role
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS role;
+CREATE TABLE IF NOT EXISTS role (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  role_name varchar(30) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  role_desc varchar(60) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+
+-- ----------------------------
+-- Table structure for user_role
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS user_role;
+CREATE TABLE IF NOT EXISTS user_role (
+  uid int(11) NOT NULL AUTO_INCREMENT,
+	rid int(11) NOT NULL ,
+  PRIMARY KEY (uid) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
 
 <img src="https://img-blog.csdnimg.cn/20210507220359237.png#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210507220836678.png?#pic_left#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210507220932899.png#pic_left#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210507221143560.png#pic_left#pic_left" alt="在这里插入图片描述" width="700"/>
 
----
 
 
 ## 二、多对多查询
@@ -49,7 +81,9 @@
 
 **分析：**   查询角色我们需要用到 role表，但角色分配的用户的信息我们并不能直接找到用户信息，而是要通过中间表(user_role 表)才能关联到用户信息。
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210507224533319.png?#pic_left" alt="在这里插入图片描述" width="300"/>
+**工程目录：**
+
+ <img src="https://img-blog.csdnimg.cn/20210507224533319.png?#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 
@@ -124,7 +158,114 @@ select u.*, r.id as rid, r.role_name, r.role_desc from role r
 
 ```
 
-用户表中的数据： <img src="https://img-blog.csdnimg.cn/20210507222913364.png#pic_left" alt="在这里插入图片描述" width="500"/> 角色表中的数据： <img src="https://img-blog.csdnimg.cn/20210507223006332.png#pic_left" alt="在这里插入图片描述" width="300"/> 用户角色表中的数据： <img src="https://img-blog.csdnimg.cn/20210507223151476.png#pic_left" alt="在这里插入图片描述" width="250"/> 查询结果： <img src="https://img-blog.csdnimg.cn/20210507223240711.png#pic_left" alt="在这里插入图片描述" width="700"/>
+```sql
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+REPLACE INTO user VALUES (41, 'user1', date_format('20180227', '%Y%m%d'),'m','address1');
+REPLACE INTO user VALUES (42, 'user2', date_format('20180302', '%Y%m%d'),'m','address2');
+REPLACE INTO user VALUES (43, 'user2', date_format('20220904', '%Y%m%d'),'f','address3');
+REPLACE INTO user VALUES (45, 'admin4', date_format('20150905', '%Y%m%d'),'f','address4');
+REPLACE INTO user VALUES (46, 'admin3', date_format('20210904', '%Y%m%d'),'f','address3');
+REPLACE INTO user VALUES (47, 'admin4', date_format('20220905', '%Y%m%d'),'f','address4');
+
+
+
+-- ----------------------------
+-- Records of role
+-- ----------------------------
+REPLACE INTO role VALUES (1,'student','study');
+REPLACE INTO role VALUES (2,'teacher','manage student');
+REPLACE INTO role VALUES (3,'boss','manage employee');
+REPLACE INTO role VALUES (4,'employee','work');
+
+-- ----------------------------
+-- Records of user_role
+-- ----------------------------
+REPLACE INTO user_role VALUES (43,1);
+REPLACE INTO user_role VALUES (43,2);
+REPLACE INTO user_role VALUES (44,1);
+REPLACE INTO user_role VALUES (45,2);
+REPLACE INTO user_role VALUES (46,3);
+
+
+```
+
+用户表中的数据：
+
+```
+mysql> select * from user;
++----+----------+---------------------+------+----------+
+| id | username | birthday            | sex  | address  |
++----+----------+---------------------+------+----------+
+|  1 | admin1   | 2022-09-01 00:00:00 | m    | address1 |
+|  2 | admin2   | 2022-09-02 00:00:00 | m    | address2 |
+|  3 | admin3   | 2022-09-04 00:00:00 | f    | address3 |
+| 41 | user1    | 2018-02-27 00:00:00 | m    | address1 |
+| 42 | user2    | 2018-03-02 00:00:00 | m    | address2 |
+| 43 | user2    | 2022-09-04 00:00:00 | f    | address3 |
+| 45 | admin4   | 2015-09-05 00:00:00 | f    | address4 |
+| 46 | admin3   | 2021-09-04 00:00:00 | f    | address3 |
+| 47 | admin4   | 2022-09-05 00:00:00 | f    | address4 |
++----+----------+---------------------+------+----------+
+9 rows in set (0.00 sec)
+
+```
+
+角色表中的数据： 
+
+```
+mysql> select * from role;
++----+-----------+-----------------+
+| id | role_name | role_desc       |
++----+-----------+-----------------+
+|  1 | student   | study           |
+|  2 | teacher   | manage student  |
+|  3 | boss      | manage employee |
+|  4 | employee  | work            |
++----+-----------+-----------------+
+4 rows in set (0.01 sec)
+```
+
+用户角色表中的数据：
+
+```
+
+mysql> select * from user_role;
++-----+-----+
+| uid | rid |
++-----+-----+
+|  43 |   2 |
+|  44 |   1 |
+|  45 |   2 |
+|  46 |   3 |
++-----+-----+
+4 rows in set (0.00 sec)
+
+mysql>
+```
+
+查询结果：
+
+```
+mysql> select u.*, r.id as rid, r.role_name, r.role_desc from role r
+    ->  left outer join user_role ur on r.id = ur.rid
+    ->  left outer join user u on u.id = ur.uid;
++------+----------+---------------------+------+----------+-----+-----------+-----------------+
+| id   | username | birthday            | sex  | address  | rid | role_name | role_desc       |
++------+----------+---------------------+------+----------+-----+-----------+-----------------+
+| NULL | NULL     | NULL                | NULL | NULL     |   1 | student   | study           |
+|   45 | admin4   | 2015-09-05 00:00:00 | f    | address4 |   2 | teacher   | manage student  |
+|   43 | user2    | 2022-09-04 00:00:00 | f    | address3 |   2 | teacher   | manage student  |
+|   46 | admin3   | 2021-09-04 00:00:00 | f    | address3 |   3 | boss      | manage employee |
+| NULL | NULL     | NULL                | NULL | NULL     |   4 | employee  | work            |
++------+----------+---------------------+------+----------+-----+-----------+-----------------+
+5 rows in set (0.02 sec)
+
+mysql>
+```
+
+
 
 ---
 
@@ -232,7 +373,25 @@ public class RoleTest {
 
 ```
 
-查询结果如下： <img src="https://img-blog.csdnimg.cn/20210507224057673.png?#pic_left" alt="在这里插入图片描述"/>
+查询结果如下： 
+
+```
+18:23:29.524 [main] DEBUG com.itheima.dao.IRoleDao.findAll - <==      Total: 5
+-----每个角色的信息-----
+Role{roleId=1, roleName='student', roleDesc='study'}
+[]
+-----每个角色的信息-----
+Role{roleId=2, roleName='teacher', roleDesc='manage student'}
+[User{id=45, username='admin4', birthday=Sat Sep 05 00:00:00 CST 2015, sex='f', address='address4'}, User{id=43, username='user2', birthday=Sun Sep 04 00:00:00 CST 2022, sex='f', address='address3'}]
+-----每个角色的信息-----
+Role{roleId=3, roleName='boss', roleDesc='manage employee'}
+[User{id=46, username='admin3', birthday=Sat Sep 04 00:00:00 CST 2021, sex='f', address='address3'}]
+-----每个角色的信息-----
+Role{roleId=4, roleName='employee', roleDesc='work'}
+[]
+```
+
+
 
 ---
 
