@@ -12,7 +12,10 @@
 <!--    <properties resource="jdbcConfig.properties" ></properties>-->
     <!--写法2 url-->
     <properties url="file:///Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/resources/com/jdbcConfig.properties"></properties>
-
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
 <!--    ### 2.1 typeAliase 标签指定别名-->
 <!--      typeAliases 标签用于配置实体类别名，其内容标签 typeAlias 的 type 属性指定的是实体类全限定类名，alias 属性指定别名。-->
     <typeAliases>

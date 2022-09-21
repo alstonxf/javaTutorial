@@ -58,8 +58,8 @@
 
 |设置参数|描述|有效值|默认值|
 | :-----| :-----| :-----| :-----|
-|lazyLoadingEnabled|延迟加载的全局开关。当开启时，所有关联对象都会延迟加载，特定关联关系中可通过设置fetchType属性来覆盖该项的开关状态。|true|false|false|
-|aggressiveLazyLoading|当开启时，任何方法的调用都会加载该对象的所有属性。否则，每个属性会按需加载(参考lazyLoadTriggerMethods )|true|false|false (true in≤3.4.1)|
+|==lazyLoadingEnabled==|延迟加载的全局开关。当开启时，所有关联对象都会延迟加载，特定关联关系中可通过设置fetchType属性来覆盖该项的开关状态。|true|false|
+|==aggressiveLazyLoading==|当开启时，任何方法的调用都会加载该对象的所有属性。否则，每个属性会按需加载(参考lazyLoadTriggerMethods )|true|false|
 
 
 针对参数 aggressiveLazyLoading 的作用说明：
@@ -72,8 +72,9 @@
 
 ---
 
+**工程目录：**
 
-**工程目录：**  <img src="https://img-blog.csdnimg.cn/20210509212501822.png?#pic_left" alt="在这里插入图片描述" width="280"/>
+  <img src="https://img-blog.csdnimg.cn/20210509212501822.png?#pic_left" alt="在这里插入图片描述" width="280"/>
 
 ---
 
@@ -130,7 +131,9 @@ public interface IAccountDao {
 
 ```
 
-**select属性：** 查询用户的唯一标志 **column属性：** 用户根据id查询时，所需要的参数的值
+**select属性：** 查询用户的唯一标志
+
+**column属性：** 用户根据id查询时，所需要的参数的值
 
 ---
 
@@ -225,7 +228,9 @@ public class AccountTest {
 
 ```
 
-测试结果： <img src="https://img-blog.csdnimg.cn/20210508232545750.png?#pic_left" alt="在这里插入图片描述" width="700"/>   
+测试结果： 
+
+<img src="https://img-blog.csdnimg.cn/20210508232545750.png?#pic_left" alt="在这里插入图片描述" width="700"/>   
 
 结果表明将 Account 对象查询出来放入 List 集合中，并没有涉及到 User 对象，所以就没有发出 SQL 语句查询账户所关联的 User 对象的查询。
 
@@ -279,7 +284,7 @@ public class AccountTest {
 
 ==**false：**   只加载调用的属性，不调用的属性不加载。==
 
-参考博客：https://blog.csdn.net/qq_42650817/article/details/103262158</a>
+参考博客：https://blog.csdn.net/qq_42650817/article/details/103262158
 
 ---
 
@@ -423,7 +428,9 @@ public class UserTest {
 
 ```
 
-测试结果： <img src="https://img-blog.csdnimg.cn/2021050922310095.png#pic_left" alt="在这里插入图片描述" width="700"/> 
+测试结果：
+
+ <img src="https://img-blog.csdnimg.cn/2021050922310095.png#pic_left" alt="在这里插入图片描述" width="700"/> 
 
 从结果中可以得出并没有加载 Account 账户信息。
 

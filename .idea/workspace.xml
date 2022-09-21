@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/spyder/sheep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/RoleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 11——Mybatis 延迟加载与立即加载.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 11——Mybatis 延迟加载与立即加载.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" afterDir="false" />
     </list>
@@ -361,7 +356,7 @@
       <workItem from="1662997611103" duration="19245000" />
       <workItem from="1663158294260" duration="7570000" />
       <workItem from="1663672824637" duration="5327000" />
-      <workItem from="1663736977170" duration="7143000" />
+      <workItem from="1663736977170" duration="7896000" />
     </task>
     <servers />
   </component>
