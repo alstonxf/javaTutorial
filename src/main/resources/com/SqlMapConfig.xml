@@ -17,6 +17,7 @@
 <!--      typeAliases 标签用于配置实体类别名，其内容标签 typeAlias 的 type 属性指定的是实体类全限定类名，alias 属性指定别名。-->
     <typeAliases>
         <typeAlias type="com.itheima.domain.User" alias="user"></typeAlias>
+        <typeAlias type="com.itheima.domain.Account" alias="account"></typeAlias>
         <typeAlias type="com.itheima.domain.QueryVo" alias="queryvo"></typeAlias>
     </typeAliases>
 
@@ -45,6 +46,7 @@
         <!--如果由xml改用注解，第一步要修改的地方，实验发现其实xml也可以用class属性指定被注解的dao全限定类名       -->
         <!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
         <mapper class="com.itheima.dao.IUserDao"/>
+        <mapper class="com.itheima.dao.IAccountDao"/>
     </mappers>
 
 

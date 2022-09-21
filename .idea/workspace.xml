@@ -10,15 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IAccountDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/domain/QueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/QueryVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 08——动态 SQL 语句.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 08——动态 SQL 语句.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 09——Mybatis多表查询之一对多查询.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IUserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/package01/test/MybatisTest8.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/package01/test/MybatisTest8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/.m2/repository" />
         <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -83,7 +88,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;1b38cf98cdd2b5c93a24a4979aef6d00&quot;
   }
 }</component>
@@ -115,35 +120,18 @@
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest8">
-    <configuration name="MybatisTest4.testFindUserByVo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountTest">
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.test.*" />
+          <option name="PATTERN" value="package01.test2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest4" />
-      <option name="METHOD_NAME" value="testFindUserByVo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisTest5.testFindByList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package01.test" />
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest5" />
-      <option name="METHOD_NAME" value="testFindByList" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="package01.test2" />
+      <option name="MAIN_CLASS_NAME" value="package01.test2.AccountTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,6 +178,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="package01.test" />
       <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest8" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="package01.test2" />
+      <option name="MAIN_CLASS_NAME" value="package01.test2.UserTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,20 +287,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AccountTest" />
+      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.MybatisTest8" />
-      <item itemvalue="JUnit.MybatisTest4.testFindUserByVo" />
-      <item itemvalue="JUnit.MybatisTest5.testFindByList" />
       <item itemvalue="JUnit.MybatisTest5.testFindByPage" />
       <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountTest" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.MybatisTest8" />
         <item itemvalue="JUnit.MybatisTest5.testFindByPage" />
         <item itemvalue="JUnit.MybatisTest5.testGetBeanList" />
-        <item itemvalue="JUnit.MybatisTest5.testFindByList" />
-        <item itemvalue="JUnit.MybatisTest4.testFindUserByVo" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +365,9 @@
       <workItem from="1662431713025" duration="2421000" />
       <workItem from="1662566857942" duration="250000" />
       <workItem from="1662997611103" duration="19245000" />
-      <workItem from="1663158294260" duration="4230000" />
+      <workItem from="1663158294260" duration="7570000" />
+      <workItem from="1663672824637" duration="5327000" />
+      <workItem from="1663736977170" duration="3935000" />
     </task>
     <servers />
   </component>

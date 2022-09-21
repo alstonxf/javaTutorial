@@ -42,13 +42,94 @@
 
 **步骤：**
 1. **建立两张表:用户表，账户表** 让用户表和账户表之间具备一对多的关系: 需要使用外键在账户表中添加
+
 1. **建立两个实体类:用户实体类和账户实体类** 让用户和账户的实体类能体现出一对多的关系
+
 1. **建立两个配置文件** 用户的配置文件、账户的配置文件
+
 1. **实现配置** 当我们查询用户时，可以同时得到用户下所包含的账户信息。 当我们查询账户时，可以同时得到账户的所属用户信息。
+
+   
 ---
 
+下面在 mysql 中建立 User 表和 Account 表，并在 account 建立索引，外键是否建立在本文的案例中没有强制要求。
 
-下面在 mysql 中建立 User 表和 Account 表，并在 account 建立索引，外键是否建立在本文的案例中没有强制要求。 <img src="https://img-blog.csdnimg.cn/20210501120630843.png?#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210501120752167.png?#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210501123116393.png#pic_left" alt="在这里插入图片描述" width="700"/>
+```sql
+
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 本地数据库
+ Source Server Type    : MySQL
+ Source Server Version : 50733
+ Source Host           : localhost:3306
+ Source Schema         : mybatis-simple
+
+ Target Server Type    : MySQL
+ Target Server Version : 50733
+ File Encoding         : 65001
+
+ Date: 16/04/2022 23:11:46
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for t_user
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS user;
+CREATE TABLE IF NOT EXISTS user (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  birthday datetime DEFAULT NULL,
+  sex varchar(1) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  address varchar(256) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_user
+-- ----------------------------
+INSERT INTO user VALUES (1, 'admin1', date_format('20220901', '%Y%m%d'),'m','address1');
+INSERT INTO user VALUES (2, 'admin2', date_format('20220902', '%Y%m%d'),'m','address2');
+INSERT INTO user VALUES (3, 'admin3', date_format('20220904', '%Y%m%d'),'f','address3');
+INSERT INTO user VALUES (4, 'admin4', date_format('20220905', '%Y%m%d'),'f','address4');
+
+-- ----------------------------
+-- Table structure for account
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS account;
+CREATE TABLE IF NOT EXISTS account (
+  id int(11) NOT NULL AUTO_INCREMENT,
+	uid int(11),
+  money double,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of account
+-- ----------------------------
+REPLACE INTO account VALUES (1,001,100);
+REPLACE INTO account VALUES (2,002,300);
+REPLACE INTO account VALUES (3,003,300);
+REPLACE INTO account VALUES (4,004,400);
+
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
+
+ 
+
+<img src="https://img-blog.csdnimg.cn/20210501120630843.png?#pic_left" alt="在这里插入图片描述" width="700"/>.
+
+ <img src="https://img-blog.csdnimg.cn/20210501120752167.png?#pic_left" alt="在这里插入图片描述" width="700"/> <img src="https://img-blog.csdnimg.cn/20210501123116393.png#pic_left" alt="在这里插入图片描述" width="700"/>
+
+
 
 ---
 
@@ -59,7 +140,9 @@
 
 **注意：**   因为一个账户信息只能供某个用户使用，所以从查询账户信息出发关联查询用户信息为一对一查询。如果从用户信息出发查询用户下的账户信息则为一对多查询，因为一个用户可以有多个账户。
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210507225805814.png?#pic_left" alt="在这里插入图片描述" width="300"/>
+**工程目录：**
+
+ <img src="https://img-blog.csdnimg.cn/20210507225805814.png?#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 
@@ -198,11 +281,21 @@ public class Account implements Serializable {
 ### 2.2 编写 SQL 语句
 
 ```sql
- select u.*, a.id as aid, a.uid, a.money from account a, user u where u.id = a.uid
+ select u.*, a.id as aid, a.uid, a.money from account a, user u where u.id = a.uid;
 
 ```
 
-账户表中的数据： <img src="https://img-blog.csdnimg.cn/20210503105433664.png#pic_left" alt="在这里插入图片描述" width="200"/> 用户表中的数据： <img src="https://img-blog.csdnimg.cn/20210503105602280.png#pic_left" alt="在这里插入图片描述" width="400"/> 测试结果： <img src="https://img-blog.csdnimg.cn/20210503105703396.png#pic_left" alt="在这里插入图片描述" width="650"/>
+账户表中的数据：
+
+ <img src="https://img-blog.csdnimg.cn/20210503105433664.png#pic_left" alt="在这里插入图片描述" width="200"/> 
+
+用户表中的数据：
+
+ <img src="https://img-blog.csdnimg.cn/20210503105602280.png#pic_left" alt="在这里插入图片描述" width="400"/> 
+
+测试结果：
+
+ <img src="https://img-blog.csdnimg.cn/20210503105703396.png#pic_left" alt="在这里插入图片描述" width="650"/>
 
 ---
 
@@ -222,7 +315,7 @@ public interface IAccountDao {
 ---
 
 
-### 2.4 AccountDao.xml 文件中的查询配置信息
+### 2.4 IAccountDao.xml 文件中的查询配置信息
 
 resultMap 标签自定义某个 javabean 的封装规则： 
 
@@ -245,7 +338,7 @@ association 表示多表查询中关联部分的映射配置，property属性和
 <mapper namespace="com.itheima.dao.IAccountDao">
 
     <!-- 定义封装account和user的resultMap -->
-    <resultMap id="accountUserMap" type="account">
+    <resultMap id="accountUserMap" type="com.itheima.domain.Account">
         <id property="id" column="aid"/>
         <result property="uid" column="uid"/>
         <result property="money" column="money"/>
@@ -270,10 +363,61 @@ association 表示多表查询中关联部分的映射配置，property属性和
 
 ---
 
+```
+mysql> select u.*, a.id as aid, a.uid, a.money from account a, user u where u.id = a.uid;
++----+----------+---------------------+------+----------+-----+------+-------+
+| id | username | birthday            | sex  | address  | aid | uid  | money |
++----+----------+---------------------+------+----------+-----+------+-------+
+|  1 | admin1   | 2022-09-01 00:00:00 | m    | address1 |   1 |    1 |   100 |
+|  2 | admin2   | 2022-09-02 00:00:00 | m    | address2 |   2 |    2 |   300 |
+|  3 | admin3   | 2022-09-04 00:00:00 | f    | address3 |   3 |    3 |   300 |
++----+----------+---------------------+------+----------+-----+------+-------+
+3 rows in set (0.02 sec)
+
+mysql> select * from user;
++----+----------+---------------------+------+----------+
+| id | username | birthday            | sex  | address  |
++----+----------+---------------------+------+----------+
+|  1 | admin1   | 2022-09-01 00:00:00 | m    | address1 |
+|  2 | admin2   | 2022-09-02 00:00:00 | m    | address2 |
+|  3 | admin3   | 2022-09-04 00:00:00 | f    | address3 |
++----+----------+---------------------+------+----------+
+3 rows in set (0.00 sec)
+
+mysql> select * from account;;
++----+------+-------+
+| id | uid  | money |
++----+------+-------+
+|  1 |    1 |   100 |
+|  2 |    2 |   300 |
+|  3 |    3 |   300 |
+|  4 |    4 |   400 |
++----+------+-------+
+4 rows in set (0.00 sec)
+
+ERROR:
+No query specified
+
+```
 
 ### 2.5 测试方法
 
 ```java
+package package01.test2;
+
+import com.itheima.dao.IAccountDao;
+import com.itheima.domain.Account;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.io.InputStream;
+import java.util.List;
+
 public class AccountTest {
     private InputStream in;
     private SqlSession sqlSession;
@@ -317,7 +461,24 @@ public class AccountTest {
 
 ```
 
-测试结果： <img src="https://img-blog.csdnimg.cn/20210503111205903.png#pic_left" alt="在这里插入图片描述" width="900"/>
+测试结果： 
+
+```
+14:56:31.046 [main] DEBUG com.itheima.dao.IAccountDao.findAll - ==>  Preparing: select u.*, a.id as aid, a.uid, a.money from account a, user u where u.id = a.uid;
+14:56:31.083 [main] DEBUG com.itheima.dao.IAccountDao.findAll - ==> Parameters: 
+14:56:31.142 [main] DEBUG com.itheima.dao.IAccountDao.findAll - <==      Total: 3
+---------每个账户的信息------
+Account{id=1, uid=1, money=100.0}
+User{id=1, username='admin1', birthday=Thu Sep 01 00:00:00 CST 2022, sex='m', address='address1'}
+---------每个账户的信息------
+Account{id=2, uid=2, money=300.0}
+User{id=2, username='admin2', birthday=Fri Sep 02 00:00:00 CST 2022, sex='m', address='address2'}
+---------每个账户的信息------
+Account{id=3, uid=3, money=300.0}
+User{id=3, username='admin3', birthday=Sun Sep 04 00:00:00 CST 2022, sex='f', address='address3'}
+```
+
+
 
 ---
 
@@ -417,9 +578,57 @@ select u.*, a.id as aid, a.uid, a.money from user  u left outer join account a o
 
 ```
 
-account 表中的数据： <img src="https://img-blog.csdnimg.cn/20210503223351845.png?#pic_left" alt="在这里插入图片描述" width="450"/> user 表中的数据： <img src="https://img-blog.csdnimg.cn/2021050322342997.png?#pic_left" alt="在这里插入图片描述" width="480"/>
+account 表中的数据：
 
-查询结果： <img src="https://img-blog.csdnimg.cn/20210503223306367.png?#pic_left" alt="在这里插入图片描述" width="620"/>
+```sql
+mysql> select a.id as aid, a.uid, a.money from account a;
++-----+------+-------+
+| aid | uid  | money |
++-----+------+-------+
+|   1 |    1 |   100 |
+|   2 |    2 |   300 |
+|   3 |    3 |   300 |
+|   4 |    4 |   400 |
++-----+------+-------+
+4 rows in set (0.00 sec)
+```
+
+user 表中的数据：
+
+```sql
+ mysql> select u.* from user u;
++----+----------+---------------------+------+----------+
+| id | username | birthday            | sex  | address  |
++----+----------+---------------------+------+----------+
+|  1 | admin1   | 2022-09-01 00:00:00 | m    | address1 |
+|  2 | admin2   | 2022-09-02 00:00:00 | m    | address2 |
+|  3 | admin3   | 2022-09-04 00:00:00 | f    | address3 |
++----+----------+---------------------+------+----------+
+3 rows in set (0.00 sec)
+```
+
+
+
+查询结果：
+
+```sql
+mysql> use mybatisdb;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select u.*, a.id as aid, a.uid, a.money from user  u left outer join account a on u.id = a.uid;
++----+----------+---------------------+------+----------+------+------+-------+
+| id | username | birthday            | sex  | address  | aid  | uid  | money |
++----+----------+---------------------+------+----------+------+------+-------+
+|  1 | admin1   | 2022-09-01 00:00:00 | m    | address1 |    1 |    1 |   100 |
+|  2 | admin2   | 2022-09-02 00:00:00 | m    | address2 |    2 |    2 |   300 |
+|  3 | admin3   | 2022-09-04 00:00:00 | f    | address3 |    3 |    3 |   300 |
++----+----------+---------------------+------+----------+------+------+-------+
+3 rows in set (0.00 sec)
+```
+
+
 
 ---
 
@@ -526,7 +735,24 @@ public class UserTest {
 
 ```
 
-查询结果： <img src="https://img-blog.csdnimg.cn/20210503223643796.png?#pic_left" alt="在这里插入图片描述" width="900"/>
+查询结果： 
+
+```
+14:51:24.988 [main] DEBUG com.itheima.dao.IUserDao.findAll - ==>  Preparing: select * from user;
+14:51:25.035 [main] DEBUG com.itheima.dao.IUserDao.findAll - ==> Parameters: 
+14:51:25.082 [main] DEBUG com.itheima.dao.IUserDao.findAll - <==      Total: 3
+------每个用户的信息-------
+User{id=1, username='admin1', birthday=Thu Sep 01 00:00:00 CST 2022, sex='m', address='address1'}
+null
+------每个用户的信息-------
+User{id=2, username='admin2', birthday=Fri Sep 02 00:00:00 CST 2022, sex='m', address='address2'}
+null
+------每个用户的信息-------
+User{id=3, username='admin3', birthday=Sun Sep 04 00:00:00 CST 2022, sex='f', address='address3'}
+null
+```
+
+
 
 ---
 

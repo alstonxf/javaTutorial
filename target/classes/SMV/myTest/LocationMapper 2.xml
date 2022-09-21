@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--//实际上是把dao接口映射成xml文件，接口名就是namespace，id就是各个方法名。所以dao和mapper.xml是绑定的。-->
+<!--namespace命名空间，需要绑定对应的dao接口-->
+
+<mapper namespace="SMV.myTest.LocationDao">
+    <!--    这里ID对应我们接口中的方法  resultType代表返回类型-->
+    <select id="getLocationList" resultType="SMV.myTest.Location" parameterType="SMV.myTest.Location">
+        select * from Location
+    </select>
+    <select id="getLocationById" resultType="SMV.myTest.Location" parameterType="SMV.myTest.Location">
+        select * from Location where id=#{id}
+    </select>
+    <insert id="AddLocation" parameterType="SMV.myTest.Location">
+        insert into Location(id,name) values(#{id},#{name})
+    </insert>
+    <update id="UpdateLocationById" parameterType="SMV.myTest.Location">
+        update Location set pwd=#{pwd} where id=#{id}
+    </update>
+    <delete id="DeleteLocationById" parameterType="SMV.myTest.Location">
+        delete from Location where id=#{id}
+    </delete>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationById2" resultType="SMV.myTest.Location" parameterType="map">
+        select * from Location where id=#{kkk}
+    </select>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationByName" resultType="SMV.myTest.Location" parameterType="map">
+        select * from Location where name=#{n}
+    </select>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationByNameOrId" resultType="SMV.myTest.Location" parameterType="map">
+        select * from Location where #{idOrName} = #{v}
+    </select>
+
+</mapper>
+
+<!--        &#45;&#45; 创建表-->
+<!--        create table location(-->
+<!--        &#45;&#45; not null 不允许为空 PRIMARY KEY唯一主键-->
+<!--        id int(20) not null PRIMARY KEY,-->
+<!--        &#45;&#45; default null 默认为null-->
+<!--        location varchar(30) default null-->
+<!--        &#45;&#45; engine=innodb设置数据库引擎为innodb，-->
+<!--        &#45;&#45; default charset=utf8;设置默认字符集为utf-8-->
+<!--        )engine=innodb default charset=utf8;-->
+
+<!--        &#45;&#45; 新增数据-->
+<!--        insert into location(id,location)values(1,'上海');-->
+<!--        insert into location(id,location)values(2,'北京');-->
+<!--        insert into location(id,location)values(3,'福建');-->
+<!--        insert into location(id,location)values(4,'江苏');-->

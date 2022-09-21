@@ -53,27 +53,27 @@
 
 # 磁盘和分区
 
-| 常用命令                            | 作用                           |
-| ----------------------------------- | ------------------------------ |
-| <u>fdisk -l</u>                     | 查看所有磁盘分区               |
-| <u>swapon -s</u>                    | 查看所有交换分区               |
-| df -h                               | 查看磁盘使⽤情况及挂载点       |
-| df -lh                              | 同上                           |
-| du -sh /dir                         | 查看指定某个⽬录的⼤⼩         |
-| du -sk * \| sort -rn                | 从⾼到低依次显示⽂件和⽬录⼤⼩ |
-| mount /dev/hda2 /mnt/hda2           | 挂载hda2盘                     |
-| mount -t ntfs /dev/sdc1 /mnt/usbhd1 | 指定⽂件系统类型挂载（如ntfs） |
-| mount -o loop xxx.iso /mnt/cdrom    | 挂 载 iso ⽂ 件                |
-| umount -v /dev/sda1                 | 通过设备名卸载                 |
-| umount -v /mnt/mymnt                | 通过挂载点卸载                 |
-| fuser -km /mnt/hda1                 | 强制卸载(慎⽤)                 |
+| 常用命令                            | 作用                               |
+| ----------------------------------- | ---------------------------------- |
+| <u>fdisk -l</u>                     | 查看所有磁盘分区                   |
+| <u>swapon -s</u>                    | 查看所有交换分区                   |
+| df -h                               | 查看磁盘使⽤情况及挂载点           |
+| ==df -lh==                          | ==同上==                           |
+| du -sh /dir                         | 查看指定某个⽬录的⼤⼩             |
+| ==du -sk * \| sort -rn==            | ==从⾼到低依次显示⽂件和⽬录⼤⼩== |
+| mount /dev/hda2 /mnt/hda2           | 挂载hda2盘                         |
+| mount -t ntfs /dev/sdc1 /mnt/usbhd1 | 指定⽂件系统类型挂载（如ntfs）     |
+| mount -o loop xxx.iso /mnt/cdrom    | 挂 载 iso ⽂ 件                    |
+| umount -v /dev/sda1                 | 通过设备名卸载                     |
+| umount -v /mnt/mymnt                | 通过挂载点卸载                     |
+| fuser -km /mnt/hda1                 | 强制卸载(慎⽤)                     |
 
 # ⽤户和⽤户组
 
 | 常用命令                                           | 作用                                           |
 | -------------------------------------------------- | ---------------------------------------------- |
-| useradd 用户名                                     | 创建⽤户                                       |
-| userdel -r 用户名                                  | 删除⽤户                                       |
+| ==useradd 用户名==                                 | ==创建⽤户==                                   |
+| ==userdel -r 用户名==                              | ==删除⽤户==                                   |
 | usermod -g group_name user_name                    | 修改⽤户的组                                   |
 | usermod -aG group_name user_name                   | 将⽤户添加到组                                 |
 | usermod -s /bin/ksh -d /home/codepig –g dev 用户名 | 修改⽤户codesheep的登录Shell、主⽬录以及⽤户组 |
@@ -81,15 +81,17 @@
 | groupadd group_name                                | 创建⽤户组                                     |
 | groupdel group_name                                | 删除⽤户组                                     |
 | groupmod -n new_name old_name                      | 重命名⽤户组                                   |
-| su - user_name                                     | 登录后切换用户                                 |
-| passwd                                             | 修改⼝令                                       |
-| passwd 用户名                                      | 修改某⽤户的⼝令                               |
+| ==su - user_name==                                 | ==登录后切换用户==                             |
+| ==passwd==                                         | ==修改⼝令==                                   |
+| ==passwd 用户名==                                  | ==修改某⽤户的⼝令==                           |
 | w                                                  | 查看活动⽤户                                   |
 | id 用户名                                          | 查看指定⽤户codesheep信息                      |
 | last                                               | 查看⽤户登录⽇志                               |
 | <u>crontab -l</u>                                  | 查看当前⽤户的计划任务                         |
 | cut -d: -f1 /etc/passwd                            | 查看系统所有⽤户                               |
 | cut -d: -f1 /etc/group                             | 查看系统所有组                                 |
+| ==cat /etc/shadow==                                | ==查看用户名==                                 |
+| ==cat /etc/group==                                 | ==查看组==                                     |
 
 # ⽹络和进程管理
 
@@ -141,48 +143,48 @@
 
 # ⽂件和⽬录操作
 
-| 常用命令                 | 作用                                                         |
-| ------------------------ | ------------------------------------------------------------ |
-| cd <⽬录名>              | 进⼊某个⽬录                                                 |
-| cd ..                    | 回上级⽬录                                                   |
-| cd ../..                 | 回上两级⽬录                                                 |
-| cd                       | 进个⼈主⽬录                                                 |
-| cd -                     | 回上⼀步所在⽬录                                             |
-| pwd                      | 显示当前路径                                                 |
-| ls                       | 查看⽂件⽬录列表                                             |
-| ls -F                    | 查看⽬录中内容（显示是⽂件还是⽬录）                         |
-| ls -l                    | 查看⽂件和⽬录的详情列表                                     |
-| ls -a                    | 查看隐藏⽂件                                                 |
-| ls -lh                   | 查看⽂件和⽬录的详情列表（增强⽂件⼤⼩易读性）               |
-| ls -lSr                  | 查看⽂件和⽬录列表（以⽂件⼤⼩升序查看）                     |
-| tree                     | 查看⽂件和⽬录的树形结构                                     |
-| mkdir <⽬录名>           | 创建⽬录                                                     |
-| mkdir dir1 dir2          | 同时创建两个⽬录                                             |
-| mkdir -p /tmp/dir1/dir2  | 创建⽬录树                                                   |
-| rm -f file1              | 删除'file1'⽂件                                              |
-| rmdir dir1               | 删除'dir1'⽬录                                               |
-| rm -rf dir1              | 删除'dir1'⽬录和其内容                                       |
-| rm -rf dir1 dir2         | 同时删除两个⽬录及其内容                                     |
-| mv old_dir new_dir       | 重命名/移动⽬录                                              |
-| cp file1 file2           | 复制⽂件                                                     |
-| cp dir/* .               | 复制某⽬录下的所有⽂件⾄当前⽬录                             |
-| cp -a dir1 dir2          | 复制⽬录                                                     |
-| cp -a /tmp/dir1 .        | 复制⼀个⽬录⾄当前⽬录                                       |
-| ln -s file1 link1        | 创建指向⽂件/⽬录的软链接                                    |
-| ln file1 lnk1            | 创建指向⽂件/⽬录的物理链接                                  |
-| find / -name file1       | 从根⽬录开始搜索⽂件/⽬录                                    |
-| find / -user user1       | 搜索⽤户user1的⽂件/⽬录                                     |
-| find /dir -name *.bin    | 在⽬录/dir中搜带有.bin后缀的⽂件                             |
-| locate <关键词>          | 快速定位⽂件                                                 |
-| locate *.mp4             | 寻找.mp4结尾的⽂件                                           |
-| whereis <关键词>         | 显示某⼆进制⽂件/可执⾏⽂件的路径                            |
-| which <关键词>           | 查找系统⽬录下某的⼆进制⽂件                                 |
-| chmod ugo+rwx dir1       | 设置⽬录所有者(u)、群组(g)及其他⼈(o)的读（r）写(w)执⾏(x)权限 |
-| chmod go-rwx dir1        | 移除群组(g)与其他⼈(o)对⽬录的读写执⾏权限                   |
-| chown user1 file1        | 改变⽂件的所有者属性                                         |
-| chown -R user1 dir1      | 改变⽬录的所有者属性                                         |
-| chgrp group1 file1       | 改变⽂件群组                                                 |
-| chown user1:group1 file1 | 改变⽂件的所有⼈和群组                                       |
+| 常用命令                  | 作用                                                         |
+| ------------------------- | ------------------------------------------------------------ |
+| cd <⽬录名>               | 进⼊某个⽬录                                                 |
+| cd ..                     | 回上级⽬录                                                   |
+| cd ../..                  | 回上两级⽬录                                                 |
+| cd                        | 进个⼈主⽬录                                                 |
+| cd -                      | 回上⼀步所在⽬录                                             |
+| pwd                       | 显示当前路径                                                 |
+| ls                        | 查看⽂件⽬录列表                                             |
+| ls -F                     | 查看⽬录中内容（显示是⽂件还是⽬录）                         |
+| ls -l                     | 查看⽂件和⽬录的详情列表                                     |
+| ls -a                     | 查看隐藏⽂件                                                 |
+| ls -lh                    | 查看⽂件和⽬录的详情列表（增强⽂件⼤⼩易读性）               |
+| ls -lSr                   | 查看⽂件和⽬录列表（以⽂件⼤⼩升序查看）                     |
+| tree                      | 查看⽂件和⽬录的树形结构                                     |
+| mkdir <⽬录名>            | 创建⽬录                                                     |
+| mkdir dir1 dir2           | 同时创建两个⽬录                                             |
+| mkdir -p /tmp/dir1/dir2   | 创建⽬录树                                                   |
+| rm -f file1               | 删除'file1'⽂件                                              |
+| rmdir dir1                | 删除'dir1'⽬录                                               |
+| rm -rf dir1               | 删除'dir1'⽬录和其内容                                       |
+| rm -rf dir1 dir2          | 同时删除两个⽬录及其内容                                     |
+| mv old_dir new_dir        | 重命名/移动⽬录                                              |
+| cp file1 file2            | 复制⽂件                                                     |
+| cp dir/* .                | 复制某⽬录下的所有⽂件⾄当前⽬录                             |
+| cp -a dir1 dir2           | 复制⽬录                                                     |
+| cp -a /tmp/dir1 .         | 复制⼀个⽬录⾄当前⽬录                                       |
+| ln -s file1 link1         | 创建指向⽂件/⽬录的软链接                                    |
+| ln file1 lnk1             | 创建指向⽂件/⽬录的物理链接                                  |
+| ==find / -name file1==    | ==从根⽬录开始搜索⽂件/⽬录==  find 路径 -name 文件名        |
+| ==find / -user user1==    | ==搜索⽤户user1的⽂件/⽬录==  find 路径 -user 用户名         |
+| ==find /dir -name *.bin== | ==在⽬录/dir中搜带有.bin后缀的⽂件==                         |
+| ==locate <关键词>==       | ==快速定位⽂件==                                             |
+| ==locate *.mp4==          | ==寻找.mp4结尾的⽂件==                                       |
+| ==whereis <关键词>==      | ==显示某⼆进制⽂件/可执⾏⽂件的路径==                        |
+| ==which <关键词>==        | ==查找系统⽬录下某的⼆进制⽂件==                             |
+| ==chmod ugo+rwx dir1==    | ==设置⽬录所有者(u)、群组(g)及其他⼈(o)的读（r）写(w)执⾏(x)权限 (如果没有填ugo，默认是all)== |
+| chmod go-rwx dir1         | 移除群组(g)与其他⼈(o)对⽬录的读写执⾏权限                   |
+| chown user1 file1         | 改变⽂件的所有者属性                                         |
+| chown -R user1 dir1       | 改变⽬录的所有者属性                                         |
+| chgrp group1 file1        | 改变⽂件群组                                                 |
+| chown user1:group1 file1  | 改变⽂件的所有⼈和群组                                       |
 
 # ⽂件查看和处理
 
@@ -194,10 +196,10 @@
 | tac file1                     | 从最后⼀⾏开始反看⽂件内容                                   |
 | more file1                    | more file1  命令类似 cat ，不过会以一页一页的形式显示，更方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示，而且还有搜寻字串的功能（与 vi 相似），使用中的说明文件，请按 h 。 |
 | less file1                    | 类似more命令，但允许反向操作                                 |
-| head -2 file1                 | 查看⽂件前两⾏                                               |
-| tail -2 file1                 | 查看⽂件后两⾏                                               |
+| ==head -2 file1==             | ==查看⽂件前两⾏==                                           |
+| ==tail -2 file1==             | ==查看⽂件后两⾏==                                           |
 | tail -f /log/msg              | 实时查看添加到⽂件中的内容                                   |
-| grep codesheep hello.txt      | 在⽂件hello.txt中查找关键词codesheep                         |
+| ==grep codesheep hello.txt==  | ==在⽂件hello.txt中查找关键词codesheep==                     |
 | grep ^sheep hello.txt         | 在⽂件hello.txt中查找以sheep开头的内容                       |
 | grep [0-9] hello.txt          | 选择hello.txt⽂件中所有包含数字的⾏                          |
 | sed 's/s1/s2/g' hello.txt     | 将hello.txt⽂件中的s1替换成s2                                |
@@ -254,7 +256,7 @@ du
 | --------------------------------- | ------------------------- |
 | zip xxx.zip file1                 | 压缩file1⾄zip包          |
 | zip -r xxx.zip file1 file2        | 将多个⽂件+⽬录压成zip包  |
-| unzip xxx.zip                     | 解压zip包                 |
+| ==unzip xxx.zip==                 | ==解压zip包==             |
 | tar -cvf xxx.tar file1            | 将file1创建⾮压缩tar包    |
 | tar -cvf xxx.tar file1 file2 dir1 | 将多个⽂件+⽬录打tar包    |
 | tar -tf xxx.tar                   | 查看tar包的内容           |
@@ -262,12 +264,12 @@ du
 | tar -xvf xxx.tar -C /dir          | 将tar包解压⾄指定⽬录/dir |
 | tar -cvfj xxx.tar.bz2 dir         | 创建bz2压缩包             |
 | tar -jxvf xxx.tar.bz2             | 解压bz2压缩包             |
-| tar -cvfz xxx.tar.gz dir          | 创建gzip压缩包            |
-| tar -zxvf xxx.tar.gz              | 解压gzip压缩包            |
+| ==tar -cvfz xxx.tar.gz dir==      | ==创建gzip压缩包==        |
+| ==tar -zxvf xxx.tar.gz==          | ==解压gzip压缩包==        |
 | bunzip2 xxx.bz2                   | 解压bz2压缩包             |
 | bzip2 filename                    | 压缩⽂件                  |
 | gunzip xxx.gz                     | 解压gzip压缩包            |
-| gzip filename                     | 压缩⽂件                  |
+| ==gzip filename==                 | ==压缩⽂件==              |
 | gzip -9 filename                  | 最⼤程度压缩              |
 
 # RPM包管理命令

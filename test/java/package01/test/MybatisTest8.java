@@ -148,7 +148,7 @@ public class MybatisTest8 {
     }
     @Test
     public void testFindById2(){
-        User u = userDao.findById2(2);
+        User u = userDao .findById2(2);
         System.out.println(u);
     }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+        <!--核心配置文件-->
+<configuration>
+<environments default="development">
+    <environment id="development">
+        <transactionManager type="JDBC"/>
+        <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.jdbc.Driver"/>
+<!--            库1-->
+            <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+            <property name="username" value="root"/>
+            <property name="password" value="lixiaofeng"/>
+        </dataSource>
+    </environment>
+</environments>
+    <!--    每一个Mapper.xml 都需要再Mybatis核心配置文件中注册-->
+    <mappers>
+    <!--    com/yunduo/dao/UserDaoMapper.xml-->
+        <mapper resource="SMV/COM1/dao/UserDaoMapper.xml"/>
+        <mapper resource="com/itheima/dao/IUserDao.xml"/>
+
+        <package name="com.mybatis.mapper"/>
+    </mappers>
+
+</configuration>
+
