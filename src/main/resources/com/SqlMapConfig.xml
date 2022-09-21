@@ -58,12 +58,14 @@
 
     <!--指定映射配置文件的位置， 映射配置文件指的是每个dao独立的配置文件-->
     <mappers>
+<!--        使用xml注册-->
 <!--        <mapper resource="com/itheima/dao/IUserDao.xml"/>-->
         <!--如果由xml改用注解，第一步要修改的地方，实验发现其实xml也可以用class属性指定被注解的dao全限定类名       -->
         <!--如果使用注解来配置，此处应该使用class属性指定被注解的dao全限定类名-->
         <mapper class="com.itheima.dao.IUserDao"/>
         <mapper class="com.itheima.dao.IAccountDao"/>
         <mapper class="com.itheima.dao.IRoleDao"/>
+        <mapper class="com.itheima.dao.IUserDaoAnnotation"/>
     </mappers>
 
 

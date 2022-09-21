@@ -47,9 +47,8 @@
    <mappers>
        <mapper class="com.itheima.dao.IUserDao"/>
    </mappers>
-   
    ```
-
+   
 2. <font color="red">但是更一般的情况我们会选择使用 package 标签指定带有注解的dao接口的所在位置。</font>
 
    ```
@@ -57,16 +56,16 @@
    <mappers> 
    	<package name="com.itheima.dao"></package>
    </mappers> 
-   
    ```
-
    
 ---
 
 
 ## 三、使用 Mybatis 注解实现基本 CRUD
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210510233817725.png#pic_left" alt="在这里插入图片描述" width="300"/>
+**工程目录：**
+
+ <img src="https://img-blog.csdnimg.cn/20210510233817725.png#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 
@@ -305,7 +304,9 @@ public class AnnotationCRUDTest {
 
 ### 4.1 修改实体类
 
-我们故意和数据库表的列名不一致，数据库各属性字段名如下： <img src="https://img-blog.csdnimg.cn/2021051211182788.png#pic_left" alt="在这里插入图片描述" width="600"/> **实体类代码如下：**
+我们故意和数据库表的列名不一致，数据库各属性字段名如下： <img src="https://img-blog.csdnimg.cn/2021051211182788.png#pic_left" alt="在这里插入图片描述" width="600"/> 
+
+**实体类代码如下：**
 
 ```java
 public class User {
