@@ -35,6 +35,8 @@
         <typeAlias type="com.itheima.domain.Account" alias="account"></typeAlias>
         <typeAlias type="com.itheima.domain.QueryVo" alias="queryvo"></typeAlias>
         <typeAlias type="com.itheima.domain.Role" alias="role"></typeAlias>
+        <typeAlias type="com.itheima.domain.Orders" alias="orders"></typeAlias>
+        <typeAlias type="com.itheima.domain.Goods" alias="goods"></typeAlias>
     </typeAliases>
 
     <!--配置环境-->
@@ -66,6 +68,8 @@
         <mapper class="com.itheima.dao.IAccountDao"/>
         <mapper class="com.itheima.dao.IRoleDao"/>
         <mapper class="com.itheima.dao.IUserDaoAnnotation"/>
+        <mapper class="com.itheima.dao.IOrdersDao"/>
+        <mapper class="com.itheima.dao.IGoodsDao"/>
     </mappers>
 
 

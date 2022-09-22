@@ -1,6 +1,7 @@
 # Mybatis从入门到精通系列 15——嵌套查询与嵌套结果
 Mybatis 在映射文件中加载关联关系对象主要通过两种方式：嵌套查询与嵌套结果。
-1. **嵌套查询是指通过执行另外一条 SQL 映射语句来返回预期的复杂类型；**1. **嵌套结果是使用嵌套结果映射来处理重复的联合结果的子集。**
+1. **嵌套查询是指通过执行另外一条 SQL 映射语句来返回预期的复杂类型；**
+1. **嵌套结果是使用嵌套结果映射来处理重复的联合结果的子集。**
 本文我们针对 Mybatis 的多对多的嵌套查询与嵌套结果进行详细分析。
 
 <img src="https://img-blog.csdnimg.cn/20210519115233329.png#pic_center" alt="在这里插入图片描述" width="700"/>
@@ -34,8 +35,77 @@ Mybatis 在映射文件中加载关联关系对象主要通过两种方式：嵌
 
 ---
 
-
 **添加数据：**
+
+```sql
+-- ----------------------------
+-- Table structure for t_user
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS mybatisdb;
+USE mybatisdb;
+DROP TABLE IF EXISTS t_goods;
+CREATE TABLE IF NOT EXISTS t_goods (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  goodname varchar(20) ,
+  price float,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_goods
+-- ----------------------------
+INSERT INTO t_goods VALUES (1, 'nike shoes12-3',560);
+INSERT INTO t_goods VALUES (2, '李宁15-1',146);
+INSERT INTO t_goods VALUES (3, '外套',780);
+INSERT INTO t_goods VALUES (4, '裤子',360);
+INSERT INTO t_goods VALUES (5, '帽子',160);
+INSERT INTO t_goods VALUES (6, '手表',30000);
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- ----------------------------
+-- Records of t_orders
+-- ----------------------------
+DROP TABLE IF EXISTS t_orders;
+CREATE TABLE IF NOT EXISTS t_orders (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  customer_id int(11) ,
+  totalprice float,
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_orders
+-- ----------------------------
+INSERT INTO t_orders VALUES (1, 111,1000.00);
+INSERT INTO t_orders VALUES (2, 2222,20000.00);
+INSERT INTO t_orders VALUES (3, 3333,3000.00);
+
+
+-- ----------------------------
+-- Records of t_goods_orders
+-- ----------------------------
+DROP TABLE IF EXISTS t_goods_orders;
+CREATE TABLE IF NOT EXISTS t_goods_orders (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  good_id int(11) ,
+  order_id int(11) ,
+  number int(11),
+  PRIMARY KEY (id) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_goods_orders
+-- ----------------------------
+INSERT INTO t_goods_orders VALUES (1, 1,1,2);
+INSERT INTO t_goods_orders VALUES (2, 2,1,1);
+INSERT INTO t_goods_orders VALUES (3, 3,1,1);
+INSERT INTO t_goods_orders VALUES (4, 4,2,1);
+INSERT INTO t_goods_orders VALUES (5, 4,3,2);
+
+```
+
+
 
 ​	<img src="https://img-blog.csdnimg.cn/20210527133233708.png?#pic_left" alt="在这里插入图片描述" width="400"/> <img src="https://img-blog.csdnimg.cn/20210527133259909.png?#pic_left" alt="在这里插入图片描述" width="400"/>
 
@@ -152,7 +222,7 @@ jdbc.password=000000
 
 **log4j.properties：**
 
-``` 
+``` properties
 </code>
 # Set root category priority to INFO and its only appender to CONSOLE.
 #log4j.rootCategory=INFO, CONSOLE            debug   info   warn error fatal

@@ -10,13 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDaoAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他文档/前端/war包.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IGoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IOrdersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IGoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/itheima/dao/IOrdersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/ClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDaoAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IUserDaoAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 10——Mybatis多表查询之多对多查询.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 14——基于注解配置的一对一查询与一对多查询.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 14——基于注解配置的一对一查询与一对多查询.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/package01/test2/AnnotationCRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/package01/test2/AnnotationCRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 15——嵌套查询与嵌套结果.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Mybatis/Mybatis从入门到精通系列/Mybatis从入门到精通系列 15——嵌套查询与嵌套结果.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/SqlMapConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +119,7 @@
       <recent name="SpringTest.Sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnnotationCRUDTest">
+  <component name="RunManager" selected="JUnit.ClientTest">
     <configuration name="AnnotationCRUDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myJava" />
       <extension name="coverage">
@@ -126,6 +130,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="package01.test2" />
       <option name="MAIN_CLASS_NAME" value="package01.test2.AnnotationCRUDTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="package01.test2" />
+      <option name="MAIN_CLASS_NAME" value="package01.test2.ClientTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,21 +194,6 @@
       <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest8" />
       <option name="METHOD_NAME" value="testFirstLevelCache_2" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package01.test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package01.test2" />
-      <option name="MAIN_CLASS_NAME" value="package01.test2.RoleTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -284,19 +288,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AnnotationCRUDTest" />
+      <item itemvalue="JUnit.ClientTest" />
       <item itemvalue="JUnit.MybatisTest8.testClearCache" />
       <item itemvalue="JUnit.MybatisTest8.testFirstLevelCache_1" />
       <item itemvalue="JUnit.MybatisTest8.testFirstLevelCache_2" />
-      <item itemvalue="JUnit.RoleTest" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientTest" />
         <item itemvalue="JUnit.AnnotationCRUDTest" />
         <item itemvalue="JUnit.MybatisTest8.testClearCache" />
         <item itemvalue="JUnit.MybatisTest8.testFirstLevelCache_2" />
         <item itemvalue="JUnit.MybatisTest8.testFirstLevelCache_1" />
-        <item itemvalue="JUnit.RoleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +367,7 @@
       <workItem from="1662997611103" duration="19245000" />
       <workItem from="1663158294260" duration="7570000" />
       <workItem from="1663672824637" duration="5327000" />
-      <workItem from="1663736977170" duration="15927000" />
+      <workItem from="1663736977170" duration="17165000" />
     </task>
     <servers />
   </component>

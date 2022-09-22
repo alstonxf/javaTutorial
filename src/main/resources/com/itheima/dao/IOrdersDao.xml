@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.dao.IOrdersDao">
+    <!--嵌套结果的 resultMap-->
+    <resultMap id="OrdersMap1" type="orders">
+        <id property="id" column="id" />
+        <result property="customerId" column="customer_id" />
+        <result property="totalPrice" column="totalPrice" />
+        <collection property="goodsList" ofType="goods">
+            <id property="id" column="gid" />
+            <result property="goodName" column="goodName" />
+            <result property="price" column="price" />
+        </collection>
+    </resultMap>
+
+    <!--嵌套结果-->
+    <select id="findOrdersNestedResultsByOrdersId" resultMap="OrdersMap1" parameterType="Integer">
+        select o.*, g.id as gid, g.goodName, g.price
+        from t_orders o, t_goods g, t_goods_orders og
+        where og.good_id = g.id
+          and og.order_id = o.id
+          and o.id=#{id}
+    </select>
+
+    <!--嵌套查询的 resultMap-->
+    <resultMap id="OrdersMap2" type="orders">
+        <id property="id" column="id" />
+        <result property="customerId" column="customer_id" />
+        <result property="totalPrice" column="totalPrice" />
+        <collection property="goodsList" column="id" ofType="goods"
+                    select="com.itheima.dao.IGoodsDao.findGoodsById">
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersNestedQueryByOrdersId" parameterType="Integer" resultMap="OrdersMap2">
+        select * from t_orders where id = #{id}
+    </select>
+
+</mapper>
+
