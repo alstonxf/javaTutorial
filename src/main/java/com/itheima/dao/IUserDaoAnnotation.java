@@ -2,6 +2,7 @@ package com.itheima.dao;
 
 import com.itheima.domain.User;
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 import org.junit.Test;
 
 import java.util.List;
@@ -12,7 +13,44 @@ public interface IUserDaoAnnotation {
      * 查询所有
      */
     @Select("select *from user")
+    @Results(id = "userMap0",value={
+            @Result(id = true, property = "userId", column = "id"),
+            @Result(property = "userName", column = "username"),
+            @Result(property = "userAddress", column = "address"),
+            @Result(property = "userSex", column = "sex"),
+            @Result(property = "userBirthday", column = "birthday"),
+            @Result(property = "accounts", column = "id",
+                    many = @Many(select = "com.itheima.dao.IAccountDao.findAccountByUid", fetchType = FetchType.LAZY))
+    })
     List<User> findAll();
+
+    /**
+     * 根据id查询用户
+     */
+    @Select("select * from user where id = #{uid}")
+    @Results(id = "userMap",value={
+            @Result(id = true, property = "userId", column = "id"),
+            @Result(property = "userName", column = "username"),
+            @Result(property = "userAddress", column = "address"),
+            @Result(property = "userSex", column = "sex"),
+            @Result(property = "userBirthday", column = "birthday")
+    })
+    User findById1(Integer id);
+
+
+
+    /**
+     * 根据id查询用户
+     */
+    @Select("select * from user where id = #{uid}")
+    @ResultMap(value={"userMap"})
+    User findById2(Integer id);
+
+    /**
+     * 查询所有
+     */
+    @Select("select *from user")
+    List<User> findAll3();
 
     /**
      * 添加用户

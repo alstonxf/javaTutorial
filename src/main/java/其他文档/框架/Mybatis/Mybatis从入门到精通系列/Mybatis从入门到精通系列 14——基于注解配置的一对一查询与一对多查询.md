@@ -1,4 +1,7 @@
+
+
 # Mybatis从入门到精通系列 14——基于注解配置的一对一查询与一对多查询
+
   上篇文章我们对 Mybatis 的 @Select、@Insert、@Delete、@Update以及 @Results 注解的进行了简单分析，本文我们将继续分析 Mybatis 中的其余注解。   实现关系映射之前需要在映射文件中通过配置 <resultMap>来实现，在使用注解开发时我们需要借助 @Results 注解，@Result 注解，@One 注解，@Many 注解。 <img src="https://img-blog.csdnimg.cn/20210512232825851.png" alt="在这里插入图片描述"/>
 
 ---
@@ -17,6 +20,19 @@
 3.2 添加 用户 的持久层接口方法
 3.3 添加 账户 的持久层接口方法
 3.4 添加测试方法
+
+## 新增字段
+
+```sql
+USE mybatisdb;
+alter table user add userId int(11);
+alter table user add userName varchar(30);
+alter table user add userAddress varchar(30);
+alter table user add userSex varchar(30);
+alter table user add userBirthday varchar(30);
+```
+
+
 
 ---
 
@@ -42,7 +58,7 @@ many 需要使用的 @Many 注解（@Result（many=@many）（）））
 **@One 注解（一对一）**
 
 >  <mark>代替了<assocation> 标签，是多表查询的关键，在注解中用来指定子查询返回单一对象</mark> @One 注解属性介绍： 
-   
+
    - select 指定用的 来多表查询的 sqlmapper- fetchType 会覆盖全局的配置参数 lazyLoadingEnabled。 
 
 
@@ -72,7 +88,9 @@ many 需要使用的 @Many 注解（@Result（many=@many）（）））
 
 ### 2.1 环境准备
 
-**工程目录：** <img src="https://img-blog.csdnimg.cn/20210518230625646.png#pic_left" alt="在这里插入图片描述" width="300"/>
+**工程目录：**
+
+ <img src="https://img-blog.csdnimg.cn/20210518230625646.png#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 
@@ -287,7 +305,9 @@ public interface IAccountDao {
 
 ```
 
-  关于 @One 注解中的 fetchType 属性有三个属性值：分别是 LAZY、EAGER、DEFAULT，代表的意思也就不言而喻了。这里我们实现的是一对一，所以选择了立即加载。 <img src="https://img-blog.csdnimg.cn/20210518232559923.png?#pic_left" alt="在这里插入图片描述" width="300"/>
+  关于 @One 注解中的 fetchType 属性有三个属性值：分别是 LAZY、EAGER、DEFAULT，代表的意思也就不言而喻了。这里我们实现的是一对一，所以选择了立即加载。
+
+ <img src="https://img-blog.csdnimg.cn/20210518232559923.png?#pic_left" alt="在这里插入图片描述" width="300"/>
 
 ---
 

@@ -37,13 +37,6 @@ public class AnnotationCRUDTest {
         in.close();
     }
 
-    @Test
-    public void testFindAll(){
-        List<User> users = userDao.findAll();
-        for (User user: users){
-            System.out.println(user);
-        }
-    }
 
     @Test
     public void testInsert(){

@@ -54,7 +54,6 @@ CREATE TABLE IF NOT EXISTS role (
   PRIMARY KEY (id) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_bin ROW_FORMAT = Dynamic;
 
-
 -- ----------------------------
 -- Table structure for user_role
 -- ----------------------------
