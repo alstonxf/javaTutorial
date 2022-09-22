@@ -338,27 +338,27 @@ com.itheima.service.impl.*.*(..)
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:aop="http://www.springframework.org/schema/aop"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <!--配置spring的ioc， service对象配置进来-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+	<!--配置spring的ioc， service对象配置进来-->
+	<bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
 
-    <!--配置Logger类-->
-    <bean id="logger" class="com.itheima.utils.Logger"></bean>
+	<!--配置Logger类-->
+	<bean id="logger" class="com.itheima.utils.Logger"></bean>
 
-    <!--配置aop-->
-    <aop:config>
-        <!--配置切面-->
-        <aop:aspect id="logAdvice" ref="logger">
-            <!--配置通知的类型，并且建立通知方法和切入点方法的关联-->
-            <aop:before method="printLog" pointcut="execution( * com.itheima.service.impl.*.*(..))"></aop:before>
-        </aop:aspect>
-    </aop:config>
+	<!--配置aop-->
+	<aop:config>
+		<!--配置切面-->
+		<aop:aspect id="logAdvice" ref="logger">
+			<!--配置通知的类型，并且建立通知方法和切入点方法的关联-->
+			<aop:before method="printLog" pointcut="execution( * com.itheima.service.impl.*.*(..))"></aop:before>
+		</aop:aspect>
+	</aop:config>
 </beans>
 
 ```

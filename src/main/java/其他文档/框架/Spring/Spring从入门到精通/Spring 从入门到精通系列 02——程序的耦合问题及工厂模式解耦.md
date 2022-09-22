@@ -224,8 +224,8 @@ public class BeanFactory {
 **bean.properties：**
 
 ```properties
-accountService = com.itheima.service.impl.AccountServiceImpl
-accountDao = com.itheima.dao.impl.AccountDaoImpl
+accountService=com.itheima.service.impl.AccountServiceImpl
+accountDao=com.itheima.dao.impl.AccountDaoImpl
 
 ```
 

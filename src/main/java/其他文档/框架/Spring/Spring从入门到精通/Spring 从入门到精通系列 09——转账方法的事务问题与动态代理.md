@@ -279,45 +279,45 @@ public class AccountServiceImpl implements IAccountService {
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--首先配置service业务层对象-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
-        <!--注入dao-->
-        <property name="accountDao" ref="accountDao"></property>
-        <!--事务管理器-->
-        <property name="txManager" ref="txManager"></property>
-    </bean>
+   <!--首先配置service业务层对象-->
+   <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+      <!--注入dao-->
+      <property name="accountDao" ref="accountDao"></property>
+      <!--事务管理器-->
+      <property name="txManager" ref="txManager"></property>
+   </bean>
 
-    <!--配置dao对象-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
-        <!--注入QueryRunner-->
-        <property name="runner" ref="runner"></property>
-        <property name="connectionUtils" ref="connectionUtils"></property>
-    </bean>
+   <!--配置dao对象-->
+   <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+      <!--注入QueryRunner-->
+      <property name="runner" ref="runner"></property>
+      <property name="connectionUtils" ref="connectionUtils"></property>
+   </bean>
 
-    <!--配置QueryRunner-->
-    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype"></bean>
+   <!--配置QueryRunner-->
+   <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype"></bean>
 
-    <!--配置数据源-->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <!--连接数据库的必备信息-->
-        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springdb"></property>
-        <property name="user" value="root"></property>
-        <property name="password" value="000000"></property>
-    </bean>
+   <!--配置数据源-->
+   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+      <!--连接数据库的必备信息-->
+      <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+      <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springdb"></property>
+      <property name="user" value="root"></property>
+      <property name="password" value="000000"></property>
+   </bean>
 
 
-    <!--配置Connection的工具类，Connection-->
-    <bean id="connectionUtils" class="com.itheima.utils.ConnectionUtils">
-        <!--注入数据源-->
-        <property name="dataSource" ref="dataSource"></property>
-    </bean>
+   <!--配置Connection的工具类，Connection-->
+   <bean id="connectionUtils" class="com.itheima.utils.ConnectionUtils">
+      <!--注入数据源-->
+      <property name="dataSource" ref="dataSource"></property>
+   </bean>
 
-    <!--配置事务管理器-->
-    <bean name="txManager" class="com.itheima.utils.TransactionManager">
-        <!--注入-->
-        <property name="connectionUtils" ref="connectionUtils"></property>
-    </bean>
+   <!--配置事务管理器-->
+   <bean name="txManager" class="com.itheima.utils.TransactionManager">
+      <!--注入-->
+      <property name="connectionUtils" ref="connectionUtils"></property>
+   </bean>
 </beans>
 
 ```

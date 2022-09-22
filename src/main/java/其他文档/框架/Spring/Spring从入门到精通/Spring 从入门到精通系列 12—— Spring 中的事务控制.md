@@ -207,7 +207,7 @@ public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
         http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
-        
+
     <!--配置业务层-->
     <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
@@ -319,42 +319,42 @@ transaction-manager：给事务通知提供一个事务管理器引用
     <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
     </bean>
-<!--配置账户的持久层-->
-<bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
-    <property name="jdbcTemplate" ref="jdbcTemplate"></property>
-</bean>
+    <!--配置账户的持久层-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+    </bean>
 
-<!--配置jdbcTemplate-->
-<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-    <property name="dataSource" ref="dataSource"></property>
-</bean>
+    <!--配置jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
 
-<!-- 配置数据源-->
-<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-    <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-    <property name="url" value="jdbc:mysql://localhost:3306/springdb"></property>
-    <property name="username" value="root"></property>
-    <property name="password" value="000000"></property>
-</bean>
-   
-<!--配置事务管理器-->
-<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-    <property name="dataSource" ref="dataSource"></property>
-</bean>
+    <!-- 配置数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/springdb"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="000000"></property>
+    </bean>
 
-<!--配置事务的通知-->
-<tx:advice id="txAdvice" transaction-manager="transactionManager">
-    <tx:attributes>
-        <tx:method name="*" propagation="REQUIRED" read-only="false"></tx:method>
-        <tx:method name="find*" propagation="REQUIRED" read-only="false"></tx:method>
-    </tx:attributes>
-</tx:advice>
+    <!--配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
 
-<!--配置AOP的通用切入点表达式-->
-<aop:config>
-    <aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
-    <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
-</aop:config>
+    <!--配置事务的通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" read-only="false"></tx:method>
+            <tx:method name="find*" propagation="REQUIRED" read-only="false"></tx:method>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置AOP的通用切入点表达式-->
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* com.itheima.service.*.*(..))"></aop:pointcut>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
+    </aop:config>
 </beans>
 ```
 

@@ -313,32 +313,32 @@ public class AccountDaoImpl implements IAccountDao {
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--首先配置 service 业务层对象-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
-        <!--注入 dao -->
-        <property name="accountDao" ref="accountDao"></property>
-    </bean>
+   <!--首先配置 service 业务层对象-->
+   <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+      <!--注入 dao -->
+      <property name="accountDao" ref="accountDao"></property>
+   </bean>
 
-    <!--配置 dao 对象-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
-        <!--注入 QueryRunner -->
-        <property name="runner" ref="runner"></property>
-    </bean>
+   <!--配置 dao 对象-->
+   <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+      <!--注入 QueryRunner -->
+      <property name="runner" ref="runner"></property>
+   </bean>
 
-    <!--配置 QueryRunner -->
-    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
-        <!--注入数据源-->
-        <constructor-arg name="ds" ref="dataSource"></constructor-arg>
-    </bean>
+   <!--配置 QueryRunner -->
+   <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+      <!--注入数据源-->
+      <constructor-arg name="ds" ref="dataSource"></constructor-arg>
+   </bean>
 
-    <!--配置数据源-->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <!--连接数据库的必备信息-->
-        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springdb"></property>
-        <property name="user" value="root"></property>
-        <property name="password" value="000000"></property>
-    </bean>
+   <!--配置数据源-->
+   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+      <!--连接数据库的必备信息-->
+      <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+      <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springdb"></property>
+      <property name="user" value="root"></property>
+      <property name="password" value="000000"></property>
+   </bean>
 
 </beans>
 

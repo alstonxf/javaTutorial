@@ -29,10 +29,13 @@ Spring 中的 IOC 常用注解
 之前 xml 的配置：
 
 ```xml
+
 <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"
-         scope="" init-method="" destroy-method="">
-        <property name=""  value="" | ref="" ></property>
-</bean>
+      scope="" init-method="" destroy-method="">
+   <property name="" value=""
+   | ref="" >
+</property>
+        </bean>
 
 ```
 

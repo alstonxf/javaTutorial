@@ -176,8 +176,8 @@ public class AccountServiceImpl implements IAccountService {
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" scope="singleton" 
-    init-method="init" destroy-method="destroy"></bean>
+  <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" scope="singleton"
+        init-method="init" destroy-method="destroy"></bean>
 
 </beans>
 
