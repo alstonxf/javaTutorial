@@ -126,7 +126,6 @@ public class AccountServiceImpl implements IAccountService {
 
 ---
 
-
 **bean.xml：**
 
 ```xml
@@ -137,8 +136,8 @@ public class AccountServiceImpl implements IAccountService {
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--把对象的创建交给spring来管理-->
-    <bean id="accountService" class="com.ithiema.service.impl.AccountServiceImpl" ></bean>
-    <bean id="accountDao" class="com.ithiema.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" ></bean>
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
 </beans>
 
 ```

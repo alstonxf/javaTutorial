@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 public class BeanFactory {
+    /**
+     * 从bean.properties 读取参数，然后返回一个hashmap，key是properties的key，value是properties的value的实例
+     */
     //定义一个Properties对象
     private static Properties props;
 

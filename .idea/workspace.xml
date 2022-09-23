@@ -10,21 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/factory/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/ui/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bean.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/bean.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 02——程序的耦合问题及工厂模式解耦.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 02——程序的耦合问题及工厂模式解耦.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 06——Spring 中的 IOC 常用注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 06——Spring 中的 IOC 常用注解.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 07——基于XML与注解方式的IOC案例编写.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 07——基于XML与注解方式的IOC案例编写.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 09——转账方法的事务问题与动态代理.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 09——转账方法的事务问题与动态代理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 10—— 使用 Spring 进行面向切面编程（AOP）.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 10—— 使用 Spring 进行面向切面编程（AOP）.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 12—— Spring 中的事务控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 12—— Spring 中的事务控制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/ui/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 03——使用 Spring 的 IOC 解决程序耦合.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 03——使用 Spring 的 IOC 解决程序耦合.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
