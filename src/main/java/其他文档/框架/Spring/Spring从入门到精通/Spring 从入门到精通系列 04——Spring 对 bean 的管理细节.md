@@ -205,7 +205,9 @@ public class Client {
 
 **注意：** 如果采用 ApplicationContext ac = new ClassPathXmlApplicationContext(“bean.xml”) 的方式获取核心容器，那么容器就没有手动关闭容器 close() 的方法。因为该方法是实现接口，由于 **多态**，容器对象只能调用父接口的方法，而接口中没有 close() 方法。但是如果采用该方法来演示 bean 生命周期的话，由于 java 垃圾回收机制的影响，容器还没来得及调用销毁方法，就已经释放了。
 
-**测试结果如下：** <img src="https://img-blog.csdnimg.cn/20210601023422316.png?#pic_left" alt="在这里插入图片描述" width="500"/>
+**测试结果如下：**
+
+ <img src="https://img-blog.csdnimg.cn/20210601023422316.png?#pic_left" alt="在这里插入图片描述" width="500"/>
 
 ---
 

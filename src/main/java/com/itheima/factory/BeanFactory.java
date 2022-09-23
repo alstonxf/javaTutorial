@@ -5,6 +5,11 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+
+/**
+ * 降低耦合方法2：不直接new实例化，改用bean工厂。
+ * 如果用spring管理，就不用这个了。
+ */
 public class BeanFactory {
     /**
      * 从bean.properties 读取参数，然后返回一个hashmap，key是properties的key，value是properties的value的实例
@@ -12,7 +17,7 @@ public class BeanFactory {
     //定义一个Properties对象
     private static Properties props;
 
-    //定义一个map，用于存放我们要创建的对象，即容器。
+    //定义一个map，用于存放我们要创建的对象  ，即容器。
     private static Map<String, Object> beans;
 
     //使用静态代码块为Properties对象赋值
