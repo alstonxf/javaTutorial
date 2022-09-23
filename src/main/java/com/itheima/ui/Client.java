@@ -27,6 +27,12 @@ public class Client {
             //2.根据id获取bean对象
             //两种方式获取对象
         IAccountService accountService = (IAccountService) ac.getBean("accountService");
+        IAccountService accountService2 = (IAccountService) ac.getBean("accountService2");
+        IAccountService accountService3 = (IAccountService) ac.getBean("accountService3");
+        IAccountService accountService4 = (IAccountService) ac.getBean("accountService4");
+        IAccountService accountService5 = (IAccountService) ac.getBean("accountService5");
+        IAccountService accountService6 = (IAccountService) ac.getBean("accountService6");
+        IAccountService accountService7 = (IAccountService) ac.getBean("accountService7");
         IAccountDao accountDao = ac.getBean("accountDao", IAccountDao.class);
 
         //打印对象

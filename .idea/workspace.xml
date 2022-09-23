@@ -10,14 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/factory/InstanceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/factory/StaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/factory/BeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/ui/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/LINUX/Linux命令手册.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/其他文档/框架/Spring/Spring从入门到精通/Spring 从入门到精通系列 04——Spring 对 bean 的管理细节.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/bean.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bean.xml" afterDir="false" />
     </list>
@@ -111,11 +108,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.service.impl" />
       <recent name="package01.test" />
       <recent name="com.itheima.dao.IUserDao" />
       <recent name="SMV.myTest" />
       <recent name="SMV.COM2.utils" />
-      <recent name="SpringTest.Sample" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Client">
