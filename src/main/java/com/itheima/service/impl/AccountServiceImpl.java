@@ -4,10 +4,16 @@ import com.itheima.dao.IAccountDao;
 import com.itheima.dao.impl.AccountDaoImpl;
 import com.itheima.factory.BeanFactory;
 import com.itheima.service.IAccountService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * 业务层实现类
  */
+@Component("accountService")
+@Service("accountService")
+@Scope("prototype")//**作用**：用于指定bean的作用范围 常用取值：singleton, prototype
 public class AccountServiceImpl implements IAccountService {
     public AccountServiceImpl() {
         System.out.println("accountService 对象创建了");

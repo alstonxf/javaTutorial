@@ -7,10 +7,21 @@ import com.itheima.service.impl.AccountServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 /**
  * 模拟表现层，用于调用业务层
  */
 public class Client {
+    @PostConstruct //作用：用于指定初始化方法
+    public void init(){
+        System.out.println("初始化");
+    }
+    @PreDestroy //作用：用于指定销毁方法
+    public void destroy(){
+        System.out.println("销毁方法Service");//这里单例对象需要手动关闭才会执行该方法
+    }
     /**
      * 获取spring的ioc核心容器，并根据id获取对象
      */
@@ -44,6 +55,7 @@ public class Client {
         //手动关闭容器
 //        如果采用 ApplicationContext ac = new ClassPathXmlApplicationContext(“bean.xml”) 的方式获取核心容器，那么容器就没有手动关闭容器 close() 的方法。
 //        ac.close();
+
 
     }
 }
