@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringTest {
     public static void main(String[] args) {
         //1.初始化Spring容器，加载配置文件
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("sample4.xml","sample4_2.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("SpringTest/Sample4/sample4.xml","SpringTest/Sample4/sample4_2.xml");
         //2.通过容器获取实例，getBean()方法中的参数是bean标签中的id
         User user =  applicationContext.getBean("user2", User.class);
         //3.调用实例中的属性

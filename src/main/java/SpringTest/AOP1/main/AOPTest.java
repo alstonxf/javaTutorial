@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AOPTest {
 
     //创建ApplicationContext对象
-    private ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext-AOP1.xml");
+    private ApplicationContext ac = new ClassPathXmlApplicationContext("SpringTest/AOP1/applicationContext-AOP1.xml");
 
     @Test
     public void testAOP(){

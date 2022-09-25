@@ -16,14 +16,14 @@ public class main2 {
 //        它是从类的根路径下加载配置文件（常用）
 //        1
 //        /*获取文件流*/
-        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext2.xml");
+        ApplicationContext app = new ClassPathXmlApplicationContext("SpringTest/SpringDemo2/applicationContext2.xml");
 
         /*接口*/                      /*接口实现*/
 
 //        2.FileSystemXmlApplicationContext：文件 系统 文件类型 应用 上下文——磁盘绝对路径
 //        它是从磁盘路径上加载配置文件，配置文件可以在磁盘的任何位置。
 
-        ApplicationContext appp = new FileSystemXmlApplicationContext("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/myGItProject/myJava/src/main/resources/ApplicationContext3.xml");
+//        ApplicationContext appp = new FileSystemXmlApplicationContext("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/resources/SpringTest/SpringDemo2/ApplicationContext2.xml");
 
 //        3.AnnotationConfigApplicationContext：注解 配置 应用 上下文——注解开发
 //        当使用注解配置容器对象时，需要使用此类来创建Spring容器。它用来读取注解。
@@ -32,15 +32,15 @@ public class main2 {
 //        1.强转类型
 //        一个是通过id来获取：某一个类型可存在多个，获取后需要强转。
 //        1
-        UserDao u111= (UserDao) appp.getBean("userDao222");
+//        UserDao u111= (UserDao) appp.getBean("userDao222");
 
 
 //        2.直接获取类对象：类文件直接指定
 //        一个通过返回值来获取：一种类型只能有一个，获取后不需要强转。
 
-        UserDao userDao = app.getBean(UserDao.class);
+//        UserDao userDao = app.getBean(UserDao.class);
 
 //        3.通过java对象获取
-        Object d111 = appp.getBean("userDao");
+//        Object d111 = appp.getBean("userDao");
     }
 }

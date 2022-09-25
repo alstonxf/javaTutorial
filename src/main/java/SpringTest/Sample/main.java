@@ -16,7 +16,7 @@ public class main {
      */
     public static void main(String[] args) {
 //        1/*获取文件流*/
-        ApplicationContext context = new ClassPathXmlApplicationContext("sample1.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("SpringTest/Sample/sample1.xml");
 
 //        2.FileSystemXmlApplicationContext：文件 系统 文件类型 应用 上下文——磁盘绝对路径
 //        它是从磁盘路径上加载配置文件，配置文件可以在磁盘的任何位置。

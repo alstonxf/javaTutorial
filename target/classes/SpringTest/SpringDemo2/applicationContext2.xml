@@ -107,7 +107,7 @@
 
 <!--    &lt;!&ndash;    1、< import >标签&ndash;&gt;-->
 <!--    &lt;!&ndash;主配置文件——引入分模块文件&ndash;&gt;-->
-<!--    <import resource="applicationContext-user.xml"></import>-->
+<!--    <import resource="SpringTest/SpringDemo2/applicationContext-user.xml"></import>-->
 
 <!--    &lt;!&ndash;    四、Spring的重点配置&ndash;&gt;-->
 <!--    &lt;!&ndash;    1、< property >标签：属性注入、setter()&ndash;&gt;-->

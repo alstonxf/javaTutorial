@@ -12,7 +12,7 @@ public class App {
     public static void main( String[] args ) {
         //获取ApplicationContext对象
 //        ApplicationContext application=new ClassPathXmlApplicationContext("ApplicationContext3.xml");
-        ApplicationContext application=new ClassPathXmlApplicationContext("ApplicationContext3.xml");
+        ApplicationContext application=new ClassPathXmlApplicationContext("SpringTest/SpringDemo3/ApplicationContext3.xml");
         //通过ApplicationContext获得TestHello对象
         //getBean（）方法中的参数即为配置文件中Bean的id的值
         TestHello testHello=(TestHello) application.getBean("TestHello");

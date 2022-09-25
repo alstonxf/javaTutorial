@@ -19,8 +19,8 @@
     <!--    每一个Mapper.xml 都需要再Mybatis核心配置文件中注册-->
     <mappers>
     <!--    com/yunduo/dao/UserDaoMapper.xml-->
-        <mapper resource="SMV/COM1/dao/UserDaoMapper.xml"/>
-        <mapper resource="com/itheima/dao/IUserDao.xml"/>
+<!--        <mapper resource="SMV/COM1/dao/UserDaoMapper.xml"/>-->
+<!--        <mapper resource="com/itheima/dao/IUserDao.xml"/>-->
 
         <package name="com.mybatis.mapper"/>
     </mappers>

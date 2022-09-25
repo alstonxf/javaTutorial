@@ -35,7 +35,7 @@ public class myTest {
 //        9.  如果执行成功，就提交事务
 
         //1.读取配置文件
-        String resource = "mybatis-config-mytest.xml";// 1. Properties加载我们mybatis全局配置文件
+        String resource = "SMV/myTest/mybatis-config-mytest.xml";// 1. Properties加载我们mybatis全局配置文件
         InputStream inputStream = Resources.getResourceAsStream(resource);
 
         //2.创建SqlSessionFactory工厂

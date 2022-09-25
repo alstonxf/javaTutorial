@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class main {
     public static void main(String[] args) {
         /*解析application.xml配置文件获取Bean实例(对象)*/
-        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext2.xml");
+        ApplicationContext app = new ClassPathXmlApplicationContext("SpringTest/SpringDemo/applicationContext2.xml");
         /*对象获取并强制转换类型*/
         UserDao userDao = (UserDao) app.getBean("userDao");
         /*对象调用方法*/
