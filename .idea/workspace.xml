@@ -9,51 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SMV/COM1/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/COM1/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/COM1/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/COM2/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/COM2/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SMV/myTest/myTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SMV/myTest/myTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/main/AOPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/AOP1/main/AOPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/TestHelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample3/TestHelloSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample4/SpringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo2/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo2/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo2/main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo2/main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/SpringDemo3/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mybatis/util/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/util/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo3/ApplicationContext3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext-AOP1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/AOP1/applicationContext-AOP1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext-product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo2/applicationContext-product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext-user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo2/applicationContext-user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo2/applicationContext2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config-mytest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SMV/myTest/mybatis-config-mytest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/mybatis/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SMV/COM2/mybatis-config2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/Sample/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/Sample3/sample3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/Sample4/sample4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringTest/Sample4/sample4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/参考文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/参考文档" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext-AOP1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config-mytest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample4_2.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +107,7 @@
       <recent name="SMV.COM2.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.test">
+  <component name="RunManager" selected="Application.sqle1">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo3.App" />
       <module name="myJava" />
@@ -165,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHelloSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample3.TestHelloSpring" />
+    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo2.main2" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Sample3.*" />
+          <option name="PATTERN" value="SpringTest.SpringDemo2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo2.main2" />
+    <configuration name="sqle1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.sqlliteExercise.sqle1" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo2.*" />
+          <option name="PATTERN" value="test.sqlliteExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,19 +268,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="Application.TestHelloSpring" />
       <item itemvalue="Application.main2" />
+      <item itemvalue="Application.sqle1" />
       <item itemvalue="JUnit.UserDaoTest.test" />
       <item itemvalue="JUnit.UserMapperTest" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sqle1" />
         <item itemvalue="JUnit.UserDaoTest.test" />
         <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="Application.main2" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.TestHelloSpring" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +352,7 @@
       <workItem from="1663989707139" duration="853000" />
       <workItem from="1664017744208" duration="9000" />
       <workItem from="1664017803449" duration="1760000" />
-      <workItem from="1664084776460" duration="3686000" />
+      <workItem from="1664084776460" duration="4716000" />
     </task>
     <servers />
   </component>
