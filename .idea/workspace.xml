@@ -9,7 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="" />
+    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka2/BookExperiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_api_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_api_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_json_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_connect_json_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_12_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_11_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_streams_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_7_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rocksdb_rocksdbjni_5_18_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DEMO/CONTEXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DEMO/CONTEXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IAccountDao 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/dao/IAccountDao 2.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +99,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
+    "ruby.rails.projectView.checked": "true",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "1b38cf98cdd2b5c93a24a4979aef6d00"
   }
@@ -107,13 +132,13 @@
       <recent name="SMV.COM2.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.sqle1">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo3.App" />
+  <component name="RunManager" selected="Application.KafkaConsumer">
+    <configuration name="CONTEXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DEMO.CONTEXT" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo3.*" />
+          <option name="PATTERN" value="DEMO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest.SpringDemo2.main2" />
+    <configuration name="KafkaConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyKafka.KafkaConsumer" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.SpringDemo2.*" />
+          <option name="PATTERN" value="MyKafka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -267,8 +292,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.main2" />
+      <item itemvalue="Application.CONTEXT" />
+      <item itemvalue="Application.KafkaConsumer" />
       <item itemvalue="Application.sqle1" />
       <item itemvalue="JUnit.UserDaoTest.test" />
       <item itemvalue="JUnit.UserMapperTest" />
@@ -276,11 +301,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaConsumer" />
+        <item itemvalue="Application.CONTEXT" />
         <item itemvalue="Application.sqle1" />
         <item itemvalue="JUnit.UserDaoTest.test" />
         <item itemvalue="JUnit.UserMapperTest" />
-        <item itemvalue="Application.main2" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -353,6 +378,7 @@
       <workItem from="1664017744208" duration="9000" />
       <workItem from="1664017803449" duration="1760000" />
       <workItem from="1664084776460" duration="4716000" />
+      <workItem from="1670170911542" duration="4070000" />
     </task>
     <servers />
   </component>
