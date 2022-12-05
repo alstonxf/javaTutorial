@@ -5,10 +5,9 @@ package MyKafka;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
-
 import java.util.Properties;
 
-public class KafkaProducer {
+public class MyKafkaProducer {
 
     public static void main(String[] args) {
         //参数设置
@@ -19,6 +18,7 @@ public class KafkaProducer {
         kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
         org.apache.kafka.clients.producer.KafkaProducer<String, String> producer = new org.apache.kafka.clients.producer.KafkaProducer(kafkaProps);
+
 
         //创建消息
         ProducerRecord<String, String> record = new ProducerRecord<>("test1", "Precision Products", "France");
