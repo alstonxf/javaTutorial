@@ -44,7 +44,7 @@ public class LangTest {
 		System.out.println("取得类名:" + ClassUtils.getShortClassName(LangTest.class));
 		System.out.println("获取包名:" + ClassUtils.getPackageName(LangTest.class));
 
-		System.out.println("是否是数字:" + NumberUtils.isCreatable("123"));
+//		System.out.println("是否是数字:" + NumberUtils.isCreatable("123"));
 		System.out.println("随机数字和字母:" + RandomStringUtils.randomAlphanumeric(5));
 		System.out.println("<>进行转义" + StringEscapeUtils.escapeHtml("<html>"));
 
