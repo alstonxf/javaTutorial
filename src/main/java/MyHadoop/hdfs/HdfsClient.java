@@ -29,17 +29,25 @@ public class HdfsClient {
 
     @Before
     public void init() throws URISyntaxException, IOException, InterruptedException {
-        // 连接的集群nn地址
-        URI uri = new URI("hdfs://localhost:8020");
-        // 创建一个配置文件
-        Configuration configuration = new Configuration();
+//        // 连接的集群nn地址
+//        URI uri = new URI("hdfs://172.16.22.154:9000");
+//        // 创建一个配置文件
+//        Configuration configuration = new Configuration();
+//
+//        configuration.set("dfs.replication", "2");
+//        // 用户
+//        String user = "root";
 
-        configuration.set("dfs.replication", "2");
-        // 用户
-        String user = "root";
+//        // 1 获取到了客户端对象
+//        fs = FileSystem.get(uri, configuration, user);
 
-        // 1 获取到了客户端对象
-        fs = FileSystem.get(uri, configuration, user);
+        //创建一个配置对象
+        Configuration conf = new Configuration();
+        //指定HDFS地址
+        conf.set("fs.defaultFS", "hdfs://172.16.22.154:9000");
+        //获取HDFS操作对象
+        fs = FileSystem.get(conf);
+        //不知道为什么获取到的是空指针，改用HdfsOp.class测试
     }
 
     @After

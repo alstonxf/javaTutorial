@@ -16,6 +16,7 @@ public class StreamTes {
                 .collect(Collectors.toList());
         lengths.forEach((s) -> System.out.println(s));
 
+        System.out.println("dabadfd".startsWith("daba"));
     }
 }
 

@@ -35,8 +35,8 @@ public class WordCountDriver {
 
         // 6 设置输入路径和输出路径
 //        FileInputFormat.setInputPaths(job, new Path("MyHadoop/mapreduce/wordcount/iputword"));
-        FileInputFormat.setInputPaths(job, new Path("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/java/MyHadoop/mapreduce/wordcount/inputword"));
-        FileOutputFormat.setOutputPath(job, new Path("/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/java/MyHadoop/mapreduce/wordcount/output01"));
+        FileInputFormat.setInputPaths(job, new Path("src/main/java/MyHadoop/mapreduce/wordcount/inputword"));
+        FileOutputFormat.setOutputPath(job, new Path("src/main/java/MyHadoop/mapreduce/wordcount/output/output04"));
 
         // 7 提交job
         boolean result = job.waitForCompletion(true);
