@@ -17,6 +17,9 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
     private Text outK = new Text();
     private IntWritable outV = new IntWritable(1);
 
+    // * KEYIN, map阶段输入的key的类型：LongWritable 偏移量
+    // * VALUEIN,map阶段输入value类型：Text
+    // Context 上下文
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 

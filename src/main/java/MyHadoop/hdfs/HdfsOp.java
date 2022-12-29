@@ -33,7 +33,7 @@ public class HdfsOp {
 
         //上传文件
 //        testPut(fs);
-        testPut2(fs);
+//        testPut2(fs);
 //        put(fileSystem);
 
         //下载文件
@@ -41,11 +41,11 @@ public class HdfsOp {
         //get(fileSystem);
 
         //删除文件
-        testRm(fs);
+//        testRm(fs);
 //        delete(fileSystem);
 
         //文件的更名和移动
-        testmv(fs);
+//        testmv(fs);
 
         //获取文件详细信息
         fileDetail(fs);

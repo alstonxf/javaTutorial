@@ -16,6 +16,10 @@ public class WordCountReducer extends Reducer<Text, IntWritable,Text,IntWritable
     private IntWritable outV = new IntWritable();
 
     @Override
+    // * KEYIN, reduce阶段输入的key的类型：Text
+    // * VALUEIN,reduce阶段输入value类型：IntWritable
+    // Context 上下文
+    // 注意： 每个不同的key调用一次。
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
 
         int sum = 0;

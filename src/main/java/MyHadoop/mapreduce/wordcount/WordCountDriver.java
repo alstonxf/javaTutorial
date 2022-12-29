@@ -36,11 +36,15 @@ public class WordCountDriver {
         // 6 设置输入路径和输出路径
 //        FileInputFormat.setInputPaths(job, new Path("MyHadoop/mapreduce/wordcount/iputword"));
         FileInputFormat.setInputPaths(job, new Path("src/main/java/MyHadoop/mapreduce/wordcount/inputword"));
-        FileOutputFormat.setOutputPath(job, new Path("src/main/java/MyHadoop/mapreduce/wordcount/output/output04"));
+        FileOutputFormat.setOutputPath(job, new Path("src/main/java/MyHadoop/mapreduce/wordcount/output/output01"));
 
+        //hdfs://172.16.22.154:9000/input/test.txt hdfs://172.16.22.154:9000/output5/
+//        FileInputFormat.setInputPaths(job, new Path(args[0]));
+//        FileOutputFormat.setOutputPath(job, new Path(args[1]));
         // 7 提交job
         boolean result = job.waitForCompletion(true);
 
+        System.out.println("result="+result);
         System.exit(result ? 0 : 1);
     }
 }
