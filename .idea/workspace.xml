@@ -10,24 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/myWordCount/WordCountDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/myWordCount/myMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/myWordCount/myReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka/myConsumer/CustomConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_csource_fastdfs_client_java_1_27_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/hdfs/HdfsOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/hdfs/HdfsOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/WordCountReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/iputword/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output03/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output03/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output03/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output03/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output04/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output04/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output04/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount/output/output04/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount2/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyHadoop/mapreduce/wordcount2/WordCountDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka/MyKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyKafka/MyKafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/BookExperiment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM1/dao/UserDaoMapper 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/dao/UserMapper 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/mybatis-config2 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/LocationMapper 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper2 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/mybatis-config-mytest 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/AOP1/applicationContext-AOP1 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample/sample1 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample3/sample3 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample4/sample4 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample4/sample4_2 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo/applicationContext 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext-product 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext-user 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext2 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo3/ApplicationContext3 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/SpringMVC/springmvc 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IAccountDao 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IOrdersDao 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mybatis/mapper/UserMapper 4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,38 +106,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/java/MyHadoop&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;1b38cf98cdd2b5c93a24a4979aef6d00&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/target",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.general",
+    "spring.configuration.checksum": "1b38cf98cdd2b5c93a24a4979aef6d00"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/main/java/MyHadoop" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/SpringTest" />
-      <recent name="$PROJECT_DIR$/src/main/resources/SMV/COM1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/MyES" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyKafka" />
       <recent name="$PROJECT_DIR$/src/main/java/MyHadoop" />
       <recent name="$PROJECT_DIR$/src/main/java/MyHadoop/" />
       <recent name="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo2" />
-      <recent name="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo3" />
-      <recent name="$PROJECT_DIR$/src/main/resources/SpringTest/SpringDemo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.itheima.dao" />
@@ -133,13 +152,13 @@
       <recent name="SMV.myTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyHadoop.mapreduce.wordcount.wordcount3.WordCountDriver">
-    <configuration name="HdfsOp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHadoop.hdfs.HdfsOp" />
+  <component name="RunManager" selected="Application.CustomProducer">
+    <configuration name="CustomConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyKafka.myConsumer.CustomConsumer" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHadoop.hdfs.*" />
+          <option name="PATTERN" value="MyKafka.myConsumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,13 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHadoop.mapreduce.wordcount2.WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHadoop.mapreduce.wordcount2.WordCountDriver" />
+    <configuration name="CustomProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyKafka.myProducer.CustomProducer" />
       <module name="myJava" />
-      <option name="PROGRAM_PARAMETERS" value="hdfs://172.16.22.154:9000/input/test.txt hdfs://172.16.22.154:9000/output5/" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHadoop.mapreduce.wordcount2.*" />
+          <option name="PATTERN" value="MyKafka.myProducer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHadoop.mapreduce.wordcount.WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHadoop.mapreduce.wordcount.WordCountDriver" />
+    <configuration name="EsTest_Client_Create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyES.index.EsTest_Client_Create" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHadoop.mapreduce.wordcount.*" />
+          <option name="PATTERN" value="MyES.index.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHadoop.mapreduce.wordcount.wordcount3.WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHadoop.mapreduce.wordcount.wordcount3.WordCountDriver" />
+    <configuration name="EsTest_Index_Create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyES.index.EsTest_Index_Create" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHadoop.mapreduce.wordcount.wordcount3.*" />
+          <option name="PATTERN" value="MyES.index.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,13 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHadoop.yarn.WordCountDriver" />
+    <configuration name="MyKafkaConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyKafka.MyKafkaConsumer" />
       <module name="myJava" />
-      <option name="PROGRAM_PARAMETERS" value="wordcount" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHadoop.yarn.*" />
+          <option name="PATTERN" value="MyKafka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -290,20 +307,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyHadoop.mapreduce.wordcount.wordcount3.WordCountDriver" />
-      <item itemvalue="Application.MyHadoop.mapreduce.wordcount.WordCountDriver" />
-      <item itemvalue="Application.MyHadoop.mapreduce.wordcount2.WordCountDriver" />
-      <item itemvalue="Application.WordCountDriver" />
-      <item itemvalue="Application.HdfsOp" />
+      <item itemvalue="Application.CustomConsumer" />
+      <item itemvalue="Application.CustomProducer" />
+      <item itemvalue="Application.MyKafkaConsumer" />
+      <item itemvalue="Application.EsTest_Client_Create" />
+      <item itemvalue="Application.EsTest_Index_Create" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyHadoop.mapreduce.wordcount.wordcount3.WordCountDriver" />
-        <item itemvalue="Application.MyHadoop.mapreduce.wordcount2.WordCountDriver" />
-        <item itemvalue="Application.MyHadoop.mapreduce.wordcount.WordCountDriver" />
-        <item itemvalue="Application.WordCountDriver" />
-        <item itemvalue="Application.HdfsOp" />
+        <item itemvalue="Application.CustomProducer" />
+        <item itemvalue="Application.CustomConsumer" />
+        <item itemvalue="Application.MyKafkaConsumer" />
+        <item itemvalue="Application.EsTest_Index_Create" />
+        <item itemvalue="Application.EsTest_Client_Create" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +411,9 @@
       <workItem from="1672198880972" duration="6954000" />
       <workItem from="1672237724581" duration="2835000" />
       <workItem from="1672243587447" duration="132000" />
-      <workItem from="1672293010858" duration="7316000" />
+      <workItem from="1672293010858" duration="15123000" />
+      <workItem from="1672460356815" duration="7570000" />
+      <workItem from="1672555697248" duration="1669000" />
     </task>
     <servers />
   </component>
