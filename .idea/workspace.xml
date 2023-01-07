@@ -10,43 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyKafka/myConsumer/CustomConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_csource_fastdfs_client_java_1_27_SNAPSHOT.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI/HbaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI/HbaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI2/HBaseUtil2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI2/HbaseTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseConnectionSingle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseDDL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseDML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hbase-site.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka/MyKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyKafka/MyKafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/BookExperiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka2/KafkaMessageStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM1/dao/UserDaoMapper 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/dao/UserMapper 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/COM2/mybatis-config2 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/LocationMapper 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/UserMapper2 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SMV/myTest/mybatis-config-mytest 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/AOP1/applicationContext-AOP1 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample/sample1 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample3/sample3 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample4/sample4 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/Sample4/sample4_2 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo/applicationContext 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext-product 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext-user 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo2/applicationContext2 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringTest/SpringDemo3/ApplicationContext3 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/SpringMVC/springmvc 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IAccountDao 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IOrdersDao 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/IUserDao 3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mybatis/mapper/UserMapper 4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyKafka/myProducer/CustomProducerTranactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyKafka/myProducer/CustomProducerTranactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/target",
+    "last_opened_file_path": "/Users/lixiaofeng/Library/Mobile Documents/com~apple~CloudDocs/Documents/study/myGItProject/myJava2/myJava/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
@@ -126,11 +101,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyHbase" />
       <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/main/java/MyHadoop" />
       <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/SpringTest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/MyES" />
@@ -145,27 +120,14 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MyHbase.HbaseAPI3" />
       <recent name="MyKafka" />
       <recent name="com.itheima.service.impl" />
       <recent name="package01.test" />
       <recent name="com.itheima.dao.IUserDao" />
-      <recent name="SMV.myTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomProducer">
-    <configuration name="CustomConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyKafka.myConsumer.CustomConsumer" />
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MyKafka.myConsumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HbaseMain">
     <configuration name="CustomProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyKafka.myProducer.CustomProducer" />
       <module name="myJava" />
@@ -179,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsTest_Client_Create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyES.index.EsTest_Client_Create" />
+    <configuration name="HbaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI3.HbaseConnection" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyES.index.*" />
+          <option name="PATTERN" value="MyHbase.HbaseAPI3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsTest_Index_Create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyES.index.EsTest_Index_Create" />
+    <configuration name="HbaseMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI3.HbaseMain" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyES.index.*" />
+          <option name="PATTERN" value="MyHbase.HbaseAPI3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,12 +167,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyKafkaConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyKafka.MyKafkaConsumer" />
+    <configuration name="HbaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI.HbaseTest" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyKafka.*" />
+          <option name="PATTERN" value="MyHbase.HbaseAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HbaseTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI2.HbaseTest2" />
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyHbase.HbaseAPI2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -307,20 +282,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CustomConsumer" />
+      <item itemvalue="Application.HbaseConnection" />
+      <item itemvalue="Application.HbaseMain" />
+      <item itemvalue="Application.HbaseTest" />
+      <item itemvalue="Application.HbaseTest2" />
       <item itemvalue="Application.CustomProducer" />
-      <item itemvalue="Application.MyKafkaConsumer" />
-      <item itemvalue="Application.EsTest_Client_Create" />
-      <item itemvalue="Application.EsTest_Index_Create" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HbaseMain" />
+        <item itemvalue="Application.HbaseTest" />
+        <item itemvalue="Application.HbaseConnection" />
+        <item itemvalue="Application.HbaseTest2" />
         <item itemvalue="Application.CustomProducer" />
-        <item itemvalue="Application.CustomConsumer" />
-        <item itemvalue="Application.MyKafkaConsumer" />
-        <item itemvalue="Application.EsTest_Index_Create" />
-        <item itemvalue="Application.EsTest_Client_Create" />
       </list>
     </recent_temporary>
   </component>
@@ -413,7 +388,9 @@
       <workItem from="1672243587447" duration="132000" />
       <workItem from="1672293010858" duration="15123000" />
       <workItem from="1672460356815" duration="7570000" />
-      <workItem from="1672555697248" duration="1669000" />
+      <workItem from="1672555697248" duration="2738000" />
+      <workItem from="1672838186188" duration="843000" />
+      <workItem from="1673081594912" duration="14273000" />
     </task>
     <servers />
   </component>
@@ -446,6 +423,11 @@
           <url>jar://$USER_HOME$/env/hadoop-3.1.3/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/Mapper.class</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MyHbase/HbaseAPI3/HbaseDDL.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$USER_HOME$/env/hadoop-3.1.3/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/Reducer.class</url>

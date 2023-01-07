@@ -41,9 +41,9 @@ public class CustomProducerTranactions {
 
             int i = 1 / 0;
 
-            kafkaProducer.commitTransaction(); // 4 提交事务
+            kafkaProducer.commitTransaction(); // 3 提交事务
         } catch (Exception e) {
-            kafkaProducer.abortTransaction(); // 4 提交事务
+            kafkaProducer.abortTransaction(); // 4 回退事务
         } finally {
             // 3 关闭资源
             kafkaProducer.close();
