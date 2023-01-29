@@ -37,11 +37,11 @@ public class HBaseUtil2 {
 	   // 获得配制文件对象
        conf = HBaseConfiguration.create();
        // 设置配置参数
-//		conf.set("hbase.zookeeper.quorum", ip);
-//		conf.set("hbase.zookeeper.property.clientPort", port);
+		conf.set("hbase.zookeeper.quorum", ip);
+		conf.set("hbase.zookeeper.property.clientPort", port);
 		//如果hbase是集群，这个必须加上
 		//这个ip和端口是在hadoop/mapred-site.xml配置文件配置的
-//		conf.set("hbase.master", ip+":"+port1);
+		conf.set("hbase.master", ip+":"+port1);
    }
 
 

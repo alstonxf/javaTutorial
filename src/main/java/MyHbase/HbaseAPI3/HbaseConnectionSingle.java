@@ -1,6 +1,8 @@
 package MyHbase.HbaseAPI3;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.TableName;
+import org.apache.hadoop.hbase.client.Admin;
 import org.apache.hadoop.hbase.client.AsyncConnection;
 import org.apache.hadoop.hbase.client.Connection;
 import org.apache.hadoop.hbase.client.ConnectionFactory;
@@ -27,7 +29,8 @@ public class HbaseConnectionSingle {
         //3：创建连接
         //默认使用同步连接
         Connection connection = ConnectionFactory.createConnection();
-
+        Admin admin = connection.getAdmin();
+        System.out.println(admin.tableExists(TableName.valueOf("bigdata","student")));
         //可以使用异步连接,不推荐使用
         CompletableFuture<AsyncConnection> asynConnection = ConnectionFactory.createAsyncConnection(conf);
 
