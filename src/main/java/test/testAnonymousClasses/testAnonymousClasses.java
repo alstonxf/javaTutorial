@@ -1,5 +1,4 @@
-package com.flink.tutorials.java.myProject.DataLibrary.test.testAnonymousClasses;
-
+package test.testAnonymousClasses;
 
 public class testAnonymousClasses {
     public static void main(String[] args) {
