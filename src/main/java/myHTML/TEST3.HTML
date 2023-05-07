@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>视频播放网页示例</title>
+</head>
+<body>
+<h1>视频播放网页示例</h1>
+<video id="myVideo" width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogv" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+    var myVideo = document.getElementById("myVideo");
+    myVideo.addEventListener("ended", function() {
+        alert("视频播放完毕！");
+    });
+</script>
+</body>
+</html>

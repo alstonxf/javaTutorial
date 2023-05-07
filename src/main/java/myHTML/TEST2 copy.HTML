@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>问答对话框示例</title>
+    <script>
+        <input type="button" value="我是按钮"
+               onClick="alert('我出现啦！')"
+        >
+
+        function askQuestion() {
+            // 获取用户输入的问题
+            var question = document.getElementById("question2").value;
+
+            // 根据问题返回相应的答案
+            var answer = getAnswer(question);
+
+            // 显示答案
+            document.getElementById("answer").innerHTML = answer;
+        }
+
+        function getAnswer(question) {
+            // 在这里编写根据问题返回答案的代码
+            // 这个函数应该根据你的需求来自定义实现
+            // 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
+            // 这里只是一个简单的示例
+            if (question == "你好吗？") {
+                return "我很好，谢谢！";
+            } else {
+                return "我不理解你的问题。";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>问答对话框示例</h1>
+    <input 请输入您的问题： type="text" id="question2">
+    <button onclick="askQuestion()"> 询问 </button>
+    <p>答案：</p>
+    <p id="answer"></p>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .list {
+            flex: 1;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .conversations {
+            margin-bottom: 20px;
+        }
+        .conversation {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #f0f0f0;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .dialog {
+            flex: 4;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .questions {
+            flex: 3;
+            overflow-y: scroll;
+            padding-right: 10px;
+        }
+        .question {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .question:last-child {
+            margin-bottom: 0;
+        }
+        .form {
+            display: flex;
+            margin-top: 20px;
+        }
+        .input {
+            flex: 3;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            border: none;
+            background-color: #f5f5f5;
+            resize: none;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .button-send {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .button-send:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="list">
+        <div class="conversations">
+            <div class="conversation">Hello!</div>
+            <div class="conversation">How can I help you?</div>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <i class="icon">&#128465;</i>
+                clear conversations
+            </div>
+            <div class="button">
+                <i class="icon">&#127775;</i>
+                upgrade to plus
+            </div>
+            <div class="button">
+                <i class="icon">&#127769;</i>
+                dark mode
+            </div>
+            <div class="button">
+                <i class="icon">&#128190;</i>
+                update &amp; FAQ
+            </div>
+            <div class="button">
+                <i class="icon">&#128682;</i>
+                Log out
+            </div>
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="questions">
+            <div class="question">What's your name?</div>
+            <div class="question">Where are you from?</div>
+        </div>
+        <form class="form">
+            <textarea class="input" placeholder="Type your message here"></textarea>
+            <button type="submit" class="button-send">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

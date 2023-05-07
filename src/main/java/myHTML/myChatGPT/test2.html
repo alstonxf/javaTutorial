@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT API Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>ChatGPT API Demo</h1>
+<p>Type your question below:</p>
+<input type="text" id="question" size="50">
+<br><br>
+<button onclick="getAnswer()">Get Answer</button>
+<br><br>
+<div id="answer"></div>
+<script>
+    function getAnswer() {
+        var question = $("#question").val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.openai.com/v1/engines/davinci-codex/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "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"
+            },
+            "data": JSON.stringify({
+                "prompt": question,
+                "max_tokens": 1024,
+                "temperature": 0.5,
+                "n": 1,
+                "stop": "\n"
+            })
+        };
+        $.ajax(settings).done(function (response) {
+            $("#answer").text(response.choices[0].text);
+        });
+    }
+</script>
+</body>
+</html>

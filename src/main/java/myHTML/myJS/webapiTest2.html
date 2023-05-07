@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    .light {
+      background-color: white;
+      color: black;
+    }
+
+    .dark {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="light">
+  肉蛋冲击 <br>
+  肉蛋冲击 <br>
+  肉蛋冲击 <br>
+  肉蛋冲击 <br>
+  肉蛋冲击 <br>
+</div>
+
+<script>
+  let div = document.querySelector('div');
+  div.onclick = function() {
+    if(div.className == 'light') {
+      div.className = 'dark';
+    }else if(div.className == 'dark') {
+      div.className = 'light';
+    }
+  }
+
+</script>
+</body>
+</html>

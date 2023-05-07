@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>表白墙</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      color: pink;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+      color: grey;
+      padding: 5px 0;
+    }
+    .row {
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+    .row span {
+      width: 80px;
+    }
+    .row .edit {
+      width: 250px;
+      height: 35px;
+    }
+    .row .submit {
+      width: 330px;
+      height: 40px;
+      background-color: orange;
+      color: #fff;
+      border: none;
+    }
+    .row .submit:active {
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>表白墙</h1>
+  <p>输入后点击提交，将会把消息显示在在墙上</p>
+  <div class="row">
+    <span>谁:</span>
+    <input type="text" class="edit">
+  </div>
+  <div class="row">
+    <span>对谁:</span>
+    <input type="text" class="edit">
+  </div>
+  <div class="row">
+    <span>说什么:</span>
+    <input type="text" class="edit">
+  </div>
+  <div class="row">
+    <input type="button" value="提交"  class="submit">
+  </div>
+</div>
+
+<script>
+  let submitButton = document.querySelector('.submit');
+  submitButton.onclick = function() {
+    // 1. 获取到输入框里的内容
+    let edits = document.querySelectorAll('.edit');
+    // 2. 根据输入框的内容，构造 HTML 元素，添加到页面中
+    let message = edits[0].value + "对" + edits[1].value + "说: " + edits[2].value;
+    if(edits[0].value == '' || edits[1].value == '' || edits[2].value == '') {
+      return;
+    }
+    let div = document.createElement('div');
+    div.innerHTML = message;
+    div.className = 'row';
+    let container = document.querySelector('.container');
+    container.appendChild(div);
+    // 3. 把上次输入的内容清空
+    for(let i = 0; i < edits.length; i++){
+      edits[i].value = '';
+    }
+  }
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

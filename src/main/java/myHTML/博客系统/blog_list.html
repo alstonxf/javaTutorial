@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客列表页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blog_list.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <img src="image/log.png" alt="我的博客系统标志">
+        <span class="title">我的博客系统</span>
+         <!-- 使用 span 把左右两侧的元素给撑开 -->
+         <span class="spacer"></span>
+        <a href="blog_list.html">主页</a>
+        <a href="blog_edit.html">写博客</a>
+        <a href="blog_login.html">注销</a>
+    </div>
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 左侧区域，显示用户信息 -->
+        <div class="container-left">
+            <!-- 用户详情 -->
+            <div class="card">
+                <!-- 用户的头像 -->
+                <img src="image/head.jpg" alt="">
+                <!-- 用户名 -->
+                <h3>晓峰言风语</h3>
+                <!-- 其它信息 -->
+                <a href="https://blog.csdn.net/qq_32593227?spm=1000.2115.3001.5343">CSDN 地址</a>
+                <a href="https://github.com/alstonxf">GitHub 地址</a>
+                <!-- 文章分类 -->
+                <div class="counter">
+                    <span>文章</span>
+                    <span>分类</span>
+                </div>
+                <div class="counter">
+                    <span>5</span>
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧区域，显示博客列表 -->
+        <div class="container-right">
+            <!-- 每个 blog 代表一篇博客 -->
+            <div class="blog">
+                <div class="title">临江仙</div>
+                <div class="date"><span>最后编辑时间:</span> 2022-2-16</div>
+                <div class="desc">
+                    滚滚长江东逝水，浪花淘尽英雄。</br>
+                    是非成败转头空。青山依旧在，几度夕阳红。</br>
+                    白发渔樵江渚上，惯看秋月春风。</br>
+                    一壶浊酒喜相逢。</br>
+                    古今多少事，都付笑谈中。</br>
+                </div>
+                <a href="blog_detail.html" class="detail">查看全文&gt;&gt;</a>
+            </div>
+            <div class="blog">
+                <div class="title">游园惊梦</div>
+                <div class="date"> <span>最后编辑时间:</span> 2023-3-24</div>
+                <div class="desc">
+                【绕地游】：“梦回莺啭，乱煞年光遍。人立小庭深院，炷尽沉烟，抛残绣线，恁今春关情似去年?”这曲子写杜丽娘对深闺内院寂寞生活的厌倦和春光撩人，青春向往的心态。一梦醒来，莺鸟鸣唱，春光是那样撩人，而丽娘却被禁锢在狭窄，冷寂的“小庭深院”中，百无聊赖听凭沉香燃尽，针线活也没心思去做。为什么今年我对春天的关心和向往比去年更为殷切?                </div>
+                <a href="blog_detail2.html" class="detail">查看全文&gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

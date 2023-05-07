@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>问答对话框示例</title>
+    <script>
+        function askQuestion() {
+            // 获取用户输入的问题
+            var question = document.getElementById("question2").value;
+
+            // 根据问题返回相应的答案
+            var answer = getAnswer(question);
+
+            // 显示答案
+            document.getElementById("answer").innerHTML = answer;
+        }
+
+        // 获取答案函数
+        const openai = new OpenAI(api_key='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');
+
+        function getAnswer(question) {
+
+            // const question = document.getElementById("question").value;
+            const prompt = "问题：" + question + "\n回答：";
+            openai.complete({
+                engine: 'davinci',
+                prompt: prompt,
+                maxTokens: 150,
+                n: 1,
+                stop: '\n'
+            }).then(function(response) {
+                const answer = response.choices[0].text.trim();
+                // document.getElementById("answer").innerHTML = "答案：" + answer;
+                return answer
+            }).catch(function(error) {
+                return "抱歉，没有获取到回答。"
+                console.log(error);
+            });
+            // return "输入的问题为"+question;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>问答对话框示例</h1>
+    <label for="question2">请输入您的问题：</label>
+    <input type="text" id="question2">
+    <button onclick="askQuestion()">询问</button>
+    <p>答案：</p>
+    <p id="answer"></p>
+</body>
+</html>

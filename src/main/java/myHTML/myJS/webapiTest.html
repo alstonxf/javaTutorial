@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>上升</div>>
+<img src="windows_screen.jpeg",title="1">;
+
+  <script>
+    d = document.querySelector("div")
+    d.onclick = function (){
+      if(d.innerHTML=="上升"){
+        d.innerHTML="下降"
+      }else {
+        d.innerHTML="上升"
+      }
+    }
+
+    picture = document.querySelector("img")
+    picture.onclick = function (){
+      if (picture.src = "windows_screen.jpeg"){
+        picture.src = "枪与美女.jpg"
+        alert("--------------")
+        picture.src = "悉尼情人港.jpg"
+      } else if (picture.src="枪与美女.jpg"){
+        alert("-----枪与美女---------")
+        picture.src = "悉尼情人港.jpg"
+
+      }else{
+        picture.src = "windows_screen.jpeg"
+
+      }
+
+
+    }
+  </script>
+</body>
+</html>

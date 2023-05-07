@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            document.writeln("Hello")
+            document.writeln("This is a statement");
+            document.writeln("This is also a statement")
+            document.writeln("This is also a statement")
+
+            function fun1(){
+                document.writeln("函数 Hello")
+            }
+            fun1()
+
+            function fun2(name,weather){
+                document.writeln("函数2 参数1"+name)
+                document.writeln("函数2 参数2"+weather)
+                return "函数2"+name+weather
+            }
+            fun2("name值","weather值")
+
+            function fun3(name,weather){
+                return "func3："+fun2(name,weather)
+            }
+            document.writeln(fun3("name值","weather值"))
+        </script>
+
+        you can see other fruits i like <a href="#fruits">here</a>
+        <p id ="fruits2">
+            请写一个适用于A股的量化交易策略，假设初始资金100万，该策略需要考虑价格日均线，日交易量，筹码分布，KDJ指标等。返回收益率，最大回撤幅度，并画出收益率图。
+            首先，对于价格日均线、日交易量、筹码分布和KDJ指标，需要进行具体的定义和解释：
+
+            价格日均线：指过去一段时间内的股票价格平均值，常用的周期包括5日均线、10日均线、20日均线等。
+            日交易量：指股票在一天内的交易量，是评估股票流动性的指标之一。
+            筹码分布：指股票当前的买卖力量分布情况，包括主力、散户等。
+            KDJ指标：是一种技术指标，主要用于判断股票价格的超买超卖情况，包括K线、D线和J线三条曲线。
+            接下来，我们可以提出一个简单的量化交易策略：
+
+            使用5日和20日均线判断股票的趋势，当5日均线上穿20日均线时，为金叉，表示股票处于上升趋势，应该买入；当5日均线下穿20日均线时，为死叉，表示股票处于下降趋势，应该卖出。
+            对于日交易量，当日交易量大于20日平均交易量的两倍时，为大量放量，表示市场情绪较为乐观，应该买入；当日交易量小于20日平均交易量的一半时，为小量缩量，表示市场情绪较为悲观，应该卖出。
+            对于筹码分布，当主力占比大于50%时，为主力控盘，表示股票价格有上涨空间，应该买入；当散户占比大于50%时，为散户控盘，表示股票价格有下跌风险，应该卖出。
+            对于KDJ指标，当K线大于80时，为超买状态，应该卖出；当K线小于20时，为超卖状态，应该买入。
+            基于以上策略，我们可以编写量化交易程序，具体代码如下（假设使用Python语言）：
+
+            python
+            Copy code
+            import numpy as np
+            import pandas as pd
+            import tushare as ts
+
+            # 设置初始资金为100万
+            init_capital = 1000000
+
+            # 获取股票数据
+            df = ts.get_k_data('000001', start='2010-01-01', end='2022-03-18')
+
+            # 计算5日和20日均线
+            df['ma5'] = df['close'].rolling(window=5).mean()
+            df['ma20'] = df['close'].rolling(window=20).mean()
+
+            # 计算20日平均交易量
+            df['vol_ma20'] = df['volume'].rolling(window=20).mean()
+
+
+
+
+            xiaofeng li
+            继续
+            接着编写程序：
+
+            python
+            Copy code
+            # 计算主力和散户的占比
+            df['main_force_scale'] = df['volume'] * 2 / (df['volume'].rolling(window=20).sum() + 1)
+            df['retail_scale'] = 1 - df['main_force_scale']
+
+            # 计算KDJ指标
+            low_list = df['low'].rolling(window=9, min_periods=1).min()
+            high_list = df['high'].rolling(window=9, min_periods=1).max()
+            rsv = (df['close'] - low_list) / (high_list - low_list) * 100
+            df['K'] = rsv.rolling(window=3).mean()
+            df['D'] = df['K'].rolling(window=3).mean()
+            df['J'] = 3 * df['K'] - 2 * df['D']
+
+            # 定义交易信号函数
+            def generate_signals(df):
+            signals = pd.DataFrame(index=df.index)
+            signals['signal'] = 0.0
+
+            # 金叉买入
+            signals['signal'][df['ma5'] > df['ma20']] = 1.0
+
+            # 死叉卖出
+            signals['signal'][df['ma5'] < df['ma20']] = -1.0
+
+            # 大量放量买入
+            signals['signal'][df['volume'] > df['vol_ma20'] * 2] = 1.0
+
+            # 小量缩量卖出
+            signals['signal'][df['volume'] < df['vol_ma20'] * 0.5] = -1.0
+
+            # 主力控盘买入
+            signals['signal'][df['main_force_scale'] > 0.5] = 1.0
+
+            # 散户控盘卖出
+            signals['signal'][df['retail_scale'] > 0.5] = -1.0
+
+            # 超买卖出
+            signals['signal'][df['K'] > 80] = -1.0
+
+            # 超卖买入
+            signals['signal'][df['K'] < 20] = 1.0
+
+            # 去除重复信号
+            signals['positions'] = signals['signal'].diff()
+            signals['positions'][0] = signals['signal'][0]
+
+            return signals
+
+            # 计算交易信号
+            signals = generate_signals(df)
+
+            # 计算每天的持仓状态和每天的收益率
+            positions = pd.DataFrame(index=df.index).fillna(0.0)
+            positions['positions'] = signals['positions']
+            portfolio = positions * df['close'].values.reshape(-1, 1) * init_capital / df['close'][0]
+            returns = portfolio.pct_change()
+            returns.iloc[0] = 0.0
+
+            # 计算最大回撤幅度
+            cum_returns = (1 + returns).cumprod()
+            drawdowns = cum_returns.cummax() - cum_returns
+            max_drawdown = drawdowns.max()[0]
+
+            # 计算收益率
+            annualized_return = np.power((cum_returns.iloc[-1]/cum_returns.iloc[0]), 252/len(cum_returns)) - 1
+
+            # 绘制收益率曲线
+            import matplotlib.pyplot as plt
+            fig, ax = plt.subplots()
+            ax.plot(cum_returns.index, cum
+
+
+
+            xiaofeng li
+            太棒了，请继续优化这个策略，加入网格策略
+            好的，接下来我们可以尝试将网格策略加入到原有的量化交易策略中。网格交易策略是一种适用于波动率较高的市场的交易策略，它通过设置多个价格点，将资金分配在这些价格点上，以便在价格波动时，能够根据预设的价格点进行买卖交易，从而实现一定的盈利。
+
+            在这里，我们采用固定间距网格策略，即在某个价格范围内，固定设置多个价格点，并在每个价格点上买入或卖出一定数量的股票。为了更好地控制风险，我们将每个网格的买入或卖出数量设为一定的比例，如下所示：
+
+            python
+            Copy code
+            grid_num = 5  # 网格数量
+            grid_width = 0.1  # 网格宽度
+            buy_ratio = 0.2  # 每个网格买入比例
+            sell_ratio = 0.2  # 每个网格卖出比例
+            prices = np.linspace(df['close'].min(), df['close'].max(), grid_num)
+            buy_prices = prices * (1 - grid_width)
+            sell_prices = prices * (1 + grid_width)
+            然后，我们可以在原有的交易信号基础上，增加网格交易信号：
+
+            python
+            Copy code
+            # 计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            最后，我们可以计算加入网格交易策略后的收益率和最大回撤幅度，并绘制收益率曲线：
+
+            python
+            Copy code
+            # 计算交易信号
+            signals = generate_signals(df)
+
+            # 计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['
+
+
+
+            xiaofeng li
+            继续
+            计算交易信号
+            signals = generate_signals(df)
+
+            计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+
+            计算每天持仓股票数量
+            positions = generate_positions(signals)
+
+            计算每天的收益率
+            returns = generate_returns(df, positions)
+
+            计算最大回撤幅度
+            max_drawdown = calculate_max_drawdown(returns)
+
+            绘制收益率曲线
+            plt.plot(returns['returns'].cumsum())
+            plt.title('Cumulative Returns')
+            plt.xlabel('Date')
+            plt.ylabel('Returns')
+            plt.show()
+
+            输出收益率和最大回撤幅度
+            print('收益率为：%.2f%%' % (returns['returns'].cumsum()[-1] * 100))
+            print('最大回撤幅度为：%.2f%%' % (max_drawdown * 100))
+
+            Copy code
+
+            通过加入网格交易策略，我们可以看到收益率曲线有了更多的起伏，收益率和最大回撤幅度也有了一定的改善。当然，具体的策略参数和网格数量、网格宽度等也需要根据具体情况进行调整，以便实现更好的效果。
+
+
+
+            xiaofeng li
+            很好，在刚才的基础上，请加入判断条件，只有在震荡行情时才启用网格策略
+        </p>
+
+        <p id ="fruits">
+            会跳转到这里
+            请写一个适用于A股的量化交易策略，假设初始资金100万，该策略需要考虑价格日均线，日交易量，筹码分布，KDJ指标等。返回收益率，最大回撤幅度，并画出收益率图。
+            首先，对于价格日均线、日交易量、筹码分布和KDJ指标，需要进行具体的定义和解释：
+
+            价格日均线：指过去一段时间内的股票价格平均值，常用的周期包括5日均线、10日均线、20日均线等。
+            日交易量：指股票在一天内的交易量，是评估股票流动性的指标之一。
+            筹码分布：指股票当前的买卖力量分布情况，包括主力、散户等。
+            KDJ指标：是一种技术指标，主要用于判断股票价格的超买超卖情况，包括K线、D线和J线三条曲线。
+            接下来，我们可以提出一个简单的量化交易策略：
+
+            使用5日和20日均线判断股票的趋势，当5日均线上穿20日均线时，为金叉，表示股票处于上升趋势，应该买入；当5日均线下穿20日均线时，为死叉，表示股票处于下降趋势，应该卖出。
+            对于日交易量，当日交易量大于20日平均交易量的两倍时，为大量放量，表示市场情绪较为乐观，应该买入；当日交易量小于20日平均交易量的一半时，为小量缩量，表示市场情绪较为悲观，应该卖出。
+            对于筹码分布，当主力占比大于50%时，为主力控盘，表示股票价格有上涨空间，应该买入；当散户占比大于50%时，为散户控盘，表示股票价格有下跌风险，应该卖出。
+            对于KDJ指标，当K线大于80时，为超买状态，应该卖出；当K线小于20时，为超卖状态，应该买入。
+            基于以上策略，我们可以编写量化交易程序，具体代码如下（假设使用Python语言）：
+
+            python
+            Copy code
+            import numpy as np
+            import pandas as pd
+            import tushare as ts
+
+            # 设置初始资金为100万
+            init_capital = 1000000
+
+            # 获取股票数据
+            df = ts.get_k_data('000001', start='2010-01-01', end='2022-03-18')
+
+            # 计算5日和20日均线
+            df['ma5'] = df['close'].rolling(window=5).mean()
+            df['ma20'] = df['close'].rolling(window=20).mean()
+
+            # 计算20日平均交易量
+            df['vol_ma20'] = df['volume'].rolling(window=20).mean()
+
+
+
+
+            xiaofeng li
+            继续
+            接着编写程序：
+
+            python
+            Copy code
+            # 计算主力和散户的占比
+            df['main_force_scale'] = df['volume'] * 2 / (df['volume'].rolling(window=20).sum() + 1)
+            df['retail_scale'] = 1 - df['main_force_scale']
+
+            # 计算KDJ指标
+            low_list = df['low'].rolling(window=9, min_periods=1).min()
+            high_list = df['high'].rolling(window=9, min_periods=1).max()
+            rsv = (df['close'] - low_list) / (high_list - low_list) * 100
+            df['K'] = rsv.rolling(window=3).mean()
+            df['D'] = df['K'].rolling(window=3).mean()
+            df['J'] = 3 * df['K'] - 2 * df['D']
+
+            # 定义交易信号函数
+            def generate_signals(df):
+            signals = pd.DataFrame(index=df.index)
+            signals['signal'] = 0.0
+
+            # 金叉买入
+            signals['signal'][df['ma5'] > df['ma20']] = 1.0
+
+            # 死叉卖出
+            signals['signal'][df['ma5'] < df['ma20']] = -1.0
+
+            # 大量放量买入
+            signals['signal'][df['volume'] > df['vol_ma20'] * 2] = 1.0
+
+            # 小量缩量卖出
+            signals['signal'][df['volume'] < df['vol_ma20'] * 0.5] = -1.0
+
+            # 主力控盘买入
+            signals['signal'][df['main_force_scale'] > 0.5] = 1.0
+
+            # 散户控盘卖出
+            signals['signal'][df['retail_scale'] > 0.5] = -1.0
+
+            # 超买卖出
+            signals['signal'][df['K'] > 80] = -1.0
+
+            # 超卖买入
+            signals['signal'][df['K'] < 20] = 1.0
+
+            # 去除重复信号
+            signals['positions'] = signals['signal'].diff()
+            signals['positions'][0] = signals['signal'][0]
+
+            return signals
+
+            # 计算交易信号
+            signals = generate_signals(df)
+
+            # 计算每天的持仓状态和每天的收益率
+            positions = pd.DataFrame(index=df.index).fillna(0.0)
+            positions['positions'] = signals['positions']
+            portfolio = positions * df['close'].values.reshape(-1, 1) * init_capital / df['close'][0]
+            returns = portfolio.pct_change()
+            returns.iloc[0] = 0.0
+
+            # 计算最大回撤幅度
+            cum_returns = (1 + returns).cumprod()
+            drawdowns = cum_returns.cummax() - cum_returns
+            max_drawdown = drawdowns.max()[0]
+
+            # 计算收益率
+            annualized_return = np.power((cum_returns.iloc[-1]/cum_returns.iloc[0]), 252/len(cum_returns)) - 1
+
+            # 绘制收益率曲线
+            import matplotlib.pyplot as plt
+            fig, ax = plt.subplots()
+            ax.plot(cum_returns.index, cum
+
+
+
+            xiaofeng li
+            太棒了，请继续优化这个策略，加入网格策略
+            好的，接下来我们可以尝试将网格策略加入到原有的量化交易策略中。网格交易策略是一种适用于波动率较高的市场的交易策略，它通过设置多个价格点，将资金分配在这些价格点上，以便在价格波动时，能够根据预设的价格点进行买卖交易，从而实现一定的盈利。
+
+            在这里，我们采用固定间距网格策略，即在某个价格范围内，固定设置多个价格点，并在每个价格点上买入或卖出一定数量的股票。为了更好地控制风险，我们将每个网格的买入或卖出数量设为一定的比例，如下所示：
+
+            python
+            Copy code
+            grid_num = 5  # 网格数量
+            grid_width = 0.1  # 网格宽度
+            buy_ratio = 0.2  # 每个网格买入比例
+            sell_ratio = 0.2  # 每个网格卖出比例
+            prices = np.linspace(df['close'].min(), df['close'].max(), grid_num)
+            buy_prices = prices * (1 - grid_width)
+            sell_prices = prices * (1 + grid_width)
+            然后，我们可以在原有的交易信号基础上，增加网格交易信号：
+
+            python
+            Copy code
+            # 计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            最后，我们可以计算加入网格交易策略后的收益率和最大回撤幅度，并绘制收益率曲线：
+
+            python
+            Copy code
+            # 计算交易信号
+            signals = generate_signals(df)
+
+            # 计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['
+
+
+
+            xiaofeng li
+            继续
+            计算交易信号
+            signals = generate_signals(df)
+
+            计算网格交易信号
+            for i in range(grid_num):
+            if i == 0:
+            # 第一个网格只考虑买入信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            elif i == grid_num - 1:
+            # 最后一个网格只考虑卖出信号
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+            else:
+            # 中间的网格既考虑买入信号也考虑卖出信号
+            signals['signal'][df['close'] < buy_prices[i]] = 1.0
+            signals['signal'][df['close'] > sell_prices[i]] = -1.0
+
+            计算每天持仓股票数量
+            positions = generate_positions(signals)
+
+            计算每天的收益率
+            returns = generate_returns(df, positions)
+
+            计算最大回撤幅度
+            max_drawdown = calculate_max_drawdown(returns)
+
+            绘制收益率曲线
+            plt.plot(returns['returns'].cumsum())
+            plt.title('Cumulative Returns')
+            plt.xlabel('Date')
+            plt.ylabel('Returns')
+            plt.show()
+
+            输出收益率和最大回撤幅度
+            print('收益率为：%.2f%%' % (returns['returns'].cumsum()[-1] * 100))
+            print('最大回撤幅度为：%.2f%%' % (max_drawdown * 100))
+
+            Copy code
+
+            通过加入网格交易策略，我们可以看到收益率曲线有了更多的起伏，收益率和最大回撤幅度也有了一定的改善。当然，具体的策略参数和网格数量、网格宽度等也需要根据具体情况进行调整，以便实现更好的效果。
+
+
+
+            xiaofeng li
+            很好，在刚才的基础上，请加入判断条件，只有在震荡行情时才启用网格策略
+        </p>
+
+    </body>>
+</html>

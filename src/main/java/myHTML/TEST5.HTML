@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .list {
+            flex: 1;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .conversations {
+            flex: 4;
+            overflow-y: scroll;
+            padding-right: 10px;
+        }
+        .conversation {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .conversation:last-child {
+            margin-bottom: 0;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #f0f0f0;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .dialog {
+            flex: 4;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .questions {
+            flex: 3;
+            overflow-y: scroll;
+            padding-right: 10px;
+        }
+        .question {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .question:last-child {
+            margin-bottom: 0;
+        }
+        .form {
+            display: flex;
+            margin-top: 20px;
+        }
+        .input {
+            flex: 3;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            border: none;
+            background-color: #f5f5f5;
+            resize: none;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .button-send {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .button-send:hover {
+            background-color: #0069d9;
+        }
+        .answer {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+            font-weight: bold;
+            word-wrap: break-word;
+        }
+        .answer:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="list">
+        <div class="conversations">
+            <div class="conversation">Hello!</div>
+            <div class="conversation">How can I help you?</div>
+            <div class="conversation">What's your name?</div>
+            <div class="conversation">Where are you from?</div>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <i class="icon">&#128465;</i>
+                clear conversations
+            </div>
+            <div class="button">
+                <i class="icon">&#127775;</i>
+                upgrade to plus
+            </div>
+            <div class="button">
+                <i class="icon">&#127769;</i>
+                dark mode
+            </div>
+            <div class="button">
+                <i class="icon">&#128190;</i>
+                update &amp; FAQ
+            </div>
+            <div class="button">
+                <i class="icon">&#128682;</i>
+                Log out
+            </div>
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="questions">
+            <div class="question">What's your name?</div>
+            <div class="question">Where are you from?</div>
+        </div>
+        <div class="answers"></div>
+        <form class="form" onsubmit="event.preventDefault(); sendMessage();">
+            <textarea id="message-input" class="input" placeholder="Type your message here"></textarea>
+            <button type="submit" class="button-send">Send</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- 导入 axios 库 -->
+<script>
+    function sendMessage() {
+        const input = document.getElementById('message-input');
+        const message = input.value.trim();
+        if (message !== '') {
+            addQuestion(message);
+            input.value = '';
+            sendRequest(message);
+        }
+    }
+
+    function addQuestion(question) {
+        const questions = document.querySelector('.questions');
+        const div = document.createElement('div');
+        div.classList.add('question');
+        div.textContent = question;
+        questions.appendChild(div);
+        questions.scrollTop = questions.scrollHeight;
+    }
+
+    function addAnswer(answer) {
+        const answers = document.querySelector('.answers');
+        const div = document.createElement('div');
+        div.classList.add('answer');
+        div.textContent = answer;
+        answers.appendChild(div);
+        answers.scrollTop = answers.scrollHeight;
+    }
+
+    async function sendRequest(message) {
+        try {
+            const response = await axios.post('https://api.openai.com/v1/engine/davinci-codex/completions', {
+                prompt: `Q: ${message}\nA:`,
+                max_tokens: 50,
+                model: 'davinci-codex-002',
+                token: 'YOUR_OPENAI_API_KEY_HERE'
+            });
+            const answer = response.data.choices[0].text.trim();
+            addAnswer(answer);
+        } catch(error) {
+            console.error(error);
+            addAnswer('Sorry, an error occurred. Please try again later.');
+        }
+    }
+</script>
+</body>
+</html>

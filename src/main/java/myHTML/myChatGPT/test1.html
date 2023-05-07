@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT Q&amp;A</title>
+</head>
+<body>
+<h1>ChatGPT Q&amp;A</h1>
+<label for="question">输入问题:</label>
+<input type="text" id="question" name="question"><br><br>
+<button onclick="getAnswer()">获取答案</button>
+<h2>答案</h2>
+<p id="answer"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/@openai/api@0.6.3"></script>
+<script>
+    // 配置OpenAI API密钥
+    const OPENAI_API_KEY = "YOUR_API_KEY";
+    const openai = require('@openai/api')({ apiKey: OPENAI_API_KEY });
+
+    // 获取答案函数
+    function getAnswer() {
+        const question = document.getElementById("question").value;
+        const answerElement = document.getElementById("answer");
+
+        // 使用OpenAI API获取答案
+        openai.answer({
+            model: "text-davinci-002",
+            question: question,
+            examplesContext: "In what year did Neil Armstrong step on the moon?",
+            examples: [
+                ["1969"]
+            ],
+            maxTokens: 5
+        })
+            .then(response => {
+                answerElement.innerHTML = response.data.answers[0].text;
+            })
+            .catch(error => {
+                answerElement.innerHTML = "获取答案时出错：" + error;
+            });
+    }
+</script>
+</body>
+</html>

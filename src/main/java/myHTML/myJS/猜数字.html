@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猜数字游戏</title>
+</head>
+<body>
+  <input type="button" value="重新开始一局游戏" id="restart">
+
+  <div>
+    <span>请输入要猜的数字:</span>
+    <input type="text" id="num">
+    <input type="button" value="猜" id="guess">
+  </div>
+
+  <div>
+    <span>已经猜的次数: </span>
+    <span id="count">0</span>
+  </div>
+
+  <div>
+    <span>结果: </span>
+    <span id="result"></span>
+  </div>
+
+  <script>
+    // 先把需要用到的 JS 的 DOM 对象准备好
+    let restartButton = document.querySelector('#restart');
+    let numInput = document.querySelector('#num');
+    let guessButton = document.querySelector('#guess');
+    let countSpan = document.querySelector('#count');
+    let resultSpan = document.querySelector('#result');
+
+    // 生成一个 1-100 之间的随机整数
+    let toGuess = Math.floor(Math.random() * 100) + 1;
+    let count = 0;
+    console.log("toGuess: " + toGuess);
+
+    guessButton.onclick = function() {
+      // 用户点击 猜 这个按钮，首先更新点击次数的显示
+      count++;
+      countSpan.innerHTML = count;
+      let num = parseInt(numInput.value);
+      if(num < toGuess) {
+        resultSpan.innerHTML = '数字猜小了！';
+      }else if(num > toGuess) {
+        resultSpan.innerHTML = '数字猜大了！';
+      }else {
+        resultSpan.innerHTML = '恭喜你猜对了！';
+      }
+    }
+    restartButton.onclick = function() {
+      // 把 toGuess 和 count 清空，重新生成一个随机的整数
+      toGuess = Math.floor(Math.random() * 100) + 1;
+      count = 0;
+      console.log("toGuess: " + toGuess);
+      countSpan.innerHTML = count;
+      resultSpan.innerHTML = '';
+    }
+  </script>
+</body>
+</html>
