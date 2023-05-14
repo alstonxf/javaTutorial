@@ -655,6 +655,8 @@
 <!--            </exclusions>-->
 <!--        </dependency>-->
 
+
+
     </dependencies>
 
     <!--    这里一定要写，不然会读取不到我们的mapper-->
@@ -676,6 +678,7 @@
                 </includes>
             </resource>
         </resources>
+
     </build>
 
 </project>

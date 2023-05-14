@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--告知spring在创建容器时要扫描的包，配置所需要的标签不是在beans的约束，而是一个名称为context名称空间和约束中-->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+
+    <!--把对象的创建交给spring来管理-->
+<!--    ## 一、创建bean的三种方式-->
+<!--    ### 1.1 使用默认构造函数创建。-->
+<!--    在spring的配置文件中使用bean标签，配以id和class属性之后，**且没有其他属性和标签时**。采用的就是 **默认构造函数** 创建bean对象，此时如果类中没有默认构造函数，则对象 **无法创建**。-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" ></bean>
+
+<!--    ### 1.2 使用普通工厂中的方法创建对象-->
+<!--    这里我们模拟，调用jar包中的工厂，并用工厂里的方法来创建 bean 对象，并存入spring 容器-->
+    <bean id="instanceFactory" class="com.itheima.factory.InstanceFactory"></bean>
+    <bean id="accountService2" factory-bean="instanceFactory" factory-method="getAccountService"></bean>
+
+<!--    ### 1.3 使用工厂中的静态方法创建对象-->
+<!--    使用某个类中的静态方法创建对象，并存入spring容器中-->
+    <bean id="accountService3" class="com.itheima.factory.StaticFactory" factory-method="getAccountService"></bean>
+
+<!--    三、bean 对象的生命周期-->
+<!--    bean标签的**scope属性**：-->
+<!--    - 作用：<mark>用于指定bean的作用范围</mark>-->
+<!--    - 取值：常用是单例和多例-->
+
+<!--    1. **singleton : 单例（默认值）**-->
+<!--    2. **prototype ：多例**-->
+
+<!--    request ：作用域web应用的请求范围-->
+<!--    session ：作用域web应用的会画范围-->
+<!--    global-session ：作用域集群环境的会话范围（全局会话范围），当不是集群环境时，它就是session-->
+    <bean id="accountService4" class="com.itheima.service.impl.AccountServiceImpl" scope="singleton"
+          init-method="init" destroy-method="destroy"></bean>
+
+<!--    1、使用构造函数注入-->
+    <bean id="accountService5" class="com.itheima.service.impl.AccountServiceImpl1">
+        <constructor-arg name="UserName" value="xiuyan"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="birthday" ref="now"></constructor-arg>
+    </bean>
+
+    <!--配置一个日期对象: 读取这个全限定类名，反射创建一个对象，并且存入IOC容器，可用 now 这个id取出来-->
+    <bean id="now" class="java.util.Date"></bean>
+
+<!--    2、使用set方法注入-->
+    <bean id="accountService6" class="com.itheima.service.impl.AccountServiceImpl2">
+        <property name="name" value="xiuyan"></property>
+        <property name="age" value="22"></property>
+        <property name="birthday" ref="now"></property>
+    </bean>
+
+<!--    3、## 复杂类型的注入/集合类型的注入
+1. **用于给 list 结构及和注入的标签： list array set**
+1. **用于给 Map 结构注入的标签：map props**-->
+    <!--复杂类型的注入/集合类型的注入-->
+    <bean id="accountService7" class="com.itheima.service.impl.AccountServiceImpl3">
+        <property name="myStrs">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="testA" value="aaa"></entry>
+                <entry key="testB">
+                    <value>BBB</value>
+                </entry>
+            </map>
+        </property>
+        <property name="myProps">
+            <props><!--prop标签属性只有 key，value 等于标签体内容的值-->
+                <prop key="testC">CCC</prop>
+                <prop key="testD">DDD</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
+

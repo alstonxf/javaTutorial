@@ -16,8 +16,12 @@ public class UserMapperTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         // 执行 这个过程就相当于创建一个interface的对象
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
         List<User> userList = mapper.selectUserList();
-        userList.forEach(System.out::println);
+        for (User user : userList) {
+            System.out.println(user);
+        }
+//        userList.forEach(System.out::println);
         sqlSession.close();
     }
 }
