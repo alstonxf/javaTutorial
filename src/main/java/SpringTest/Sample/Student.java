@@ -5,7 +5,7 @@ public class Student {
 
     private String name2;
     private int id;
-    private int age;
+    public int age;
     private Dog dog;
 
     public Collection habit;

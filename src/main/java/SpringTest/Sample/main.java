@@ -28,6 +28,8 @@ public class main {
         //调用方法
         System.out.println("开始调用方法student2.studentInfo()");
         student2.studentInfo();
+        System.out.println("student2.habit"+student2.habit);
+        System.out.println("student2.age"+student2.age);
 
         System.out.println("**********************************************");
         //获取Collection实例

@@ -10,9 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/AppleSon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/FruitInfoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/FruitProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/FruitRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/FruitRun2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/anotationExercise/testInherited.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/TreeMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/package01/test2/testTreeSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mybatis/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mybatis/UserMapperTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mybatis/util/MybatisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringTest/Sample/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +41,7 @@
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -74,27 +84,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
-    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
-    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/myJava/src/main/java/SpringTest/SpringInAction4",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "650ad39f05f249d7099c7f57637687b9"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/myGitProjects/myJava/src/main/java/SpringTest/SpringInAction4&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;650ad39f05f249d7099c7f57637687b9&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/SpringTest/SpringInAction4" />
@@ -123,13 +133,13 @@
       <recent name="package01.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest2.test">
-    <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package01.test.MybatisTest" />
+  <component name="RunManager" selected="Application.testInherited">
+    <configuration name="FruitRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.FruitRun" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.test.*" />
+          <option name="PATTERN" value="test.anotationExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,62 +147,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.Spring-in-action-four-master in myJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FruitRun2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.FruitRun2" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringTest.Spring-in-action-four-master.*" />
+          <option name="PATTERN" value="test.anotationExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SpringTest.Spring-in-action-four-master" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpringTest.Sample.main" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mybatis.*" />
+          <option name="PATTERN" value="SpringTest.Sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.mybatis.UserMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testInherited" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.testInherited" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mybatis.*" />
+          <option name="PATTERN" value="test.anotationExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.mybatis.UserMapperTest2" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package01.test2.testTreeSet" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mybatis.*" />
+          <option name="PATTERN" value="package01.test2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.mybatis.UserMapperTest2" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,52 +287,21 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Local">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="debugHost" value="localhost" />
-      <option name="architecture" />
-      <option name="environmentVariables">
-        <map />
-      </option>
-      <option name="handler" />
-      <option name="image" value="false" />
-      <option name="logicalFunctionName" />
-      <option name="memorySize" value="128" />
-      <option name="pathMappings">
-        <list />
-      </option>
-      <option name="platform" />
-      <option name="runtime" />
-      <option name="templateFile" />
-      <option name="timeout" value="300" />
-      <option name="useTemplate" value="false" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <sam>
-        <option name="additionalBuildArgs" />
-        <option name="additionalLocalArgs" />
-        <option name="buildInContainer" value="false" />
-        <option name="dockerNetwork" />
-        <option name="skipImagePull" value="false" />
-      </sam>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.MybatisTest" />
-      <item itemvalue="JUnit.UserMapperTest" />
-      <item itemvalue="JUnit.UserMapperTest2" />
-      <item itemvalue="JUnit.UserMapperTest2.test" />
-      <item itemvalue="JUnit.SpringTest.Spring-in-action-four-master in myJava" />
+      <item itemvalue="Application.FruitRun" />
+      <item itemvalue="Application.FruitRun2" />
+      <item itemvalue="Application.testInherited" />
+      <item itemvalue="Application.testTreeSet" />
+      <item itemvalue="Application.main" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserMapperTest2.test" />
-        <item itemvalue="JUnit.UserMapperTest2" />
-        <item itemvalue="JUnit.UserMapperTest" />
-        <item itemvalue="Application.MybatisTest" />
-        <item itemvalue="JUnit.SpringTest.Spring-in-action-four-master in myJava" />
+        <item itemvalue="Application.testInherited" />
+        <item itemvalue="Application.FruitRun" />
+        <item itemvalue="Application.FruitRun2" />
+        <item itemvalue="Application.testTreeSet" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +420,11 @@
       <workItem from="1683300926303" duration="666000" />
       <workItem from="1683441941852" duration="1159000" />
       <workItem from="1683455874556" duration="5245000" />
-      <workItem from="1684054919210" duration="4042000" />
+      <workItem from="1684054919210" duration="5453000" />
+      <workItem from="1684079059271" duration="2259000" />
+      <workItem from="1684417045328" duration="13000" />
+      <workItem from="1684417835978" duration="308000" />
+      <workItem from="1686499242443" duration="5848000" />
     </task>
     <servers />
   </component>
