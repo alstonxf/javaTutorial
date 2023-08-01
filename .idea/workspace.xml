@@ -10,15 +10,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/MVC/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/MVC/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/MVC/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/MVC/UserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/mvc2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/mvc2/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/mvc2/StudentView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/mvc2/model/StudentEntityBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DEMO/mvc2/model/StudentServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case1/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case1/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case2/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case2/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case3/MyCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/case3/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise1/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise1/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise2/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise2/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise3/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise3/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise4/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise4/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise4_case2/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise4_case2/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise5/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise5/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise6/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise6/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise7/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/exercise7/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadDeadLock/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadDeadLock/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod2/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod2/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod3/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod3/MyThread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod3/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod4/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod4/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod5/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/threadMethod5/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe1/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe1/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe2/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe2/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe3/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe3/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe3/mytest/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/thredSafe3/mytest/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify2/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify2/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyThread/waitandnotify2/ThreadDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,34 +123,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/myGitProjects/myJava/src/main/java/SpringTest/SpringInAction4&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;650ad39f05f249d7099c7f57637687b9&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/myJava/src/main/java/MyThread/exercise7",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "650ad39f05f249d7099c7f57637687b9"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/SpringTest/SpringInAction4" />
-      <recent name="$PROJECT_DIR$/src/main/java/SpringTest" />
-      <recent name="$PROJECT_DIR$/src/main/java/SpringTest/springiA4_code-master" />
-      <recent name="$PROJECT_DIR$/src/main/java/SpringTest/springInActionCode" />
-      <recent name="$PROJECT_DIR$/src/main/java/myHTML/博客系统/image" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyThread/exercise7" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyThread/exercise6" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyThread/exercise5" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyThread/exercise4_case2" />
+      <recent name="$PROJECT_DIR$/src/main/java/MyThread/exercise4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/SpringTest/SpringInAction4" />
@@ -124,20 +166,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MyThread.thredSafe1" />
+      <recent name="MyThread.threadMethod3" />
       <recent name="com.mybatis" />
       <recent name="MyHbase.HbaseAPI3" />
       <recent name="MyKafka" />
-      <recent name="com.itheima.service.impl" />
-      <recent name="package01.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DEMO.mvc2.Main">
-    <configuration name="DEMO.mvc2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DEMO.mvc2.Main" />
+  <component name="RunManager" selected="Application.MyThread.exercise7.ThreadDemo">
+    <configuration name="MyThread.exercise4.ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyThread.exercise4.ThreadDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DEMO.mvc2.*" />
+          <option name="PATTERN" value="MyThread.exercise4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +187,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.FruitRun" />
+    <configuration name="MyThread.exercise4_case2.ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyThread.exercise4_case2.ThreadDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.anotationExercise.*" />
+          <option name="PATTERN" value="MyThread.exercise4_case2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,12 +200,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitRun2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.FruitRun2" />
+    <configuration name="MyThread.exercise5.ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyThread.exercise5.ThreadDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.anotationExercise.*" />
+          <option name="PATTERN" value="MyThread.exercise5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +213,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DEMO.MVC.Main" />
+    <configuration name="MyThread.exercise6.ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyThread.exercise6.ThreadDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DEMO.MVC.*" />
+          <option name="PATTERN" value="MyThread.exercise6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,12 +226,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testInherited" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.anotationExercise.testInherited" />
+    <configuration name="MyThread.exercise7.ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyThread.exercise7.ThreadDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.anotationExercise.*" />
+          <option name="PATTERN" value="MyThread.exercise7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -286,20 +328,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DEMO.mvc2.Main" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.FruitRun" />
-      <item itemvalue="Application.FruitRun2" />
-      <item itemvalue="Application.testInherited" />
+      <item itemvalue="Application.MyThread.exercise4.ThreadDemo" />
+      <item itemvalue="Application.MyThread.exercise4_case2.ThreadDemo" />
+      <item itemvalue="Application.MyThread.exercise5.ThreadDemo" />
+      <item itemvalue="Application.MyThread.exercise6.ThreadDemo" />
+      <item itemvalue="Application.MyThread.exercise7.ThreadDemo" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DEMO.mvc2.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.testInherited" />
-        <item itemvalue="Application.FruitRun" />
-        <item itemvalue="Application.FruitRun2" />
+        <item itemvalue="Application.MyThread.exercise7.ThreadDemo" />
+        <item itemvalue="Application.MyThread.exercise6.ThreadDemo" />
+        <item itemvalue="Application.MyThread.exercise5.ThreadDemo" />
+        <item itemvalue="Application.MyThread.exercise4_case2.ThreadDemo" />
+        <item itemvalue="Application.MyThread.exercise4.ThreadDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +465,11 @@
       <workItem from="1684417045328" duration="13000" />
       <workItem from="1684417835978" duration="308000" />
       <workItem from="1686499242443" duration="5871000" />
-      <workItem from="1687437164288" duration="5193000" />
+      <workItem from="1687437164288" duration="6639000" />
+      <workItem from="1687583975567" duration="1618000" />
+      <workItem from="1690377736380" duration="14605000" />
+      <workItem from="1690474333207" duration="9000" />
+      <workItem from="1690614360147" duration="32556000" />
     </task>
     <servers />
   </component>
