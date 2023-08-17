@@ -4,12 +4,14 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.*;
 import org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class WordCountDriver {
 
@@ -39,16 +41,28 @@ public class WordCountDriver {
 
         //虚拟存储切片最大值设置4m
 //        CombineTextInputFormat.setMaxInputSplitSize(job, 4194304);
+        //虚拟存储切片最大值设置20m
         CombineTextInputFormat.setMaxInputSplitSize(job, 20971520);
 
 
         // 6 设置输入路径和输出路径
-        FileInputFormat.setInputPaths(job, new Path("D:\\input\\inputcombinetextinputformat"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\hadoop\\outputCombine3"));
+        FileInputFormat.setInputPaths(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/guigu/combineTextInputforamt/input"));
+        // 获取当前时间
+        LocalDateTime currentTime = LocalDateTime.now();
+        // 定义日期时间格式
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        // 将当前时间格式化为指定格式的字符串
+        String formattedTime = currentTime.format(formatter);
+        // 打印当前格式化后的时间
+        System.out.println("Current time: " + formattedTime);
+        FileOutputFormat.setOutputPath(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/guigu/combineTextInputforamt/output/"+formattedTime));
+
+        // 获取切片数量
+        int sliceCount = job.getConfiguration().getInt("mapreduce.job.maps", 1);
+        System.out.println("Number of slices: " + sliceCount);
 
         // 7 提交job
         boolean result = job.waitForCompletion(true);
-
         System.exit(result ? 0 : 1);
     }
 }

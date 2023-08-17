@@ -7,15 +7,42 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 
+/**
+ * KEYIN, map阶段输入的key的类型：LongWritable 偏移量
+ * VALUEIN,map阶段输入value类型：Text
+ * KEYOUT,map阶段输出的Key类型：Text
+ * VALUEOUT,map阶段输出的value类型：IntWritable
+ */
 
 public class myMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
+    private Text outK = new Text();
+    private IntWritable outV = new IntWritable(1);
 
+    // * KEYIN, map阶段输入的key的类型：LongWritable 偏移量
+    // * VALUEIN,map阶段输入value类型：Text
+    // Context 上下文
     @Override
-    public void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, IntWritable>.Context context) throws IOException, InterruptedException {
-        for (String s:value.toString().split(" ")){
-            context.write(new Text(s), new IntWritable(1));
-        }
+    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
+        // 1 获取一行
+        // atguigu atguigu
+        String line = value.toString();
+
+        // 2 切割
+        // atguigu
+        // atguigu
+        String[] words = line.split(" ");
+
+        // 3 循环写出
+        for (String word : words) {
+            System.out.println("key==>" + key + " value =>>"+value);
+            // 封装outk
+            outK.set(word);
+
+            // 写出
+            context.write(outK, outV);
+        }
     }
 }
+
 
