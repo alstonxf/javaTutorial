@@ -10,572 +10,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/inputflow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/inputflow1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combiner/hello.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/inputword" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/outputword/2023-08-16 22:49:03/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/outputword/2023-08-16 22:49:03/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/outputword/2023-08-16 22:49:03/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/outputword/2023-08-16 22:49:03/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitionerandwritableComparable/input/phone_data .txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/input/inputword" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/input/phone_data .txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:08:24/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:08:24/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:08:24/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:08:24/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:09:45/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/.part-r-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/.part-r-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/part-r-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:12:49/part-r-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00006.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00007.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00008.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00009.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00010.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00011.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00012.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00013.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00014.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00015.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00016.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00017.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00018.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/.part-r-00019.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00008" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00009" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00010" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00011" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00012" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00013" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00014" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00015" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00016" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00017" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:15/part-r-00019" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00006.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00007.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00008.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00009.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00010.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00011.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00012.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00013.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00014.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00015.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00016.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00017.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00018.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00019.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00020.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00021.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00022.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00023.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00024.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00025.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00026.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00027.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00028.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00029.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00030.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00031.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00032.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00033.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00034.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00035.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00036.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00037.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00038.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00039.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00040.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00041.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00042.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00043.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00044.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00045.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00046.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00047.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00048.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00049.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00050.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00051.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00052.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00053.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00054.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00055.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00056.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00057.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00058.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00059.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00060.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00061.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00062.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00063.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00064.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00065.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00066.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00067.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00068.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00069.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00070.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00071.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00072.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00073.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00074.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00075.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00076.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00077.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00078.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00079.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00080.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00081.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00082.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00083.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00084.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00085.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00086.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00087.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00088.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00089.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00090.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00091.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00092.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00093.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00094.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00095.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00096.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00097.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00098.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00099.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00100.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00101.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00102.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00103.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00104.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00105.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00106.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00107.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00108.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00109.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00110.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00111.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00112.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00113.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00114.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00115.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00116.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00117.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00118.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00119.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00120.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00121.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00122.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00123.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00124.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00125.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00126.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00127.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00128.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00129.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00130.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00131.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00132.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00133.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00134.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00135.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00136.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00137.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00138.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00139.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00140.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00141.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00142.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00143.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00144.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00145.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00146.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00147.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00148.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00149.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00150.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00151.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00152.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00153.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00154.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00155.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00156.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00157.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00158.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00159.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00160.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00161.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00162.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00163.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00164.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00165.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00166.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00167.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00168.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00169.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00170.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00171.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00172.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00173.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00174.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00175.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00176.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00177.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00178.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00179.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00180.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00181.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00182.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00183.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00184.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00185.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00186.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00187.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00188.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00189.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00190.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00191.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00192.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00193.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00194.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00195.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00196.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00197.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00198.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/.part-r-00199.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00008" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00009" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00010" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00011" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00012" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00013" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00014" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00015" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00016" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00017" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00019" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00020" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00021" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00022" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00023" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00024" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00025" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00026" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00027" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00028" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00029" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00030" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00031" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00032" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00033" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00034" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00035" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00036" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00037" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00038" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00039" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00041" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00042" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00043" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00044" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00045" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00046" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00047" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00048" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00049" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00050" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00051" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00052" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00053" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00054" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00055" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00056" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00057" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00058" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00059" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00060" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00061" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00062" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00063" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00064" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00065" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00066" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00067" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00068" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00069" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00070" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00071" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00072" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00073" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00074" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00075" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00076" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00077" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00078" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00079" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00080" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00081" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00082" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00083" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00084" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00085" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00086" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00087" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00088" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00089" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00090" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00091" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00092" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00093" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00094" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00095" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00096" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00097" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00098" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00099" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00100" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00101" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00102" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00103" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00104" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00105" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00106" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00107" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00108" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00109" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00110" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00112" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00113" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00114" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00115" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00116" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00117" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00118" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00119" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00120" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00121" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00122" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00123" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00124" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00125" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00126" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00127" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00128" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00129" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00130" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00131" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00132" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00133" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00134" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00135" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00136" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00137" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00138" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00139" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00140" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00141" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00142" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00143" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00144" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00145" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00146" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00147" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00148" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00149" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00150" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00151" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00152" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00153" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00154" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00155" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00156" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00157" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00158" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00159" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00160" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00161" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00162" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00163" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00164" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00165" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00166" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00167" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00168" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00169" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00170" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00171" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00172" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00173" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00174" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00175" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00176" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00177" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00178" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00179" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00180" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00181" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00182" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00183" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00184" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00185" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00186" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00187" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00188" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00189" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00190" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00191" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00192" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00193" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00194" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00195" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00196" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00197" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00198" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/outputPartition2023-08-14 01:13:42/part-r-00199" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/.part-r-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/outputPartition2023-08-14 01:20:22/part-r-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/inputflow2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input2/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input2/b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input2/c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input2/d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input3/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input3/b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input3/c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input3/d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:47:54/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:47:54/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:07/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:07/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:50/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:50/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:56:18/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:56:18/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:58:11/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:58:11/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:23:12/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:23:12/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:24:56/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:24:56/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:29:39/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:29:39/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:29:39/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:29:39/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:37:40/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:37:40/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:37:40/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:37:40/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:39:10/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:39:10/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:39:10/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:39:10/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:42:52/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:42:52/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:42:52/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:42:52/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/inputflow2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/myPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-17 21:53:49/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-17 21:53:49/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-17 21:53:49/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-17 21:53:49/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:17:36/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:17:36/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:17:36/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:17:36/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:27:27/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:27:27/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:27:27/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:27:27/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:13/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:13/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:13/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:13/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/part-r-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:29:23/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/part-r-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:14/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/part-r-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-18 02:34:46/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testReducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/WordCountDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/WordCountDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/myMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/myMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/myReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/myWordCount/myReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/WordCountDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner/WordCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/WordCountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner/WordCountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/WordCountReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner2/FlowBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner2/FlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner2/FlowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner2/FlowReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/partitioner2/ProvincePartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/ProvincePartitioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/WordCountDriver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/WordCountMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/WordCountReducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/inputword/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output01/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/._SUCCESS.crc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output01/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output01/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/_SUCCESS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output01/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output02/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/._SUCCESS.crc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output02/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output02/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/_SUCCESS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/wordcount/output/output02/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writable/FlowBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writable/FlowDriver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writable/FlowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writable/FlowReducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writableComparable/FlowBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/WritableComparable/FlowBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writableComparable/FlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/WritableComparable/FlowDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writableComparable/FlowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/WritableComparable/FlowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/writableComparable/FlowReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/WritableComparable/FlowReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/Writable/FlowDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:47:54/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:47:54/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 00:59:32/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:07/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:07/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:00:20/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:50/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:49:50/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 01:01:27/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:56:18/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:56:18/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:07/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:58:11/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-17 23:58:11/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 02:01:57/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:23:12/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:23:12/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow2023-08-17 21:45:06/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/WordCountDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/WordCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/WordCountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/WordCountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/WordCountReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input/a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input/b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input/c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/input/d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/input/d.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:24:56/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat/output/2023-08-18 00:24:56/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputforamt/output/2023-08-12 23:00:53/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner/WordCountDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/partitioner2/FlowDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/inputflow2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/outputflow/2023-08-17 21:53:49/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/outputflow/2023-08-17 21:53:49/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/outputflow/2023-08-17 21:53:49/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/outputflow/2023-08-17 21:53:49/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testFlowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable/testReducer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -647,7 +213,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/test/java/mapreduce/Serialization/Writable",
+    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/combineTextInputformat",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
@@ -658,12 +224,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mapreduce.Serialization.Writable" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat" />
       <recent name="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization" />
       <recent name="$PROJECT_DIR$/myHadoop/src/test/resources" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/guigu/testPartitioner" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/guigu/testSerialization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/input" />
@@ -693,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testFlowDriver">
+  <component name="RunManager" selected="Application.mapreduce.testFlowDriver">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -706,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.testPartitioner.partitioner2.FlowDriver" />
+    <configuration name="WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mapreduce.combineTextInputformat.WordCountDriver" />
       <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.testPartitioner.partitioner2.*" />
+          <option name="PATTERN" value="mapreduce.combineTextInputformat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -745,12 +314,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapreduce.testPartitioner.partitioner.WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.testPartitioner.partitioner.WordCountDriver" />
+    <configuration name="mapreduce.testFlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mapreduce.testFlowDriver" />
       <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.testPartitioner.partitioner.*" />
+          <option name="PATTERN" value="mapreduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -861,18 +430,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.mapreduce.Serialization.Writable.FlowDriver" />
+      <item itemvalue="Application.mapreduce.testFlowDriver" />
       <item itemvalue="Application.testFlowDriver" />
-      <item itemvalue="Application.FlowDriver" />
+      <item itemvalue="Application.WordCountDriver" />
       <item itemvalue="Application.mapreduce.myWordCount.WordCountDriver" />
-      <item itemvalue="Application.mapreduce.testPartitioner.partitioner.WordCountDriver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mapreduce.testFlowDriver" />
         <item itemvalue="Application.testFlowDriver" />
+        <item itemvalue="Application.WordCountDriver" />
         <item itemvalue="Application.mapreduce.Serialization.Writable.FlowDriver" />
         <item itemvalue="Application.mapreduce.myWordCount.WordCountDriver" />
-        <item itemvalue="Application.FlowDriver" />
-        <item itemvalue="Application.mapreduce.testPartitioner.partitioner.WordCountDriver" />
       </list>
     </recent_temporary>
   </component>

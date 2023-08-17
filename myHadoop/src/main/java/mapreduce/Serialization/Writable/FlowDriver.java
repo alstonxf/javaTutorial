@@ -45,7 +45,7 @@ public class FlowDriver {
         // 打印当前格式化后的时间
         System.out.println("Current time: " + formattedTime);
 
-        FileOutputFormat.setOutputPath(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/Serialization/testWritable/outputflow"+formattedTime));
+        FileOutputFormat.setOutputPath(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/Serialization/Writable/output/outputflow"+formattedTime));
 
 
         // 提交Job并等待任务完成

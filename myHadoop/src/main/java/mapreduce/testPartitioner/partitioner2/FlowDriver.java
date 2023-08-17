@@ -34,8 +34,9 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
+        //设置使用的分区类
         job.setPartitionerClass(ProvincePartitioner.class);
-        job.setNumReduceTasks(6);
+        job.setNumReduceTasks(6);//设置reducer数量
 
 
         // 6 设置数据的输入路径和输出路径

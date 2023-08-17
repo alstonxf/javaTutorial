@@ -35,7 +35,10 @@ public class WordCountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        job.setNumReduceTasks(200);
+
+        job.setNumReduceTasks(200);//设置reducer数量
+
+
 
         // 6 设置输入路径和输出路径
         FileInputFormat.setInputPaths(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/testPartitioner/input"));
