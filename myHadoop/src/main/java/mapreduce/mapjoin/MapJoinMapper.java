@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URI;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class MapJoinMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
@@ -34,10 +35,10 @@ public class MapJoinMapper extends Mapper<LongWritable, Text, Text, NullWritable
         String line;
         while (StringUtils.isNotEmpty(line = reader.readLine())) {
             // 切割
-            String[] fields = line.split("\t");
-
+            String[] fields = line.split(" ");
+            System.out.println(Arrays.toString(fields));
             // 赋值
-            pdMap.put(fields[0], fields[1]);
+            pdMap.put(fields[0], fields[fields.length-1]);
         }
 
         // 关流
@@ -50,15 +51,18 @@ public class MapJoinMapper extends Mapper<LongWritable, Text, Text, NullWritable
         // 处理 order.txt
         String line = value.toString();
 
-        String[] fields = line.split("\t");
+        String[] fields = line.split(" ");
+        System.out.println(Arrays.toString(fields));
 
         // 获取pid
         String pname = pdMap.get(fields[1]);
 
         // 获取订单id 和订单数量
         // 封装
+        if (pname == null) {
+            pname = "pname";
+        }
         outK.set(fields[0] + "\t" + pname + "\t" + fields[2]);
-
         context.write(outK, NullWritable.get());
     }
 }

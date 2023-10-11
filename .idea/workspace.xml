@@ -10,54 +10,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/myPartitionerComparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:04:22/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:05:28/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:27/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:06:56/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/.part-r-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/.part-r-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/.part-r-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/part-r-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/part-r-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:07:17/part-r-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBeanComparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriverComparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowMapperComparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testReducerComparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-flink/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-flink/src/main/java/com/atguigu/es/FlinkElasticsearchSinkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-sparkstreaming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-sparkstreaming/src/main/java/com/atguigu/es/SparkStreamingESTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/ElasticsearchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/SpringDataESIndexTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/SpringDataESProductDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/java/com/atguigu/es/SpringDataElasticSearchMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-springdata/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Delete_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Get.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Insert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Insert_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Doc_Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Index_Create.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Index_Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/ESTest_Index_Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/es-test/src/main/java/com/atguigu/es/test/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Delete_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Update_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/index/EsTest_Client_Create.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/index/EsTest_Index_Create.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/index/EsTest_Index_Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/index/EsTest_Index_Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Aggregation_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Blur_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Composition_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Group_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Hightlight_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Page_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Query_All.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Query_By_Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myES/src/main/java/search/EsTest_Search_Range_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/output/2023-08-19 20:32:47/.part-m-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/output/2023-08-19 20:32:47/part-m-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/output/2023-08-19 19:31:06/.part-m-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/output/2023-08-19 19:31:06/part-m-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/t_order" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/t_product" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output1/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output1/.atguigu.log.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output1/.other.log.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output1/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/.part-r-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/.part-r-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/part-r-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 20:30:00/part-r-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/province.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/inputflow2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/inputflow2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/WebLogDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/WebLogDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/MapJoinDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/MapJoinDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/MapJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/MapJoinMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/LogDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/LogDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/LogRecordWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/LogRecordWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/._SUCCESS.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/output/2023-08-19 20:32:47/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/.part-r-00001.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/.part-r-00002.crc" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/output/2023-08-19 19:31:06/._SUCCESS.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/etl/output/2023-08-19 20:32:47/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/part-r-00000" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/part-r-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/part-r-00001" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflow/2023-08-19 18:35:53/part-r-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/outputflowComparable/2023-08-19 16:08:20/part-r-00002" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/mapjoin/output/2023-08-19 19:31:06/_SUCCESS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBeanComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowBeanComparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriverComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowDriverComparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowMapperComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/testFlowMapperComparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/target/myHadoop-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/myJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Delete_Batch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Insert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Insert_Batch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Update.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/doc/EsTest_Doc_Update_Batch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/index/EsTest_Client_Create.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/index/EsTest_Index_Create.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/index/EsTest_Index_Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/index/EsTest_Index_Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Aggregation_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Blur_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Composition_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Group_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Hightlight_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Page_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Query_All.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Query_By_Condition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyES/search/EsTest_Search_Range_Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyHbase/HbaseAPI3/HbaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/HbaseAPI/HbaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyHbase/HbaseAPI3/HbaseConnectionSingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/HbaseAPI/HbaseConnectionSingle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyHbase/HbaseAPI3/HbaseDDL.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/HbaseAPI/HbaseDDL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyHbase/HbaseAPI3/HbaseDML.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/HbaseAPI/HbaseDML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MyHbase/HbaseAPI3/HbaseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/HbaseAPI/HbaseMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,45 +198,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/combineTextInputformat&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;751b93ab9d1fa197e089e604fcb9912f&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/myJava/myES",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.5865724",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "b8a79c7b3072428c6e40caac0148ed80"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="mapreduce.Serialization.Writable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myES" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat" />
       <recent name="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization" />
       <recent name="$PROJECT_DIR$/myHadoop/src/test/resources" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/guigu/testPartitioner" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myES" />
+      <recent name="$PROJECT_DIR$/myES/src/main/java" />
+      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/input" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/../myHadoop/myHadoop/src/main/java/hdfs/hdfs2local" />
-      <recent name="$PROJECT_DIR$/../myHadoop/myHadoop/src/main/java" />
-      <recent name="$PROJECT_DIR$/../myHadoop/myHadoop" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.itheima.dao" />
@@ -178,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.mapreduce.testFlowDriver">
+  <component name="RunManager" selected="Application.HbaseConnectionSingle">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -191,12 +272,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.combineTextInputformat.WordCountDriver" />
+    <configuration name="HbaseConnectionSingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HbaseAPI.HbaseConnectionSingle" />
       <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.combineTextInputformat.*" />
+          <option name="PATTERN" value="HbaseAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +285,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapreduce.Serialization.Writable.FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.Serialization.Writable.FlowDriver" />
+    <configuration name="HbaseMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HbaseAPI.HbaseMain" />
       <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.Serialization.Writable.*" />
+          <option name="PATTERN" value="HbaseAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,12 +298,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapreduce.testFlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.testFlowDriver" />
-      <module name="myHadoop" />
+    <configuration name="HbaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI.HbaseTest" />
+      <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.*" />
+          <option name="PATTERN" value="MyHbase.HbaseAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,12 +311,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testFlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.Serialization.Writable.testFlowDriver" />
-      <module name="myHadoop" />
+    <configuration name="HbaseTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI2.HbaseTest2" />
+      <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.Serialization.Writable.*" />
+          <option name="PATTERN" value="MyHbase.HbaseAPI2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,18 +324,108 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testFlowDriverComparable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.testFlowDriverComparable" />
+    <configuration name="WebLogDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mapreduce.etl.WebLogDriver" />
       <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.*" />
+          <option name="PATTERN" value="mapreduce.etl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
     </configuration>
     <configuration name="myTomcat1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
@@ -345,19 +516,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.testFlowDriverComparable" />
-      <item itemvalue="Application.mapreduce.Serialization.Writable.FlowDriver" />
-      <item itemvalue="Application.mapreduce.testFlowDriver" />
-      <item itemvalue="Application.testFlowDriver" />
-      <item itemvalue="Application.WordCountDriver" />
+      <item itemvalue="Application.HbaseConnectionSingle" />
+      <item itemvalue="Application.HbaseMain" />
+      <item itemvalue="Application.HbaseTest" />
+      <item itemvalue="Application.HbaseTest2" />
+      <item itemvalue="Application.WebLogDriver" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mapreduce.testFlowDriver" />
-        <item itemvalue="Application.testFlowDriverComparable" />
-        <item itemvalue="Application.testFlowDriver" />
-        <item itemvalue="Application.WordCountDriver" />
-        <item itemvalue="Application.mapreduce.Serialization.Writable.FlowDriver" />
+        <item itemvalue="Application.HbaseConnectionSingle" />
+        <item itemvalue="Application.HbaseTest" />
+        <item itemvalue="Application.HbaseMain" />
+        <item itemvalue="Application.HbaseTest2" />
+        <item itemvalue="Application.WebLogDriver" />
       </list>
     </recent_temporary>
   </component>

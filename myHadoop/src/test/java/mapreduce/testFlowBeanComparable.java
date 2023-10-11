@@ -3,6 +3,9 @@ package mapreduce;
 import org.apache.hadoop.io.WritableComparable;
 
 public class testFlowBeanComparable extends testFlowBean implements WritableComparable<testFlowBeanComparable> {
+
+
+
     //按以下顺序比较，总流量，上行流量，下行流量
     @Override
     public int compareTo(testFlowBeanComparable o) {

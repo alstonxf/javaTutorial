@@ -1,0 +1,10 @@
+mapreduce/testFlowBeanComparable.class
+mapreduce/myPartitionerComparable.class
+mapreduce/testFlowMapperComparable.class
+mapreduce/myPartitioner.class
+mapreduce/testReducerComparable.class
+mapreduce/testFlowMapper.class
+mapreduce/testFlowDriver.class
+mapreduce/testReducer.class
+mapreduce/testFlowDriverComparable.class
+mapreduce/testFlowBean.class

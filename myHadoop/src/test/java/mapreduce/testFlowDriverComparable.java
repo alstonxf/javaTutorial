@@ -43,6 +43,9 @@ public class testFlowDriverComparable {
         //使用自定义分区
         job.setPartitionerClass(myPartitionerComparable.class);
 
+        // 加载缓存数据
+        job.addCacheFile(new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/test/java/mapreduce/province.txt").toUri());
+
         FileInputFormat.setInputPaths(job,new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/test/java/mapreduce/inputflow2.txt"));
         // 获取当前时间
         LocalDateTime currentTime = LocalDateTime.now();

@@ -44,6 +44,10 @@ public class testFlowDriver {
         //使用自定义分区
         job.setPartitionerClass(myPartitioner.class);
 
+        //设置combiner ,可以直接使用写的reducer替代，也可以手动再搓一个。
+        job.setCombinerClass(testReducer.class);
+
+        //输出
         FileInputFormat.setInputPaths(job,new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/test/java/mapreduce/inputflow2.txt"));
         // 获取当前时间
         LocalDateTime currentTime = LocalDateTime.now();

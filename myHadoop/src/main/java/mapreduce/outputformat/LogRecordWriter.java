@@ -10,8 +10,11 @@ import org.apache.hadoop.mapreduce.RecordWriter;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class LogRecordWriter extends RecordWriter<Text, NullWritable> {
+
 
     private  FSDataOutputStream atguiguOut;
     private  FSDataOutputStream otherOut;
@@ -21,9 +24,9 @@ public class LogRecordWriter extends RecordWriter<Text, NullWritable> {
         try {
             FileSystem fs = FileSystem.get(job.getConfiguration());
 
-            atguiguOut = fs.create(new Path("D:\\hadoop\\atguigu.log"));
+            atguiguOut = fs.create(new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/outputformat/output1/atguigu.log"));
 
-            otherOut = fs.create(new Path("D:\\hadoop\\other.log"));
+            otherOut = fs.create(new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/outputformat/output1/other.log"));
         } catch (IOException e) {
             e.printStackTrace();
         }

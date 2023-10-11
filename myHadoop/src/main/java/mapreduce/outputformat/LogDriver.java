@@ -30,10 +30,10 @@ public class LogDriver {
         //设置自定义的outputformat
         job.setOutputFormatClass(LogOutputFormat.class);
 
-        FileInputFormat.setInputPaths(job, new Path("D:\\input\\inputoutputformat"));
+        FileInputFormat.setInputPaths(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/outputformat/log.txt"));
         //虽然我们自定义了outputformat，但是因为我们的outputformat继承自fileoutputformat
         //而fileoutputformat要输出一个_SUCCESS文件，所以在这还得指定一个输出目录
-        FileOutputFormat.setOutputPath(job, new Path("D:\\hadoop\\output1111"));
+        FileOutputFormat.setOutputPath(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/outputformat/output1"));
 
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);

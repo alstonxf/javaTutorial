@@ -11,6 +11,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class MapJoinDriver {
     public static void main(String[] args) throws IOException, URISyntaxException, ClassNotFoundException, InterruptedException {
@@ -30,13 +32,28 @@ public class MapJoinDriver {
         job.setOutputValueClass(NullWritable.class);
 
         // 加载缓存数据
-        job.addCacheFile(new URI("file:///D:/input/tablecache/pd.txt"));
+        job.addCacheFile(new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/mapjoin/t_product").toUri());
         // Map端Join的逻辑不需要Reduce阶段，设置reduceTask数量为0
         job.setNumReduceTasks(0);
 
         // 6 设置输入输出路径
-        FileInputFormat.setInputPaths(job, new Path("D:\\input\\inputtable2"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\hadoop\\output8888"));
+        FileInputFormat.setInputPaths(job, new Path("/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/mapjoin/t_order"));
+        // 获取当前时间
+        LocalDateTime currentTime = LocalDateTime.now();
+        // 定义日期时间格式
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        // 将当前时间格式化为指定格式的字符串
+        String formattedTime = currentTime.format(formatter);
+        // 打印当前格式化后的时间
+        System.out.println("Current time: " + formattedTime);
+        String outputPath = null;
+        if (args.length == 0){
+            outputPath = "/Users/lixiaofeng/myGitProjects/myJava/myHadoop/src/main/java/mapreduce/mapjoin/output/"+formattedTime;
+        }else{
+            outputPath = args[1];
+        }
+        FileOutputFormat.setOutputPath(job, new Path(outputPath));
+
         // 7 提交
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);
