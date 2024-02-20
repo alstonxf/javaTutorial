@@ -20,7 +20,8 @@ public class review {
         Constructor StudentCon = clazz2.getDeclaredConstructor(Integer.class);
         Object o1 = StudentCon.newInstance(20);
         Student s1 = (Student)o1;
-        s1.setStudentId("cn000000");
+//        s1.setStudentId("cn000000");
+        s1.setStudentId("00000");
         Method getStudentId = s1.getClass().getMethod("getStudentId");
         String id = (String) getStudentId.invoke(s1);
         System.out.println("id="+id);

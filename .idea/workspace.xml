@@ -9,7 +9,121 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="" />
+    <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/MyBloomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/MailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/prepareTest.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/xfTestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/xfTestMybatis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/PayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/domain/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/ClassLoaderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/PK2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/PKClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJava/src/main/resources/com/myTest/mybatis-config-mytest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert_Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert_Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/dao/UserDaoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/utils/MybatisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/dao/UserDaoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/dao/UserDaoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/test/UserDaoTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/test/UserDaoTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/utils/MybatisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/LocationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/LocationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/LocationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/TEST1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserMapper2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/MailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/myTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/SpringRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/SpringRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/HelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/HelloSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/HelloSpringImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/HelloSpringImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/TestHelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/TestHelloSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/GirlFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/GirlFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/SpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/entity/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/entity/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/factory/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo2/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/SpringDemo2/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo2/main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/SpringDemo2/main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/ui/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/UserMapperTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/UserMapperTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/All.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/review.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/COM1/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon/COM1/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/COM2/mybatis-config2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon/COM2/mybatis-config2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/myTest/mybatis-config-mytest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample/sample1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample3/sample3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample3/sample3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/SpringDemo/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/SpringDemo/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/com/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/com/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM1/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM2/dao/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM2/mybatis-config2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/LocationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/LocationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/UserMapper2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/mybatis-config-mytest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/AOP1/applicationContext-AOP1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample/sample1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample3/sample3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample4/sample4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample4/sample4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext-product.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext-user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo3/ApplicationContext3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/SpringMVC/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/bean.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IAccountDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IGoodsDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IOrdersDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IRoleDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IUserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/jdbcConfig.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/mybatis/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/mybatis/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/hbase-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/target/classes/log4j2.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,45 +182,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lixiaofeng/myGitProjects/myJava/myES&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5865724&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b8a79c7b3072428c6e40caac0148ed80&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/mySpring/src/main/java/org/com",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.5865724",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "spring.configuration.checksum": "b8a79c7b3072428c6e40caac0148ed80"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="mapreduce.Serialization.Writable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../mySpring/src/main/java/org/com" />
+      <recent name="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest" />
       <recent name="$PROJECT_DIR$/myES" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat" />
       <recent name="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/Serialization" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/test/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myJava/src/main/resources/com" />
+      <recent name="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon" />
+      <recent name="$PROJECT_DIR$/myJava/src/main/resources" />
+      <recent name="$PROJECT_DIR$/myJava/src/main/java/com/next/interview" />
       <recent name="$PROJECT_DIR$/myES" />
-      <recent name="$PROJECT_DIR$/myES/src/main/java" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/outputformat/output" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/testPartitioner/input" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.itheima.dao" />
@@ -114,11 +232,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.service.impl" />
       <recent name="mapreduce" />
       <recent name="mapreduce.Serialization.Writable" />
       <recent name="MyThread.thredSafe1" />
       <recent name="MyThread.threadMethod3" />
-      <recent name="com.mybatis" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -129,25 +247,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HbaseConnectionSingle">
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HbaseConnectionSingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HbaseAPI.HbaseConnectionSingle" />
-      <module name="myHadoop" />
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+        <option value="TomeeConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.com.itheima.App">
+    <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App2" />
+      <module name="mySpring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HbaseAPI.*" />
+          <option name="PATTERN" value="com.itheima.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,25 +269,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbaseMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HbaseAPI.HbaseMain" />
-      <module name="myHadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HbaseAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HbaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI.HbaseTest" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.ui.Client" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHbase.HbaseAPI.*" />
+          <option name="PATTERN" value="com.itheima.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,12 +282,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbaseTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHbase.HbaseAPI2.HbaseTest2" />
+    <configuration name="com.itheima.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
+      <module name="mySpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xfTestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.SMV.myTest.xfTestDemo" />
       <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MyHbase.HbaseAPI2.*" />
+          <option name="PATTERN" value="com.SMV.myTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,12 +308,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebLogDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapreduce.etl.WebLogDriver" />
-      <module name="myHadoop" />
+    <configuration name="xfTestMybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.SMV.myTest.xfTestMybatis" />
+      <module name="myJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapreduce.etl.*" />
+          <option name="PATTERN" value="com.SMV.myTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -386,19 +500,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HbaseConnectionSingle" />
-      <item itemvalue="Application.HbaseMain" />
-      <item itemvalue="Application.HbaseTest" />
-      <item itemvalue="Application.HbaseTest2" />
-      <item itemvalue="Application.WebLogDriver" />
+      <item itemvalue="Application.App2" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.com.itheima.App" />
+      <item itemvalue="Application.xfTestDemo" />
+      <item itemvalue="Application.xfTestMybatis" />
+      <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HbaseConnectionSingle" />
-        <item itemvalue="Application.HbaseTest" />
-        <item itemvalue="Application.HbaseMain" />
-        <item itemvalue="Application.HbaseTest2" />
-        <item itemvalue="Application.WebLogDriver" />
+        <item itemvalue="Application.com.itheima.App" />
+        <item itemvalue="Application.App2" />
+        <item itemvalue="Application.xfTestDemo" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.xfTestMybatis" />
       </list>
     </recent_temporary>
   </component>
@@ -577,7 +692,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$USER_HOME$/env/hadoop-3.1.3/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/Reducer.class</url>
           <line>33</line>
-          <properties class="org.apache.hadoop.mapreduce.Reducer" method="cleanup">
+          <properties class="org.apache.hadoop.mapreduce.Reducer">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

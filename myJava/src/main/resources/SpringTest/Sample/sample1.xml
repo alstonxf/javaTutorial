@@ -3,12 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dog" class="SpringTest.Sample.Dog">
+    <bean id="dog" class="SpringTest.abandon.SpringDemo.Sample.Dog">
         <property name="number" value="0"></property>
         <property name="name" value="Tom"></property>
     </bean>
 
-    <bean id = "myCollect" name="myCollect" class="SpringTest.Sample.Collection">
+    <bean id = "myCollect" name="myCollect" class="SpringTest.abandon.SpringDemo.Sample.Collection">
         <!--    ### 1、数组类型注入-->
         <property name="myArray">
             <array>
@@ -42,7 +42,7 @@
 
 <!--    当id不存在，此时需要看name，name的值可以通过 ,;或者空格 分割，最后会按照分隔符得到一个String数组，数组的第一个元素作为bean的名称，其他的作为bean的别名-->
 <!--    <bean class="SpringTest.Sample.Student" id="student2" name = "student2,student22;student222" init-method="init2" destroy-method="destroy2" scope="singleton">-->
-    <bean class="SpringTest.Sample.Student"  name = "student23456,student22;student222,student2" init-method="init2" destroy-method="destroy2" scope="singleton">
+    <bean class="SpringTest.abandon.SpringDemo.Sample.Student" name = "student23456,student22;student222,student2" init-method="init2" destroy-method="destroy2" scope="singleton">
 
         <!--    使用有参构造进行注入-->
         <constructor-arg name="name" value="test"></constructor-arg>

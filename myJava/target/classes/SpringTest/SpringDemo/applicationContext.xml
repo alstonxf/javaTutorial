@@ -29,12 +29,12 @@
         http://www.springframework.org/schema/jms ">
 <!--    ## 七、spring创建对象的方式-->
 <!--    1、空参构造方法-->
-    <bean name="user" class="SpringTest.SpringDemo.entity.User"></bean>
+    <bean name="user" class="SpringTest.abandon.SpringDemo.entity.User"></bean>
 <!--    2、静态工厂实例化-->
-    <bean name="user2" class="SpringTest.SpringDemo.factory.UserFactory" factory-method="createUser"></bean>
+    <bean name="user2" class="SpringTest.abandon.SpringDemo.factory.UserFactory" factory-method="createUser"></bean>
 <!--    3、实例工厂实例化-->
 <!--    <bean name="user" factory-bean="userFactory" factory-method="createUser"></bean>-->
-    <bean name="user3" class="SpringTest.SpringDemo.entity.User" >
+    <bean name="user3" class="SpringTest.abandon.SpringDemo.entity.User" >
         <property name="name" value="小明"></property>
         <property name="age" value="18"></property>
     </bean>
@@ -44,16 +44,16 @@
 <!--        <constructor-arg name="age" value="50"></constructor-arg>-->
 <!--    </bean>-->
 <!--    4、spel表达式注入-->
-    <bean name="user4" class="SpringTest.SpringDemo.entity.User">
+    <bean name="user4" class="SpringTest.abandon.SpringDemo.entity.User">
         <property name="name" value="小红"></property>
         <property name="age" value="18"></property>
     </bean>
-    <bean name="user1" class="SpringTest.SpringDemo.entity.User">
+    <bean name="user1" class="SpringTest.abandon.SpringDemo.entity.User">
         <property name="name" value="#{user.name}"></property>
         <property name="age" value="#{user.age}"></property>
     </bean>
 <!--    1、数组类型注入-->
-    <bean name="collect1" class="SpringTest.SpringDemo.entity.Collection">
+    <bean name="collect1" class="SpringTest.abandon.SpringDemo.entity.Collection">
         <property name="arr">
             <array>
                 <value>xiaohei</value>
@@ -62,7 +62,7 @@
         </property>
     </bean>
 <!--    2、list类型注入-->
-    <bean name="collect2" class="SpringTest.SpringDemo.entity.Collection">
+    <bean name="collect2" class="SpringTest.abandon.SpringDemo.entity.Collection">
         <property name="list">
             <list>
                 <value>xiaohei</value>
@@ -71,7 +71,7 @@
         </property>
     </bean>
 <!--    3、map类型注入-->
-    <bean name="collect3" class="SpringTest.SpringDemo.entity.Collection">
+    <bean name="collect3" class="SpringTest.abandon.SpringDemo.entity.Collection">
         <property name="map">
             <map>
                 <entry key="name" value="xiaohei"></entry>
@@ -80,7 +80,7 @@
         </property>
     </bean>
 <!--    4、properties类型注入-->
-    <bean name="collect4" class="SpringTest.SpringDemo.entity.Collection">
+    <bean name="collect4" class="SpringTest.abandon.SpringDemo.entity.Collection">
         <property name="props">
             <props>
                 <prop key="name">xiaohei</prop>

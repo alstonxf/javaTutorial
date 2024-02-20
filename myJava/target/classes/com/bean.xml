@@ -15,9 +15,17 @@
 <!--    ### 1.1 使用默认构造函数创建。-->
 <!--    在spring的配置文件中使用bean标签，配以id和class属性之后，**且没有其他属性和标签时**。采用的就是 **默认构造函数** 创建bean对象，此时如果类中没有默认构造函数，则对象 **无法创建**。-->
     <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" ></bean>
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" >
+        <constructor-arg name = "ar1" value="val1"/>
+    </bean>
 
-<!--    ### 1.2 使用普通工厂中的方法创建对象-->
+    <bean id="accountService0" class="com.itheima.service.impl.AccountServiceImpl0" >
+        <property name = 'accountDao0' ref="accountDao"/>
+    </bean>
+
+
+
+    <!--    ### 1.2 使用普通工厂中的方法创建对象-->
 <!--    这里我们模拟，调用jar包中的工厂，并用工厂里的方法来创建 bean 对象，并存入spring 容器-->
     <bean id="instanceFactory" class="com.itheima.factory.InstanceFactory"></bean>
     <bean id="accountService2" factory-bean="instanceFactory" factory-method="getAccountService"></bean>

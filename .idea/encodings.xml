@@ -5,5 +5,7 @@
     <file url="file://$PROJECT_DIR$/myES/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myHadoop/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myHadoop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mySpring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mySpring/src/main/resources" charset="UTF-8" />
   </component>
 </project>

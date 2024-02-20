@@ -18,9 +18,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="myHadoop" />
         <module name="myES" />
         <module name="myJava" />
+        <module name="myHadoop" />
+        <module name="mySpring" />
       </profile>
     </annotationProcessing>
   </component>

@@ -34,16 +34,16 @@ public class All {
         System.out.println("con1[1].getName()"+con1[1].getName());
         System.out.println("modifier"+con1[0].getModifiers());
 
-//        System.out.println(con1.toString());
-//        Constructor cs = cl1.getConstructor(String.class, Integer.class, String.class);
-//        Method ms = cl1.getDeclaredMethod("sport");
-//        System.out.println(ms);
+        System.out.println(con1.toString());
+        Constructor cs = cl1.getConstructor(String.class, Integer.class, String.class);
+        Method ms = cl1.getDeclaredMethod("sport");
+        System.out.println(ms);
 
-//        Student cs1 = (Student)cs.newInstance("n5",5,"005");
-//        System.out.println(cs1.getCountry()+"  "+ cs1.getName()+"  age "+cs1.getAge()+"  "+ cs1.getStudentId());
-//        Field[] fs = cl1.getFields();
-//        System.out.println("fs="+ Arrays.toString(fs));
-//        cs1.sport("basketball");
+        Student cs1 = (Student)cs.newInstance("n5",5,"005");
+        System.out.println(cs1.getCountry()+"  "+ cs1.getName()+"  age "+cs1.getAge()+"  "+ cs1.getStudentId());
+        Field[] fs = cl1.getFields();
+        System.out.println("fs="+ Arrays.toString(fs));
+        cs1.sport("basketball");
 
 //        String nameCS1 =
 
@@ -59,6 +59,19 @@ public class All {
         Method m9 = cl6.getDeclaredMethod("sport",String.class);
         m9.invoke(s9,"fdasf");
 
+        // fields
+        Field[] declaredFields = cl6.getDeclaredFields();
+        for (Field field:declaredFields){
+            System.out.println("获取到field=>"+field);
+        }
+        Field sex = cl6.getDeclaredField("sex");
+        if(!sex.isAccessible()){
+            sex.setAccessible(true);
+        }
+        System.out.println(o6);
+        sex.set(o6,"男");
+        System.out.println(o6);
+        System.out.println("设置field成功");
 
 
 

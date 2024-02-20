@@ -5,24 +5,24 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--实例化GirlFriend-->
-    <bean id="girlFriend1" class="SpringTest.Sample4.GirlFriend">
+    <bean id="girlFriend1" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
         <property name="girlName" value="王美丽"/>
         <property name="girlAge" value="18"/>
         <property name="girlHeight" value="170"/>
     </bean>
-    <bean id="girlFriend2" class="SpringTest.Sample4.GirlFriend">
+    <bean id="girlFriend2" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
         <property name="girlName" value="杨美丽"/>
         <property name="girlAge" value="19"/>
         <property name="girlHeight" value="171"/>
     </bean>
-    <bean id="girlFriend3" class="SpringTest.Sample4.GirlFriend">
+    <bean id="girlFriend3" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
         <property name="girlName" value="李美丽"/>
         <property name="girlAge" value="20"/>
         <property name="girlHeight" value="172"/>
     </bean>
 
     <!--实例化User-->
-    <bean id="user2" class="SpringTest.Sample4.User">
+    <bean id="user2" class="SpringTest.abandon.SpringDemo.Sample4.User">
         <!--注入普通值：使用 value 属性-->
         <property name="userId" value="2020"/>
         <property name="userName" value="菜逼唐"/>

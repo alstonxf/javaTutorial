@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Student extends Person{
     private String studentId;
+    private String sex;
 
     public Student(){};
 
@@ -48,6 +49,15 @@ public class Student extends Person{
         this.studentId = studentId;
     }
 
+    public void setSex(String sex){
+        this.sex = sex;
+    }
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId='" + studentId + '\'' +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
 }

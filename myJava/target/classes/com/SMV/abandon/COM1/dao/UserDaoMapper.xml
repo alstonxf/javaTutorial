@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace命名空间，需要绑定对应的dao接口：这里填入doo接口路径-->
+<mapper namespace="com.SMV.abandon.COM1.dao.UserDao">
+    <!--    这里ID对应我们接口中的方法  resultType代表返回类型-->
+    <select id="getUserList" resultType="com.SMV.abandon.COM1.pojo.User">
+    --     接口对应sql语句
+        select * from user where id != '3';
+    </select>
+
+</mapper>
+
