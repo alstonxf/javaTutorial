@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch22-case-studies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myES/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/myES/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myHadoop/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myHadoop/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../mySpring/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../mySpring/src/main/resources" charset="UTF-8" />
   </component>
 </project>

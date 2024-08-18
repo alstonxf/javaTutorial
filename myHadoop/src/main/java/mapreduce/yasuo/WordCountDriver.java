@@ -19,7 +19,7 @@ public class WordCountDriver {
         Configuration conf = new Configuration();
 
         // 开启map端输出压缩
-        conf.setBoolean("mapreduce.map.output.compress", true);
+        conf.setBoolean("mapreduce.map.output.compress", false);
 
         // 设置map端输出压缩方式
         conf.setClass("mapreduce.map.output.compress.codec", SnappyCodec.class, CompressionCodec.class);
@@ -42,8 +42,8 @@ public class WordCountDriver {
         job.setOutputValueClass(IntWritable.class);
 
         // 6 设置输入路径和输出路径
-        FileInputFormat.setInputPaths(job, new Path("D:\\input\\inputword"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\hadoop\\output888"));
+        FileInputFormat.setInputPaths(job, new Path("myHadoop/src/main/java/mapreduce/yasuo/input/inputword"));
+        FileOutputFormat.setOutputPath(job, new Path("myHadoop/src/main/java/mapreduce/yasuo/output888"));
 
 
         // 设置reduce端输出压缩开启

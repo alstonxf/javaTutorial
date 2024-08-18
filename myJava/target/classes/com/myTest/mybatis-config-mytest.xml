@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 核心配置文件 -->
+<configuration>
+
+    <!-- 传入参数配置 -->
+    <!-- 注意 configuration 表现中的元素是有顺序的,
+         properties->settings->typeAliases->typeHandlers->objectFactory->
+         objectWrapperFactory->plugins->environments->databaseProvider->mappers -->
+    <properties>
+        <!-- 数据库连接参数 -->
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="12345678"/>
+    </properties>
+
+    <!-- 1 日志设置 -->
+    <settings>
+        <!-- Mybatis 日志实现，这里使用 Log4j -->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!-- 2 类型别名配置 -->
+    <!-- 类型别名是为 Java 类型对象设置一个短的名字 -->
+    <!-- 存在的意义仅在于用来减少类完全限定名的冗余 -->
+    <!--这部分配置设置了 MyBatis 的类型别名，将 Java 类 SMV.myTest.User 别名为 user。你可以通过这个别名在 SQL 映射文件中引用实体类。-->
+    <typeAliases>
+        <!-- 这里默认别名到一个对象 -->
+        <typeAlias alias="user" type="com.SMV.myTest.User"/>
+    </typeAliases>
+
+    <!-- 3 数据源配置 -->
+    <!--    这部分配置设置了数据库连接信息，包括使用的数据源类型（这里是 POOLED），数据库驱动、连接 URL、用户名、密码。
+    这里使用了属性占位符 ${driver}, ${url}, ${username}, ${password}，这些值可以在 <properties> 部分进行配置。-->
+    <environments default="development">
+        <!-- 配置 MySQL 的环境 -->
+        <environment id="development">
+            <!-- 配置事务 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置连接池 -->
+            <dataSource type="POOLED">
+                <!-- 数据库连接参数 -->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 4 Mapper注册 -->
+    <!-- 每一个 Mapper.xml 都需要在 Mybatis 核心配置文件中注册 -->
+    <mappers>
+        <!-- 使用 XML 配置 -->
+        <mapper resource="com/SMV/myTest/UserMapper.xml"/>
+        <mapper resource="com/SMV/myTest/LocationMapper.xml"/>
+        <mapper resource="com/SMV/myTest/MailMapper.xml"/>
+        <!-- 使用注解配置 -->
+        <!-- <mapper class="SMV.myTest.UserDao"/> -->
+    </mappers>
+
+</configuration>

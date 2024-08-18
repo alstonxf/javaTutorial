@@ -155,7 +155,7 @@ public class HdfsClient {
         //fs.rename(new Path("/input/ss.txt"),new Path("/cls.txt"));
 
         // 目录更名
-        fs.rename(new Path("/output"), new Path("/input"));
+        fs.rename(new Path("/output"), new Path("/mapreduce/yasuo/input"));
 
     }
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--实例化GirlFriend-->
+    <bean id="girlFriend1" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
+        <property name="girlName" value="王美丽"/>
+        <property name="girlAge" value="18"/>
+        <property name="girlHeight" value="170"/>
+    </bean>
+    <bean id="girlFriend2" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
+        <property name="girlName" value="杨美丽"/>
+        <property name="girlAge" value="19"/>
+        <property name="girlHeight" value="171"/>
+    </bean>
+    <bean id="girlFriend3" class="SpringTest.abandon.SpringDemo.Sample4.GirlFriend">
+        <property name="girlName" value="李美丽"/>
+        <property name="girlAge" value="20"/>
+        <property name="girlHeight" value="172"/>
+    </bean>
+
+    <!--实例化User-->
+    <bean id="user2" class="SpringTest.abandon.SpringDemo.Sample4.User">
+        <!--注入普通值：使用 value 属性-->
+        <property name="userId" value="2020"/>
+        <property name="userName" value="菜逼唐"/>
+        <property name="userAge" value="18"/>
+        <property name="userPwd" value="123456"/>
+        <property name="userAddress" value="地球中国"/>
+        <!--注入对象：使用 ref 属性-->
+        <property name="girlFriend" ref="girlFriend1"/>
+
+        <!--注入List集合-->
+        <property name="lists">
+            <list>
+                <ref bean="girlFriend1"/>
+                <ref bean="girlFriend2"/>
+                <ref bean="girlFriend3"/>
+            </list>
+        </property>
+        <!--注入Set集合-->
+        <property name="sets">
+            <set>
+                <ref bean="girlFriend1"/>
+                <ref bean="girlFriend2"/>
+                <ref bean="girlFriend3"/>
+            </set>
+        </property>
+        <!--注入Map集合-->
+        <property name="maps">
+            <map>
+                <entry key="正牌女友" value-ref="girlFriend1"/>
+                <entry key="备胎1" value-ref="girlFriend2"/>
+                <entry key="备胎2" value-ref="girlFriend3"/>
+            </map>
+        </property>
+        <!--注入Properties-->
+        <property name="properties">
+            <props>
+                <prop key="k1">v1</prop>
+                <prop key="k2">v2</prop>
+            </props>
+        </property>
+        <!--注入数组-->
+        <property name="array">
+            <array>
+                <value>value1</value>
+                <value>value2</value>
+                <value>value3</value>
+            </array>
+        </property>
+    </bean>
+</beans>

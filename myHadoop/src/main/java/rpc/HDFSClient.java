@@ -16,6 +16,6 @@ public class HDFSClient {
 
         System.out.println("客户端开始工作");
 
-        client.mkdirs("/input");
+        client.mkdirs("/mapreduce/yasuo/input");
     }
 }

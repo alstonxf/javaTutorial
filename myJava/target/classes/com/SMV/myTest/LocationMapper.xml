@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--//实际上是把dao接口映射成xml文件，接口名就是namespace，id就是各个方法名。所以dao和mapper.xml是绑定的。-->
+<!--namespace命名空间，需要绑定对应的dao接口-->
+
+<mapper namespace="com.SMV.myTest.LocationDao">
+    <!--    这里ID对应我们接口中的方法  resultType代表返回类型-->
+    <select id="getLocationList" resultType="com.SMV.myTest.Location" parameterType="com.SMV.myTest.Location">
+        select * from Location
+    </select>
+    <select id="getLocationById" resultType="com.SMV.myTest.Location" parameterType="com.SMV.myTest.Location">
+        select * from Location where id=#{id}
+    </select>
+    <insert id="AddLocation" parameterType="com.SMV.myTest.Location">
+        insert into Location(id,name) values(#{id},#{name})
+    </insert>
+    <update id="UpdateLocationById" parameterType="com.SMV.myTest.Location">
+        update Location set pwd=#{pwd} where id=#{id}
+    </update>
+    <delete id="DeleteLocationById" parameterType="com.SMV.myTest.Location">
+        delete from Location where id=#{id}
+    </delete>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationById2" resultType="com.SMV.myTest.Location" parameterType="map">
+        select * from Location where id=#{kkk}
+    </select>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationByName" resultType="com.SMV.myTest.Location" parameterType="map">
+        select * from Location where name=#{n}
+    </select>
+
+    <!--    这里如果传递是一个map的话，那么我们传递的参数和key对应即可-->
+    <select id="getLocationByNameOrId" resultType="com.SMV.myTest.Location" parameterType="map">
+        select * from Location where #{idOrName} = #{v}
+    </select>
+
+</mapper>

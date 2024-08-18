@@ -18,10 +18,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="myES" />
+        <module name="ch03-hdfs" />
+        <module name="snippet" />
+        <module name="ch22-case-studies" />
         <module name="myJava" />
+        <module name="ch21-zk" />
+        <module name="ch16-pig" />
         <module name="myHadoop" />
+        <module name="ch20-hbase" />
+        <module name="ch15-sqoop" />
+        <module name="ch12-avro" />
+        <module name="myES" />
+        <module name="ch18-crunch" />
+        <module name="ch02-mr-intro" />
         <module name="mySpring" />
+        <module name="ch08-mr-types" />
+        <module name="ch13-parquet" />
+        <module name="common" />
+        <module name="ch09-mr-features" />
+        <module name="ch05-io" />
+        <module name="ch17-hive" />
+        <module name="ch19-spark" />
+        <module name="ch06-mr-dev" />
       </profile>
     </annotationProcessing>
   </component>

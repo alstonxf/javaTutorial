@@ -10,119 +10,814 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31023341-50d8-46ea-bc98-48f5f1b33146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/MyBloomFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/MailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/prepareTest.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/xfTestDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/xfTestMybatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/PayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/domain/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/com/next/interview/domain/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/ClassLoaderApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/PK2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/java/jvm/PKClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJava/src/main/resources/com/myTest/mybatis-config-mytest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/myJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/appc/src/main/sh/create_ncdc_files.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/appc/src/main/sh/load_ncdc.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/appc/src/main/sh/load_ncdc_map.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/appc/src/main/sh/ncdc_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/book/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/book/src/main/assembly/jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/book/src/main/assembly/oozie-workflow-application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/awk/max_temperature.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/cpp/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/cpp/max_temperature.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/MaxTemperature/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/MaxTemperature/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/MaxTemperatureWithCombiner/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/MaxTemperatureWithCombiner/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/OldMaxTemperature/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/OldMaxTemperature/output/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature.cpp.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_hadoop.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_hadoop_cluster.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/2/output/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/pseudo/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/examples/max_temperature_py/pseudo/output/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/MaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/MaxTemperatureReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/MaxTemperatureWithCombiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/OldMaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/oldapi/MaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/oldapi/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/oldapi/MaxTemperatureReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/java/oldapi/MaxTemperatureWithCombiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/python/max_temperature_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/python/max_temperature_reduce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/ruby/max_temperature_map.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/ruby/max_temperature_reduce.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch02-mr-intro/src/main/sh/max_temp.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/conf/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/conf/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/DateRangePathFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/FileCopyWithProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/FileSystemCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/FileSystemDoubleCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/ListStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/RegexExcludePathFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/RegexPathFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/java/URLCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/sh/file.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/main/sh/hars.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/test/java/CoherencyModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/test/java/FileSystemDeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/test/java/FileSystemGlobTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch03-hdfs/src/test/java/ShowFileStatusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch04-yarn/capacity-scheduler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch04-yarn/fair-scheduler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/FileDecompressor.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-data-head.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-data-head.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-index.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-index.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-ls.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFile-ls.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MapFileWriteDemo.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MaxTemperatureWithCompression/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MaxTemperatureWithCompression/output/part-r-00000.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MaxTemperatureWithMapOutputCompression.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/MaxTemperatureWithMapOutputCompression.ignore/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileMapReduceSort.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileMapReduceSortResults.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileMapReduceSortResults.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileMapReduceSortResults.java.pre.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileReadDemo.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileReadDemo.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileReadDemo.java.pre.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileToMapFileConverter-fix.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileToMapFileConverter-mv.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileToMapFileConverter-sort.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileWriteDemo.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/SequenceFileWriteDemo.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/StreamCompressor.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/StreamCompressor.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/TextIterator.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/TextIterator.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/hadoop-fs-text.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/examples/hadoop-fs-text.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/FileDecompressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/IntPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/MapFileFixer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/MapFileWriteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/MaxTemperatureWithCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/MaxTemperatureWithMapOutputCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/PooledStreamCompressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/SequenceFileReadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/SequenceFileWriteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/StreamCompressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/TextArrayWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/TextIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/TextPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/oldapi/IntPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/oldapi/MaxTemperatureWithCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/oldapi/MaxTemperatureWithMapOutputCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/main/java/oldapi/TextPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/ArrayWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/BinaryOrTextWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/BooleanWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/BytesWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/FileDecompressorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/GenericWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/IntPairTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/IntWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/MapFileSeekTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/MapWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/NullWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/ObjectWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/SequenceFileSeekAndSyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/StringTextComparisonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/TextPairTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/TextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/VIntWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/VLongWritableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/java/WritableTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch05-io/src/test/resources/file.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/input/ncdc/micro/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/output/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/output/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/output/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterSystem.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterWithConf.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterWithConf.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterWithConfAndD.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterWithD.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/ConfigurationPrinterWithD.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriver.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV2.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV2GOP.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV3/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV3/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV3GOP/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/examples/MaxTemperatureDriverV3GOP/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/ConfigurationPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/LoggingDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/LoggingIdentityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v1/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v1/MaxTemperatureReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v2/MaxTemperatureDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v2/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v2/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v3/MaxTemperatureDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v3/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v4/MaxTemperatureDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v4/MaxTemperatureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/java/v4/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/resources/configuration-1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/resources/configuration-2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/resources/max-temp-workflow.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/main/resources/max-temp-workflow/workflow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/MultipleResourceConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/SingleResourceConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v1/MaxTemperatureMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v1/MaxTemperatureReducerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v2/MaxTemperatureDriverMiniTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v2/MaxTemperatureDriverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v2/MaxTemperatureMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/java/v4/MaxTemperatureMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch06-mr-dev/src/test/resources/expected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MaxTemperatureWithMultipleInputs/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MaxTemperatureWithMultipleInputs/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MinimalMapReduce.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MinimalMapReduce/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MinimalMapReduce/output/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MinimalMapReduceWithDefaults/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/MinimalMapReduceWithDefaults/output/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputFormat.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/029070-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/029500-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/029600-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/029720-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/029810-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/227070-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/2/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/029070-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/029500-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/029600-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/029720-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/029810-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/227070-99999-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationUsingMultipleOutputs/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029070-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029070-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029500-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029500-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029600-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029600-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029720-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029720-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029810-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/029810-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/227070-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/227070-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/2/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029070-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029070-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029500-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029500-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029600-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029600-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029720-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029720-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029810-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/029810-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/227070-99999/1901/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/227070-99999/1902/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/PartitionByStationYearUsingMultipleOutputs/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/SmallFilesToSequenceFileConverter.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/SmallFilesToSequenceFileConverter.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/default_streaming.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/examples/minimal_streaming.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/MaxTemperatureWithMultipleInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/MinimalMapReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/MinimalMapReduceWithDefaults.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/NonSplittableTextInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/PartitionByStationUsingMultipleOutputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/PartitionByStationYearUsingMultipleOutputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/SmallFilesToSequenceFileConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/StationPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/WholeFileInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/WholeFileRecordReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/MaxTemperatureWithMultipleInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/MinimalMapReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/MinimalMapReduceWithDefaults.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/NonSplittableTextInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/PartitionByStationUsingMultipleOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/PartitionByStationUsingMultipleOutputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/PartitionByStationYearUsingMultipleOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/SmallFilesToSequenceFileConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/StationPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/WholeFileInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/java/oldapi/WholeFileRecordReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/main/sh/streaming.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch08-mr-types/src/test/java/TextInputFormatsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/JoinRecordWithStationName/2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/JoinRecordWithStationName/2/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/JoinRecordWithStationName/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/JoinRecordWithStationName/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/LookupRecordByTemperature.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/LookupRecordByTemperature.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/LookupRecordsByTemperature.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/LookupRecordsByTemperature.java.output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureByStationNameUsingDistributedCacheFile.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureByStationNameUsingDistributedCacheFileApi.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureUsingSecondarySort/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureUsingSecondarySort/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureWithCounters.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureWithCounters/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MaxTemperatureWithCounters/output/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/MissingTemperatureFields.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortByTemperatureToMapFile.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortByTemperatureUsingHashPartitioner.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortByTemperatureUsingHashPartitioner.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortByTemperatureUsingTotalOrderPartitioner.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortDataPreprocessor.ignore/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/examples/SortDataPreprocessor.java.input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/JoinRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/JoinRecordWithStationName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/JoinReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/JoinStationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/LookupRecordByTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/LookupRecordsByTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/MaxTemperatureByStationNameUsingDistributedCacheFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/MaxTemperatureUsingSecondarySort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/MaxTemperatureWithCounters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/MissingTemperatureFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/SortByTemperatureToMapFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/SortByTemperatureUsingHashPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/SortByTemperatureUsingTotalOrderPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/SortDataPreprocessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/TemperatureDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/JoinRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/JoinRecordWithStationName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/JoinReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/JoinStationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/LookupRecordByTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/LookupRecordsByTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/MaxTemperatureByStationNameUsingDistributedCacheFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/MaxTemperatureByStationNameUsingDistributedCacheFileApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/MaxTemperatureUsingSecondarySort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/MaxTemperatureWithCounters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/MissingTemperatureFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/SortByTemperatureToMapFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/SortByTemperatureUsingHashPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/SortByTemperatureUsingTotalOrderPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/SortDataPreprocessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/java/oldapi/TemperatureDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/max_daily_temp_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/max_daily_temp_reduce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/mean_max_daily_temp.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/mean_max_daily_temp_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/mean_max_daily_temp_reduce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/secondary_sort.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/secondary_sort_map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/python/secondary_sort_reduce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/fixed-partitions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/output_sorted" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/sampled-partitions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/temperature_distribution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/r/temperature_distribution.r" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/resources/MaxTemperatureWithCounters_Temperature.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/main/resources/oldapi/MaxTemperatureWithCounters_Temperature.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch09-mr-features/src/test/java/KeyFieldBasedComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch10-setup/src/main/conf/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch10-setup/src/main/conf/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch10-setup/src/main/conf/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch10-setup/src/main/sh/trash.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/assembly/job.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/c/dump_pairs.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroGenericMaxTemperature/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroGenericMaxTemperature/output/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroGenericMaxTemperature/output/.part-r-00000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroGenericMaxTemperature/output/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroGenericMaxTemperature/output/part-r-00000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroSort/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroSort/output/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroSort/output/.part-r-00000.avro.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroSort/output/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/examples/AvroSort/output/part-r-00000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/AvroGenericMaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/AvroSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/oldapi/AvroGenericMaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/oldapi/AvroProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/oldapi/AvroSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/oldapi/AvroSpecificMaxTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/java/oldapi/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/py/test_avro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/py/write_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/AliasedStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/Array.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/Enum.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/Fixed.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/Map.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/NewStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/NewStringPairWithNull.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/ProjectedStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/SortedStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/StringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/SwitchedStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/Union.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/main/resources/WeatherRecord.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch12-avro/src/test/java/AvroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/assembly/job.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/examples/TextToParquetWithAvro/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/examples/TextToParquetWithAvro/output/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/examples/TextToParquetWithAvro/output/_metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/examples/TextToParquetWithAvro/output/part-m-00000.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/java/ParquetToTextWithAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/java/ParquetToTextWithExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/java/TextToParquetWithAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/main/java/TextToParquetWithExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/java/ParquetMRWithAvroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/java/ParquetMRWithExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/java/ParquetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/resources/NewStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/resources/ProjectedStringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/resources/StringPair.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch13-parquet/src/test/resources/fruit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs-and-logger.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs-avro.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs-partitioned.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs-tiered-load-balance.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs-tiered.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-hdfs.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch14-flume/spool-to-logger.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/src/main/java/MaxWidgetId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/src/main/java/MaxWidgetIdGenericAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/src/main/java/Widget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch15-sqoop/widgets/part-m-00000.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/combine.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/disambiguate.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/flatten.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/foreach.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/group.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/join.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/max_temp.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/missing.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/multiquery.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/null.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/schema.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/set.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/sort.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/store.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/stream.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/tuples.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/types.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/grunt/udfs.grunt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/java/com/hadoopbook/pig/CutLoadFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/java/com/hadoopbook/pig/IsGoodQuality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/java/com/hadoopbook/pig/Range.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/java/com/hadoopbook/pig/Trim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/comment_c-style.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/comment_single_line.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp.macro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_filter_stream.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_filter_udf.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_macro.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_macro_import.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_param.param" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_param.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/max_temp_station_name.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/pig/year_stats.pig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/main/python/is_good_quality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/test/java/com/hadoopbook/pig/IsGoodQualityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch16-pig/src/test/java/com/hadoopbook/pig/RangeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/buckets.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/conversions.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/indexes.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/joins.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/mapreduce.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/max_temp.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/multitable_insert.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/partitions.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/regex_serde.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/set.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/sort.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/storage.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/types.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/hive/udfs.hive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/java/com/hadoopbook/hive/Maximum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/java/com/hadoopbook/hive/Mean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/java/com/hadoopbook/hive/Strip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/python/is_good_quality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch17-hive/src/main/python/max_temperature_reduce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/assembly/hadoop-job.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/AvroGenericMaxTemperatureCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/JoinRecordWithStationNameCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureByStationNameCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureCrunchWithShutdownHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureUsingSecondarySortCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureWithCompressionCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureWithCountersCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MaxTemperatureWithMultipleInputsCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/MetOfficeRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/NcdcStationMetadataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/SortByTemperatureCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/main/java/crunch/SplitCrunch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/CheckpointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/CountValuesFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/CustomDoFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/InversePairFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/JoinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/MaterializeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/NonSerializableOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/ObjectReuseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/PCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/PageRankTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/PipelineDebugTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/PipelineExecutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/PrimitiveOperationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/SerializableFunctionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/SortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/SourcesAndTargetsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/ToLowerFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/TypesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/java/crunch/WeatherRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/fruit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/ints.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/numbers.seq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/set1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/set2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch18-crunch/src/test/resources/urls.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/main/java/MaxTemperatureSpark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/main/python/MaxTemperature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/main/scala/MaxTemperature.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/main/scala/MaxTemperatureWithPlacement.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/avro/IntWrapper.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/avro/WeatherRecord.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/java/SimpleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/resources/fruit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/resources/numbers.seq" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/resources/quangle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/resources/set2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/CustomKryoRegistrator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/DataSerializationTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/FunctionSerializationTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/RDDCreationTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/ReflectWeatherRecord.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/SharedDataTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/TransformationsAndActionsTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch19-spark/src/test/scala/WordCountHistogramTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/ExampleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseStationImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseStationQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseTemperatureBulkImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseTemperatureDirectImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseTemperatureImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/HBaseTemperatureQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/NewExampleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/NewHBaseStationImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/NewHBaseStationQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/NewHBaseTemperatureQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/RowKeyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch20-hbase/src/main/java/SimpleRowCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ActiveKeyValueStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ConfigUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ConfigWatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ConnectionWatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/CreateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/DeleteGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/JoinGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ListGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ResilientActiveKeyValueStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/java/ResilientConfigUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch21-zk/src/main/sh/group.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch22-case-studies/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch22-case-studies/src/main/java/TrackStats.jr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch22-case-studies/src/main/java/fm/last/hadoop/io/records/TrackStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/ch22-case-studies/src/main/java/fm/last/hadoop/programs/labs/trackstats/TrackStatisticsProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/JobBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/MetOfficeRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/NcdcStationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/NcdcStationMetadataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/oldapi/JobBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/oldapi/MetOfficeRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/oldapi/NcdcRecordParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/oldapi/NcdcStationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/main/java/oldapi/NcdcStationMetadataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/test/java/MetOfficeRecordParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/test/java/NcdcRecordParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/common/src/test/java/NcdcStationMetadataParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop-cluster.template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop-local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop-localhost.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop/pseudo-distributed/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop/pseudo-distributed/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop/pseudo-distributed/mapred-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/hadoop/pseudo-distributed/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/pig/localhost/pig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/zookeeper/cluster/zoo.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/zookeeper/localhost/zoo.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/conf/zookeeper/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/hadoop-examples/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/hadoop-meta/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/avro/pairs.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/badrecords/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/badrecords/b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/badrecords/c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/docs/1400-8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/docs/quangle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileglob/2007/12/30/data-2007-12-30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileglob/2007/12/30/data[2007-12-30]" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileglob/2007/12/31/data-2007-12-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileglob/2008/01/01/data-2008-01-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileinput/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/fileinput/dir/b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/dummy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/joins/sales.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/joins/things.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/partitions/file6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/tables/users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/tables/users_extended.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/tmp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/types/complex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/types/nested.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/udfs/arrays.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/udfs/fruit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/udfs/max1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/hive/udfs/max2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/aberporthdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/armaghdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/bradforddata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/braemardata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/cambridgedata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/cardiffdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/durhamdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/eastbournedata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/greenwichdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/hurndata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/lerwickdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/leucharsdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/newtonriggdata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/oxforddata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/paisleydata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/ringwaydata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/rossonwyedata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/shawburydata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/sheffielddata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/southamptondata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/stmawgandata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/stornowaydata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/suttonbonningtondata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/tireedata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/valleydata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/metoffice/yeoviltondata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/all/1901.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/all/1902.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/metadata/ish-history.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/metadata/stations-fixed-width.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/micro-tab/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/micro-tab/sample2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/micro-tab/sample_corrupt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/micro/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/ncdc/sample.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/combine/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/combine/B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/corrupt/missing_fields" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/foreach/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/group/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/join/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/join/B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/multiquery/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/nested/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/nested/B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/pairwise/postings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/schema/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/sort/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/tuples/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/types/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/types/B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/types/C" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/types/one" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/pig/udfs/A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/smallfiles/f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/wikipedia/example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/input/wikipedia/sample.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/check_expected.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/check_manuscript.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/check_manuscript.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/generate_listings.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/grunter.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/hiver.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/phragmite_db.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/phragmite_hive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/bin/phragmite_pig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/capacity-scheduler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/configuration.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/container-executor.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hadoop-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hadoop-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hadoop-metrics.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hadoop-metrics2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hadoop-policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/httpfs-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/httpfs-log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/httpfs-signature.secret" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/httpfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/mapred-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/mapred-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/mapred-queues.xml.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/mapred-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/mapred-site.xml.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/slaves" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/ssl-client.xml.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/ssl-server.xml.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/yarn-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/yarn-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/local/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/capacity-scheduler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/capacity-scheduler.xml.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/configuration.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/container-executor.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/fair-scheduler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hadoop-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hadoop-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hadoop-metrics.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hadoop-metrics2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hadoop-policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/httpfs-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/httpfs-log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/httpfs-signature.secret" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/httpfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/mapred-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/mapred-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/mapred-queues.xml.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/mapred-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/mapred-site.xml.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/slaves" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/ssl-client.xml.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/ssl-server.xml.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/yarn-env.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/yarn-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/conf/pseudo/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/combine_schema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/combine_union.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/foreach_generate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/group_all.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/group_dump.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/group_expression.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_cogroup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_cogroup_flatten.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_cogroup_inner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_cogroup_join.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_dump.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_frj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/join_join.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_describe_records.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_dump_grouped_records.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_dump_records.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_filter_records.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_load.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_max_temp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/max_temp_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/missing_fields.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/null_corrupt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/null_count.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/null_dump.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/null_split.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/null_undetected.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/schema_absent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/schema_absent_projected.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/schema_names_only.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/schema_one_type_only.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/schema_types.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/set_debug_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/sort_dump.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/sort_limit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/sort_no_order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/sort_order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/store_colon_delimited.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/stream_cut.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/udfs_invoke_long.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/udfs_invoke_short.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/udfs_load.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/udfs_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/expected/ch11/grunt/udfs_schema.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/src/test/java/ExamplesIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/src/test/resources/copyoutput.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HadoopTheDefinitiveGuide/snippet/src/test/resources/setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/yasuo/input/inputword" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ed95140-3250-403f-8f53-127ea6b6c464.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert_Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/myES/src/main/java/doc/EsTest_Doc_Insert_Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/hdfs/HdfsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/yasuo/WordCountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/yasuo/WordCountDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myHadoop/src/main/java/rpc/HDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/myHadoop/src/main/java/rpc/HDFSClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/dao/UserDaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/test/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM1/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM1/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/dao/UserDaoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/dao/UserDaoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/test/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/test/UserDaoTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/test/UserDaoTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/COM2/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/COM2/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/LocationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/LocationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/LocationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/TEST1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/UserMapper2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/MailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest/myTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/SpringRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/SpringRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample2/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample2/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/HelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/HelloSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/HelloSpringImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/HelloSpringImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample3/TestHelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample3/TestHelloSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/GirlFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/GirlFriend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/SpringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/Sample4/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/Sample4/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/entity/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/entity/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo2/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/SpringDemo2/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/SpringDemo2/main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/SpringTest/abandon/SpringDemo/SpringDemo2/main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/itheima/ui/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/UserMapperTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/UserMapperTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/com/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/abandon/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/review.java" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/test/reflectExercise/review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/COM1/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon/COM1/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/COM2/mybatis-config2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon/COM2/mybatis-config2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SMV/myTest/mybatis-config-mytest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample3/sample3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample3/sample3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/Sample4/sample4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/SpringDemo/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/SpringTest/SpringDemo/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/src/main/resources/com/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/resources/com/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM1/dao/UserDaoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM1/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM2/dao/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/COM2/mybatis-config2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/LocationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/LocationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myJava/src/main/java/com/SMV/myTest/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/UserMapper2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SMV/myTest/mybatis-config-mytest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/AOP1/applicationContext-AOP1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample/sample1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample3/sample3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample4/sample4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/Sample4/sample4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext-product.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext-user.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo2/applicationContext2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/SpringTest/SpringDemo3/ApplicationContext3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/SpringMVC/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/SqlMapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/bean.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IAccountDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IGoodsDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IOrdersDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IRoleDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/itheima/dao/IUserDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/jdbcConfig.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/mybatis/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/com/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/hbase-site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myJava/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MySpringMVC/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MySpringMVC/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJava/src/main/java/MySpringMVC/hello.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,9 +857,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/env/apache-maven-3.8.8/lib" />
-        <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="$USER_HOME$/env/apache-maven-3.8.8/conf/settings.xml" />
+        <option name="localRepository" value="D:\env\apache-maven-3.8.6\myRespository" />
+        <option name="userSettingsFile" value="D:\env\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -182,49 +876,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
-    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
-    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/lixiaofeng/myGitProjects/mySpring/src/main/java/org/com",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.5865724",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "spring.configuration.checksum": "b8a79c7b3072428c6e40caac0148ed80"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/myHadoop/src/main/java/HadoopTheDefinitiveGuide" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HadoopTheDefinitiveGuide" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="mapreduce.Serialization.Writable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myGitProject\myJava1\myJava\myHadoop\src\main\java" />
       <recent name="$PROJECT_DIR$/../mySpring/src/main/java/org/com" />
       <recent name="$PROJECT_DIR$/myJava/src/main/java/SMV/myTest" />
       <recent name="$PROJECT_DIR$/myES" />
       <recent name="$PROJECT_DIR$/myHadoop/src/main/java/mapreduce/combineTextInputformat" />
-      <recent name="$PROJECT_DIR$/myHadoop/src/test/java/mapreduce/Serialization/Writable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myGitProject\myJava1\myJava\myHadoop\src\main\java\mapreduce\yasuo" />
+      <recent name="D:\myGitProject\myJava1\myJava\myHadoop\src\main\resources\input" />
       <recent name="$PROJECT_DIR$/myJava/src/main/resources/com" />
       <recent name="$PROJECT_DIR$/myJava/src/main/resources/SMV/abandon" />
       <recent name="$PROJECT_DIR$/myJava/src/main/resources" />
-      <recent name="$PROJECT_DIR$/myJava/src/main/java/com/next/interview" />
-      <recent name="$PROJECT_DIR$/myES" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.itheima.dao" />
@@ -255,7 +936,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.com.itheima.App">
+  <component name="RunManager" selected="Application.WordCountDriver">
     <configuration name="App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.App2" />
       <module name="mySpring" />
@@ -269,12 +950,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.ui.Client" />
-      <module name="myJava" />
+    <configuration name="WordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mapreduce.yasuo.WordCountDriver" />
+      <module name="myHadoop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itheima.ui.*" />
+          <option name="PATTERN" value="mapreduce.yasuo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,6 +976,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.test1" />
+      <module name="myJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="xfTestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.SMV.myTest.xfTestDemo" />
       <module name="myJava" />
@@ -307,109 +1001,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="xfTestMybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.SMV.myTest.xfTestMybatis" />
-      <module name="myJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.SMV.myTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
     </configuration>
     <configuration name="myTomcat1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
@@ -499,21 +1090,52 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Local">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.App2" />
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.com.itheima.App" />
       <item itemvalue="Application.xfTestDemo" />
-      <item itemvalue="Application.xfTestMybatis" />
+      <item itemvalue="Application.test1" />
+      <item itemvalue="Application.WordCountDriver" />
       <item itemvalue="Tomcat Server.myTomcat1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordCountDriver" />
+        <item itemvalue="Application.test1" />
         <item itemvalue="Application.com.itheima.App" />
         <item itemvalue="Application.App2" />
         <item itemvalue="Application.xfTestDemo" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.xfTestMybatis" />
       </list>
     </recent_temporary>
   </component>
@@ -651,6 +1273,8 @@
       <workItem from="1691334951184" duration="6845000" />
       <workItem from="1691822028241" duration="28923000" />
       <workItem from="1692196491349" duration="201000" />
+      <workItem from="1723900048140" duration="4384000" />
+      <workItem from="1723972709919" duration="1620000" />
     </task>
     <servers />
   </component>
@@ -667,6 +1291,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
